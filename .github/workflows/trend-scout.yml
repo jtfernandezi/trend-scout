@@ -1,0 +1,66 @@
+name: Trend Scout
+
+# Headless Claude Code scans current startup/tech trends, makes a non-obvious
+# second-order leap, and adversarially novelty-checks the result before
+# committing anything. No live system to protect (unlike the stocks audit),
+# so output commits straight to main: one report file + ledger update per run.
+# Runs in the cloud (Mac off), overnight so it doesn't compete with daytime
+# token budget, and avoids Sunday so it never collides with the stocks
+# weekly-audit's token usage in the same week.
+
+on:
+  schedule:
+    # 09:00 UTC Tue/Thu/Sat = 03:00 America/Mexico_City (UTC-6, no DST)
+    - cron: "0 9 * * 2,4,6"
+  workflow_dispatch:
+    inputs:
+      model:
+        description: "Claude model (sonnet = reliable on subscription quota; opus = deeper but may hit session limits)"
+        default: "opus"
+        required: false
+
+permissions:
+  contents: write   # commit the daily report + ledger update to main
+
+concurrency:
+  group: trend-scout
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0   # full history so the run can read prior reports
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Configure git identity
+        run: |
+          git config user.name  "trend-scout-bot"
+          git config user.email "trend-scout@users.noreply.github.com"
+
+      - name: Run trend research
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SCOUT_MODEL: ${{ github.event.inputs.model || 'opus' }}
+        run: |
+          claude -p "$(cat automation/trend_research_prompt.md)" \
+            --model "$SCOUT_MODEL" \
+            --dangerously-skip-permissions
+
+      - name: Alert on failure
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=🚨 Trend Scout workflow FAILED on $(date -u +%F). Check GitHub Actions logs." >/dev/null
