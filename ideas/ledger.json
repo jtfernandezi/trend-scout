@@ -61,7 +61,7 @@
     },
     {
       "id": "ts-0007",
-      "date": "2026-06-19",
+      "date": "2026-06-16",
       "status": "new",
       "summary": "Spanish-first compliance + certification copilot for tiny engineered-stone countertop fab shops, built around California's STOP Act (SB 20) phased silicosis regime (July 1 2026 training/attestation; July 2027 mandatory shop certification or suppliers can't sell to you).",
       "cross": {
@@ -85,7 +85,7 @@
     },
     {
       "id": "ts-0008",
-      "date": "2026-06-19",
+      "date": "2026-06-16",
       "status": "new",
       "summary": "Slab-distributor certification-verification rail: the point-of-sale system that legally clears whether a stone shop is STOP-Act-certified before a distributor sells it slabs, with an audit trail against the state public database.",
       "cross": {
@@ -109,35 +109,35 @@
     },
     {
       "id": "ts-0009",
-      "date": "2026-06-19",
+      "date": "2026-06-16",
       "status": "killed",
       "summary": "Voice-AI road-readiness coach that simulates the FMCSA two-step ELP roadside assessment (verbal interview + highway-sign ID) for immigrant owner-operator truckers and produces an 'ELP-ready' record.",
       "kill_reason": "Occupied. CDL Help already exists, purpose-built for the post-2025 two-step ELP assessment, in 10 languages with 13,000+ drivers; INFINITI is launching dedicated ELP training modules following the exact inspection flow. The why-now (FMCSA ELP out-of-service since 2025-06-25, permanent in the April 2026 CVSA criteria) is real, but the space is taken."
     },
     {
       "id": "ts-0010",
-      "date": "2026-06-19",
+      "date": "2026-06-16",
       "status": "killed",
       "summary": "Survey-evidence engine for hospitals that auto-assembles the 'data-driven staffing adequacy' packet for Joint Commission NPG 12 (effective Jan 2026) and ties staffing to performance-improvement root-cause analyses.",
       "kill_reason": "Occupied by incumbents extending. Kahuna Workforce already markets directly to NPG 12; symplr, QGenda and UKG own the hospital scheduling/acuity/competency data the evidence is built from, and accreditation-management is a crowded healthcare-IT space (Midas+, symplr). Large-hospital buyer is well served; no clean wedge."
     },
     {
       "id": "ts-0011",
-      "date": "2026-06-19",
+      "date": "2026-06-16",
       "status": "killed",
       "summary": "Multimodal mitigation-evidence dossier that turns a small commercial property owner's phone photos into the carrier-formatted wildfire/CAT resilience documentation packet to avoid a 2026 nonrenewal.",
       "kill_reason": "Occupied. ZestyAI Z-FIRE (carrier risk model), defensiblespacescore.com, Foothills Fire Block, FireRoofs and CompanyCam already do wildfire-mitigation documentation, and third-party services already 'build systems, complete hardening, and deliver documentation' working with agents/brokers. CA Safer-from-Wildfires 12-category discount framework is already mapped by these players."
     },
     {
       "id": "ts-0012",
-      "date": "2026-06-19",
+      "date": "2026-06-16",
       "status": "killed",
       "summary": "AI that finds a small company's qualifying domestic R&D and auto-prepares the retroactive Section 174 expensing election + amended 2022-2024 returns before the ~2026-07-06 OBBBA one-year window closes.",
       "kill_reason": "Saturated. The Section 174 / R&D-credit space is exactly where specialist tax-tech and firms already compete hard (alliantgroup, Strike Tax, ABGI, Cherry Bekaert, KLR, inkle), all of them actively marketing the OBBBA retroactive-expensing window. Wrong space to wedge into; deadline-driven but fully occupied."
     },
     {
       "id": "ts-0013",
-      "date": "2026-06-19",
+      "date": "2026-06-16",
       "status": "killed",
       "summary": "Compliance tooling for community banks / credit unions to meet CFPB Section 1071 (Regulation B) small-business-lending data collection, triggered by the 2026-06-30 effective date.",
       "kill_reason": "Why-now collapsed. The May 2026 final rule scaled 1071 back: the covered-institution threshold was raised tenfold to 1,000 originations (excluding most community banks/credit unions and all Farm Credit lenders), the small-business definition dropped to $1M revenue, and the single compliance date was pushed to 2028-01-01. Near-term urgency for the small-lender buyer was deliberately removed. Same failure mode as ts-0003 (verify the trigger is live)."

@@ -5,6 +5,10 @@ sole purpose is to find startup ideas worth pitching at YC. You get three
 runs a week. Most ideas you will generate are not novel — that's expected.
 Your job is to filter ruthlessly and only keep what survives.
 
+**Today's date:** run `date -u +%F` and use that exact value everywhere a date
+is needed (the report filename, the `date` field on every ledger entry). Do not
+guess, infer from the schedule, or use a date from memory — read the clock.
+
 ## Context you must read first
 
 1. `ideas/ledger.json` — every idea ever proposed, with its status. Do not
