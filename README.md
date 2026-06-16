@@ -24,5 +24,8 @@ validate the scan→leap→novelty-check loop before building the automation —
 both rounds killed every idea generated, which validated that the novelty
 filter has teeth but showed the prompt needed to force buyer-specific,
 trigger-specific ideas instead of category-level ones. That fix is baked
-into `trend_research_prompt.md`. Next: one manual end-to-end test run
-inside this repo before turning on the schedule.
+into `trend_research_prompt.md`.
+
+First cloud run completed successfully 2026-06-16 (`reports/2026/2026-06-16.md`):
+4 ideas logged, 1 survivor at composite 3.83 (below the 4.0 brief threshold),
+3 killed on the novelty check. Schedule is live (Tue/Thu/Sat 09:00 UTC).

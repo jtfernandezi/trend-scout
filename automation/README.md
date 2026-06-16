@@ -14,7 +14,11 @@ is no PR gate and no read-only DB role, because there's nothing to damage.
 
 ## Secrets (GitHub repo settings → Secrets and variables → Actions)
 
-- `CLAUDE_CODE_OAUTH_TOKEN` — same token type used by the stocks audit
+- `CLAUDE_CODE_OAUTH_TOKEN` — same token type used by the stocks audit.
+  Generate/refresh with `claude setup-token` (requires a Claude subscription)
+  and update via `gh secret set CLAUDE_CODE_OAUTH_TOKEN -R <owner>/<repo>`.
+  A stale or revoked token fails fast with `401 Invalid bearer token` in the
+  "Run trend research" step — that's the signal to rotate it.
 - `TELEGRAM_BOT_TOKEN` — a **new** bot, separate from `@trade_stocks_ai_bot`,
   so idea pings don't mix with trading pings
 - `TELEGRAM_CHAT_ID` — your chat id for that bot
