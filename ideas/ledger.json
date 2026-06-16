@@ -58,6 +58,89 @@
       "status": "killed",
       "summary": "RIA client-repapering / advisor-transition automation for PE roll-ups, to stop AUM leakage during post-acquisition account migration.",
       "kill_reason": "Saturated: Feathery, TradePMR Fusion SYNC, Skience all lead with 'end manual repapering' and AI-assisted transitions; a 2026 platform comparison already exists. No opening."
+    },
+    {
+      "id": "ts-0007",
+      "date": "2026-06-19",
+      "status": "new",
+      "summary": "Spanish-first compliance + certification copilot for tiny engineered-stone countertop fab shops, built around California's STOP Act (SB 20) phased silicosis regime (July 1 2026 training/attestation; July 2027 mandatory shop certification or suppliers can't sell to you).",
+      "cross": {
+        "ai_signal": "Multimodal, Spanish-first frontier models (Opus 4.8 / Gemini 3.5 agentic era) that can run a written exposure-control plan, deliver + log trigger-task training, track worker medical surveillance, and emit the annual Cal/OSHA attestation from a 5-person shop's messy photos and records.",
+        "structural_signal": "California STOP Act / SB 20 (signed 2025-10-13): bans dry-cutting, mandates training + annual written attestation from 2026-07-01, and a phased shop-certification regime where by 2027-07-01 distributors may only sell slabs to certified shops, tracked in a state public database. Cal/OSHA voted 2026-05-21 to advance >1%-silica artificial-stone rulemaking."
+      },
+      "buyer": "Owner of a 3-15 employee engineered-stone countertop fabrication shop in California (often a Spanish-first immigrant owner with no EHS staff), at the training/attestation stage.",
+      "trigger": "2026-07-01 training + annual written attestation requirement begins; the shop's slab distributor warns it must be state-certified by 2027-07-01 or lose the ability to buy slabs.",
+      "why_incumbents_cant": "General EHS platforms (VelocityEHS, KPA, Cority, J.J. Keller) are priced and designed for mid/large firms with full-time EHS managers and English workflows; the only resources aimed at these shops today are static OSHA/Natural Stone Institute PDFs and one-off consultants. No software product encodes SB 20's brand-new, CA-specific, phased certification regime for a tiny Spanish-first shop.",
+      "scores": {
+        "novelty": 5,
+        "why_now": 5,
+        "market_venture_scale": 3,
+        "solo_buildable_during_mba": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.2
+      },
+      "kill_attempts_survived": 2,
+      "brief": "ideas/briefs/0002-stop-act-fab-shop-compliance.md"
+    },
+    {
+      "id": "ts-0008",
+      "date": "2026-06-19",
+      "status": "new",
+      "summary": "Slab-distributor certification-verification rail: the point-of-sale system that legally clears whether a stone shop is STOP-Act-certified before a distributor sells it slabs, with an audit trail against the state public database.",
+      "cross": {
+        "ai_signal": "Agentic verification + document-reasoning layer that reconciles a distributor's messy customer list against the state certified/non-compliant database and each shop's attestation status, and blocks or flags non-compliant sales in the order flow.",
+        "structural_signal": "Under SB 20, distributors are legally required to confirm a buyer shop's certification status before selling slabs (phasing to a hard bar by 2027-07-01), backed by a public state database of certified and non-compliant shops."
+      },
+      "buyer": "Compliance / sales-ops lead at a stone-slab distributor or importer (Caesarstone, Cambria, MSI, Arizona Tile, regional importers) selling into California, who becomes legally the enforcement chokepoint.",
+      "trigger": "The 2027-07-01 supplier-certification bar plus 2026 database/attestation spin-up; distributors must build a defensible 'we verified before we sold' process now or risk liability and blocked sales.",
+      "why_incumbents_cant": "Stone-industry ERPs and distributor order systems have no concept of a per-customer state silica-certification gate; generic compliance/KYB vendors don't touch a niche state public-health database. The verification rail sits between ~50-100 distributors and thousands of shops with built-in distribution.",
+      "scores": {
+        "novelty": 5,
+        "why_now": 3,
+        "market_venture_scale": 4,
+        "solo_buildable_during_mba": 3,
+        "yc_fit": 4,
+        "founder_fit": 3,
+        "composite": 3.7
+      },
+      "kill_attempts_survived": 2,
+      "brief": null
+    },
+    {
+      "id": "ts-0009",
+      "date": "2026-06-19",
+      "status": "killed",
+      "summary": "Voice-AI road-readiness coach that simulates the FMCSA two-step ELP roadside assessment (verbal interview + highway-sign ID) for immigrant owner-operator truckers and produces an 'ELP-ready' record.",
+      "kill_reason": "Occupied. CDL Help already exists, purpose-built for the post-2025 two-step ELP assessment, in 10 languages with 13,000+ drivers; INFINITI is launching dedicated ELP training modules following the exact inspection flow. The why-now (FMCSA ELP out-of-service since 2025-06-25, permanent in the April 2026 CVSA criteria) is real, but the space is taken."
+    },
+    {
+      "id": "ts-0010",
+      "date": "2026-06-19",
+      "status": "killed",
+      "summary": "Survey-evidence engine for hospitals that auto-assembles the 'data-driven staffing adequacy' packet for Joint Commission NPG 12 (effective Jan 2026) and ties staffing to performance-improvement root-cause analyses.",
+      "kill_reason": "Occupied by incumbents extending. Kahuna Workforce already markets directly to NPG 12; symplr, QGenda and UKG own the hospital scheduling/acuity/competency data the evidence is built from, and accreditation-management is a crowded healthcare-IT space (Midas+, symplr). Large-hospital buyer is well served; no clean wedge."
+    },
+    {
+      "id": "ts-0011",
+      "date": "2026-06-19",
+      "status": "killed",
+      "summary": "Multimodal mitigation-evidence dossier that turns a small commercial property owner's phone photos into the carrier-formatted wildfire/CAT resilience documentation packet to avoid a 2026 nonrenewal.",
+      "kill_reason": "Occupied. ZestyAI Z-FIRE (carrier risk model), defensiblespacescore.com, Foothills Fire Block, FireRoofs and CompanyCam already do wildfire-mitigation documentation, and third-party services already 'build systems, complete hardening, and deliver documentation' working with agents/brokers. CA Safer-from-Wildfires 12-category discount framework is already mapped by these players."
+    },
+    {
+      "id": "ts-0012",
+      "date": "2026-06-19",
+      "status": "killed",
+      "summary": "AI that finds a small company's qualifying domestic R&D and auto-prepares the retroactive Section 174 expensing election + amended 2022-2024 returns before the ~2026-07-06 OBBBA one-year window closes.",
+      "kill_reason": "Saturated. The Section 174 / R&D-credit space is exactly where specialist tax-tech and firms already compete hard (alliantgroup, Strike Tax, ABGI, Cherry Bekaert, KLR, inkle), all of them actively marketing the OBBBA retroactive-expensing window. Wrong space to wedge into; deadline-driven but fully occupied."
+    },
+    {
+      "id": "ts-0013",
+      "date": "2026-06-19",
+      "status": "killed",
+      "summary": "Compliance tooling for community banks / credit unions to meet CFPB Section 1071 (Regulation B) small-business-lending data collection, triggered by the 2026-06-30 effective date.",
+      "kill_reason": "Why-now collapsed. The May 2026 final rule scaled 1071 back: the covered-institution threshold was raised tenfold to 1,000 originations (excluding most community banks/credit unions and all Farm Credit lenders), the small-business definition dropped to $1M revenue, and the single compliance date was pushed to 2028-01-01. Near-term urgency for the small-lender buyer was deliberately removed. Same failure mode as ts-0003 (verify the trigger is live)."
     }
   ]
 }
