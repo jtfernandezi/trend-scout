@@ -1,3 +1,63 @@
 {
-  "ideas": []
+  "ideas": [
+    {
+      "id": "ts-0001",
+      "date": "2026-06-16",
+      "status": "new",
+      "summary": "Buy-side SBA capital-stack structuring engine for self-funded ETA searchers, built around the post-June-2025 SOP 50-10 8 full-standby seller-note + 10% equity-injection rules.",
+      "cross": {
+        "ai_signal": "Frontier LLM reasoning (Claude Opus 4.8 / Gemini 3.5 agentic era) over dense, recently-rewritten SBA SOP rules + a buyer's messy deal inputs.",
+        "structural_signal": "SBA SOP 50-10 8 (effective 2025-06-01) tightened seller-note/equity rules so deals are 'falling through'; runs into the $5T baby-boomer small-business transfer driving record ETA deal volume."
+      },
+      "buyer": "First-time self-funded searcher / ETA buyer under signed LOI on a $400k-$2M SDE service business (HVAC, plumbing, landscaping), at the financing-structuring stage.",
+      "trigger": "SOP 50-10 8 in force since 2025-06-01; the SBA lender rejects the assumed seller-note structure inside the 30-60 day diligence/financing window and the LOI clock is running.",
+      "why_incumbents_cant": "Lender-side tools (Aloan, LenderAI, Biz2x, iBusiness) organize/underwrite the file to protect the bank AFTER structure is set; retained buy-side advisors (Munera) are uneconomic for sub-$2M deals; ETA content/communities educate but don't generate a compliant structure + seller-negotiation artifact.",
+      "scores": {
+        "novelty": 4,
+        "why_now": 5,
+        "market_venture_scale": 3,
+        "solo_buildable_during_mba": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.0
+      },
+      "kill_attempts_survived": 2,
+      "brief": "ideas/briefs/0001-sba-buyside-deal-structuring.md"
+    },
+    {
+      "id": "ts-0002",
+      "date": "2026-06-16",
+      "status": "killed",
+      "summary": "AI tribal-knowledge / founder's-brain capture to document a retiring SMB owner's operations before they leave.",
+      "kill_reason": "Saturated (Context Memo, MO Docs AI, WorkCell, SimplySOPs, oxmaint, Cohevo) AND is essentially YC Summer-2026's own 'Company Brain' RFS. Textbook one-step extension of an AI trend; everyone has it simultaneously."
+    },
+    {
+      "id": "ts-0003",
+      "date": "2026-06-16",
+      "status": "killed",
+      "summary": "Black-box algorithmic-discrimination audit for non-tech AI deployers (e.g. property managers, regional lenders) triggered by Colorado SB24-205.",
+      "kill_reason": "The why-now trigger no longer exists: Colorado SB24-205 was repealed and replaced by SB 26-189 (signed 2026-05-14) and never took effect. No live mandate = no urgency. Killed on the facts."
+    },
+    {
+      "id": "ts-0004",
+      "date": "2026-06-16",
+      "status": "killed",
+      "summary": "AI SBA 7(a) loan packaging / underwriting automation (lender-side analyst layer).",
+      "kill_reason": "Saturated lender-side: Aloan, LenderAI (iBusiness Funding), Biz2x, CRS Credit API all do SOP-50-10-7/8 file organization and underwriting. Wrong side of the table from the unserved buyer."
+    },
+    {
+      "id": "ts-0005",
+      "date": "2026-06-16",
+      "status": "killed",
+      "summary": "Agentic vendor-oversight tool that discovers an RIA's real vendor stack and enforces the Reg S-P 72-hour breach-notification clause, sold to PE-backed RIA aggregators.",
+      "kill_reason": "Covered by RIA-vertical incumbents already owning the compliance relationship: Venminder, Ncontracts, Smart-RIA, itSynergy, AdvisorLaw. Agentic discovery is a feature, not a wedge against entrenched vendors. Reg S-P deadline (2026-06-03) is real but the space is taken."
+    },
+    {
+      "id": "ts-0006",
+      "date": "2026-06-16",
+      "status": "killed",
+      "summary": "RIA client-repapering / advisor-transition automation for PE roll-ups, to stop AUM leakage during post-acquisition account migration.",
+      "kill_reason": "Saturated: Feathery, TradePMR Fusion SYNC, Skience all lead with 'end manual repapering' and AI-assisted transitions; a 2026 platform comparison already exists. No opening."
+    }
+  ]
 }
