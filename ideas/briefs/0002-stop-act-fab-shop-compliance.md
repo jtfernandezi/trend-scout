@@ -2,9 +2,9 @@
 
 - **Ledger id:** ts-0007
 - **First proposed:** 2026-06-19
-- **Status:** new
+- **Status:** killed (revised 2026-06-16 thesis — fails the venture-scale $1B gate)
 - **Composite score:** 4.2 (Novelty 5 · Why-now 5 · Market 3 · Solo-buildable 4 · YC-fit 4 · Founder-fit 4)
-- **Why this got the brief:** it is the run's strongest survivor and the only one above 4.0. The novelty is unusually clean — a direct search for compliance software in this sector returned *no* startup, only law-firm explainers, static OSHA/Natural Stone Institute PDFs, and human consultants.
+- **Note:** retained as a historical record. The novelty was unusually clean (a direct search returned *no* competing startup), but the market score of 3 — a CA-only, tiny-shop niche — is now a hard kill under the venture-scale gate. Kept as a worked example of a clean novelty result that still isn't venture-scale.
 
 ## One line
 

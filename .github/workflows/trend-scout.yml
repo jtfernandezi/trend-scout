@@ -1,9 +1,15 @@
 name: Trend Scout
 
 # Headless Claude Code scans current startup/tech trends, makes a non-obvious
-# second-order leap, and adversarially novelty-checks the result before
-# committing anything. No live system to protect (unlike the stocks audit),
-# so output commits straight to main: one report file + ledger update per run.
+# second-order leap, and adversarially novelty-checks the result. No live system
+# to protect (unlike the stocks audit), so output commits straight to main: one
+# report file + ledger update per run.
+#
+# The research step only WRITES files (ledger, report, briefs, digest). The
+# workflow — not the model — then commits, pushes, and sends the Telegram digest
+# in dedicated steps, and FAILS LOUDLY if the run produced no changes. This stops
+# a run from silently "succeeding" without committing anything.
+#
 # Runs in the cloud (Mac off), overnight so it doesn't compete with daytime
 # token budget, and avoids Sunday so it never collides with the stocks
 # weekly-audit's token usage in the same week.
@@ -43,17 +49,40 @@ jobs:
           git config user.name  "trend-scout-bot"
           git config user.email "trend-scout@users.noreply.github.com"
 
-      - name: Run trend research
+      - name: Run trend research (writes files only)
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SCOUT_MODEL: ${{ github.event.inputs.model || 'opus' }}
         run: |
           claude -p "$(cat automation/trend_research_prompt.md)" \
             --model "$SCOUT_MODEL" \
             --dangerously-skip-permissions
+
+      - name: Commit and push results (guarded)
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "::error::Research run produced no file changes — nothing to commit. Failing so the run is flagged, not silently 'successful'."
+            exit 1
+          fi
+          echo "Changes to commit:"
+          git diff --cached --name-status
+          git commit -m "trend-scout: report $(date -u +%F)"
+          git push origin HEAD:main
+
+      - name: Send Telegram digest
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          DIGEST="reports/$(date -u +%Y)/$(date -u +%F).digest.md"
+          if [ -f "$DIGEST" ]; then
+            bash automation/telegram_digest.sh "$(cat "$DIGEST")"
+            echo "Sent digest from $DIGEST"
+          else
+            echo "::warning::No digest file at $DIGEST — the run committed, but no Telegram digest was sent."
+          fi
 
       - name: Alert on failure
         if: failure()

@@ -2,9 +2,9 @@
 
 - **Ledger id:** ts-0001
 - **First proposed:** 2026-06-16
-- **Status:** new
+- **Status:** killed (revised 2026-06-16 thesis — fails the venture-scale $1B gate)
 - **Composite score:** 4.0 (Novelty 4 · Why-now 5 · Market 3 · Solo-buildable 4 · YC-fit 4 · Founder-fit 4)
-- **Note:** sits exactly on the 4.0 brief threshold, not clearly above it. Written because it is the run's sole survivor and the why-now is unusually clean. Treat as a watch-and-validate, not a conviction call.
+- **Note:** retained as a historical record. Killed when the project re-targeted to venture-scale, AI-native ideas: the market score of 3 (episodic, low-LTV buyer) is now a hard kill, not a survivable weakness. Kept because the why-now analysis is a clean worked example.
 
 ## One line
 

@@ -3,7 +3,7 @@
     {
       "id": "ts-0001",
       "date": "2026-06-16",
-      "status": "new",
+      "status": "killed",
       "summary": "Buy-side SBA capital-stack structuring engine for self-funded ETA searchers, built around the post-June-2025 SOP 50-10 8 full-standby seller-note + 10% equity-injection rules.",
       "cross": {
         "ai_signal": "Frontier LLM reasoning (Claude Opus 4.8 / Gemini 3.5 agentic era) over dense, recently-rewritten SBA SOP rules + a buyer's messy deal inputs.",
@@ -22,7 +22,8 @@
         "composite": 4.0
       },
       "kill_attempts_survived": 2,
-      "brief": "ideas/briefs/0001-sba-buyside-deal-structuring.md"
+      "brief": "ideas/briefs/0001-sba-buyside-deal-structuring.md",
+      "kill_reason": "Killed under the revised 2026-06-16 thesis (venture-scale is now a hard gate): episodic, low-LTV ETA buyer, market score 3 \u2014 no credible $1B path. Brief retained as historical record."
     },
     {
       "id": "ts-0002",
@@ -62,7 +63,7 @@
     {
       "id": "ts-0007",
       "date": "2026-06-16",
-      "status": "new",
+      "status": "killed",
       "summary": "Spanish-first compliance + certification copilot for tiny engineered-stone countertop fab shops, built around California's STOP Act (SB 20) phased silicosis regime (July 1 2026 training/attestation; July 2027 mandatory shop certification or suppliers can't sell to you).",
       "cross": {
         "ai_signal": "Multimodal, Spanish-first frontier models (Opus 4.8 / Gemini 3.5 agentic era) that can run a written exposure-control plan, deliver + log trigger-task training, track worker medical surveillance, and emit the annual Cal/OSHA attestation from a 5-person shop's messy photos and records.",
@@ -81,12 +82,13 @@
         "composite": 4.2
       },
       "kill_attempts_survived": 2,
-      "brief": "ideas/briefs/0002-stop-act-fab-shop-compliance.md"
+      "brief": "ideas/briefs/0002-stop-act-fab-shop-compliance.md",
+      "kill_reason": "Killed under the revised 2026-06-16 thesis (venture-scale is now a hard gate): CA-only tiny-shop niche, market score 3 \u2014 no credible $1B path. Brief retained as historical record."
     },
     {
       "id": "ts-0008",
       "date": "2026-06-16",
-      "status": "new",
+      "status": "killed",
       "summary": "Slab-distributor certification-verification rail: the point-of-sale system that legally clears whether a stone shop is STOP-Act-certified before a distributor sells it slabs, with an audit trail against the state public database.",
       "cross": {
         "ai_signal": "Agentic verification + document-reasoning layer that reconciles a distributor's messy customer list against the state certified/non-compliant database and each shop's attestation status, and blocks or flags non-compliant sales in the order flow.",
@@ -105,7 +107,8 @@
         "composite": 3.7
       },
       "kill_attempts_survived": 2,
-      "brief": null
+      "brief": null,
+      "kill_reason": "Killed under the revised 2026-06-16 thesis: niche CA slab-distributor rail (~50-100 buyers) and not AI-native at venture scale, despite market score 4. Same slab cluster as ts-0007."
     },
     {
       "id": "ts-0009",

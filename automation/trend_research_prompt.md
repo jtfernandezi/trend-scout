@@ -139,13 +139,20 @@ it.
    strongest survivor (or any scoring above a 4.0 composite). The report is
    the menu; the brief is the deep-dive on the best one. Don't write a full
    brief for every survivor.
-4. **Commit and push** everything above directly to `main` with message
-   `trend-scout: report YYYY-MM-DD`.
-5. **Send the Telegram digest** by running `automation/telegram_digest.sh`
-   with a short summary message: survivor count, then each survivor's one-liner
-   followed by its one-sentence plain-English explanation (so the message is
-   understandable on a phone without opening the repo), and a note that the
-   full report is in the repo.
+4. **Write the Telegram digest to `reports/YYYY/YYYY-MM-DD.digest.md`** — a
+   short message: survivor count, then each survivor's one-liner followed by its
+   one-sentence plain-English explanation (understandable on a phone without
+   opening the repo), and a note that the full report is in the repo. Just write
+   the file; the workflow sends it.
+
+**Do not run git or the Telegram script yourself.** Your job is to *write the
+files* (ledger, report, briefs, digest). The GitHub Actions workflow commits,
+pushes, and sends the digest deterministically after you finish — and fails
+loudly if you produced no changes. This guarantees a run can't silently
+"succeed" without committing. (You only ever write files; never `git commit`,
+`git push`, or call `telegram_digest.sh`.)
 
 If zero ideas survive the novelty check, that is a valid and useful outcome —
-report it honestly rather than forcing a weak idea through.
+report it honestly rather than forcing a weak idea through. Even on a
+zero-survivor run you still write the report (with the kills), update the
+ledger, and write the digest — so there is always something to commit.
