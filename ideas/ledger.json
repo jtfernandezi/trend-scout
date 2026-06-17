@@ -144,6 +144,142 @@
       "status": "killed",
       "summary": "Compliance tooling for community banks / credit unions to meet CFPB Section 1071 (Regulation B) small-business-lending data collection, triggered by the 2026-06-30 effective date.",
       "kill_reason": "Why-now collapsed. The May 2026 final rule scaled 1071 back: the covered-institution threshold was raised tenfold to 1,000 originations (excluding most community banks/credit unions and all Farm Credit lenders), the small-business definition dropped to $1M revenue, and the single compliance date was pushed to 2028-01-01. Near-term urgency for the small-lender buyer was deliberately removed. Same failure mode as ts-0003 (verify the trigger is live)."
+    },
+    {
+      "id": "ts-0014",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "AI interconnection-study / hidden-grid-capacity engine that finds idle capacity and compresses interconnection timelines so AI data centers can get power fast (cross: AI grid-physics simulation x the 2,600 GW interconnection-queue bottleneck + FERC reform).",
+      "kill_reason": "Occupied by funded category leaders. GridCARE raised a $64M Series A running 'quadrillions of grid-physics simulations' to find idle capacity for data-center developers; Pearl Street Technologies already automates the MISO study process (months to days). Exact idea, well-capitalized incumbents.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0015",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "FinOps / spend-governance layer for autonomous AI agents that burn compute, tokens and API budgets unpredictably (cross: agentic autonomy x corporate cost-control budget).",
+      "kill_reason": "Occupied. FinOpsly ($4.45M seed, 'control plane' for AI/cloud cost), AWS FinOps agent (launched 2026-06-11), Finout and nOps Clara all market real-time agentic cost governance. Cloud-cost angle taken; external-transaction angle collapses into agent identity/payments (also saturated).",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0016",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "AI-native insurer / MGA that underwrites 'uninsurable' climate-exposed property via hyper-local, per-structure multimodal risk pricing as reinsurance capacity exits (cross: multimodal risk models x the property-insurance climate exodus).",
+      "kill_reason": "Saturated thesis. FutureProof (climate MGA, high-res risk selection), Stand, Kettle, Pibit.ai (CURE underwriting platform), and Cotality all pursue 'unlock the uninsurable with data + AI'; BCG's 'AI-first P&C insurer' is now mainstream consultant copy. No clean novel wedge.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0017",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "AI engine that generates electrical/structural engineering designs and permit-ready, PE-stampable calculations to clear the licensed-engineer bottleneck on the infra buildout (cross: reasoning models x AEC engineer shortage).",
+      "kill_reason": "Occupied. Augmenta auto-routes 25 miles of data-center electrical containment overnight; ELEK Software does deterministic electrical-calc AI; Branch3D does real-time structural; Spacial delivers stamped MEP/structural plans. The data-center beachhead is already Augmenta's.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0018",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "Telemetry-based insurance + risk underwriting for humanoid/AMR robot fleets as embodied AI deploys at scale (cross: physical-AI mass deployment x a risk-transfer industry with no actuarial basis for robots).",
+      "kill_reason": "Occupied and nascent-but-claimed. RobotsInsurance (white-label AI underwriting on real-time fleet telemetry), Autonomy.insurance (all-OEM humanoid fleets), Klaimee (YC, certifies + insures AI agents), and China's first dedicated humanoid policy already exist.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0019",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "Cross-organization reputation / trust-score graph ('credit bureau for agents') so counterparties can trust unknown agents transacting in an open machine economy (cross: live agent-payment protocols x a missing trust layer).",
+      "kill_reason": "Occupied + standardizing. AgentScore (5-dimension agent trust score), ERC-8004 reputation registry, Trulioo's 'Know Your Agent' (KYA, ~$1.75B), and Mastercard 'Verifiable Intent' all stake this. Plus cold-start network dynamics. No opening.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0020",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "Autonomous AI operator that dispatches the heterogeneous behind-the-meter power plants (gas gensets + fuel cells + batteries) being built at AI data centers in island mode (cross: agentic real-time control x the onsite-generation buildout).",
+      "kill_reason": "No clean AI-native wedge. Microgrid orchestration / DERMS already provide the autonomous-operation layer, and the new behind-the-meter plants (VoltaGrid + Blackstone $1B; AIP Monarch) are being built as vertically integrated 'power-as-a-service' with their own ops. Buyer is building, not buying.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0021",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "Real-time purchase-policy enforcement and spend controls for AI agents making external purchases via the new payment protocols (cross: agentic commerce x corporate procurement controls).",
+      "kill_reason": "Occupied. Ramp and Payhawk already ship agentic-procurement policy enforcement and virtual agent cards with merchant/category/limit controls; Google AP2 standardizes signed purchase mandates at the protocol layer. Feature of existing spend platforms, not a new company.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0022",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "AI that compresses energy-project environmental permitting / NEPA review and transmission siting for the infra buildout (cross: document-reasoning AI x permitting as the buildout bottleneck).",
+      "kill_reason": "Occupied by a VC-backed startup and the government itself. Paces AI does AI siting/permitting screening and environmental-report generation for infra developers; DOE's PermitAI / VoltAIc initiative and SearchNEPA target federal NEPA directly.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0023",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "AI that converts safety/design docs into NRC licensing applications to compress nuclear/SMR licensing timelines for the data-center nuclear renaissance (cross: long-context reasoning x the NRC licensing bottleneck + Part 53).",
+      "kill_reason": "Occupied. Atomic Canyon trained a model on 50M+ pages of NRC documents with Oak Ridge; DOE + INL + Argonne + Microsoft + Everstar already demonstrated SAR-to-NRC-document generation (208 pages in a day vs 4-6 weeks). Category leader exists.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0024",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "Computer-use agents that operate API-less legacy back-office software via the UI for a regulated vertical (insurance/healthcare), replacing brittle RPA (cross: reliable computer-use models x the legacy-systems long tail).",
+      "kill_reason": "Saturated 'agentic process automation / RPA replacement' space. Kognitos, Automat (extracts from legacy carrier portals, no APIs), Zamp, o-mega, plus UiPath/Automation Anywhere all claim computer-vision agents that survive UI changes. Crowded category.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0025",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "AI customs broker / HTS classification + clearance agent for importers under the 2026 tariff regime (cross: document-reasoning AI x tariff chaos).",
+      "kill_reason": "Occupied. TariffLens (AI HTS classification for brokers), Gaia Dynamics (AI classification + auditing), Amari AI (ex-Big-Tech, trade-policy navigation), Digicust and Digiqt. CBP issued its first AI-classification ruling (HQ H350722, 2026-01-16). Crowded and one-step extension.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0026",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "Multimodal field-engineering / commissioning copilot (phone + smart glasses) that lets less-experienced techs do medium-voltage data-center electrical work, expanding the scarce skilled-trades workforce (cross: multimodal real-time models x the electrician/commissioning shortage).",
+      "kill_reason": "Occupied. NavigateAI (Eric Wu / Opendoor co-founder, $25M seed) is 'the AI copilot for the physical world,' runs on phone camera + Meta Glasses, explicitly targets data-center construction with electrical-trade launch partners. Directly occupies the beachhead.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0027",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "Immutable 'flight recorder' + forensics layer for AI agent actions, sold to legal/risk/compliance (not dev) in regulated enterprises for post-incident liability reconstruction (cross: agent autonomy x enterprise accountability/evidence requirements).",
+      "kill_reason": "Occupied. Vorlon shipped an 'AI Agent Flight Recorder' (continuous, immutable, cross-app audit trail) in March 2026; ibl.ai, Galileo and Proofpoint cover agent audit/governance mapped to SOC2/HIPAA/EU AI Act/DORA. Already a product, not a gap.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0028",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "AI tariff-engineering / duty-optimization engine that designs the lowest-legal-duty structure (first-sale valuation, tariff engineering, FTZ, drawback), distinct from classification compliance (cross: legal-reasoning AI x duty as a continuous P&L line under the 2026 tariff regime).",
+      "kill_reason": "Occupied + trigger-erosion risk. Jade Global TariffImpactAI, Pax AI, GingerControl and Tariff Refund HQ already do AI-recommended FTZ / drawback / first-sale mitigation. The Last Sale Valuation Act (introduced Feb 2026) would kill first-sale, and CBP is questionnaire-auditing its use.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0029",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "AI-native title insurance / escrow-closing automation that does title examination and closing workflow end to end (cross: agentic document reasoning x the manual, regulated title/escrow industry).",
+      "kill_reason": "Occupied. Titl ($2.5M seed, AI + blockchain title registry), Qualia (agentic AI for title/escrow), alanna.ai and CloseSimple all already automate title search, document prep and closing workflows. Mainstream proptech-AI motion.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0030",
+      "date": "2026-06-17",
+      "status": "killed",
+      "summary": "Agentic supply-chain / tariff-sourcing optimizer that models reshoring/nearshoring and alternative sourcing under tariff volatility (cross: AI sourcing agents + digital twins x tariff-driven supply-chain restructuring).",
+      "kill_reason": "Owned by incumbents. SAP, C3 AI, Snowflake and Deloitte all ship 'agentic supply chain' / sourcing agents that score cost, tariff, lead time and resilience. Enterprise SCM giants already occupy the buyer; no independent wedge.",
+      "kill_attempts_survived": 1
     }
   ]
 }
