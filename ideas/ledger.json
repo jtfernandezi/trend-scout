@@ -280,6 +280,102 @@
       "summary": "Agentic supply-chain / tariff-sourcing optimizer that models reshoring/nearshoring and alternative sourcing under tariff volatility (cross: AI sourcing agents + digital twins x tariff-driven supply-chain restructuring).",
       "kill_reason": "Owned by incumbents. SAP, C3 AI, Snowflake and Deloitte all ship 'agentic supply chain' / sourcing agents that score cost, tariff, lead time and resilience. Enterprise SCM giants already occupy the buyer; no independent wedge.",
       "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0031",
+      "date": "2026-06-18",
+      "status": "new",
+      "summary": "Independent third-party behavioral-certification lab for robot foundation-model policies: adversarially simulates a humanoid/AMR's learned neural policy in world-model sims to find dangerous failure modes before deployment and on every OTA policy update, issuing a certification artifact insurers and safety teams accept.",
+      "cross": {
+        "ai_signal": "Frontier world models (NVIDIA Cosmos, Genie) + generative adversarial scenario synthesis can now simulate a non-deterministic VLA robot policy's behavior across millions of out-of-distribution situations cheaply; NVIDIA's robot-dexterity scaling law and GR00T/pi0-class policies make policies powerful but opaque and frequently updated.",
+        "structural_signal": "Humanoid/AMR mass deployment into workplaces ($38B robotics market, Amazon 1M+ robots) is hitting a regulated-appliance inflection: Agility Robotics secured OSHA-recognized approval (demo->deployment), ANSI/A3 R15.06-2025 + ISO 10218:2025 published Oct 2025, ISO 25785-1 for dynamically-stable robots in development, and insurers are starting to require certification before robots can be deployed/insured."
+      },
+      "buyer": "Safety/ops or risk lead at an enterprise deploying humanoid/AMR fleets (logistics, manufacturing fulfillment) at go-live, whose insurer/EHS process now requires independent behavioral sign-off; secondarily robot makers needing an independent stamp to sell to risk-averse enterprise buyers.",
+      "trigger": "2026 demo->deployment shift: Agility OSHA-recognized approval, ANSI R15.06-2025/ISO 10218:2025 in force, insurers requiring certification; neural policies update OTA like software, so each update needs re-validation hardware certs don't cover.",
+      "why_incumbents_cant": "Hardware/mechanical certs (UL 3300, ANSI R15.06, Saphira) certify the chassis, not the learned policy's behavior; Kite Compliance is a regulatory-requirements copilot, not a sim-based validation lab; ReSim is a developer CI/CD test tool robot makers run on themselves (grading own homework); robot insurers (ts-0018 cluster) underwrite but rely on someone else to test. No independent assurance authority for robot brains exists.",
+      "scores": {
+        "novelty": 4,
+        "why_now": 4,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.0
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0003-robot-policy-assurance-lab.md"
+    },
+    {
+      "id": "ts-0032",
+      "date": "2026-06-18",
+      "status": "new",
+      "summary": "Independent test-and-evaluation 'assurance harness' for DoD autonomous systems: adversarially stress-tests non-deterministic military-AI/autonomous-weapon behavior in simulation to produce the assurance case a program needs before a commander authorizes deployment, re-run on every model update.",
+      "cross": {
+        "ai_signal": "Frontier models + adversarial simulation can probe and characterize the 'unpredictable behaviors' of non-deterministic autonomous-systems policies at a scale and rigor manual T&E cannot, generating structured assurance evidence.",
+        "structural_signal": "Autonomous-weapons venture funding hit $14.6B in 5 months of 2026 and the White House requested $54.6B for the Defense Autonomous Working Group; DoW AI Strategy (Jan 2026), Army contract to assess AI 'unpredictable behaviors' (Jan 2026), and DIU's 'MYSTIC DEPOT' solicitation (Mar 2026) show DoD/IC explicitly asking industry to build a standardized 'evaluation harness' for autonomous-system TEV&V that does not yet exist."
+      },
+      "buyer": "DoD program office / T&E authority and the autonomy primes that must clear a TEV&V gate before a fielding decision; entry via a DIU/CSO solicitation for a specific autonomy class (e.g., counter-drone or uncrewed systems).",
+      "trigger": "2026 explicit government pull: DIU MYSTIC DEPOT eval-harness solicitation, Army 'unpredictable behaviors' contract, DT&E of Autonomous Systems Guidebook in development, and a 24,000% DAWG budget jump - with no standardized way to verify autonomous AI before authorizing deployment.",
+      "why_incumbents_cant": "Primes (Anduril, Shield AI) grade their own homework and DoD wants independent evaluation; FFRDCs (MITRE, APL) are slow and unproductized; the standardized AI-native eval harness is a new software category DoD is publicly soliciting because it does not exist as a product.",
+      "scores": {
+        "novelty": 4,
+        "why_now": 5,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 3,
+        "composite": 4.0
+      },
+      "kill_attempts_survived": 2,
+      "brief": null
+    },
+    {
+      "id": "ts-0033",
+      "date": "2026-06-18",
+      "status": "killed",
+      "summary": "AI-native verification-evidence + traceability generator for AI-written safety-critical code (medical-device IEC 62304, automotive ISO 26262, aerospace DO-178C), turning the certification bottleneck created by AI coding into auto-generated submission-ready artifacts.",
+      "kill_reason": "Occupied. Ketryx ($39M Series B, 'AI-native compliance platform that automates validation, traceability, regulatory workflows,' validated AI agents, used by 3 of top-5 MedTech) owns the medical-device beachhead; ETAS Embedded AI Coder generates ISO 26262/8800-compliant code; LDRA/Vector/Parasoft incumbents are adding AI; NASA building its own certification pipeline. Bottleneck is real but the wedge is taken.",
+      "kill_attempts_survived": 2
+    },
+    {
+      "id": "ts-0034",
+      "date": "2026-06-18",
+      "status": "killed",
+      "summary": "AI agent that protects provider revenue through the new six-month Medicaid redeterminations (mandated every-state by 2026-12-31) by continuously re-verifying eligibility, finding alternative coverage, and walking churning patients through renewal.",
+      "kill_reason": "Occupied by incumbents extending + not AI-native-deep. EHR/RCM platforms already trigger eligibility alerts; member-engagement AI (Genesys, ContinuumCloud, myEZCare, BetaQuick) already markets Medicaid-redetermination call/renewal automation. RCM-adjacent workflow, not an impossible-without-frontier-AI product; crowded.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0035",
+      "date": "2026-06-18",
+      "status": "killed",
+      "summary": "Reinforcement-learning 'environments / gym' and verifiable-reward marketplace to train and grade vertical/scientific agents (verification-is-the-moat thesis).",
+      "kill_reason": "Saturated. Mechanize, OpenReward (330+ envs/4.5M tasks), HUD (YC W25), Fleet, Veris.ai, Bespoke, plus a $750M-valuation RL-gym startup and Mercor (~$500M revenue) already serve frontier labs. 'UI gyms' are a commodity at ~$20k/site. No opening.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0036",
+      "date": "2026-06-18",
+      "status": "killed",
+      "summary": "Teleoperation + egocentric-video training-data foundry for robot foundation models, exploiting NVIDIA's robot-dexterity scaling law (1k->20k hours of human egocentric video doubles task completion).",
+      "kill_reason": "Occupied by funded players. XDOF launched with $70M, Cortex AI (real-world robot + egocentric data + HITL evals), Claru, and NVIDIA's own EgoScale/GR00T pipeline target million-demonstration-scale data. Vertical-exclusivity variant is too thin against well-capitalized generalists.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0037",
+      "date": "2026-06-18",
+      "status": "killed",
+      "summary": "Brand-visibility / answer-engine-optimization + monetization layer for the agentic-web traffic collapse (publisher referral traffic down 47-90%, 'extinction-level event').",
+      "kill_reason": "Occupied. Profound is already a $1B unicorn ($96M Series C, 700+ enterprise customers, 10% of Fortune 500) for AI answer-engine visibility; content-licensing rails (TollBit, ProRata, Cloudflare pay-per-crawl, Human Native) take the publisher-monetization angle. Saturated platform shift.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0038",
+      "date": "2026-06-18",
+      "status": "killed",
+      "summary": "Self-driving-lab / closed-loop autonomous discovery platform (AI designs, robots run experiments) for drug and materials discovery, using RLVR scientific agents.",
+      "kill_reason": "Occupied by funded labs and incumbents. ChemLex ($45M, self-driving chemistry lab), Recursion (in-house closed-loop at scale), Periodic Labs / FutureHouse, and the Acceleration Consortium (~C$500M) already run closed-loop discovery. Capital-heavy category with named leaders.",
+      "kill_attempts_survived": 1
     }
   ]
 }
