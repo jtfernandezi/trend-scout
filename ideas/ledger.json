@@ -376,6 +376,94 @@
       "summary": "Self-driving-lab / closed-loop autonomous discovery platform (AI designs, robots run experiments) for drug and materials discovery, using RLVR scientific agents.",
       "kill_reason": "Occupied by funded labs and incumbents. ChemLex ($45M, self-driving chemistry lab), Recursion (in-house closed-loop at scale), Periodic Labs / FutureHouse, and the Acceleration Consortium (~C$500M) already run closed-loop discovery. Capital-heavy category with named leaders.",
       "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0039",
+      "date": "2026-06-20",
+      "status": "new",
+      "summary": "Independent third-party credibility-assessment lab for AI models used in FDA/EMA drug & biological-product submissions: adversarially stress-tests a sponsor's AI model across its declared context-of-use and auto-generates the Credibility Assessment Plan/Report (CAP/CAR) the FDA's 2026 AI framework now requires, re-run on every model update.",
+      "cross": {
+        "ai_signal": "Frontier models can now adversarially probe another AI model's scientific outputs at scale - generating out-of-distribution stress cases, subgroup/performance analyses, and counterfactuals across a declared context-of-use - producing structured credibility evidence no human team can enumerate by hand.",
+        "structural_signal": "FDA's 'Considerations for the Use of AI to Support Regulatory Decision-Making for Drug and Biological Products' finalizing in 2026 with a risk-based 7-step credibility framework (CAP/CAR); FDA-EMA joint 'Good AI Practice' principles (2026-01-14); an FDA press release proposing the credibility framework; ~173 AI-originated programs in clinical development and a ~$2.6B AI-drug-discovery market - AI is pervading a ~$300B pharma R&D budget and every AI-touched submission now needs credibility evidence."
+      },
+      "buyer": "Regulatory-affairs / biostatistics / model-governance lead at a pharma or biotech sponsor (or a CRO acting for one) preparing an IND/NDA/BLA in which an AI model influenced patient selection, dosing, safety-signal detection, or evidence generation - at the moment they must file a Credibility Assessment Report for that model.",
+      "trigger": "FDA AI-in-drug-development credibility guidance finalizing in 2026 + FDA's explicit expectation that the 'testing model be demonstrably independent from the tool under validation' - sponsors suddenly need an independent credibility dossier per model, re-generated on each update, with no productized independent lab to turn to.",
+      "why_incumbents_cant": "Ketryx ($55M) and CSV/GAMP vendors do self-run compliance *documentation* (IQ/OQ/PQ, traceability) - the sponsor grading its own homework - not independent adversarial model credibility; cross-industry AI assurers (Armilla, Munich Re aiSure) aren't built around the FDA drug-submission credibility framework; CROs (IQVIA, Medidata) own the trial but not independent model assurance; consultants (EY GxP+AI) are advisory, not a productized lab. FDA itself signals it wants an independent tester.",
+      "scores": {
+        "novelty": 3,
+        "why_now": 5,
+        "market_venture_scale": 4,
+        "defensibility": 3,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 3.8
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0004-pharma-ai-credibility-lab.md"
+    },
+    {
+      "id": "ts-0040",
+      "date": "2026-06-20",
+      "status": "killed",
+      "summary": "Function-based (not homology-based) biosecurity screening / safety-execution gate for AI-designed biological sequences, sold as the mandatory check synthesis providers and robotic cloud labs/biofoundries run before making or running an order, because AI-designed novel sequences evade today's homology screening.",
+      "kill_reason": "Occupied + heavily funded. OpenAI is bankrolling the exact thesis - Valthos ($30M; biothreat ID + countermeasures) and Red Queen Bio ($15M seed; AI defensive countermeasures) - while Aclid already screens orders 'including complex or AI-generated sequences' and Microsoft published+deployed function-based screening patches (Science, Oct 2025). 'Biosecurity x AI' is a named seed-stage spike, and the screening rail leans nonprofit/public-good (IBBIS, SecureDNA), denting the venture-scale story.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0041",
+      "date": "2026-06-20",
+      "status": "killed",
+      "summary": "AI-native underwriting + real-time risk monitoring for GPU/compute-collateralized debt - pricing neocloud and data-center loans on live utilization, power, residual-value and counterparty-credit telemetry as a new private-credit asset class forms.",
+      "kill_reason": "Fails the AI-native gate and is filling fast. The structural shift is real and huge ($20B+ GPU-backed debt, $30-40B/yr projected securitization, a neocloud credit crunch), but the product is specialized credit/underwriting analytics that doesn't require frontier AI; the moat is underwriting expertise and data, not a model. Insurers, JPMorgan, CoreWeave's IG-rated GPU deals, and onchain players (USD.AI) are already structuring the asset class.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0042",
+      "date": "2026-06-20",
+      "status": "killed",
+      "summary": "Independent post-market surveillance / assurance platform for deployed clinical AI - continuously monitors live models in hospitals for drift, bias and performance decay and produces the evidence FDA's new post-market-monitoring regime and hospital risk teams require.",
+      "kill_reason": "Occupied. Lattice Health (YC 2026) monitors deployed medical-imaging AI for drift/agreement/subgroup performance and emits governance evidence; Parachute vets + evaluates + monitors every hospital model with an immutable audit trail; Armilla AI and Munich Re aiSure add cross-industry third-party assurance + guarantees. CHAI's nonprofit assurance labs failed, but for-profit startups already filled the gap.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0043",
+      "date": "2026-06-20",
+      "status": "killed",
+      "summary": "Independent evaluation / red-team harness for 'covered frontier models' tied to the White House June-2-2026 AI executive order, which orders NSA/CISA/Treasury to benchmark frontier models and sets up voluntary federal model submission + an AI cybersecurity clearinghouse.",
+      "kill_reason": "Weak trigger + crowded. The EO is explicitly voluntary ('nothing... shall authorize mandatory licensing, preclearance, or permitting'), so there is no hard market-making mandate; and frontier-model evaluation/red-teaming is already contested (Gray Swan, Haize Labs, the saturated RL-gym/eval cluster from ts-0035). No clean novel wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0044",
+      "date": "2026-06-20",
+      "status": "killed",
+      "summary": "Reproducibility / provenance / governed-execution layer for autonomous 'AI scientist' agents that design and run experiments in cloud labs - recording tool versions, parameters and data lineage so AI-driven R&D is defensible and reproducible.",
+      "kill_reason": "Occupied. DataJoint launched 'DataJoint Agentic AI', a governed execution layer for scientific workflows explicitly for 'defensible and reproducible AI in regulated R&D'; Autoscience, Kosmos/Edison Scientific and the broader scAInce tooling stack target the same provenance need. The gap is acknowledged and already being productized.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0045",
+      "date": "2026-06-20",
+      "status": "killed",
+      "summary": "Governance platform that captures, retains and legal-holds AI prompts/outputs/agent logs as discoverable ESI now that 2026 courts treat generative-AI data as producible in litigation, with privilege and spoliation exposure.",
+      "kill_reason": "Fails the AI-native gate + incumbent-owned. This is records-management / eDiscovery for AI data, not a product impossible without frontier AI; eDiscovery/legal-hold incumbents (Relativity et al.) and agent-audit players (Vorlon, ts-0027) extend straight into it. A compliance feature, not a venture-scale company.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0046",
+      "date": "2026-06-20",
+      "status": "killed",
+      "summary": "AI predictive-maintenance / sustainment-readiness platform for DoD depots and fleets (forecast component demand, optimize repair cycles, pre-position inventory) riding the FY2026 $13.4B defense-AI budget and the Marine Aviation Plan's AI/ML sustainment pivot.",
+      "kill_reason": "Occupied + one-step extension. Avathon, PTC and r4.ai already market AI-driven defense predictive maintenance/sustainment, and DoD logistics primes own the multi-echelon optimization. A direct 'AI for predictive maintenance' extension into a buyer incumbents already serve.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0047",
+      "date": "2026-06-20",
+      "status": "killed",
+      "summary": "AI computer-vision/LiDAR grid-inspection + vegetation-management + wildfire-ignition-risk platform for utilities, riding 25%+ wildfire-driven rate filings and the 86 GW 2026 grid buildout.",
+      "kill_reason": "Saturated. AiDash, ZestyAI, Green Grid, DOE's FireMap and multiple LiDAR/CV vendors already do utility vegetation management and wildfire-risk inspection; computer-vision grid-asset inspection is a mature category. One-step extension, no opening.",
+      "kill_attempts_survived": 0
     }
   ]
 }
