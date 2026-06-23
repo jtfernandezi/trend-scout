@@ -464,6 +464,70 @@
       "summary": "AI computer-vision/LiDAR grid-inspection + vegetation-management + wildfire-ignition-risk platform for utilities, riding 25%+ wildfire-driven rate filings and the 86 GW 2026 grid buildout.",
       "kill_reason": "Saturated. AiDash, ZestyAI, Green Grid, DOE's FireMap and multiple LiDAR/CV vendors already do utility vegetation management and wildfire-risk inspection; computer-vision grid-asset inspection is a mature category. One-step extension, no opening.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0048",
+      "date": "2026-06-23",
+      "status": "new",
+      "summary": "Correlated-redemption-run prediction + liquidity-orchestration engine for semi-liquid private-asset vehicles (interval funds, non-traded BDCs, evergreen funds, and the new private-asset 401(k) sleeves): a behavioral foundation model over investor/participant flow data that forecasts reflexive, regime-dependent redemption runs and drives the liquid-sleeve sizing and gate decisions so funds honor withdrawals without gating or diluting returns.",
+      "cross": {
+        "ai_signal": "Frontier sequence/behavioral models can now learn correlated, news-reactive, herding redemption behavior across heterogeneous investors and simulate joint redemption demand curves under stress - a problem classical actuarial liquidity models get fundamentally wrong because they assume independent, stable redemption rates. Frontier models can also fuse exogenous signals (media/sentiment, category contagion, mark deterioration) into a real-time run-risk forecast no spreadsheet can produce.",
+        "structural_signal": "Two halves of one shift: (1) EO 14330 (Aug 2025) + the DOL ERISA safe-harbor proposed 2026-03-30 (final expected late 2026) open the ~$12T defined-contribution / 401(k) market to private equity, private credit, real estate and infra - the structural binding constraint is liquidity mismatch in daily-traded retail vehicles; (2) the mismatch is detonating live in the existing retail channel - Apollo capped redemptions on its retail private-credit fund 2026-06-23 (~17% withdrawal spike), Blackstone restricted withdrawals this month, and Blue Owl liquidated OBDC II after a 200% redemption surge."
+      },
+      "buyer": "Beachhead: liquidity / portfolio-risk lead at an asset manager running a retail-distributed semi-liquid fund (non-traded BDC, interval fund, evergreen) sold through the wealth channel (iCapital/CAIS/advisors), right now post-Apollo, who must prove the vehicle can survive a redemption run. Expansion: the asset managers, recordkeepers and CIT/target-date providers building the first private-asset 401(k) sleeves who must demonstrate to ERISA plan fiduciaries that participant-level redemptions can be honored.",
+      "trigger": "Live crisis + imminent mandate: Apollo gated its retail private-credit fund 2026-06-23 and Blackstone restricted withdrawals this month (reflexive runs the managers' models did not predict); simultaneously the DOL safe harbor finalizing late 2026 is about to pour the $12T DC market into the same semi-liquid structures, and the rule explicitly requires fiduciaries to model participant-level liquidity events.",
+      "why_incumbents_cant": "Institutional risk platforms (BlackRock Aladdin, MSCI LiquidityMetrics) model the market-liquidity of holdings (can you sell the assets) under historical/assumed redemption rates - they do not model correlated, reflexive, participant-level run behavior in retail/DC structures. Valuation/monitoring players (73 Strings, Canoe) mark assets, not flows. Corporate-treasury AI cash-forecasting (TheNoah, AutomationEdge) is the wrong buyer and wrong behavior. The asset managers themselves were caught flat-footed (their models assumed limited predictable redemptions), and recordkeepers have participant data but no model/motion. No one owns the behavioral run-prediction + liquidity-orchestration layer.",
+      "scores": {
+        "novelty": 4,
+        "why_now": 5,
+        "market_venture_scale": 5,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.3
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0005-private-markets-liquidity-engine.md"
+    },
+    {
+      "id": "ts-0049",
+      "date": "2026-06-23",
+      "status": "killed",
+      "summary": "Picks-and-shovels 'automatability underwriting' + workflow-extraction tool for AI-enabled roll-ups: pre-acquisition, maps a target services firm's labor workflows and scores how much agentic AI can automate; post-close, instruments and automates them, sold to the AI-rollup funds doing repeated deals.",
+      "kill_reason": "Occupied + buyer-builds-in-house. General Catalyst already mapped 70 service categories / 4 automatable task classes; AI-diligence tools (Hebbia, DealRoom) cover deal diligence; and the AI-rollup funds (General Catalyst $1.5B, Thrive $1B w/ OpenAI embedded, 8VC, Long Lake) build the automation platform themselves per portfolio company - the value accrues to the integrated holdco, leaving no independent tool buyer (same failure mode as ts-0020).",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0050",
+      "date": "2026-06-23",
+      "status": "killed",
+      "summary": "AI continuous borrower-health / covenant monitoring for private-credit & direct-lending funds - catch credit deterioration weeks before covenant breaches and auto-draft credit-committee materials, riding the $1.3T private-credit boom and its 2026 stress test.",
+      "kill_reason": "Occupied + being-built + thin AI-native gate. The category is already marketed ('AI enables continuous borrower monitoring... 40-60% reduction in monitoring overhead, catch credit events ~6 weeks earlier'); the moat is data + credit expertise, not a model. A one-step extension of an AI trend into a space credit-tech vendors and the funds themselves are already filling.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0051",
+      "date": "2026-06-23",
+      "status": "killed",
+      "summary": "Independent ERISA fiduciary due-diligence + ongoing-monitoring 'dossier' engine for alternative assets entering 401(k)/DC menus: ingests private-fund disclosures and continuously generates the DOL safe-harbor six-factor evaluation (performance, fees, liquidity, valuation, benchmark, complexity) defensible against ERISA challenge.",
+      "kill_reason": "Assurance-vein fatigue + incumbent-owned buyer relationship. The plan-fiduciary investment due-diligence function is owned by entrenched investment consultants and fiduciary-tooling incumbents (Aon, Mercer, Morningstar fiduciary services, fi360/Broadridge, RPAG) who will extend straight into alts and already publish on it; alt-data (Canoe, 73 Strings) supplies the inputs. Closely related to the now-mined independent-assurance seam (ts-0031/0039); no clean novel wedge against incumbents who own the relationship.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0052",
+      "date": "2026-06-23",
+      "status": "killed",
+      "summary": "Daily-strike interim-NAV engine for retail/DC semi-liquid private vehicles: frontier models continuously re-mark illiquid private holdings between quarterly valuations (from public comps, credit and news signals) to produce an audit/SEC/DOL-defensible daily NAV a recordkeeper can trade participants against.",
+      "kill_reason": "73 Strings adjacency - too close to an occupied incumbent. 73 Strings already does AI-powered valuation + portfolio monitoring of illiquid private assets and is the obvious player to extend from quarterly institutional marks into daily retail-NAV strikes; Canoe supplies document data. Real problem, but the novelty kill fails against a funded incumbent already on the path.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0053",
+      "date": "2026-06-23",
+      "status": "killed",
+      "summary": "Generative-UI / 'dynamic software interfaces' layer that draws bespoke per-user interfaces at runtime from intent and context, riding the YC Summer-2026 'Dynamic Software Interfaces' RFS category.",
+      "kill_reason": "Saturated headline trend. A crowded SDK/framework space already (CopilotKit AG-UI/Open-JSON-UI, Google Generative UI for Search, plus ~10 generative-UI SDKs catalogued for 2026). Textbook one-step extension of a named AI trend that everyone is building simultaneously.",
+      "kill_attempts_survived": 0
     }
   ]
 }
