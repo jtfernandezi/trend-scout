@@ -528,6 +528,102 @@
       "summary": "Generative-UI / 'dynamic software interfaces' layer that draws bespoke per-user interfaces at runtime from intent and context, riding the YC Summer-2026 'Dynamic Software Interfaces' RFS category.",
       "kill_reason": "Saturated headline trend. A crowded SDK/framework space already (CopilotKit AG-UI/Open-JSON-UI, Google Generative UI for Search, plus ~10 generative-UI SDKs catalogued for 2026). Textbook one-step extension of a named AI trend that everyone is building simultaneously.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0054",
+      "date": "2026-06-25",
+      "status": "new",
+      "summary": "Correlated-AI-failure catastrophe/accumulation model + per-insured AI-exposure score for primary P&C carriers: maps the foundation-model dependency graph across a carrier's whole commercial book (CGL/D&O/E&O/professional) and simulates the joint loss when thousands of insureds relying on the same few models/agents fail at once, so carriers can move from blanket AI exclusion to selectively pricing the fastest-growing exposure in the economy.",
+      "cross": {
+        "ai_signal": "Frontier models can now map which foundation models, vendors and agents each insured business depends on and characterize how those systems fail, then simulate correlated/cascading non-malicious AI-error scenarios across an economy of insureds - producing a joint loss distribution. Classical CAT/actuarial models assume independent risks and structurally cannot capture this correlation; the industry itself flags that 'current methods do not measure whether failures could be correlated across multiple insureds simultaneously' - the same independent-rate blind spot that broke pandemic-BI and that made ts-0048 AI-native.",
+        "structural_signal": "A 'silent AI' accumulation crisis across all of P&C: Verisk/ISO issued standardized generative-AI exclusions (CG 40 47/48, effective 2026-01-01); WR Berkley filed an absolute AI exclusion for D&O/E&O/Fiduciary; Berkshire/Chubb/Travelers won approval to strip AI damages. Carriers are blanket-excluding because they cannot price the peril - but AI is embedded in ~97% of companies (Gartner: 80% of enterprise apps shipped/updated in Q1 2026 embed an agent), so excluding the whole economy is unsustainable. Reinsurers are already pricing AI into treaties (Swiss Re sigma 07/2026 'Insuring AI'; Munich Re), 200+ active AI-liability cases, and the AI ecosystem's reliance on a few foundation models makes systemic correlated exposure the defining underwriting fear."
+      },
+      "buyer": "Beachhead: exposure-management / chief-underwriting-officer / portfolio-accumulation lead at a mid-to-large commercial P&C carrier or specialty MGA, starting in the D&O/E&O/Tech-E&O lines where Berkley's absolute exclusion is forcing the issue, who right now must choose between blanket-excluding AI (ceding the fastest-growing exposure) and writing it blind (unbounded accumulation). Expansion: all commercial liability lines, then the industry-standard 'AI peril' model that reinsurers, ILS/cat-bond investors and brokers all price against.",
+      "trigger": "2026 ISO/Verisk GenAI exclusions live (2026-01-01) + 2026 renewals + WR Berkley absolute D&O/E&O exclusion + reinsurers pricing AI into treaties (Swiss Re sigma 07/2026); frontier models make economy-wide dependency-graph mapping + correlated-failure simulation newly possible.",
+      "why_incumbents_cant": "CAT-modeling incumbents (Verisk, Moody's RMS) model physical perils with decades of geographic/actuarial data and have no AI-dependency data or model-failure expertise; CyberCube and Moody's RMS Cyber frame AI only as a force-multiplier for cyber ATTACKS (malware propagation) - a different correlation structure than non-malicious foundation-model-error cascades across liability lines; per-agent MGAs (Klaimee, Mount, Corgi, HSB/Munich Re) insure the AI vendor/agent-maker and price one agent at a time, not correlated accumulation across a carrier's whole book of ordinary insureds; reinsurers (Munich Re aiSure, Swiss Re) build AI risk views for their own treaties and primaries don't want to depend on their reinsurer's model (the same conflict that makes cedents want independent CAT models). The independent, liability-line, correlated-AI-failure accumulation model for the primary market is open.",
+      "scores": {
+        "novelty": 4,
+        "why_now": 5,
+        "market_venture_scale": 5,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.3
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0006-ai-peril-cat-model.md"
+    },
+    {
+      "id": "ts-0055",
+      "date": "2026-06-25",
+      "status": "killed",
+      "summary": "Vendor-neutral, natural-language-intent orchestrator that commands heterogeneous multi-vendor drone swarms (the Pentagon's $100M Orchestrator Prize gap; Replicator failed to procure swarm C2).",
+      "kill_reason": "Occupied by giants + the prize is crowded. Shield AI's Hivemind ($12.7B valuation, USAF CCA selection) and Anduril's Lattice are the two dominant autonomy/orchestration platforms (already demonstrated multi-vendor interop on the same aircraft); OpenAI joined the Orchestrator Prize doing voice-to-instruction; Auterion / Northrop Beacon push open multi-vendor standards. The 'doesn't exist yet' framing is the government soliciting it, but well-capitalized incumbents already occupy the layer.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0056",
+      "date": "2026-06-25",
+      "status": "killed",
+      "summary": "Compute-flexibility / AI-workload orchestration that lets a data center throttle/shift/checkpoint training and inference jobs against grid-stress signals so it can accept curtailment and get fast 'conditional firm' interconnection (the data-center load-flexibility shift: ERCOT 198 GW large-load Q1 2026, Brattle $110B savings, DOE >20MW fast lane).",
+      "kill_reason": "Occupied by a funded category leader. Emerald AI ($68M total, NVIDIA-backed; Conductor platform - digital twin of AI power, orchestrates compute + onsite energy, verifies performance) demoed a 25% three-hour power cut with Oracle/NVIDIA/EPRI/SRP and markets 'the fast pass for grid connects.' Exact thesis, well-capitalized incumbent.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0057",
+      "date": "2026-06-25",
+      "status": "killed",
+      "summary": "Agentic AI for eldercare / aging-in-place: proactively schedules care, coordinates family, manages benefits, expands a caregiver's capacity, riding the demographic wave (boomers turning 80 in 2026, 1M new home-care jobs by 2030, 355k paid-worker shortage by 2040).",
+      "kill_reason": "Occupied. Sensi.ai (24/7 home-care AI), Rosarium Health ($6M, MA/Medicaid partnerships), AlayaCare and CareSmartz360 (agentic AI in home-based care), Ajentik, plus physical-AI senior-care entrants already fill both the consumer-monitoring and home-care-agency angles; 72% of home-health agencies already use AI tools. Crowded, and Medicare-coverage gaps dent the venture-scale story.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0058",
+      "date": "2026-06-25",
+      "status": "killed",
+      "summary": "AI-agent liability insurance carrier/MGA - underwrite and cover deployed AI agents (model output failures, bias, autonomous-action harm) as traditional insurers add AI exclusions.",
+      "kill_reason": "Occupied. Klaimee (YC; proprietary three-block risk-score: public-data scan + governance assessment + 100+ behavioral probes), Mount (building an AI insurance carrier for deployed agents), Corgi (10-minute AI-agent liability quotes) and HSB/Munich Re (AI liability insurance for small businesses) already fill the per-agent carrier/MGA gap. 'Insurers retreat, startups rush in' is a named, funded spike. Distinct from ts-0054, which models correlated accumulation across a carrier's whole book rather than pricing one agent.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0059",
+      "date": "2026-06-25",
+      "status": "killed",
+      "summary": "Underwriting + financial-backstop + curtailment-compliance assurance layer for data-center grid commitments: predict whether a data center will honor its curtailment pledge or defect, price the default risk, and provide the bond/insurance utilities and PUCs now require before granting fast-lane interconnection (the stranded-cost / load-defection problem; SPP CHILLS, PJM NCBL, DOE >20MW jurisdiction).",
+      "kill_reason": "Fails the AI-native gate. No named startup yet (genuinely open competitive field), but the product is a financial/insurance instrument + compliance monitoring whose moat is underwriting data and grid-stress forecasting, not frontier AI - the same failure mode as ts-0041 (GPU-debt) and ts-0050 (covenant monitoring). Verification also overlaps Emerald AI's 'verify performance' (ts-0056).",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0060",
+      "date": "2026-06-25",
+      "status": "killed",
+      "summary": "AI-native cognitive electronic warfare / spectrum-dominance system - autonomous signal classification, adaptive jamming and dynamic spectrum allocation at machine speed for the EW buildout ($32B->$65B EW market; Air Force Cognitive EW program element).",
+      "kill_reason": "Prime-dominated + brutal DoD-only GTM. Cognitive EW is an entrenched defense-contractor / FFRDC category (SwRI cognitive-EW contracts, AI-Tech Systems, and the major primes); the buyer is DoD only and procurement is slow and relationship-bound. No clean AI-native-startup wedge against incumbents who own the spectrum-hardware-plus-algorithms stack.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0061",
+      "date": "2026-06-25",
+      "status": "killed",
+      "summary": "AI residential permitting / entitlement automation - ingest a jurisdiction's codes and auto-review building-permit and zoning applications to clear the local-government approval bottleneck behind the housing crisis.",
+      "kill_reason": "Occupied. Govstream.ai ($3.6M seed; Bellevue), Archistar (Austin zoning review), CivCheck (Honolulu plan-review copilot, 60-90 min -> 15-20 min), Anori (Google X spinout pulling entitlements/financing/cost/design upfront) and EliseAI already serve municipalities and developers; HUD opened $13M demonstration funding and Seattle mandated AI permit review by 2026. Crowded across both the city and developer sides.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0062",
+      "date": "2026-06-25",
+      "status": "killed",
+      "summary": "Stablecoin-native B2B treasury + AR/AP reconciliation automation riding the GENIUS Act (B2B stablecoin volume +733% YoY, ~60% of payment volume; $280B outstanding, projected ~$3T by 2030).",
+      "kill_reason": "Saturated rails + weak AI-native gate. The reconciliation/treasury/compliance bundle is already being shipped by stablecoin-rail providers (eco, Bottomline, payfuture and others 'bundling stablecoin rails with compliance, controls, reporting'); the value is the payment rail and regulatory plumbing, not frontier AI. The agentic-payments adjacency is also already mined (ts-0019, ts-0021).",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0063",
+      "date": "2026-06-25",
+      "status": "killed",
+      "summary": "World-model vertical application play - apply frontier physical-world 'world models' (JEPA / dynamics models) to a big enterprise simulation market beyond robotics.",
+      "kill_reason": "Land-grabbed by giants. World-model startups pulled ~$1.8B in two days as the layer commoditizes: World Labs ($1B, +Autodesk into 3D workflows), AMI Labs ($1.03B seed, explicitly targeting 'complex physical systems' - manufacturers, aerospace, biomedical, pharma), Odyssey ($310M), Runway ($315M pivot), plus IBM Maximo asset-agnostic simulation. The foundation-model layer and the obvious enterprise verticals are being taken by billion-dollar players; no clean independent-startup wedge surfaced this run.",
+      "kill_attempts_survived": 0
     }
   ]
 }
