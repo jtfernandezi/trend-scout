@@ -624,6 +624,62 @@
       "summary": "World-model vertical application play - apply frontier physical-world 'world models' (JEPA / dynamics models) to a big enterprise simulation market beyond robotics.",
       "kill_reason": "Land-grabbed by giants. World-model startups pulled ~$1.8B in two days as the layer commoditizes: World Labs ($1B, +Autodesk into 3D workflows), AMI Labs ($1.03B seed, explicitly targeting 'complex physical systems' - manufacturers, aerospace, biomedical, pharma), Odyssey ($310M), Runway ($315M pivot), plus IBM Maximo asset-agnostic simulation. The foundation-model layer and the obvious enterprise verticals are being taken by billion-dollar players; no clean independent-startup wedge surfaced this run.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0064",
+      "date": "2026-06-27",
+      "status": "new",
+      "summary": "Independent 'demand-realism / probability-of-energization' + correlated-materialization risk engine for the AI grid buildout: a frontier model that fuses cross-utility interconnection filings, permits, transformer/equipment supply chains, construction and satellite signals, chip-allocation and financing data, and developer behavior to score which announced data-center loads (and the power/grid projects meant to serve them) will actually materialize and how correlated their fates are - the independent source of truth utilities/PUCs use to avoid stranded overbuild and lenders/ABS investors/hyperscalers use to avoid stranded capital.",
+      "cross": {
+        "ai_signal": "Frontier multimodal models can now fuse heterogeneous, messy, unstructured signals (interconnection-queue filings across many utilities, permit and construction records, equipment/transformer lead-time and chip-allocation data, hyperscaler capex guidance, project-finance terms, satellite imagery, developer filing behavior) into a per-project probability-of-energization AND simulate the CORRELATED materialization of thousands of projects whose fates are linked through shared hyperscaler demand, shared equipment supply chains and shared power constraints. Classical integrated-resource-planning load forecasting is single-point, historically-grounded and assumes independent, stable demand - it structurally cannot model strategic 'phantom' duplicate requests or correlated materialization, the same independent-rate blind spot that made ts-0048 and ts-0054 AI-native.",
+        "structural_signal": "A ~$1.4T US utility grid buildout (top-5 hyperscaler capex ~$602B in 2026; >$9B data-center securitization) colliding with an acute demand-truth crisis: developers file duplicate 'phantom' interconnection requests across multiple utilities, NERC's 10-yr peak forecast jumped 24% (+224 GW) almost entirely on speculative data-center load, ~$700B of the buildout is projected to hit residential ratepayers, and 23 states have approved large-load tariffs (300+ bills in 6 weeks) explicitly to weed out speculative requests. Ratings agencies (Moody's, S&P) and bond investors are openly 'questioning the modeling assumptions' (financing treats contracted demand as actual demand); the live debate is overbuild-stranded-asset risk (utilities/ratepayers) vs under-delivery-stranded-capital risk (lenders/hyperscalers) - both sides need the same demand-realism truth, and the emerging concept ('probability-of-energization-weighted capacity') is acknowledged by analysts (Janus Henderson, E3) but productized by no one."
+      },
+      "buyer": "Beachhead: the resource-planning / load-forecasting lead at a large electric utility (or the staff/consumer-advocate side of a state PUC) facing a flood of speculative large-load interconnection requests right now, who must decide how much transmission/generation to build and how to set cost-causative tariffs without saddling ratepayers with stranded assets. Expansion: project-finance lenders, data-center ABS/CMBS investors and ratings agencies underwriting the $1.4T buildout who need independent demand-truth (their assumptions are 'under scrutiny'); then hyperscalers/developers themselves and the industry-standard demand-realism layer all sides price against.",
+      "trigger": "2026 demand-truth crisis is live and dated: 23 states approved large-load tariffs (51 tariffs, 300+ bills in 6 weeks) explicitly to filter speculative requests; NERC +24% forecast (Dec 2025/2026) on speculative load; Moody's/S&P and Bond Buyer flagging that data-center financing assumptions are 'under scrutiny' (2026); PowerLines ~$700B ratepayer exposure; and frontier multimodal models newly make cross-source demand-realism + correlated-materialization modeling possible. The overbuild-vs-underdelivery debate means urgency persists regardless of which way demand breaks.",
+      "why_incumbents_cant": "Supply-side capacity finders (GridCARE - generative-AI mapping of hidden grid capacity sold to developers; Pearl Street - interconnection-study automation, ts-0014) answer 'where can I get power,' not 'is this announced demand real and correlated'; utility IRP tools and load forecasters (Itron, consultancies E3/Brattle/ICF) use classical single-point historical methods that the phantom-load problem breaks and are advisory, not an independent productized model; ratings agencies (Moody's, S&P) and investors (Janus Henderson's PoE framing) write commentary but ship no independent platform; flexibility players (Emerald AI ts-0056, Verrus) make load curtailable, a different problem. No independent, cross-utility, correlated-materialization demand-realism engine exists - and utilities/PUCs/cedents structurally want a source of truth NOT owned by the developers or their own relationship-conflicted advisors (the same independent-model demand that sustains third-party CAT modelers).",
+      "scores": {
+        "novelty": 4,
+        "why_now": 5,
+        "market_venture_scale": 5,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.3
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0007-data-center-demand-realism-engine.md"
+    },
+    {
+      "id": "ts-0065",
+      "date": "2026-06-27",
+      "status": "killed",
+      "summary": "AI-native audit/assurance firm or platform that automates substantive audit testing end to end, riding the CPA pipeline collapse (300k accountants lost 2020-2024, pipeline -33%, PwC cutting campus hiring ~1/3).",
+      "kill_reason": "Saturated and well-funded. Modus ($85M Seed+A, Lightspeed), Accrual ($75M), Fieldguide (automates ~70% of testing), Audrey AI ($1.8M, piloted top-10/20 firms), Oath (ex-PCAOB regulator, targeting 80% automation) all build AI-native audit; EY launched enterprise agentic-AI audit and PwC is building its own. Real structural shift (the shortage is severe) but the wedge is taken across both startups and Big Four.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0066",
+      "date": "2026-06-27",
+      "status": "killed",
+      "summary": "AI controls-engineering / PLC-and-SCADA code-generation + commissioning copilot to expand the scarce controls/electrical-engineer workforce behind the reindustrialization buildout (~500k skilled-worker shortage; controls/mechanical/electrical engineers hardest to fill).",
+      "kill_reason": "Incumbent-owned + startups already in. Siemens Industrial Copilot (with Microsoft) generates/optimizes/debugs PLC code and Siemens Eigen Engineering Agent autonomously executes PLC coding + HMI design in TIA Portal; Rockwell ships Copilot for Studio 5000; PLCAutoPilot/PLCCopilot cover all major platforms. The PLC vendors own the runtime and the engineer relationship; no independent AI-native wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0067",
+      "date": "2026-06-27",
+      "status": "killed",
+      "summary": "AI engine that simulates how a Most-Favored-Nation / IRA drug-price cut cascades through a manufacturer's global web of international reference-priced, commercial and PBM contracts to find where it is contractually exposed, riding the 2025 MFN executive order + IRA negotiated prices becoming 'observable market reality' in 2026.",
+      "kill_reason": "Incumbent-adjacent + concentrated buyer (the ts-0051 failure mode). The MFN 'ripple/spillover across reference markets' and commercial-contract-misalignment risk is loudly acknowledged, but the pharma pricing/market-access/gross-to-net relationship is owned by entrenched players who extend straight in: Model N (revenue/contract mgmt), IQVIA (orchestrated GTN platform + WhizAI conversational analytics, claim-level insights/accruals), plus the crowded market-access analytics field (~12 platforms). MFN cascade simulation reads as a feature of GTN orchestration for a ~30-50-buyer concentrated market, not a clean novel venture wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0068",
+      "date": "2026-06-27",
+      "status": "killed",
+      "summary": "AI 'apprenticeship / competency-manufacturing' engine that uses deliberate-practice training + real-work simulation to turn juniors into competent seniors fast, addressing the 'missing rung' as AI erases entry-level jobs and companies shift to paid-residency models.",
+      "kill_reason": "Saturated AI-upskilling/training space + soft, distant why-now. AI corporate learning/skilling is crowded (Sana, Multiverse, Workera and many more) and 'AI for hiring/assessment' is well served; the senior-pipeline shortage the thesis depends on bites in 5-10 years, so there is no dated, phones-ringing trigger - the same weak-why-now failure mode as a deferred-deadline idea. No clean AI-native, venture-scale wedge.",
+      "kill_attempts_survived": 0
     }
   ]
 }
