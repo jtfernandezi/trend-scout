@@ -680,6 +680,86 @@
       "summary": "AI 'apprenticeship / competency-manufacturing' engine that uses deliberate-practice training + real-work simulation to turn juniors into competent seniors fast, addressing the 'missing rung' as AI erases entry-level jobs and companies shift to paid-residency models.",
       "kill_reason": "Saturated AI-upskilling/training space + soft, distant why-now. AI corporate learning/skilling is crowded (Sana, Multiverse, Workera and many more) and 'AI for hiring/assessment' is well served; the senior-pipeline shortage the thesis depends on bites in 5-10 years, so there is no dated, phones-ringing trigger - the same weak-why-now failure mode as a deferred-deadline idea. No clean AI-native, venture-scale wedge.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0069",
+      "date": "2026-06-30",
+      "status": "new",
+      "summary": "Independent correlated construction-delay / 'time-to-power' accumulation model for the AI data-center buildout: a frontier model that maps the shared electrical-equipment (transformer/switchgear/GIS), EPC, labor and interconnection dependency graph beneath thousands of data-center projects and simulates the joint, correlated delay-loss across an insurer's or lender's whole book - so delay-in-start-up (DSU)/parametric/builders-risk carriers, reinsurers and completion lenders can price the fastest-growing construction peril instead of writing it blind or leaving billions of dollars of risk uninsured.",
+      "cross": {
+        "ai_signal": "Frontier multimodal models can now fuse messy, unstructured signals (per-project equipment purchase orders and nameplate specs, transformer/switchgear factory backlogs and lead times, port/tariff/China-exposure, EPC contractor loading, interconnection milestones, satellite construction progress) into a per-project probability-of-on-time-energization AND simulate the CORRELATED delay of thousands of projects whose completion dates are linked through the SAME handful of transformer/switchgear factories, EPC firms and grid queues. Classical actuarial/parametric pricing assumes independent, stable per-project delay distributions and structurally cannot capture this correlation - the same independent-rate blind spot that made ts-0048 (redemption runs), ts-0054 (AI-error accumulation) and ts-0064 (demand realism) AI-native.",
+        "structural_signal": "The electrical-equipment supply-chain crisis is the binding constraint on the ~$1.4T AI data-center buildout: high-voltage transformer lead times stretched from 12-18 to 36-48 months (avg ~128 weeks), switchgear ~44 weeks, prices up to +95%; 30-50% of planned 2026 US data centers are at risk and only ~5 of 12 GW announced is under construction. Insurers are racing in with capacity they cannot yet price - Aon expanded its Data Center Lifecycle Insurance Program to $3.5B (Jan 2026), Descartes launched a data-center parametric product suite, Zurich launched a first-of-its-kind data-center Builders Risk solution, delay-in-start-up cover adds 2-3x the base rate, and ENR reports 'billions of dollars in data-center construction risk is uninsured.'"
+      },
+      "buyer": "Beachhead: the exposure-management / underwriting lead at a delay-in-start-up (DSU) / builders-risk / parametric carrier or specialty MGA writing AI data-center construction (and their reinsurers), who must price delay risk now - post-Aon/Descartes/Zurich - and is exposed to correlated equipment-delay accumulation across the whole book. Expansion: completion lenders and data-center ABS/CMBS investors underwriting on-time energization; then all large-project DSU/builders-risk (renewables, LNG, fabs, transmission) where shared equipment/EPC supply chains create the same correlated-completion peril; finally the industry-standard 'completion-realism / time-to-power' model all sides price against.",
+      "trigger": "2026 is the dated inflection: transformer/switchgear lead times at 36-48 months, ENR 'billions uninsured,' Aon $3.5B program (Jan 2026), Descartes parametric data-center launch, Zurich data-center builders-risk launch, DSU at 2-3x base rate - carriers are deploying capacity into a correlated peril they price on assumed-independent delay; frontier multimodal models newly make equipment-dependency-graph + correlated-delay simulation possible.",
+      "why_incumbents_cant": "Per-project AI construction-delay tools (private-lender due-diligence vendors, construction-finance monitors) score one project independently for go/no-go and don't model correlated accumulation across a carrier's book; CAT modelers (Verisk, Moody's RMS) model nat-cat with decades of geographic/actuarial data and have no equipment-supply-chain dependency data; parametric/DSU carriers (Descartes, Aon, Zurich) are deploying capacity but price each policy on assumed-independent delay distributions; supply-chain-risk mappers (Everstream, Interos) map supplier tiers generally but don't price insured delay-loss accumulation. The independent, equipment-dependency-graph, correlated-delay accumulation model for the construction-insurance / completion-lending market is open - and cedents structurally want a model NOT owned by their reinsurer (the same independent-CAT-model demand that sustains third-party catastrophe modelers).",
+      "scores": {
+        "novelty": 4,
+        "why_now": 5,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.2
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0008-data-center-completion-realism-engine.md"
+    },
+    {
+      "id": "ts-0070",
+      "date": "2026-06-30",
+      "status": "killed",
+      "summary": "Agentic-commerce dispute/chargeback/liability rail: post-transaction infrastructure to assign liability and resolve contested charges for AI-agent-initiated purchases now that Visa/Mastercard/OpenAI/Google activated agent payment rails (June 2026) but the merchant remains merchant-of-record holding all the risk.",
+      "kill_reason": "Occupied + filling fast. The per-merchant chargeback/dispute square already has funded entrants - Findustry AI ($2.25M, public agentic-dispute brand launched June 2026), Kurv (resells a chargeback agent to merchants), AllPaid, Chargeflow, Justt - and the card networks themselves are writing the liability rules in-protocol. A dispute-automation feature, not an open venture-scale wedge.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0071",
+      "date": "2026-06-30",
+      "status": "killed",
+      "summary": "Correlated AI-agent-fraud accumulation model for the agentic-commerce payments ecosystem: score the joint loss when a single indirect-prompt-injection payload hits all buyer-agents running the same foundation model and triggers synchronized fraudulent purchases across thousands of merchants.",
+      "kill_reason": "Per-transaction agent-fraud scoring is occupied by extending incumbents (Forter launched Identity Monitoring for Agentic Commerce + an Agentic Dashboard + network intelligence; Signifyd, Riskified, Sift all extending), and the correlated-accumulation framing is largely subsumed by ts-0054 (the silent-AI accumulation cat-model already covers correlated foundation-model failure across insureds). Buyer for 'ecosystem accumulation' is fuzzy/contested. No clean separate wedge.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0072",
+      "date": "2026-06-30",
+      "status": "killed",
+      "summary": "Merchant-side agentic storefront / 'agent-channel revenue management' layer: a seller-controlled agent that dynamically prices, bundles and makes counteroffers to win selection in millions of buyer-agent negotiations as agentic commerce hits $900B-$1T US by 2030.",
+      "kill_reason": "Platform-owned. Google's Universal Commerce Protocol (with Shopify, Etsy, Walmart), Salesforce Agentforce Commerce (Merchant Agent GA) and Shopify's native merchant agents already build seller-side dynamic pricing/counteroffer/merchandising into the commerce platforms the merchant already runs on. The agent-conversion/visibility square is also taken (Profound, ts-0037). No independent wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0073",
+      "date": "2026-06-30",
+      "status": "killed",
+      "summary": "AI chronic-care delivery + outcome/next-best-intervention engine riding the Medicare ACCESS model (live 2026-07-05): a 10-year CMS model that, for the first time at federal scale, pays Original Medicare on measured outcomes for technology-enabled between-visit chronic care (hypertension, diabetes, CKD, depression).",
+      "kill_reason": "Exceptional dated why-now, but saturated/occupied across every square. The participant-delivery square is saturated by design (CMS already picked 150 digital-health companies + 350 intent-to-apply: Verily, Noom, WW, Headspace, Whoop, DocGo...); value-based-care infrastructure is occupied (Keebler $16M, RAAPID, Navina, Reveleer, Innovaccer, Optum Value Connect); and the closed-loop RL 'next-best-intervention' brain is occupied by Lirio (Behavioral Reinforcement Learning agents + 'world's first Large Behavior Model for healthcare,' 400M+ nudges/yr, chronic-condition outcome partnerships). A severe-shortage / hot-trigger square everyone reads at once.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0074",
+      "date": "2026-06-30",
+      "status": "killed",
+      "summary": "Clinical-AI reimbursement-capture / market-access engine: help providers bill, and AI vendors win coverage for, the first-ever AI-augmented CPT codes (26 codes live Jan 2026, CMS carrier-pricing chaos across MACs, CMAA codes coming).",
+      "kill_reason": "Two-sided occupied/concentrated. The provider billing-capture side is RCM, already extending into AI codes (OpenEvidence shipped AI medical coding; the AI-RCM field is crowded - Innovaccer, Cedar, many). The AI-vendor coverage/market-access side is a consulting-shaped function for a concentrated buyer (the AI-tool makers) and reads like a feature, not a venture-scale AI-native company.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0075",
+      "date": "2026-06-30",
+      "status": "killed",
+      "summary": "AI semiconductor traceability / provenance & counterfeit-detection rail riding the NIST traceability initiative (workshop Jan 2026), CHIPS-Act anti-counterfeiting push and new gov supplier track-and-trace mandates.",
+      "kill_reason": "Fails the AI-native gate + incumbent-occupied. The product is track-and-trace + zero-trust provenance with some vision inspection; the moat is the data standard and chain-of-custody network, not frontier AI. Incumbents already own it (Siemens trusted-traceability, Corsearch anti-counterfeiting) and the standard is being set by NIST as public infrastructure, denting the venture-scale story.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0076",
+      "date": "2026-06-30",
+      "status": "killed",
+      "summary": "Affirmative professional-liability / E&O insurance product for licensed professionals (lawyers, accountants) whose AI tools cause client harm, as 2022-era LPL policies are silent on AI and a 'reasonable oversight' liability standard emerges in 2026.",
+      "kill_reason": "Occupied by extending carriers + ledger adjacency. Major LPL/E&O carriers (CNA, AXA XL, Swiss Re) are already revising policy language and 60%+ ask about AI use at intake; affirmative-AI endorsements exist. The deployed-agent liability-carrier square is also taken (Klaimee, Mount, Corgi - ts-0058) and book-wide accumulation is ts-0054. No clean novel wedge.",
+      "kill_attempts_survived": 0
     }
   ]
 }
