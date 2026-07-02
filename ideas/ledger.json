@@ -760,6 +760,94 @@
       "summary": "Affirmative professional-liability / E&O insurance product for licensed professionals (lawyers, accountants) whose AI tools cause client harm, as 2022-era LPL policies are silent on AI and a 'reasonable oversight' liability standard emerges in 2026.",
       "kill_reason": "Occupied by extending carriers + ledger adjacency. Major LPL/E&O carriers (CNA, AXA XL, Swiss Re) are already revising policy language and 60%+ ask about AI use at intake; affirmative-AI endorsements exist. The deployed-agent liability-carrier square is also taken (Klaimee, Mount, Corgi - ts-0058) and book-wide accumulation is ts-0054. No clean novel wedge.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0077",
+      "date": "2026-07-02",
+      "status": "new",
+      "summary": "Independent integrity + resolution-truth intelligence layer for the institutional consumers of prediction-market signals: an AI-native engine that scores every liquid event contract for bot/wash-trade distortion, cross-venue manipulation, coordinated narrative/pressure campaigns and resolution risk, and outputs a 'manipulation-adjusted true probability' + integrity rating for the quant funds, asset managers, corporate treasuries, data vendors and policymakers who now trade on, hedge with, or ingest these prices - the consumer-side systemic square that per-venue exchange surveillance and retail whale-trackers structurally skip.",
+      "cross": {
+        "ai_signal": "Frontier multimodal models can now fuse the on-chain wallet-cluster graph (attribution of coordinated/wash activity), cross-venue order flow (Polymarket/Kalshi/Limitless plus the correlated underlying equity/rate/commodity market), the natural-language semantics of a contract and the news/evidence that will resolve it, and detection of coordinated narrative/pressure campaigns - into a per-contract manipulation-adjusted, resolution-aware probability and integrity score at the scale of thousands of live markets. Classical trade surveillance is product/venue-centric, rule- and statistics-based, single-venue, and structurally cannot reason over event semantics, on-chain attribution across permissionless wallets, or resolution ground-truth.",
+        "structural_signal": "Prediction markets became financial infrastructure in ~9 months: monthly volume ran from ~$1.2B (early 2025) to ~$24B (April 2026), overtaking gambling ($36.6B in Q1); prices are embedded in Google Finance, Nasdaq (Kalshi) and Dow Jones (Polymarket); Fed economists validated Kalshi macro markets as 'distributionally rich' expectations data; ARK Invest and funds like Oldenburg integrate the data into risk engines and institutions increasingly hedge policy/weather/geopolitical event risk with contracts ('prediction market as insurance'). Simultaneously an integrity crisis exploded: AI agents are 30%+ of Polymarket wallets and 14 of its 20 most-profitable accounts; ~5% of bot-like wallets drive ~75% of volume; the first federal insider-trading prosecutions landed (Feb 2026, incl. an Army sergeant trading on classified intel); the Atlantic Council warns of foreign-influence weaponization; WEF ranks misinformation the #1 near-term systemic risk; CFTC proposed first federal rules (2026-06-10) and S.4060 (Prediction Markets Security and Integrity Act of 2026) is live."
+      },
+      "buyer": "Beachhead: the head of a systematic / event-driven desk at a quant hedge fund, or the data/risk lead at an asset manager, now trading, hedging with, or feeding prediction-market prices into models, who must know whether a given Kalshi/Polymarket price is bot-distorted or manipulated and whether it will resolve the way the headline implies - before acting on it. Expansion: corporate treasuries / CROs hedging policy/weather/geopolitical event risk; financial-data vendors (Bloomberg/RavenPack-style) licensing an integrity-scored event-market feed; and regulators/central banks (the Fed already uses Kalshi data) - ultimately the industry-standard 'true-probability / integrity' layer every side prices against.",
+      "trigger": "2026 institutionalization and the integrity crisis are simultaneous and dated: ~20x volume growth in a year, Google Finance/Nasdaq/Dow Jones embedding, Fed/ARK adoption (H1 2026), bots dominating price formation (mid-March 2026 data), first federal insider prosecutions (Feb 2026), CFTC rulemaking (proposed 2026-06-10) and S.4060 - institutions are pouring in as data consumers and hedgers exactly as the price signal becomes least trustworthy, and frontier multimodal models newly make manipulation-adjusted + resolution-aware scoring possible.",
+      "why_incumbents_cant": "Exchange-side trade surveillance (Solidus Labs @ Kalshi, Eventus Validus @ Novig) serves the EXCHANGE's CFTC compliance duty - protecting its own book and catching abuse on its own venue - not the CONSUMER's need to know whether a published price is trustworthy; it is product/venue-centric and does not sell a cross-venue truth signal to the buy-side or data buyers. News alt-data leaders (RavenPack) do NLP on news, not on-chain manipulation attribution or resolution modeling. Retail tools (Polytrackerbot, YN Signals, Oddpool) are consumer whale-alert / odds-aggregator toys, not institutional-grade integrity intelligence. Oracles (Chainlink, UMA) resolve contracts; they do not score resolution risk for consumers. The independent, cross-venue, consumer-facing integrity + resolution-truth layer is open - and consumers structurally want a truth source NOT owned by the exchanges they trade against (the same independence demand that sustains third-party ratings/CAT modelers).",
+      "scores": {
+        "novelty": 4,
+        "why_now": 5,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.2
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0009-prediction-market-integrity-intelligence.md"
+    },
+    {
+      "id": "ts-0078",
+      "date": "2026-07-02",
+      "status": "killed",
+      "summary": "AI-native trade-surveillance / manipulation-detection platform sold to prediction-market EXCHANGES to meet their CFTC market-integrity obligations across bot-dominated, cross-venue, on-chain event contracts.",
+      "kill_reason": "Occupied by extending incumbents. Solidus Labs (crypto-native surveillance; HALO detects insider trading, social manipulation and event-driven risk with AI agents) partnered with Kalshi in Feb 2026; Eventus Validus was deployed by the new Novig prediction exchange (2026-06-30) and already surveils event contracts cross-asset. The exchange-compliance buyer is taken; the open square is the CONSUMER-side integrity layer (ts-0077), a different buyer and job.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0079",
+      "date": "2026-07-02",
+      "status": "killed",
+      "summary": "AI trading / alpha engine or 'Bloomberg terminal' for event contracts - autonomous agents that price and trade prediction markets to generate returns.",
+      "kill_reason": "Occupied + not venture-SaaS. AI already dominates price formation (14 of 20 top Polymarket accounts are bots; 30%+ of wallets); Badass Capital launched an AI-first fund trading prediction markets (May 2026); Kalshi is building its own 'Bloomberg Terminal' for traders; unified prediction-market APIs (CCXT-style) exist. Building a fund is not venture-scale SaaS, and the data terminal is the exchange's own.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0080",
+      "date": "2026-07-02",
+      "status": "killed",
+      "summary": "AI event-risk hedging engine for corporate treasuries: map a company's idiosyncratic policy/weather/geopolitical exposures to a basket of prediction-market contracts and continuously rebalance ('prediction market as insurance').",
+      "kill_reason": "Thin AI-native + legally fragile buyer + not cleanly novel. The 'prediction market as insurance' shift is real (Oldenburg, PredictStreet, Fed macro-data validation) but funds and prop desks are already doing exposure->contract mapping; the tooling reads as a trading/advisory feature, and S.4060 would reclassify prediction markets as WAGERING requiring state licenses - a governance non-starter for a corporate treasurer buying 'wagers.' Folded into ts-0077's expansion path (integrity/resolution truth is what a hedger needs) rather than a standalone company.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0081",
+      "date": "2026-07-02",
+      "status": "killed",
+      "summary": "Autonomous defensive platform for the collapsed patch window - virtual patching / self-healing remediation as AI-driven exploit generation compresses time-to-exploit from ~125 days (Jan 2025) to ~0.5-5 days (Apr 2026).",
+      "kill_reason": "Saturated across offense and defense. Offensive-agent side is a funded unicorn race (Twenty $100M @ $1B agentic kill chains, A Security $37M, Terra $38M); autonomous vulnerability response/patching is occupied by Cogent Security ($53M) and incumbents Ivanti, N-able, Adaptiva, Barracuda, CrowdStrike. Real, dated structural shift (the exploit-window collapse) but every obvious square is taken; the correlated-N-day-accumulation framing is subsumed by cyber-CAT incumbents (CyberCube, Moody's RMS Cyber) and the ts-0054 accumulation thesis.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0082",
+      "date": "2026-07-02",
+      "status": "killed",
+      "summary": "AI personalized-decumulation / in-plan-annuity selection & retirement-income engine riding SECURE 2.0 in-plan annuities and the EO opening 401(k)s to guaranteed income (93% want guaranteed income; $29B in-plan annuities vs $4T target-date).",
+      "kill_reason": "Fails AI-native depth + ts-0051 fiduciary-incumbent failure mode. Personalized decumulation is optimization + tax + product selection - a robo/fintech feature, not impossible-without-frontier-AI; and the plan-sponsor fiduciary relationship (the actual gatekeeper to in-plan annuities) is owned by entrenched recordkeepers, consultants (Aon/Mercer) and RPAG who extend straight in. Real structural shift, no clean AI-native venture wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0083",
+      "date": "2026-07-02",
+      "status": "killed",
+      "summary": "AI (deep-RL) wholesale-electricity / battery-storage bidding & dispatch optimizer riding the VPP market ($6B->$31B by 2033) and the grid buildout.",
+      "kill_reason": "Occupied by funded players. Capalo AI (EUR11M, Zeus VPP), Tem ($75M to remake electricity markets with AI), Rewbi, plus Gridmatic, Fluence Mosaic, Tyba and GridBeyond all do RL/agentic energy-market bidding and battery dispatch. Mature, well-capitalized category; no independent AI-native wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0084",
+      "date": "2026-07-02",
+      "status": "killed",
+      "summary": "AI-native workforce-transition platform for the AI-displacement wave (Goldman: ~16,000 US jobs displaced/month in 2026): reskill, redeploy and manage severance/transition for affected workers at large enterprises.",
+      "kill_reason": "ts-0068 failure mode. AI corporate upskilling/reskilling is a crowded space (Sana, Multiverse, Workera) and 'workforce transition services' reads as services + training, not deep AI-native product; there is no dated, phones-ringing trigger (no federal AI-labor legislation) - the transition budget is diffuse and slow. No clean AI-native, venture-scale wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0085",
+      "date": "2026-07-02",
+      "status": "killed",
+      "summary": "Non-human-identity / AI-agent identity & authorization governance platform (agents create machine identities at machine speed; NHI-to-human ratio ~45:1; runtime delegation/authz gap).",
+      "kill_reason": "Saturated + standardizing (confirmed again after the 2026-06-30 note). Entro, Aembit, Oleria, Strata, Ping Identity ('runtime identity standard for autonomous AI'), Okta, Microsoft Entra Agent ID, IBM Vault 2.0, SailPoint, CyberArk all ship agent/NHI identity; NIST (Feb 2026 concept paper) and the IETF draft-klrc-aiagent-auth are setting the standard. No open wedge.",
+      "kill_attempts_survived": 0
     }
   ]
 }
