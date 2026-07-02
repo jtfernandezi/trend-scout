@@ -34,7 +34,7 @@ TELEGRAM_CHAT_ID=...
 
 ## Schedule
 
-Tue/Thu/Sat 09:00 UTC = 03:00 America/Mexico_City. Deliberately skips
+Tue/Thu/Sat 06:00 UTC = 00:00 America/Mexico_City. Deliberately skips
 Sunday so it never competes with the stocks project's weekly audit
 (07:00 UTC Sunday) for the same weekly Claude token budget.
 

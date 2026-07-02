@@ -16,8 +16,8 @@ name: Trend Scout
 
 on:
   schedule:
-    # 09:00 UTC Tue/Thu/Sat = 03:00 America/Mexico_City (UTC-6, no DST)
-    - cron: "0 9 * * 2,4,6"
+    # 06:00 UTC Tue/Thu/Sat = 00:00 America/Mexico_City (UTC-6, no DST)
+    - cron: "0 6 * * 2,4,6"
   workflow_dispatch:
     inputs:
       model:
