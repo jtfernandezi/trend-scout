@@ -848,6 +848,103 @@
       "summary": "Non-human-identity / AI-agent identity & authorization governance platform (agents create machine identities at machine speed; NHI-to-human ratio ~45:1; runtime delegation/authz gap).",
       "kill_reason": "Saturated + standardizing (confirmed again after the 2026-06-30 note). Entro, Aembit, Oleria, Strata, Ping Identity ('runtime identity standard for autonomous AI'), Okta, Microsoft Entra Agent ID, IBM Vault 2.0, SailPoint, CyberArk all ship agent/NHI identity; NIST (Feb 2026 concept paper) and the IETF draft-klrc-aiagent-auth are setting the standard. No open wedge.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0086",
+      "date": "2026-07-07",
+      "status": "new",
+      "summary": "Independent 'silicon-delivery realism' / correlated compute-supply-shortfall engine for the AI buildout's financiers and buyers: a frontier model that maps the shared CoWoS advanced-packaging + HBM + ABF-substrate dependency graph beneath thousands of announced AI-accelerator orders and data-center projects and simulates the joint, correlated probability that the chips will actually be delivered on schedule - so GPU-backed-debt lenders, neocloud/data-center ABS investors, specialty insurers and hyperscaler/neocloud procurement teams can price 'will the compute arrive' instead of underwriting as if contracted orders equal delivered silicon.",
+      "cross": {
+        "ai_signal": "Frontier multimodal models can now fuse messy, unstructured, partly-adversarial supply signals (foundry and HBM-maker earnings-call language, customs/import records, capital-equipment and ABF-substrate orders, HBM allocation disclosures, hyperscaler capex guidance, tape-out/packaging queue signals, satellite fab-construction imagery, chip-startup filings) into a per-accelerator-line probability-of-on-time-delivery AND simulate the CORRELATED delivery shortfall across thousands of exposures whose fates are linked through the SAME single advanced-packaging house (TSMC CoWoS), the SAME three HBM makers (SK Hynix/Samsung/Micron) and shared ABF substrate. Classical supply planning is single-point, assumes independent and stable lead times, and structurally cannot represent strategic double-ordering ('phantom' allocation) or correlated shortfall - the same independent-rate blind spot that made ts-0048, ts-0054, ts-0064 and ts-0069 AI-native.",
+        "structural_signal": "The compute-supply chain is now THE binding constraint on a $500B+/yr AI capex plan: TSMC CoWoS-S/-L fully booked against ~1.0M-wafer 2026 demand with ~85% locked by NVIDIA/hyperscalers and <15% left for the ASIC long tail; HBM3E sold out through 2026 into 2027 across all three makers; custom-ASIC shipments projected +44.6% YoY (nearly 3x merchant-GPU growth) flooding the same packaging lines. Simultaneously a GPU-backed-debt market ($20B+) and neocloud/data-center ABS ($30-40B/yr) are underwriting as if contracted chip orders equal delivered chips, and ratings agencies are scrutinizing those assumptions - while advanced packaging + HBM (not logic dies) were confirmed the actual 2025 bottleneck and YC's Fall-2026 RFS names advanced packaging 'the single biggest bottleneck in AI compute right now.'"
+      },
+      "buyer": "Beachhead: the risk/underwriting lead at a GPU-backed-debt lender or neocloud/data-center ABS investor (and the specialty insurers now writing compute-collateral and delay cover) who must price whether the collateral - the accelerators themselves - will actually arrive on time, right now as the asset class scales and ratings assumptions are under scrutiny; secondarily neocloud/hyperscaler procurement/supply-chain planners and long-tail ASIC teams competing for the <15% of CoWoS. Expansion: all compute-supply-dependent financing and procurement, then the industry-standard 'compute-delivery realism' model that lenders, ABS investors, ratings agencies and buyers all price against.",
+      "trigger": "2026 is the dated inflection: CoWoS sold out through 2026 into 2027, HBM3E fully allocated, custom-ASIC shipments +44.6% YoY squeezing the same lines, GPU-debt/ABS scaling now with ratings agencies questioning that contracted orders equal delivered chips; frontier multimodal models newly make cross-source delivery-probability + correlated-shortfall simulation possible.",
+      "why_incumbents_cant": "Supply-chain-risk mappers (Everstream, Interos) map supplier tiers generically but do not price correlated compute-delivery shortfall for financiers; GPU-debt underwriters (ts-0041 cluster) score one loan on credit/utilization data, not correlated physical-delivery truth; semiconductor market analysts (SemiAnalysis, TrendForce, TechInsights) publish commentary and capacity estimates, not a productized independent per-line delivery + correlation model embedded in an underwriting workflow; foundry/HBM makers own the allocation data but will not sell an independent truth their own customers use against them; CAT modelers have no semiconductor supply-chain data. Financiers structurally want a delivery-truth model NOT owned by the vendors selling them the chips - the same independence demand that sustains third-party CAT modelers.",
+      "scores": {
+        "novelty": 4,
+        "why_now": 5,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.2
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0010-compute-supply-realism-engine.md",
+      "note": "Buildout-adjacent: the 4th chokepoint systemic-square after ts-0064 (demand realism), ts-0069 (construction/power delivery) and the ts-0041 GPU-debt cluster. Distinct object (accelerator/silicon delivery via CoWoS+HBM, not power/land/construction) and distinct buyer (chip-financiers/procurement). Surfaced because it cleanly clears all three gates and is not a duplicate; flagged honestly because the operator already holds three buildout systemic-square ideas."
+    },
+    {
+      "id": "ts-0087",
+      "date": "2026-07-07",
+      "status": "killed",
+      "summary": "AI chip-design / EDA / RTL-verification agent that autonomously designs and verifies custom silicon from spec, riding the custom-ASIC explosion (+44.6% YoY) and the chip-design engineer shortage.",
+      "kill_reason": "Occupied and consolidating. Cadence acquired ChipStack and shipped a 'Level-5 ChipStack AI Super Agent' (RTL validation 5 weeks -> <1 day, June 2026) with NVIDIA; Cognichip ($93M total, physics-informed AI EDA); Silogy ('Viv' verification agent, 10x); Normal Computing (auto-formalization + proofs); Chipmind, ChipAgents ($21M), Oxmiq ($35M). The EDA giants own the tool relationship and are moving fast; concentrated, sophisticated, slow buyer. No independent AI-native wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0088",
+      "date": "2026-07-07",
+      "status": "killed",
+      "summary": "Independent verification / tamper-proof metering layer for outcome-based AI-agent pricing (pay-per-resolution), as outcome billing becomes the dominant AI monetization model in 2026.",
+      "kill_reason": "Occupied by billing infra. Flexprice (open-source, AI-native, 20B+ events/mo), Nevermined, Sierra (outcome pricing native), Metronome/Orb/m3ter all ship usage/outcome metering with immutable append-only logs and independent verification. The 'did the agent deliver the outcome' judgment collapses into eval/observability (saturated). A billing feature, not a venture-scale independent company.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0089",
+      "date": "2026-07-07",
+      "status": "killed",
+      "summary": "AI variant-interpretation / VUS-reclassification engine at population scale, riding universal newborn whole-genome sequencing programs (UK NHS £650M rollout begins 2026; US pilots) that generate a tsunami of variants of uncertain significance human geneticists can't clear.",
+      "kill_reason": "Occupied + slow clinical-genomics path. Genomenon (Mastermind evidence automation), Fabric Genomics (AI interpretation + workflow), BeginNGS (federated-learning newborn-screening models) and clinical NGS interpretation vendors already own variant classification and reclassification; the buyer (clinical labs / national programs) is slow and reimbursement-gated, denting the $1B venture path. Real backlog, but the wedge is taken and the motion is not venture-fast.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0090",
+      "date": "2026-07-07",
+      "status": "killed",
+      "summary": "AI cross-border (China->West) pharma-asset diligence + BD-scouting engine for the $400B 2026-2032 patent cliff, as Western pharma races to in-license China-originated assets (~$2B committed Q1 2026 alone) it can't easily diligence for clinical-data integrity, IP defensibility and regulatory translatability.",
+      "kill_reason": "ts-0051/ts-0067 concentrated-buyer failure mode + occupied AI-diligence. Big-pharma BD/diligence is a ~30-50-buyer, episodic (per-deal), services-shaped function; AI deal-diligence (Hebbia, DealRoom) and pharma AI-scouting already extend in, and pharma itself is buying AI capability (AstraZeneca/Modella, GSK). Real, huge shift but no venture-scale AI-native wedge with a repeatable buyer.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0091",
+      "date": "2026-07-07",
+      "status": "killed",
+      "summary": "AI engine for large/complex insurance claims, subrogation recovery and litigation defense, riding the adjuster shortage and $20B/yr in missed subrogation recoveries.",
+      "kill_reason": "Saturated. CLARA Analytics (subrogation + nuclear-verdict AI), Roots, Prosper, Agentech and the crowded claims-automation field (fastest-growing AI-in-insurance segment) already serve it; insurance-defense litigation AI (Thomson Reuters, Harvey-class) covers the legal side. One-step extension into a space incumbents and RCM-style vendors already own.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0092",
+      "date": "2026-07-07",
+      "status": "killed",
+      "summary": "AI protein/ligand-design engine for next-gen pesticides and biopesticides that hit pest-specific molecular targets while sparing pollinators, riding the chemical-pesticide restriction wave and YC's Fall-2026 agriculture RFS.",
+      "kill_reason": "Occupied by funded first-movers. Bindwell ($6M seed, General Catalyst + A Capital + Paul Graham; PLAPT/APPT open protein-interaction models scanning all known compounds in <6h) and Molagri already do AI-designed target-specific (bio)pesticides. YC named the space and the obvious teams are funded; the design square is taken.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0093",
+      "date": "2026-07-07",
+      "status": "killed",
+      "summary": "Real-time speech-to-speech voice-AI agent for a healthcare vertical (appointment reminders, adherence, follow-ups) riding sub-1s latency + HIPAA-compliant voice going mainstream in 2026.",
+      "kill_reason": "Saturated. Retell AI, Vapi, LuMay, Synthflow and RingCentral's March-2026 healthcare launch (80+ EHR integrations) already occupy HIPAA-compliant healthcare voice; healthcare is the single most-crowded voice-AI vertical in 2026 (no-show reduction is the standard pitch). One-step extension of a named trend.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0094",
+      "date": "2026-07-07",
+      "status": "killed",
+      "summary": "Generative patient 'digital twin' / synthetic-control-arm engine to shrink clinical-trial control groups, as digital twins 'move from pilot to practice' in 2026 drug development.",
+      "kill_reason": "Occupied by the category leader. Unlearn.AI (well-funded, FDA-engaged) owns AI generative-patient digital twins / prognostic scores for control-arm reduction; the broader trial-AI stack (Deep 6, TrialMatchAI, digital-twin CROs) fills the rest. Named leader in a capital-heavy, regulated space.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0095",
+      "date": "2026-07-07",
+      "status": "killed",
+      "summary": "'Narrative intelligence' platform that detects coordinated AI-driven manipulation / influence campaigns to protect brand and digital trust, riding the inaugural June-2026 Gartner Emerging Market Quadrant for the category.",
+      "kill_reason": "Occupied + already a named Gartner category. Cyabra is a recognized 'Market Shaper' in the inaugural June-2026 Gartner narrative-intelligence quadrant (a whole vendor cohort), and the consumer-of-manipulated-signal square in the highest-value adjacent market (prediction markets) is already held by ts-0077. A defined, contested category, not an open wedge.",
+      "kill_attempts_survived": 0
     }
   ]
 }
