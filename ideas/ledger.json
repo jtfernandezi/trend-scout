@@ -945,6 +945,62 @@
       "summary": "'Narrative intelligence' platform that detects coordinated AI-driven manipulation / influence campaigns to protect brand and digital trust, riding the inaugural June-2026 Gartner Emerging Market Quadrant for the category.",
       "kill_reason": "Occupied + already a named Gartner category. Cyabra is a recognized 'Market Shaper' in the inaugural June-2026 Gartner narrative-intelligence quadrant (a whole vendor cohort), and the consumer-of-manipulated-signal square in the highest-value adjacent market (prediction markets) is already held by ts-0077. A defined, contested category, not an open wedge.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0096",
+      "date": "2026-07-09",
+      "status": "killed",
+      "summary": "Independent correlated-redemption-run / reserve-contagion systemic model for the new GENIUS-Act bank-issued stablecoin + tokenized-deposit ecosystem: a frontier model that maps the shared custodian/T-bill-repo/redemption-rail dependency graph across issuers and simulates joint depeg/run contagion, sold to issuers, money-market funds and systemic regulators as the stablecoin market scales toward ~$3T.",
+      "cross": {
+        "ai_signal": "Frontier models fuse on-chain flow, cross-issuer reserve composition and off-chain banking signals to simulate correlated depeg/run contagion the classical independent-rate assumption misses (the ts-0048/ts-0054 AI-native basis).",
+        "structural_signal": "GENIUS Act rules finalize 2026-07-18; stablecoins ~$317B heading to a projected ~$3T by 2030; banks (JPMorgan, BNY) issuing deposit tokens/stablecoins; FDIC subsidiary-issuance rule; a genuinely new multi-issuer regulated ecosystem with novel T-bill/repo contagion channels."
+      },
+      "buyer": "Risk/treasury lead at a stablecoin issuer or a money-market fund exposed to redemption contagion; systemic regulators.",
+      "why_incumbents_cant": "n/a - killed before full development.",
+      "kill_reason": "Occupied + thin AI-native gate + systemic-seam fatigue. agioratings.io already scores institutional stablecoin default/liquidity/contagion risk (rating-agency model), academic ASRI is a composite systemic-risk index, and on-chain monitors already detect depegs in real time (e.g., the USR 38% dislocation flagged 2h17m early, 2026-03-22). GENIUS mandates 100% safe-asset reserves, blunting the behavioral-run novelty vs ts-0048; the moat is reserve/credit data, not frontier AI; and this is the ts-0048/0054 systemic square in a new market (the seam the 07-07 takeaway told us to diversify away from). Buyer skews regulatory/nonprofit (the Fed models this itself).",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0097",
+      "date": "2026-07-09",
+      "status": "killed",
+      "summary": "Independent frontier-AI verification organization (IVO): a licensed, for-profit third party that performs the adversarial safety/security audits and assessments the Great American AI Act (GAAIA) would require large frontier developers to retain, productizing deep-access model auditing.",
+      "cross": {
+        "ai_signal": "Frontier models adversarially probe another lab's frontier model for catastrophic-risk capabilities and safety-claim validity at deep-access scale.",
+        "structural_signal": "GAAIA discussion draft (2026-06-04) would codify CAISI and direct it to license 'independent verification organizations' auditing large ($500M+ revenue) frontier developers; AVERI (nonprofit) forming; OpenAI published a third-party-eval framework."
+      },
+      "buyer": "Compliance/safety lead at a large frontier AI developer required to retain a licensed IVO.",
+      "why_incumbents_cant": "n/a - killed before full development.",
+      "kill_reason": "Contingent trigger + tiny concentrated buyer + venture-scale + saturation. GAAIA is a draft bill stuck in a 'preemption impasse,' not law - the ts-0043 'voluntary-EO' failure mode. The buyer is only $500M+ frontier developers who trained a frontier model (a handful of firms) = no venture-scale path. The independent-assurance role leans nonprofit (AVERI) and standards-body (CAISI), and frontier-model eval/red-team is already contested (Gray Swan, Haize, OpenAI's own third-party framework, ts-0035/0043). Re-check of the frontier-audit seam under the new GAAIA/AVERI facts: still not a wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0098",
+      "date": "2026-07-09",
+      "status": "killed",
+      "summary": "AI prior-authorization defense / denial-forensics engine riding CMS's WISeR model (AI+clinical review screening prior-auth in Original Medicare, live 2026-01, 6 states, 6 years): help providers contest AI denials and/or provide an independent adjudication-quality audit of the WISeR contractors' AI decisions.",
+      "cross": {
+        "ai_signal": "Frontier models generate evidence-backed appeals against, or independently audit the clinical appropriateness of, an AI prior-auth denial at scale.",
+        "structural_signal": "WISeR brings AI prior-auth to Original Medicare (previously none) for skin/tissue substitutes, nerve-stimulator implants and knee arthroscopy in NJ/OH/OK/TX/AZ/WA; politically explosive ('AI denying care to seniors')."
+      },
+      "buyer": "Provider RCM/authorization lead in a WISeR state; secondarily CMS oversight / plaintiff attorneys.",
+      "why_incumbents_cant": "n/a - killed before full development.",
+      "kill_reason": "Occupied provider-side + concentrated/episodic-or-fragile buyer. Provider-side prior-auth automation and AI-denial appeals are saturated RCM (many vendors; MA-denial appeal startups Counterforce Health, Claimable already extend in); the independent-audit-of-contractors buyer (CMS OIG) is concentrated and the plaintiff/class-action angle is episodic services. WISeR is a contested pilot at risk of political scale-back (the ts-0003/ts-0013 trigger-fragility mode). No clean AI-native, venture-scale wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0099",
+      "date": "2026-07-09",
+      "status": "killed",
+      "summary": "Vendor-neutral fleet-orchestration 'operating system' for heterogeneous multi-vendor humanoid + AMR fleets in one facility - task allocation, coordination and safety across the 12+ commercial humanoid platforms now deploying at scale (Schaeffler 1-2k robots, JAL, Agility public via $2.5B SPAC).",
+      "cross": {
+        "ai_signal": "A coordination/scheduling layer over non-deterministic VLA robot policies across mixed vendors.",
+        "structural_signal": "Humanoids went pilot->platform in 2026: binding Schaeffler deal (1-2k robots by 2032), JAL Haneda trial, Agility Robotics $2.5B SPAC IPO, 12 commercial platforms, VLA backing ~40% of new deployments."
+      },
+      "buyer": "Ops/automation lead at a manufacturer or 3PL deploying a mixed humanoid+AMR fleet across sites.",
+      "why_incumbents_cant": "n/a - killed before full development.",
+      "kill_reason": "Fleet-mgmt incumbents + robot makers extend in + thin AI-native. Robot fleet management (Formant, InOrbit, Freedom Robotics) already exists for AMRs and extends to humanoids; the robot makers instrument and orchestrate their own fleets; deployments today are single-vendor (Schaeffler=Humanoid, JAL=Unitree), so multi-vendor orchestration is a future integration layer, not a frontier-AI-native product. Assurance of the robot brains is already ts-0031. Borderline venture wedge; killed.",
+      "kill_attempts_survived": 0
     }
   ]
 }
