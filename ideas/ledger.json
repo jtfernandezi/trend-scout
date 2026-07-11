@@ -1001,6 +1001,62 @@
       "why_incumbents_cant": "n/a - killed before full development.",
       "kill_reason": "Fleet-mgmt incumbents + robot makers extend in + thin AI-native. Robot fleet management (Formant, InOrbit, Freedom Robotics) already exists for AMRs and extends to humanoids; the robot makers instrument and orchestrate their own fleets; deployments today are single-vendor (Schaeffler=Humanoid, JAL=Unitree), so multi-vendor orchestration is a future integration layer, not a frontier-AI-native product. Assurance of the robot brains is already ts-0031. Borderline venture wedge; killed.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0100",
+      "date": "2026-07-11",
+      "status": "killed",
+      "summary": "Independent alignment / reward-hacking + emergent-misalignment assurance lab for enterprises RL-post-training their OWN vertical agents: adversarially audits a company's fine-tuned agent for specification-gaming and broadly-generalized misalignment introduced during its own RL, before production sign-off.",
+      "cross": {
+        "ai_signal": "Reward-hacking / emergent misalignment from RL post-training is now a measurable, escalating failure mode (RHB: RL raises exploit rates 0.6%->13.9%; TRACE/SpecBench/Terminal-Wrench benchmarks; Anthropic's Nov-2025 'natural emergent misalignment from reward hacking in production RL' shows a reward hack can generalize to broadly misaligned behavior beyond the training task).",
+        "structural_signal": "Enterprises now RL-train their OWN agents at scale rather than relying on frontier labs - Prime Intellect ($130M Series A, $1B valuation, ~$100M ARR, 6,000 customers, 'open superintelligence stack' with compute+RL+envs+evals), Amazon Bedrock RFT, and the OpenEnv standard (Microsoft joined); Gartner: 40% of enterprise apps ship task-specific agents in 2026. A bank/insurer/logistics firm post-training an agent has no alignment team to catch that its home-trained agent silently games its reward."
+      },
+      "buyer": "ML/platform lead at a mid-to-large enterprise that has begun RL-fine-tuning its own vertical agent and must sign off before production.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "Occupied + independent-assurance seam is tapped + thin standalone AI-native gate. Patronus AI ($50M Series B, 2026-06-25) already builds 'Digital World Models' - large-scale simulation environments to catch enterprise agent failures before production, explicitly for companies fine-tuning agents (VW/CARIAD, Emergence AI); Galileo does runtime guardrails/observability; Superagent + Promptfoo do agent red-teaming. The reward-hacking nuance collapses into the saturated eval/red-team/environments cluster (ts-0035) and the RL platforms (Prime Intellect, Bedrock) bundle evals; the enterprise-RL buyer is still small in mid-2026. Independent-assurance square is the one the last three runs' takeaways flagged as tapped.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0101",
+      "date": "2026-07-11",
+      "status": "killed",
+      "summary": "Independent cross-operator autonomous conjunction-coordination / maneuver-deconfliction layer ('air-traffic control for autonomous satellites') for LEO mega-constellations, as thousands of satellites autonomously dodge each other without a shared coordination system.",
+      "cross": {
+        "ai_signal": "Frontier prediction/coordination models could de-conflict thousands of independently-autonomous maneuver decisions across operators in near-real-time.",
+        "structural_signal": "LEO congestion crisis is live: Starlink ran ~300,000 collision-avoidance maneuvers in 2025 (+50% YoY), projected ~1M/yr by 2027; 9 conjunction threats in 4 days (Mar 2026); debris density approaching active-satellite density at 550km; >100,000 satellites projected within a decade; ESA flags LEO collision risk +20% in 2026 - and 'there is no explicit space traffic management system' to coordinate autonomous maneuvers made 'independently, often autonomously, sometimes without coordination.'"
+      },
+      "buyer": "Constellation flight-dynamics / space-safety lead at a satellite operator; secondarily national space-traffic authorities.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "Occupied + gov baseline + concentrated buyer + cold-start. Kayhan Space (Satcat/Pathfinder autonomous conjunction assessment + coordination), LeoLabs and Slingshot Aerospace already do conjunction screening and cross-operator coordination; the US government provides a free civil baseline (Office of Space Commerce TraCSS), denting the venture story; the buyer is a handful of large operators + agencies; and a neutral coordination utility has a classic cold-start. Real 2026 crisis, no clean venture-scale AI-native SaaS wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0102",
+      "date": "2026-07-11",
+      "status": "killed",
+      "summary": "'AI bill of materials' / AI-tool disclosure + safeguarding-compliance rail for federal contractors, riding the 2026 'Revolutionary FAR Overhaul' (EO 14275) and the draft GSA LLM data-safeguarding clause that would require contractors to disclose every AI tool used in contract performance and enforce it down the subcontractor chain.",
+      "cross": {
+        "ai_signal": "Model-provenance/attestation + policy-reasoning over a wholesale-rewritten acquisition rulebook.",
+        "structural_signal": "FAR Council published the first tranche of a 12-rule wholesale FAR rewrite (2026-06-23, comments due 2026-07-23) implementing EO 14275; GSA is drafting a GSAR clause imposing LLM data-handling, model-neutrality, model-modification-disclosure and broad government-use-rights requirements on AI used in contract performance - across a ~$750B federal-contracting market."
+      },
+      "buyer": "Compliance/contracts lead at a federal contractor (or an AI vendor selling into government) who must attest to and govern AI tools used in contract performance.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "Contingent trigger + fails AI-native gate + occupied. The FAR rewrite and GSA AI clause are draft/proposed (12 rules staggered through year-end, comments open) - the ts-0043/ts-0097 contingent-mandate failure mode; the product is a registry/attestation/disclosure tool whose moat is a data standard, not frontier AI; and govcon compliance + contract AI is occupied by Icertis (extending straight into the FAR overhaul), GovDash/Govly/Rogue/Sweetspot and GRC incumbents (Vanta, Drata). 36% of govcon firms already use AI for compliance.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0103",
+      "date": "2026-07-11",
+      "status": "killed",
+      "summary": "Smart-glasses-native egocentric-demonstration capture foundry that turns frontline experts' first-person video into proprietary training data / reward signals for vertical physical-and-procedural work agents, riding the fall-2026 consumer smart-glasses platform launch.",
+      "cross": {
+        "ai_signal": "Egocentric video -> imitation/RL training data + reward models for procedural physical work (NVIDIA's egocentric-video dexterity scaling law).",
+        "structural_signal": "Smart glasses became a real developer platform in 2026: Meta shipped the Wearables Device Access Toolkit (publishing GA 2026), and Google (with Samsung/Warby Parker/Gentle Monster), Samsung Galaxy Glasses, Snap Specs and Xreal Aura all launch fall 2026 - putting always-on first-person capture on millions of professionals."
+      },
+      "buyer": "Ops/training lead at an enterprise with a scarce skilled-procedural workforce wanting to capture and scale its experts' tacit know-how.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "Occupied across both halves. The egocentric/teleop training-data foundry is ts-0036 (XDOF $70M, Cortex AI, NVIDIA EgoScale/GR00T); the glasses 'AI copilot for the physical world' for trades is ts-0026 (NavigateAI, $25M, phone+Meta glasses, data-center electrical launch partners); consumer life-memory on glasses is the platform owners' own (Meta/Google). No open, defensible wedge - the capture device is new but every downstream square is claimed.",
+      "kill_attempts_survived": 0
     }
   ]
 }
