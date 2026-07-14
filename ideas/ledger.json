@@ -1057,6 +1057,76 @@
       "why_incumbents_cant": "n/a - killed on occupation.",
       "kill_reason": "Occupied across both halves. The egocentric/teleop training-data foundry is ts-0036 (XDOF $70M, Cortex AI, NVIDIA EgoScale/GR00T); the glasses 'AI copilot for the physical world' for trades is ts-0026 (NavigateAI, $25M, phone+Meta glasses, data-center electrical launch partners); consumer life-memory on glasses is the platform owners' own (Meta/Google). No open, defensible wedge - the capture device is new but every downstream square is claimed.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0104",
+      "date": "2026-07-14",
+      "status": "killed",
+      "summary": "Satellite/geospatial-AI deforestation-free supply-chain compliance engine that generates EUDR due-diligence statements (per-plot geolocation verified deforestation-free after the Dec-2020 cutoff) for EU importers of cattle/cocoa/coffee/palm/rubber/soy/wood ahead of the 2026-12-30 large-operator deadline.",
+      "cross": {
+        "ai_signal": "Geospatial foundation models over satellite imagery + plot-polygon data verify per-farm deforestation-free status at scale and reconcile it against messy multi-tier commodity supply chains.",
+        "structural_signal": "EUDR large-operator obligations bind 2026-12-30 (SME later), covering seven commodities across the entire EU import base with a mandatory 5-year audit trail - a huge, dated compliance wave."
+      },
+      "buyer": "Sustainability/procurement compliance lead at an EU commodity trader, roaster or retailer preparing due-diligence statements for customs.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "Occupied + one-step extension. EUDR compliance software is a crowded, named category: Sourcemap, Satelligence, IntegrityNext, TraceX, SuperVision.earth, Nimbo, Coolset all ship satellite-monitoring + geolocation + DDS-generation; the deep multi-tier supply-chain-mapping half is Altana/Sayari/Sourcemap. Textbook 'regulation launched, build the compliance tool' extension into a saturated square.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0105",
+      "date": "2026-07-14",
+      "status": "killed",
+      "summary": "In-silico / New-Approach-Methodologies (NAM) safety-package engine that generates the FDA-acceptable non-animal preclinical safety dossier (in-silico tox predictions + credibility argument in a declared context-of-use) to replace animal studies, riding the FDA's landmark 2026-03-18 NAM draft guidance and first qualified AI drug-development tool.",
+      "cross": {
+        "ai_signal": "Frontier bio/chem-tuned models (GPT-5.6 Sol era) predict tox endpoints from structure/mechanism and assemble the qualification/credibility evidence a NAM needs.",
+        "structural_signal": "FDA NAM draft guidance (2026-03-18) + ISTAND first-AI-tool qualification + ICH NAM harmonization formally open animal-study replacement across a ~$300B pharma R&D base and chemicals/cosmetics (EU roadmap 2026-06-01)."
+      },
+      "buyer": "Preclinical/regulatory-tox lead at a biotech assembling IND-enabling safety, at the moment they want to skip an animal study.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "Occupied by incumbent biosimulation + overlaps ts-0039. VeriSIM Life (BIOiSIM; formal FDA/NCTR collaboration), Simulations Plus (ADMET/PBPK), VivoSim (NAM liver-tox, superiority data Jun-2026) and Emulate ($200M) already own predictive tox and are FDA-partnered; the independent-credibility-of-the-model framing is the tapped-seam ts-0039 (pharma AI credibility lab). Real, dated shift but the wedge is taken.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0106",
+      "date": "2026-07-14",
+      "status": "killed",
+      "summary": "AI premium-audit engine for commercial P&C (workers' comp / GL): reads a policyholder's messy payroll, tax and financial records at policy expiry, classifies exposure by class code, and produces the premium true-up - expanding a shrinking premium-auditor workforce.",
+      "cross": {
+        "ai_signal": "Frontier document reasoning ingests heterogeneous payroll/ledger formats and classifies exposure by class code with an audit trail.",
+        "structural_signal": "Millions of annual auditable-policy true-ups against a severe premium-auditor shortage; a slow institutional carrier buyer."
+      },
+      "buyer": "Premium-audit / operations lead at a commercial P&C carrier or workers'-comp specialist at policy-expiry true-up.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "Occupied. NeuralMetrics shipped CHRIS, an autonomous AI assistant for workers'-comp premium-audit (automated collection + classification); Audit1 maps 4,400+ payroll column names to WC exclusion categories with a connect-and-discover agent; AI-first WC carriers (Pie, $2B+) own the pricing/classification data. A back-office feature inside an occupied WC-tech stack.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0107",
+      "date": "2026-07-14",
+      "status": "killed",
+      "summary": "Persistent-memory compliance agent that durably OWNS an industrial facility's multi-year environmental obligations (Title V air, NPDES water, RCRA waste): tracks every permit condition, calculates dynamic deadlines against operations/CEMS data, drafts reports and manages deviations across years - the 'durable-responsibility' seam instantiated in a slow, data-locked vertical.",
+      "cross": {
+        "ai_signal": "Long-horizon agents (8-hour+ horizons, 1M-token context, 2026) can now maintain coherent state and act over multi-month/multi-year obligations for the first time.",
+        "structural_signal": "Hundreds of thousands of permitted industrial facilities each carry perpetual, deadline-dense environmental obligations; EHS staff are scarce and the compliance calendar is a durable human-owned responsibility."
+      },
+      "buyer": "Plant/site environmental manager at a permitted industrial facility owning the ongoing compliance calendar.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "The durable-responsibility vertical is already memory-native. Ecesis converts static permits into a 'living compliance system' where every permit condition becomes a tracked obligation with an owner and automated reminders; VelocityEHS (Title V/air-emissions calculations + threshold alerts) and Oxmaint AI (automates EPA permits + real-time CEMS) already own it; the memory infra itself is mem0/Letta/Cognee/Zep. No dated fresh trigger and no open memory-native wedge - the 07-09 'test durable-responsibility only against a verified-open vertical' hint returned occupied.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0108",
+      "date": "2026-07-14",
+      "status": "killed",
+      "summary": "EU Cyber Resilience Act (CRA) compliance rail: auto-generate machine-readable SBOMs, monitor components for actively-exploited vulnerabilities and file the 24h/72h CRA reports for every hardware/software product maker selling into the EU, ahead of the 2026-09-11 reporting deadline.",
+      "cross": {
+        "ai_signal": "LLM reasoning over dependency graphs + vuln feeds to draft CRA-conformant SBOMs and incident notifications.",
+        "structural_signal": "CRA reporting obligations start 2026-09-11 (full compliance 2027-12-11) across every 'product with digital elements' sold in the EU; fines up to EUR15M / 2.5% of turnover."
+      },
+      "buyer": "Product-security / compliance lead at a manufacturer of connected hardware or software selling into the EU.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "Fails the AI-native gate + occupied. The product is SBOM generation + vuln management + regulatory reporting whose moat is a data standard and feed coverage, not frontier AI; Anchore, Mend.io, Cycode, Cloudsmith and HeroDevs already ship CRA SBOM/vuln-reporting, and OpenSSF is standardizing the format as public infrastructure. Same failure mode as ts-0075/ts-0102 (compliance-standard rail, not a model).",
+      "kill_attempts_survived": 0
     }
   ]
 }
