@@ -1127,6 +1127,62 @@
       "why_incumbents_cant": "n/a - killed on occupation.",
       "kill_reason": "Fails the AI-native gate + occupied. The product is SBOM generation + vuln management + regulatory reporting whose moat is a data standard and feed coverage, not frontier AI; Anchore, Mend.io, Cycode, Cloudsmith and HeroDevs already ship CRA SBOM/vuln-reporting, and OpenSSF is standardizing the format as public infrastructure. Same failure mode as ts-0075/ts-0102 (compliance-standard rail, not a model).",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0109",
+      "date": "2026-07-16",
+      "status": "killed",
+      "summary": "AI special-servicing / workout-decisioning engine for the 2026 commercial-real-estate maturity wall: value distressed loans, generate risk-adjusted restructuring scenarios (extend, modify, cash-in, DPO, deed-in-lieu) and triage the refinancing backlog for CRE lenders and special servicers as ~$930B-$1.5T of CRE debt matures in 2026.",
+      "cross": {
+        "ai_signal": "Frontier document + financial reasoning over messy rent rolls, loan docs and comps to produce hybrid valuations and workout scenarios.",
+        "structural_signal": "~$930B of CRE loans mature in 2026 (>$1.5T through year-end; ~$126B already distressed), a huge dated refinancing/workout wave as rates and valuations bite."
+      },
+      "buyer": "Portfolio/workout lead at a CRE lender or special servicer facing the maturity wall.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "Occupied + thin AI-native + slow/concentrated buyer. AI CRE underwriting/valuation and workout tooling is already shipped: Blooma (AI underwriting + risk-adjusted loan scenarios for refinancing backlogs), PropertyNova (real-time hybrid AVMs into origination), Northspyre (predictive budget-risk analytics), and RXR launched REX Loan Services as an AI-era special servicer. The AI angle is underwriting/valuation analytics (moat = data + credit expertise, not a model - the ts-0041/ts-0050 failure mode), and the special-servicer/lender buyer is slow, concentrated and episodic per maturity cycle.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0110",
+      "date": "2026-07-16",
+      "status": "killed",
+      "summary": "Compliance rail for the solidifying state-AI-regulation patchwork: navigate and auto-generate the frontier-transparency frameworks + deployer risk assessments the harmonized IL/CA/NY frontier-AI laws now require, riding the Illinois AI Safety Measures Act (signed 2026-07-06) that joins California's TFAIA and New York's RAISE Act to form a de-facto national standard (~40% of the US AI market).",
+      "cross": {
+        "ai_signal": "Policy-reasoning over three overlapping state frontier-AI statutes to map obligations and draft transparency/risk artifacts.",
+        "structural_signal": "IL AI Safety Measures Act (2026-07-06) + CA TFAIA + NY RAISE Act now substantially harmonized; lawmakers estimate IL/CA/NY = ~40% of the US AI market, a de-facto national frontier-AI compliance standard absent federal law."
+      },
+      "buyer": "Compliance/AI-governance lead at a frontier AI developer (transparency framework) or an enterprise AI deployer (risk assessments) operating across the three states.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "Tapped assurance seam + concentrated buyer + thin AI-native. The frontier-developer transparency/third-party-audit obligation lands on a handful of frontier labs (the ts-0097/GAAIA tiny-concentrated-buyer + tapped independent-assurance failure mode); the broader AI-deployer governance square is owned by GRC incumbents extending straight in (Vanta, Drata, Credo AI, Holistic AI, OneTrust), and the product is a policy/attestation registry whose moat is a standard, not frontier AI (the ts-0102/ts-0108 thin-AI-native mode). No open venture-scale wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0111",
+      "date": "2026-07-16",
+      "status": "killed",
+      "summary": "AI case-outcome underwriting engine for litigation finance: rank incoming claims by predicted resolution value/exposure and price case investments for litigation funders as AI enters legal-finance underwriting.",
+      "cross": {
+        "ai_signal": "Frontier models predict litigation outcomes/resolution value from docket, docs and precedent to automate case review.",
+        "structural_signal": "Litigation finance is a large, growing alternative-asset class actively adopting AI in underwriting (Burford, Mustang)."
+      },
+      "buyer": "Underwriting/investment lead at a litigation-funding firm selecting and pricing cases.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "Occupied + concentrated/episodic buyer. Theo AI (predictive case-outcome engine, $4.2M seed, live partnership with Mustang Litigation Funding) already occupies the exact wedge, and the largest funders (Burford) run in-house quant/AI underwriting teams; the buyer is a small, concentrated set of funders evaluating cases episodically (the ts-0051/ts-0090 concentrated-buyer failure mode). No clean venture-scale AI-native wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0112",
+      "date": "2026-07-16",
+      "status": "killed",
+      "summary": "AI advanced-packaging (CoWoS/EMIB/2.5D-3D) design + yield/thermal co-optimization engine to relieve advanced packaging - the YC-Fall-2026-named 'single biggest bottleneck in AI compute right now' - by auto-exploring thermal/warpage/PPA design space and lifting HBM-stack packaging yield.",
+      "cross": {
+        "ai_signal": "Generative design-space exploration + simulation over thermal/mechanical/PPA variables for 2.5D/3D packages.",
+        "structural_signal": "Advanced packaging (TSMC CoWoS) is the binding constraint on the AI-accelerator buildout; HBM4/16-Hi stacks raise yield and thermal risk and YC's Fall-2026 RFS names it the top bottleneck."
+      },
+      "buyer": "Packaging/design engineering lead at a foundry/OSAT or fabless AI-chip team fighting yield/thermal limits.",
+      "why_incumbents_cant": "n/a - killed on occupation.",
+      "kill_reason": "EDA-owned + concentrated slow buyer + not-yet-commercial. Advanced-packaging thermal/PPA co-optimization and defect detection is owned by the EDA/design incumbents (Siemens EDA, Cadence - the ts-0087 chip-design-agent cluster), analysts peg generative packaging design as a commercial capability only ~2028-2030, and the buyer is a handful of sophisticated foundries/OSATs/fabless teams with long sales cycles. No independent AI-native software wedge; hardware startups (Heron Power, Ayr) attack the physical supply side, not a model.",
+      "kill_attempts_survived": 0
     }
   ]
 }
