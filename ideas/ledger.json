@@ -1183,6 +1183,34 @@
       "why_incumbents_cant": "n/a - killed on occupation.",
       "kill_reason": "EDA-owned + concentrated slow buyer + not-yet-commercial. Advanced-packaging thermal/PPA co-optimization and defect detection is owned by the EDA/design incumbents (Siemens EDA, Cadence - the ts-0087 chip-design-agent cluster), analysts peg generative packaging design as a commercial capability only ~2028-2030, and the buyer is a handful of sophisticated foundries/OSATs/fabless teams with long sales cycles. No independent AI-native software wedge; hardware startups (Heron Power, Ayr) attack the physical supply side, not a model.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0113",
+      "date": "2026-07-18",
+      "status": "killed",
+      "summary": "AI rate-case / cost-allocation engine for the data-center electricity backlash: frontier quantitative+document reasoning that models the utility-to-ratepayer cost shift and auto-drafts intervention testimony / special-large-load-rate-class designs as ~$23B in data-center-driven costs land on consumers and 300+ state bills spawn special rate classes.",
+      "cross": {
+        "ai_signal": "Frontier quantitative + document reasoning over dense utility rate filings, load forecasts and cost-of-service studies can model who bears a data center's grid cost and generate intervenor testimony / alternative rate-class designs at a scale manual regulatory economists cannot.",
+        "structural_signal": "Data-center demand added ~$23B (PJM) to consumer electricity bills through 2028; 300+ state data-center bills filed across 30+ states in six weeks; 24 states have approved large-load tariffs and 18+ are creating special rate classes for large energy users - a genuine, fresh repricing of US electricity."
+      },
+      "buyer": "State consumer advocate / attorney-general ratepayer division / industrial-energy-user coalition intervening in a utility rate case to contest the data-center cost allocation.",
+      "why_incumbents_cant": "n/a - killed on venture-scale + occupation.",
+      "kill_reason": "Fails venture-scale + occupied + thin-AI-native. The structural shift is real, fresh and huge, but the reachable buyer (state consumer advocates, AG ratepayer divisions, PUC intervenors, industrial-user coalitions) is government/nonprofit, underfunded, concentrated and episodic per rate cycle - no credible $1B path. The large-load-tariff-intelligence square is already occupied by named players (Halcyon Large Load Tariff Tracker at 188 filings, SEPA DELTa database, RMI large-load-tariffs dashboard, EnergyCAP SmartAnalytics, ExpenseLogic/RadiusPoint), and the product is data/feed intelligence, not a frontier-AI moat. Same failure family as ts-0014 (grid-capacity) on the supply side.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0114",
+      "date": "2026-07-18",
+      "status": "killed",
+      "summary": "PBM-compensation-reasonableness fiduciary engine for self-insured employers: frontier document reasoning over opaque pharmacy-benefit-manager contracts and claims data to prove PBM compensation is 'reasonable' under the DOL's 2026 proposed ERISA disclosure expectation, as employer drug/health costs spike ~11-12%.",
+      "cross": {
+        "ai_signal": "Frontier long-context document reasoning can parse deliberately opaque PBM contracts, spread pricing, rebate flows and claims files to quantify effective PBM compensation and benchmark 'reasonableness' - work today done by scarce, expensive benefits consultants.",
+        "structural_signal": "DOL proposed new ERISA disclosure requirements for PBM compensation arrangements with self-insured employers (plan fiduciaries expected to judge whether PBM comp is reasonable); employer pharmacy costs rising ~11-12% into 2026 with GLP-1 demand, and health plans blaming ~9% 2027 cost jumps on AI + drug prices."
+      },
+      "buyer": "Benefits/HR fiduciary or CFO at a self-insured employer needing to document that its PBM compensation is reasonable under the new ERISA expectation.",
+      "why_incumbents_cant": "n/a - killed on AI-native + occupation + contingent trigger.",
+      "kill_reason": "Fails AI-native gate + occupied + contingent trigger. This is ERISA fiduciary due-diligence / benefits-audit documentation whose moat is claims-data access and benefits expertise, not frontier AI (the ts-0051 fiduciary-dossier failure mode); the buyer relationship is owned by the benefits consultancies (Mercer, WTW, Aon) and specialist PBM auditors already marketing AI-assisted contract review, and the DOL rule is proposed, not final (the ts-0043/ts-0102 contingent-mandate mode). No independent venture-scale AI-native wedge.",
+      "kill_attempts_survived": 0
     }
   ]
 }
