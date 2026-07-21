@@ -468,7 +468,7 @@
     {
       "id": "ts-0048",
       "date": "2026-06-23",
-      "status": "new",
+      "status": "watching",
       "summary": "Correlated-redemption-run prediction + liquidity-orchestration engine for semi-liquid private-asset vehicles (interval funds, non-traded BDCs, evergreen funds, and the new private-asset 401(k) sleeves): a behavioral foundation model over investor/participant flow data that forecasts reflexive, regime-dependent redemption runs and drives the liquid-sleeve sizing and gate decisions so funds honor withdrawals without gating or diluting returns.",
       "cross": {
         "ai_signal": "Frontier sequence/behavioral models can now learn correlated, news-reactive, herding redemption behavior across heterogeneous investors and simulate joint redemption demand curves under stress - a problem classical actuarial liquidity models get fundamentally wrong because they assume independent, stable redemption rates. Frontier models can also fuse exogenous signals (media/sentiment, category contagion, mark deterioration) into a real-time run-risk forecast no spreadsheet can produce.",
@@ -487,7 +487,8 @@
         "composite": 4.3
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0005-private-markets-liquidity-engine.md"
+      "brief": "ideas/briefs/0005-private-markets-liquidity-engine.md",
+      "revalidation": "2026-07-21 kill-or-commit re-check: thesis STRENGTHENED, field still open. The crisis intensified since 06-23 - Blackstone BCRED took $3.8B redemption requests in Q1 (7.9% of AUM), Blue Owl OCIC 21.9%, Partners Group gated (June 2026) - and the first systematic academic evidence landed (Fang/Goldstein/Zeng, June 2026, 59 semi-liquid BDCs: 'meeting redemptions imposes costs on those who stay, so everyone runs first' = the reflexive-run dynamic the idea models). Yet the competitive field is still only academics documenting the problem, managers gating reactively, and Morningstar reporting numbers - NO named startup building the behavioral run-prediction + liquidity-orchestration engine. Status new->watching. Strongest kill-or-commit candidate in the ledger; recommend the operator commit or seed a domain expert."
     },
     {
       "id": "ts-0049",
@@ -551,7 +552,8 @@
         "composite": 4.3
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0006-ai-peril-cat-model.md"
+      "brief": "ideas/briefs/0006-ai-peril-cat-model.md",
+      "revalidation": "2026-07-21 kill-or-commit re-check: SURVIVES but novelty softening. Still no productized independent correlated-AI-failure accumulation model for primary carriers - so the product wedge remains open. BUT the thesis is now widely-published broker/academic copy: Gallagher Re 'identifies systemic risk from AI model failures,' Swiss Re sigma 07/2026, and arXiv papers ('The Insurability Frontier of AI Risk,' 'Your SaaS Is an Insurance Product') all articulate the '80% depend on 3 foundation providers -> correlated accumulation the classical CAT model can't price' framing. Acknowledgment != a built product, so it is not yet occupied, but the novelty score is eroding as the framing commoditizes - a funded entrant is now more likely than at 06-25. Recommend watching closely; commit before the copy becomes a company."
     },
     {
       "id": "ts-0055",
@@ -1210,6 +1212,34 @@
       "buyer": "Benefits/HR fiduciary or CFO at a self-insured employer needing to document that its PBM compensation is reasonable under the new ERISA expectation.",
       "why_incumbents_cant": "n/a - killed on AI-native + occupation + contingent trigger.",
       "kill_reason": "Fails AI-native gate + occupied + contingent trigger. This is ERISA fiduciary due-diligence / benefits-audit documentation whose moat is claims-data access and benefits expertise, not frontier AI (the ts-0051 fiduciary-dossier failure mode); the buyer relationship is owned by the benefits consultancies (Mercer, WTW, Aon) and specialist PBM auditors already marketing AI-assisted contract review, and the DOL rule is proposed, not final (the ts-0043/ts-0102 contingent-mandate mode). No independent venture-scale AI-native wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0115",
+      "date": "2026-07-21",
+      "status": "killed",
+      "summary": "AI-native autonomous-operations 'brain' for orbital / space-based AI data centers: manage thermal/radiation fault-recovery, power (solar/battery), station-keeping and job scheduling for compute satellites no technician can ever reach, riding the 2026 orbital-data-center land rush (Orbital filed for 100,000 satellites / 10 GW; Starcloud, Sophia Space, Blue Origin Project Sunrise).",
+      "cross": {
+        "ai_signal": "Frontier control/agent models could autonomously operate an un-serviceable compute constellation - self-healing around radiation-induced faults, thermal limits and power constraints.",
+        "structural_signal": "Orbital data centers went from concept to a funded land rush in 2026: Orbital ($5M pre-seed, a16z Speedrun; FCC filing for up to 100,000 satellites / 10 GW), Starcloud (first LLM trained in space, Nov 2025), Sophia Space ($10M), Blue Origin Project Sunrise, SpaceX floating 1M satellites / 100 GW."
+      },
+      "buyer": "Ops/autonomy lead at an orbital-data-center operator; secondarily satellite-compute integrators.",
+      "why_incumbents_cant": "n/a - killed on buyer-builds + capital-heavy + platform-owned.",
+      "kill_reason": "Buyer-builds + capital-heavy hardware + platform-owned (the ts-0020/ts-0056 failure mode). The genuinely-new, big, fresh structural half is real, but the operators (Orbital, Starcloud, Sophia, Blue Origin) are vertically-integrated hardware plays that build their own autonomy in-house because it IS the product, and NVIDIA already ships the orbital autonomy/compute platform (Space-1 Vera Rubin, IGX Thor, Jetson Orin for 'autonomous space operations'). No independent software buyer, and the market is a handful of pre-revenue hardware startups - no near-term venture-scale SaaS wedge. Sibling of ts-0101 (space) and the ts-0064/0069/0086 buildout cluster.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0116",
+      "date": "2026-07-21",
+      "status": "killed",
+      "summary": "AML/CTF 'tranche 2' compliance copilot for the ~80,000 professional-services firms (lawyers, accountants, real-estate agents, conveyancers, dealers in precious metals/stones) newly pulled into Australia's anti-money-laundering regime on 2026-07-01, none of which have ever run an AML program.",
+      "cross": {
+        "ai_signal": "Frontier document + policy reasoning could run customer due-diligence, risk scoring and suspicious-matter reporting for firms with zero compliance staff.",
+        "structural_signal": "Australia's AML/CTF regime extended to lawyers/accountants/real-estate/conveyancers/precious-metals dealers on 2026-07-01, taking AUSTRAC from ~19,000 to ~100,000 regulated entities - a dated ~5x expansion of the regulated base."
+      },
+      "buyer": "Owner/compliance lead at a small Australian law/accounting/real-estate firm newly subject to AML obligations.",
+      "why_incumbents_cant": "n/a - killed on venture-scale + AI-native + occupation.",
+      "kill_reason": "Fails venture-scale + thin AI-native + foreign single-market + occupied. Real dated trigger and a genuine 5x base expansion, but it is one country's SME compliance niche (the ts-0007 tiny-shop / non-venture-scale failure mode), the product is CDD/SMR workflow whose moat is a data/typology feed not frontier AI, and AML SaaS is a mature occupied category (incumbents and Australian tranche-2-specific vendors already marketing to exactly these firms ahead of the deadline). No credible $1B AI-native path.",
       "kill_attempts_survived": 0
     }
   ]
