@@ -284,7 +284,7 @@
     {
       "id": "ts-0031",
       "date": "2026-06-18",
-      "status": "new",
+      "status": "watching",
       "summary": "Independent third-party behavioral-certification lab for robot foundation-model policies: adversarially simulates a humanoid/AMR's learned neural policy in world-model sims to find dangerous failure modes before deployment and on every OTA policy update, issuing a certification artifact insurers and safety teams accept.",
       "cross": {
         "ai_signal": "Frontier world models (NVIDIA Cosmos, Genie) + generative adversarial scenario synthesis can now simulate a non-deterministic VLA robot policy's behavior across millions of out-of-distribution situations cheaply; NVIDIA's robot-dexterity scaling law and GR00T/pi0-class policies make policies powerful but opaque and frequently updated.",
@@ -303,7 +303,8 @@
         "composite": 4.0
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0003-robot-policy-assurance-lab.md"
+      "brief": "ideas/briefs/0003-robot-policy-assurance-lab.md",
+      "revalidation": "2026-07-23 kill-or-commit re-check (first re-check since 06-18): SURVIVES, still no productized independent behavioral-certification lab for learned robot policies. But the research frontier is heating up fast - mid-2026 arXiv work ('Verifiable Foundation Models for Robot Safety,' 'Modular Safety Guardrails Are Necessary for Foundation-Model-Enabled Robots,' 'Safe robot foundation models') is formalizing exactly the sim-based behavioral-validation problem, and NVIDIA GR00T-Dreams/Isaac Sim + ReSim supply the sim substrate developers self-grade on. Concept maturing toward productization; the independent-lab wedge is open now but a funded entrant is more likely each quarter. Status new->watching."
     },
     {
       "id": "ts-0032",
@@ -630,7 +631,7 @@
     {
       "id": "ts-0064",
       "date": "2026-06-27",
-      "status": "new",
+      "status": "watching",
       "summary": "Independent 'demand-realism / probability-of-energization' + correlated-materialization risk engine for the AI grid buildout: a frontier model that fuses cross-utility interconnection filings, permits, transformer/equipment supply chains, construction and satellite signals, chip-allocation and financing data, and developer behavior to score which announced data-center loads (and the power/grid projects meant to serve them) will actually materialize and how correlated their fates are - the independent source of truth utilities/PUCs use to avoid stranded overbuild and lenders/ABS investors/hyperscalers use to avoid stranded capital.",
       "cross": {
         "ai_signal": "Frontier multimodal models can now fuse heterogeneous, messy, unstructured signals (interconnection-queue filings across many utilities, permit and construction records, equipment/transformer lead-time and chip-allocation data, hyperscaler capex guidance, project-finance terms, satellite imagery, developer filing behavior) into a per-project probability-of-energization AND simulate the CORRELATED materialization of thousands of projects whose fates are linked through shared hyperscaler demand, shared equipment supply chains and shared power constraints. Classical integrated-resource-planning load forecasting is single-point, historically-grounded and assumes independent, stable demand - it structurally cannot model strategic 'phantom' duplicate requests or correlated materialization, the same independent-rate blind spot that made ts-0048 and ts-0054 AI-native.",
@@ -649,7 +650,8 @@
         "composite": 4.3
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0007-data-center-demand-realism-engine.md"
+      "brief": "ideas/briefs/0007-data-center-demand-realism-engine.md",
+      "revalidation": "2026-07-23 kill-or-commit re-check (first re-check since 06-27): thesis PROBLEM now fully front-page-validated - Exelon states only ~22% of its 65-GW pipeline is likely to materialize, ERCOT tracking 226 GW (up from 63 GW end-2024, ~3/4 data centers), phantom requests estimated 5-10x real builds. BUT novelty SOFTENING on two fronts: (1) the incumbent 'solution' so far is tariff design (AEP Ohio 25-MW eligibility / 85% min-billing / termination fees cut its queue 30->13 GW), a policy lever, not a demand-realism model; (2) GridUnity (interconnection-queue management software) is now publicly framing 'phantom data centers flooding the load queue' - adjacent and could extend toward per-project materialization scoring. Still no independent, cross-utility, correlated-materialization probability-of-energization engine productized. Survives the gate; watch GridUnity closely. Status new->watching."
     },
     {
       "id": "ts-0065",
@@ -766,7 +768,7 @@
     {
       "id": "ts-0077",
       "date": "2026-07-02",
-      "status": "new",
+      "status": "watching",
       "summary": "Independent integrity + resolution-truth intelligence layer for the institutional consumers of prediction-market signals: an AI-native engine that scores every liquid event contract for bot/wash-trade distortion, cross-venue manipulation, coordinated narrative/pressure campaigns and resolution risk, and outputs a 'manipulation-adjusted true probability' + integrity rating for the quant funds, asset managers, corporate treasuries, data vendors and policymakers who now trade on, hedge with, or ingest these prices - the consumer-side systemic square that per-venue exchange surveillance and retail whale-trackers structurally skip.",
       "cross": {
         "ai_signal": "Frontier multimodal models can now fuse the on-chain wallet-cluster graph (attribution of coordinated/wash activity), cross-venue order flow (Polymarket/Kalshi/Limitless plus the correlated underlying equity/rate/commodity market), the natural-language semantics of a contract and the news/evidence that will resolve it, and detection of coordinated narrative/pressure campaigns - into a per-contract manipulation-adjusted, resolution-aware probability and integrity score at the scale of thousands of live markets. Classical trade surveillance is product/venue-centric, rule- and statistics-based, single-venue, and structurally cannot reason over event semantics, on-chain attribution across permissionless wallets, or resolution ground-truth.",
@@ -785,7 +787,8 @@
         "composite": 4.2
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0009-prediction-market-integrity-intelligence.md"
+      "brief": "ideas/briefs/0009-prediction-market-integrity-intelligence.md",
+      "revalidation": "2026-07-23 kill-or-commit re-check (first re-check since 07-02): institutionalization ACCELERATED hard - Kalshi raised $1B at a $22B valuation, ICE completed a $2B Polymarket commitment, the two jointly backed a $35M VC fund, and Pascal raised $9M (07-16) to challenge them; prediction-market prices are now genuine financial infrastructure. The consumer-side independent integrity + resolution-truth wedge (ts-0077) is STILL not built by any named startup. Mild novelty headwind: Kalshi/Polymarket are aggressively building their OWN exchange-side surveillance (employment-disclosure mandates, whistleblower portals, 24/7 surveillance teams, per-market risk-scoring), which both confirms the exchange-side square is taken (ts-0078, killed) AND could make some institutions trust the venue's own integrity signal rather than an independent one - narrowing, not closing, the buy-side 'independent truth' story. Survives the gate; the buy-side/data-consumer integrity layer remains open. Status new->watching."
     },
     {
       "id": "ts-0078",
@@ -1240,6 +1243,20 @@
       "buyer": "Owner/compliance lead at a small Australian law/accounting/real-estate firm newly subject to AML obligations.",
       "why_incumbents_cant": "n/a - killed on venture-scale + AI-native + occupation.",
       "kill_reason": "Fails venture-scale + thin AI-native + foreign single-market + occupied. Real dated trigger and a genuine 5x base expansion, but it is one country's SME compliance niche (the ts-0007 tiny-shop / non-venture-scale failure mode), the product is CDD/SMR workflow whose moat is a data/typology feed not frontier AI, and AML SaaS is a mature occupied category (incumbents and Australian tranche-2-specific vendors already marketing to exactly these firms ahead of the deadline). No credible $1B AI-native path.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0117",
+      "date": "2026-07-23",
+      "status": "killed",
+      "summary": "Autonomous-trading-agent supervision / pre-trade-risk + behavioral-guardrail layer for the new agentic regulated trading venues, riding the London Stock Exchange's LSE 24 (announced 2026-07-21) - a greenfield 24/5 venue built around agentic trading with native machine-to-machine connectivity and an on-chain settlement path - which puts non-deterministic AI trading agents onto a regulated exchange for the first time.",
+      "cross": {
+        "ai_signal": "Frontier agents can trade autonomously against live market data 24/5; supervising a non-deterministic LLM-driven trading agent (catching a hallucinated, manipulated or runaway order before it moves a regulated market) is a behavioral-guardrail problem distinct from deterministic limit checks.",
+        "structural_signal": "LSE 24 (LSEG, announced 2026-07-21): a regulated 24/5 venue explicitly engineered for agent-based trading, machine-to-machine connectivity, hybrid CLOB/RFQ matching and a path to on-chain settlement via LSEG's Digital Securities Depository - client testing end-2026, ETPs H1 2027, equities next. A genuinely new 'agents-as-market-participants' platform."
+      },
+      "buyer": "Head of trading risk / algo governance at a buy-side firm or broker connecting autonomous trading agents to LSE 24 and successor agentic venues.",
+      "why_incumbents_cant": "n/a - killed on one-step extension + occupation + too-early.",
+      "kill_reason": "One-step extension of a just-announced platform (the exact Step-2 failure mode) + occupied on both flanks + too early. The obvious 'build an agent-supervision layer for the new agentic venue' is what everyone reads off the LSE 24 headline simultaneously; the venue itself provides market-level governance/controls, deterministic pre-trade algo-risk is owned by trading-infra incumbents (Trading Technologies, FlexTrade, Broadway), and LLM-agent behavioral governance/guardrails is the saturated agent-governance cluster (ts-0027/ts-0085/ts-0100, Galileo et al.) extending straight in. LSE 24 is also pre-live (testing end-2026, ETPs H1-2027), so there is no buyer yet. No novel, AI-native, venture-scale wedge.",
       "kill_attempts_survived": 0
     }
   ]
