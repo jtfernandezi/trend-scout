@@ -23,7 +23,7 @@
       },
       "kill_attempts_survived": 2,
       "brief": "ideas/briefs/0001-sba-buyside-deal-structuring.md",
-      "kill_reason": "Killed under the revised 2026-06-16 thesis (venture-scale is now a hard gate): episodic, low-LTV ETA buyer, market score 3 \u2014 no credible $1B path. Brief retained as historical record."
+      "kill_reason": "Killed under the revised 2026-06-16 thesis (venture-scale is now a hard gate): episodic, low-LTV ETA buyer, market score 3 — no credible $1B path. Brief retained as historical record."
     },
     {
       "id": "ts-0002",
@@ -83,7 +83,7 @@
       },
       "kill_attempts_survived": 2,
       "brief": "ideas/briefs/0002-stop-act-fab-shop-compliance.md",
-      "kill_reason": "Killed under the revised 2026-06-16 thesis (venture-scale is now a hard gate): CA-only tiny-shop niche, market score 3 \u2014 no credible $1B path. Brief retained as historical record."
+      "kill_reason": "Killed under the revised 2026-06-16 thesis (venture-scale is now a hard gate): CA-only tiny-shop niche, market score 3 — no credible $1B path. Brief retained as historical record."
     },
     {
       "id": "ts-0008",
@@ -329,7 +329,7 @@
       },
       "kill_attempts_survived": 2,
       "brief": "ideas/briefs/0011-dod-autonomy-assurance-harness.md",
-      "revalidation": "2026-07-25 first re-check since 06-18: SURVIVES, and the why-now materially STRENGTHENED - this is the run's biggest held-book upgrade. The FY2026 defense budget gives AI and autonomous systems a $13.4B standalone budget line for the first time ever (RDT&E Defense-Wide is $35.2B), and the Pentagon's AI Acceleration Strategy (2026-01-09) directs the department to become an 'AI-first' warfighting force through seven Pace-Setting Projects. Critically, DoD is now funding the exact capability rather than merely wanting it: DTE&A has funded researchers to build a framework for structuring and executing assurance cases for autonomous systems and to work out the TEV&V implications, and there is a live DoD SBIR topic 'Runtime Assured Autonomy for AI-Driven Unmanned Platforms' ($250k Phase I / $2M Phase II). Novelty caution: the SBIR route invites many small entrants and FFRDCs plus the primes (Anduril ~$28B, Shield AI ~$5B) do their own T&E, but independence from the system builder is the structural requirement no prime can satisfy. Status new->watching; brief written this run (0011)."
+      "revalidation": "2026-07-25 first re-check since 06-18: SURVIVES, and the why-now materially STRENGTHENED - this is the run's biggest held-book upgrade. The FY2026 defense budget gives AI and autonomous systems a $13.4B standalone budget line for the first time ever (RDT&E Defense-Wide is $35.2B), and the Pentagon's AI Acceleration Strategy (2026-01-09) directs the department to become an 'AI-first' warfighting force through seven Pace-Setting Projects. Critically, DoD is now funding the exact capability rather than merely wanting it: DTE&A has funded researchers to build a framework for structuring and executing assurance cases for autonomous systems and to work out the TEV&V implications, and there is a live DoD SBIR topic 'Runtime Assured Autonomy for AI-Driven Unmanned Platforms' ($250k Phase I / $2M Phase II). Novelty caution: the SBIR route invites many small entrants and FFRDCs plus the primes (Anduril ~$28B, Shield AI ~$5B) do their own T&E, but independence from the system builder is the structural requirement no prime can satisfy. Status new->watching; brief written this run (0011). | 2026-07-28 note (no re-check run; incidental signal): the why-now hardened again on two dated fronts. YC's Fall 2026 RFS (applications closed 2026-07-27) carries 'The Future of American Defense' authored by the sitting US Secretary of the Army - the first time a serving service secretary has written a YC request - which puts defense autonomy at the centre of the batch the operator would apply to. Separately, the 2026-07-20 executive order 'Securing America's Defense Supply Chains and Ensuring Domestic Acquisition of Critical Materials' confirms defense-industrial policy is still escalating at EO level. Novelty caution unchanged and now slightly worse: a YC RFS naming defense guarantees Fall-2026 entrants aimed at this area."
     },
     {
       "id": "ts-0033",
@@ -903,7 +903,7 @@
       "id": "ts-0089",
       "date": "2026-07-07",
       "status": "killed",
-      "summary": "AI variant-interpretation / VUS-reclassification engine at population scale, riding universal newborn whole-genome sequencing programs (UK NHS \u00a3650M rollout begins 2026; US pilots) that generate a tsunami of variants of uncertain significance human geneticists can't clear.",
+      "summary": "AI variant-interpretation / VUS-reclassification engine at population scale, riding universal newborn whole-genome sequencing programs (UK NHS £650M rollout begins 2026; US pilots) that generate a tsunami of variants of uncertain significance human geneticists can't clear.",
       "kill_reason": "Occupied + slow clinical-genomics path. Genomenon (Mastermind evidence automation), Fabric Genomics (AI interpretation + workflow), BeginNGS (federated-learning newborn-screening models) and clinical NGS interpretation vendors already own variant classification and reclassification; the buyer (clinical labs / national programs) is slow and reimbursement-gated, denting the $1B venture path. Real backlog, but the wedge is taken and the motion is not venture-fast.",
       "kill_attempts_survived": 1
     },
@@ -1334,6 +1334,114 @@
       },
       "kill_reason": "Occupied by a decade-old category, and the moat is data licensing rather than frontier AI. Alternative-data macro nowcasting is an established business - QuantCube Technology, Nowcast, Thinknum, Oxford Economics' AI & Data Solutions - alongside in-house teams at every macro fund and central banks doing their own ML nowcasting (IMF working paper on ML + satellite GDP nowcasting, January 2026). Frontier extraction lowers the cost of an existing product rather than enabling a new one, and the defensible asset is exclusive access to primary data, which incumbents already hold.",
       "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0124",
+      "date": "2026-07-28",
+      "status": "killed",
+      "summary": "AI-native non-recourse episode underwriter / de-facto payer for the self-pay wave: price a whole episode of care before it happens, guarantee the price to an uninsured or high-deductible patient, and pay the provider in full at time of service while taking the patient credit risk.",
+      "cross": {
+        "ai_signal": "Frontier reasoning over plan design, chargemaster/MRF rate data, clinical episode structure and alternative-data ability-to-pay makes it possible for the first time to underwrite an individual patient's total episode cost and residual balance at the scheduling moment.",
+        "structural_signal": "US healthcare definancing at scale: $911B of Medicaid cuts over 10 years, CBO projecting ~10M more uninsured by 2034, marketplace effectuated enrollment falling 22.3M -> ~17.5M, average marketplace deductibles up 37% to $3,786, hospital bad debt and charity care up 18% YoY in March 2026, HCA guiding to a $900M hit and Tenet $250M. Self-pay-after-insurance went from 11% to 58% of hospital bad debt in three years."
+      },
+      "kill_reason": "Directly occupied. PayZen already pays health systems upfront on a non-recourse basis and underwrites patient ability-to-pay with AI across ~30,000 data points, deployed across hundreds of health systems; PatientFi, Cherry, iCreditWorks, AccessOne, CarePayment and ClearBalance fill the rest of the financing surface. The 'guarantee an episode price before service' variant is occupied on the purchaser side by Carrum Health (bundled episode contracts) and on the retail side by MDsave and Sesame. The structural signal is real and getting worse, but the product it implies has been built.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0125",
+      "date": "2026-07-28",
+      "status": "killed",
+      "summary": "Cross-vendor industrial machine-telemetry data foundry for physical AI: pay factories for state-action logs from the millions of robot cells, CNC machines and AMRs already deployed, convert heterogeneous vendor telemetry into a unified action space, and sell contact-rich dynamics corpora to robot foundation-model labs.",
+      "cross": {
+        "ai_signal": "NVIDIA named demonstration data the critical bottleneck for physical AI at GTC 2026; contact dynamics, friction coefficients and sensor-noise patterns cannot be simulated if never observed, so real interaction data is the scarce input to robot foundation models.",
+        "structural_signal": "Over $10B of 2025 physical-AI funding against a 'physical AI data asymmetry', with the data supply chain underfunded relative to the problem, while millions of already-deployed industrial machines generate contact-rich trajectories daily that nobody collects."
+      },
+      "kill_reason": "Occupied and funded. XDOF has raised $70M, works with 20 customers including several frontier labs, and released the ABC dataset (130,000 manipulation trajectories) with UC Berkeley BAIR; Robotics Center runs a robotics data marketplace with 20,000+ hours and 11M+ episodes indexed; SVRC sells synchronized multimodal capture plus a buy/sell marketplace; Scale AI has a dedicated physical-AI data engine. The ledger has also already killed the two adjacent variants (ts-0036 teleoperation/egocentric foundry, ts-0103 smart-glasses demonstration capture) - this is the third costume of the same bet.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0126",
+      "date": "2026-07-28",
+      "status": "killed",
+      "summary": "AI revenue-management and rate-setting engine for providers: airline-style dynamic pricing and payer-contract negotiation simulation for hospitals and physician groups, made possible for the first time by machine-readable competitor rates.",
+      "cross": {
+        "ai_signal": "Frontier document + quantitative reasoning can read a health system's payer contracts, machine-readable rate files and claims history together and simulate the outcome of a renegotiation, turning an intuitive process into a modelled one.",
+        "structural_signal": "House Energy & Commerce and Senate HELP both advanced price-transparency bills the week of 2026-07-20, on top of margins crushed by an 18% YoY rise in bad debt and charity care and $911B of Medicaid cuts - meaning negotiated rates are becoming observable exactly as providers are desperate for rate lift."
+      },
+      "kill_reason": "The square is occupied and the category is already being marketed under this exact framing. Rivet Health's Payer Performance centralizes payer contracts and analyzes claims to find underpayments and variances; the broader 'AI arms race in the revenue cycle' (Innovaccer, Quadax, denial-analytics vendors) is aggressively covering payer interaction and negotiation; Turquoise Health and Serif Health own the transparency data plumbing. Secondary problem: payer contracts renegotiate on ~3-year cycles, so the buying event is episodic - a poor fit for fast compounding.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0127",
+      "date": "2026-07-28",
+      "status": "killed",
+      "summary": "Consumer 'counter-AI' verification concierge: an agent that intercepts every inbound call, text, email and DM, verifies whether the human on the other end is who they claim, and negotiates or triages on the user's behalf as face and voice stop being proof of identity.",
+      "cross": {
+        "ai_signal": "Real-time multimodal deepfake detection plus a personal relationship graph and cheap on-device inference make continuous per-contact verification feasible for a consumer at consumer price points.",
+        "structural_signal": "Identity fraud losses exceeded $50B globally in 2025 with sophisticated multi-technique attacks up 180%; Deloitte projects $40B of US AI-enabled fraud by 2027; deepfakes are now 11% of global fraudulent activity; INTERPOL's March 2026 assessment flagged impersonation fraud inside $440B of global fraud losses. YC's Fall 2026 RFS names 'Proving You're Human' explicitly."
+      },
+      "kill_reason": "Platform absorption plus an occupied consumer category. Google has shipped Android protection against AI deepfake scam calls and both iOS and Android call screening have materially improved - the interception point belongs to the OS vendor, who gives it away. Hiya, Robokiller, Truecaller and Aura occupy the third-party consumer layer, and the funded innovation is on the enterprise side (Adaptive Security, $146.5M including OpenAI's first cybersecurity investment). Being named in the YC RFS also guarantees the Fall 2026 batch swarms it.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0128",
+      "date": "2026-07-28",
+      "status": "killed",
+      "summary": "Cryptographic discovery and automated post-quantum migration engine: an AI that finds every cryptographic dependency across an organization's code, firmware and network and rewrites it to post-quantum algorithms, riding the June 2026 quantum executive orders.",
+      "cross": {
+        "ai_signal": "Repository-scale code reasoning (1M-token context, 128K output) can now find and rewrite cryptographic primitives across heterogeneous legacy codebases rather than merely inventorying them.",
+        "structural_signal": "The White House issued two executive orders on 2026-06-22 on quantum innovation and securing the nation against advanced cryptographic attacks, forcing a cryptographic inventory and migration obligation across federal agencies and their supply chains."
+      },
+      "kill_reason": "This is the incumbent product, not a gap. SandboxAQ (AQtive Guard) sells cryptographic discovery plus migration at scale and is one of the best-funded private AI companies; IBM Quantum Safe, InfoSec Global (AgileSec), Entrust, Utimaco and Keyfactor all ship crypto-agility discovery/remediation. A federal mandate here creates demand for an existing category rather than a new one.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0129",
+      "date": "2026-07-28",
+      "status": "killed",
+      "summary": "Sub-tier materials provenance engine for the defense industrial base: trace every critical material in a weapons-system bill of materials to its true origin and generate the domestic/allied-sourcing attestation, triggered by the 2026-07-20 defense supply-chain executive order.",
+      "cross": {
+        "ai_signal": "Frontier extraction and entity resolution across mill certs, customs records, corporate ownership and supplier documents can reconstruct provenance several tiers below where a prime's ERP visibility ends.",
+        "structural_signal": "Executive Order 'Securing America's Defense Supply Chains and Ensuring Domestic Acquisition of Critical Materials' (2026-07-20) pushes contractors to source critical materials domestically or from allies for manufacture, maintenance and repair of military equipment, across a $400B+/yr procurement base."
+      },
+      "kill_reason": "Occupied by scaled incumbents that already hold the DoD relationship: Exiger (supply-chain illumination is its core product and it holds DoD-wide vehicles), Govini (Ark platform for defense supply-chain and sourcing analytics) and Fortress Information Security. The ledger has also already killed two neighbours for the same reason (ts-0075 semiconductor traceability, ts-0102 AI-BOM disclosure for federal contractors), which makes this the third pass at the same square.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0130",
+      "date": "2026-07-28",
+      "status": "killed",
+      "summary": "Automated per-unit system identification / real-to-sim runtime for deployed physical AI: an agent that actively pokes a specific robot in the field, infers its true dynamics (friction, backlash, compliance, actuator wear) and emits a continuously re-calibrated simulator for that individual machine, so sim-trained policies actually transfer and keep transferring.",
+      "cross": {
+        "ai_signal": "Interactive novel-environment reasoning took a step change in July 2026 (Claude Opus 5 scoring ~3x the next-best model on ARC-AGI-3 and beating Fable 5 on OSWorld 2.0 at roughly a third of the cost), which is exactly the capability needed to design informative physical excitation experiments and infer parameters from their results without a human engineer.",
+        "structural_signal": "NVIDIA's GTC 2026 framing that you cannot simulate contact dynamics, friction or sensor noise you have never observed, against a physical-AI deployment wave with over $10B of 2025 funding - the gap is per-unit physical truth, not more human demonstrations."
+      },
+      "kill_reason": "Fails on defensibility and venture-scale via platform absorption, despite surviving the 'is there a startup' check - no dedicated company was found, only an active academic frontier (ASID, scalable Real2Sim, GeCo-SRT). AWS's Physical AI program states plainly that real-to-sim calibration 'is becoming fully automated' as part of the stack, and NVIDIA owns the simulator layer (Isaac / Newton) into which this capability naturally folds; the robot foundation-model companies with the budget (Physical Intelligence, Skild, Figure, Tesla) treat sim fidelity as core IP and build it in-house. The reachable buyer set is a few hundred mostly pre-revenue robot companies whose platform vendor gives the feature away. It is also adjacent to held survivor ts-0031, which occupies the defensible half (independent behavioral certification) of the same territory.",
+      "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0131",
+      "date": "2026-07-28",
+      "status": "killed",
+      "summary": "Enterprise reward infrastructure: instrument a company's existing operational systems so every agent decision receives a delayed real-world outcome label, turning the company's own P&L into a reward signal for continuous reinforcement-learning post-training of its vertical agents.",
+      "cross": {
+        "ai_signal": "With seven frontier models shipping in the seven days to 2026-07-23 and several now near-equal in quality, base-model choice has stopped being a differentiator and proprietary outcome-labelled data has become the scarce asset.",
+        "structural_signal": "Gartner projects $207B of AI agent software spend in 2026 (up 139%), while the July 2026 counter-narrative is that agents frequently cost more than the labour they replaced - creating pressure to make deployed agents measurably improve rather than plateau."
+      },
+      "kill_reason": "One of the most crowded infrastructure squares in the market. Wing Venture Capital's own market map says roughly 20 seed-to-Series-A companies are competing in RL environments and expects consolidation to 3-5 winners by 2030; Scale AI sells enterprise agent RL with reward crafting; Microsoft Foundry ships OpenEnv for outcome-driven learning systems; SuperAnnotate, Invisible and Adaptive ML cover the rest. The ledger already killed the lab-facing version (ts-0035) and the assurance-facing version (ts-0100).",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0132",
+      "date": "2026-07-28",
+      "status": "killed",
+      "summary": "AI-native outcome-priced services firm (agentic BPO): contract to deliver a whole business function at a fixed price per resolved outcome and staff it with agents rather than people.",
+      "cross": {
+        "ai_signal": "Near-parity across seven frontier models released in seven days means capability is no longer the scarce input; the buyer wants a delivered outcome and someone willing to hold the delivery risk.",
+        "structural_signal": "$207B of 2026 agent software spend against Forbes' 2026-07-02 finding that agents can cost more than the humans they replaced, plus 115,000 tech layoffs across 150+ companies in 2026 - the buyer increasingly wants to purchase the result, not the tool."
+      },
+      "kill_reason": "Killed on sight as the single most-funded thesis of the 2025-2026 cycle ('services-as-software' / AI-native rollups), pursued simultaneously by General Catalyst, Thrive Holdings, Elad Gil and dozens of funded operators. No wedge is available to a new entrant on the strength of the thesis alone, and the ledger already killed the picks-and-shovels version (ts-0049).",
+      "kill_attempts_survived": 0
     }
   ]
 }
