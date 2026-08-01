@@ -1550,6 +1550,126 @@
    },
    "kill_reason": "Platform absorption plus an adverse-selection problem. PointClickCare is the dominant SNF EHR, owns the MDS workflow and the data, and already sells case-mix analytics; the specialist layer (Zimmet, Richter, Real Time Medical Systems, SNFMetrics) fills the rest. A startup would be building on the incumbent's data with the incumbent's permission. Separately the product's value proposition is indistinguishable from upcoding a federal payer, which is the wrong side of an enforcement wave, not a defensible moat.",
    "kill_attempts_survived": 0
+  },
+  {
+   "id": "ts-0141",
+   "date": "2026-08-01",
+   "status": "new",
+   "summary": "Autonomous firmware re-hosting engine for the legacy-memory obsolescence wave: a verified agent that ports a shipped embedded product's firmware from a discontinued memory part or MCU onto an available one, proves behavioural equivalence on hardware-in-the-loop, and emits the change-control/requalification evidence a regulated OEM needs to ship it.",
+   "cross": {
+    "ai_signal": "The July-2026 convergence on multi-hour long-horizon coding agents (Claude Opus 5 on 07-24, GPT-5.6 family, Grok 4.5, Kimi K3, DeepSeek-V4-Flash on 07-31) plus cheap near-frontier inference makes autonomous cross-architecture firmware migration with closed-loop empirical verification feasible for the first time. The task is verifiable end-to-end (differential execution against the incumbent binary, timing/memory-map equivalence, hardware-in-the-loop replay), which is exactly the regime where 2026 agents are strong and where general legacy-migration tooling explicitly fails today ('testing embedded systems is not straightforward with LLM agents').",
+    "structural_signal": "The AI buildout is cannibalising the memory supply the entire non-AI electronics economy runs on. Data centres consume ~70% of all memory chips made in 2026 versus 20-30% in 2022; DRAM supply grows only 16%; Q2-2026 conventional DRAM contract prices rose a record 90-95% QoQ and DDR2 55-60% (with a further 35-40% expected in Q3); DRAM spot is up ~700% YoY; automotive LPDDR4 +70% YoY; and no meaningful new capacity arrives until late 2027-2028, with SK Hynix warning the shortage may persist past 2030. Legacy nodes (DDR2/DDR3) that automotive dashboards, gateways, industrial controls and medical devices depend on are being EOL'd as fabs convert to HBM. Z2Data puts a single obsolescence-driven redesign at $20,000 to nearly $2M, and in regulated industries even a minor component change triggers cascading revalidation."
+   },
+   "buyer": "The embedded-software or sustaining-engineering lead at an automotive Tier-1, industrial-controls, medical-device or aerospace OEM at the moment a product-change notification or end-of-life notice lands on a memory part or MCU inside a product with a 10-15 year service life and a regulated change-control process - a redesign that is already budgeted at $20k-$2M and today gets handed to a contract engineering firm.",
+   "trigger": "The 2026 legacy-DRAM crunch: record 90-95% QoQ contract price rises in Q2 2026, DDR2/DDR3 supply being starved by the HBM conversion, and no new capacity until late 2027-2028. EOL notices on long-life parts are arriving faster than sustaining-engineering capacity can absorb them.",
+   "why_incumbents_cant": "The obsolescence-intelligence vendors (Z2Data/Vituoso, SiliconExpert, PartAnalytics, Accuris, ComponentSense) monetise notification, lifecycle prediction and alternate-part recommendation - their product ends precisely where the engineering begins, and they have no compiler, toolchain or test-harness competence. The embedded toolchain vendors (IAR, Green Hills, Segger, Vector) sell per-architecture seats and have no incentive to make silicon interchangeable. The semiconductor vendors' business model IS lock-in, so portability is strategically hostile to them. And the incumbent solution is contract firmware-engineering firms (Promwad, Lemberg and hundreds like them) whose entire revenue is the labour the engine deletes - the same structural disqualification that left ts-0133's square open.",
+   "scores": {
+    "novelty": 4,
+    "why_now": 5,
+    "market_venture_scale": 4,
+    "defensibility": 4,
+    "yc_fit": 4,
+    "founder_fit": 5,
+    "composite": 4.3
+   },
+   "kill_attempts_survived": 3,
+   "brief": "ideas/briefs/0013-firmware-rehosting-engine.md"
+  },
+  {
+   "id": "ts-0142",
+   "date": "2026-08-01",
+   "status": "killed",
+   "summary": "Independent AI cryptanalysis lab: a productised service that adversarially attacks cryptographic constructions with frontier models before they are standardised or deployed, off the back of Claude Mythos breaking HAWK in 60 hours.",
+   "cross": {
+    "ai_signal": "Anthropic's Claude Mythos Preview found a previously unknown nontrivial automorphism in HAWK's lattice structure ('Mobius Bridge'), halving its security level and dropping the cost of recovering its smallest key from 2^64 to 2^38 operations in 60 hours, after two years of expert human review had failed; it also improved on the best 7-round AES attack since 2013. Published 2026-07-28, alongside CryptanalysisBench (191 tasks, ETH Zurich / Anthropic / Haifa / TU Berlin / Tel Aviv, 2026-07-20).",
+    "structural_signal": "The ~$15B post-quantum migration: NIST FIPS 203/204/205 final, CNSA 2.0 deadlines set, and a G7 Cyber Expert Group financial-sector PQC roadmap (2026-01-13, co-chaired by US Treasury and the Bank of England) targeting critical systems by 2030-2032 and full transition by 2035. The HAWK team withdrew the algorithm from standardisation."
+   },
+   "kill_reason": "Fails the venture-scale gate and repeats my own template. The reachable buyer set is a few dozen standards participants, HSM/chip vendors and proprietary-crypto holders - the world does not contain enough purchasers of cryptanalysis to build a $1B company, and the highest-value results are being produced by frontier labs themselves as research and PR (Anthropic published this one free, at ~$100k of API cost per major result). The commercial layer around it - cryptographic posture management and agility - is already held (SandboxAQ AQtive Guard, Qinsight Atlas, IBM Quantum Safe, InfoSec Global, Entrust, Keyfactor), which is the same wall that killed ts-0128. And structurally it would be the fifth costume of this ledger's 'independent adversarial assurance lab' shape (ts-0031, ts-0032, ts-0039, ts-0100).",
+   "kill_attempts_survived": 1
+  },
+  {
+   "id": "ts-0143",
+   "date": "2026-08-01",
+   "status": "killed",
+   "summary": "Memory-footprint compression engine: an agent that structurally rewrites a shipped product's software to run in less RAM, sold as bill-of-materials savings now that memory is 35% of a PC's BOM and DRAM spot is up ~700% YoY.",
+   "kill_reason": "Occupied by the general category. TurinTech's Artemis ($24.8M raised, $15M Series A led by Oxford Capital, Microsoft among investors, Intel partnership for an offline on-device build) sells exactly AI-driven code optimisation for performance and compute cost, with Codeflash and the embedded toolchain vendors (IAR publishes 'Reducing RAM footprint to lower BOM cost in embedded systems') around it. The BOM-dollars framing is a repositioning of an occupied product, not a new one, and the thesis rests on a price spike rather than a permanent change. Kept as the weaker sibling of ts-0141, which attacks the same signal at the point where the incumbents are structurally disqualified rather than one repositioning away.",
+   "kill_attempts_survived": 0
+  },
+  {
+   "id": "ts-0144",
+   "date": "2026-08-01",
+   "status": "killed",
+   "summary": "Microarchitectural side-channel discovery engine: apply the Mythos-style novel-structure search to find Spectre-class timing and leakage attacks in a specific chip design before tape-out, sold to the hyperscalers and startups now designing their own accelerators.",
+   "kill_reason": "The category was launched before I got to it. Caspia Technologies has shipped an RTL Security Analyzer explicitly marketed as 'agentic silicon security verification' (CODAx, GenAI-mapped RTL weakness patterns, DVCon and DAC 2026 presence) and states it is creating the agentic hardware-security-verification category; Cycuity's Radix holds the static-plus-dynamic security verification flank. The buyer set is also a few dozen design houses, so venture-scale is marginal even without the occupancy. Same square as the already-killed ts-0087.",
+   "kill_attempts_survived": 1
+  },
+  {
+   "id": "ts-0145",
+   "date": "2026-08-01",
+   "status": "killed",
+   "summary": "Fixed-price delivery underwriting engine for federal contractors: read the solicitation plus the government's entire public contract-modification and performance history, and price what a scope of work will actually cost, now that the April 30 2026 executive order makes firm-fixed-price the default across ~$775B/yr of federal procurement.",
+   "cross": {
+    "ai_signal": "Frontier long-context reasoning over a 300-page performance work statement plus millions of public FPDS/USAspending modification records, CPARS performance histories and GAO/DCAA findings - producing a probabilistic cost distribution rather than a rate build-up.",
+    "structural_signal": "Executive Order 'Promoting Efficiency, Accountability, and Performance in Federal Contracting' (2026-04-30) makes firm-fixed-price and performance-based contracts the default, restricts cost-reimbursement to senior-approved exceptions, and required every agency to renegotiate its ten largest cost-type contracts within 90 days - a deadline that fell on 2026-07-29, two days before this run. Execution and pricing risk moves wholesale onto contractors who spent sixty years building cost-plus muscle."
+   },
+   "kill_reason": "Textbook platform absorption - the pre-filter this project adopted on 07-28 should have stopped it before the kill check. Deltek owns Costpoint (the contractor's actual incurred-cost data), ProPricer (the industry-standard proposal pricing platform, acquired 2024) and GovWin, already ships AI agents inside them (Ask Dela, Narrative Scoring, agentic estimate cleanup, BOE justification) and Acumen for AI-driven schedule-risk discovery - and is *already publishing the exact marketing line* for this trigger ('FFP Contracts Don't Create Margin Risk. Bad Estimates Do.'). GovDash holds the proposal flank. Honest note for any revisit: the one asset Deltek does not hold is the cross-agency public outcome corpus (FPDS mods, CPARS, protest records) that would let a model learn how a given agency's scopes actually overrun - that part of the square is genuinely empty, it is just attached to a buyer relationship someone else owns.",
+   "kill_attempts_survived": 1
+  },
+  {
+   "id": "ts-0146",
+   "date": "2026-08-01",
+   "status": "killed",
+   "summary": "AI-native small-dollar mortgage originator: collapse the ~$11,000 fixed cost of originating a mortgage so loans under $100k pencil, riding the 21st Century ROAD to Housing Act's FHA small-dollar pilot.",
+   "kill_reason": "Real signal, occupied product. The structural half is genuinely strong and dated - the ROAD to Housing Act became law 2026-07-11 (first major federal housing law in three decades, 43 provisions), authorises an FHA small-dollar pilot with direct payments to lenders, directs the CFPB to fix the rules, and bans investors owning 350+ single-family homes from buying more; origination under $150k has fallen ~70% in twenty years and only about a third of homes under $100k are bought with a mortgage versus 80%+ above. But the product is an AI loan-origination stack, and that is a crowded field (Tavant TOUCHLESS, Copperlane, Casca, Lama AI, DigiFi, SecureLend, TurnKey Lender, plus Better and Rocket in-house). The venture-scale version requires becoming a lender - a balance-sheet business - and the trigger is a subsidised pilot the incumbents will chase with their existing stacks.",
+   "kill_attempts_survived": 1
+  },
+  {
+   "id": "ts-0147",
+   "date": "2026-08-01",
+   "status": "killed",
+   "summary": "Adversarial policy-wording exposure engine: read a carrier's entire in-force wording corpus and generate the coverage arguments a policyholder attorney would make against it, quantifying silent exposure before the next mass-loss theory lands.",
+   "kill_reason": "The incumbent authors the contract language. Verisk writes the ISO standard forms the market runs on and is actively drafting the AI exclusions themselves (CG 40 47, CG 40 48, CG 35 08 available to insurers from 2026-01-01, with agentic-AI exclusions under evaluation as of 2026-07-10) - so a carrier's response to wording uncertainty is to buy the endorsement, not the analytics. Cytora (Applied Systems) holds the agentic commercial-insurance workflow layer. The policyholder-side variant is advisory-shaped and structurally owned by the brokers (Marsh, Aon, WTW), and the carrier-side AI-exposure scoring is already this ledger's ts-0054.",
+   "kill_attempts_survived": 1
+  },
+  {
+   "id": "ts-0148",
+   "date": "2026-08-01",
+   "status": "killed",
+   "summary": "Automatic kernel and compiler generation for non-NVIDIA accelerators - break the CUDA moat by having a model generate, verify and tune device-specific kernels for any silicon, as hyperscaler capex hits $740B and every buyer wants a second source.",
+   "kill_reason": "Occupied at the exact wedge. Mako (formerly Makora) ships MakoGenerate, an agent that generates, compiles, validates and benchmarks GPU code autonomously and explicitly targets 'NVIDIA, AMD, or custom accelerators', and is building a self-optimising AI-native compiler; Luminal raised $5.3M seed for the compiler layer; AMD, Modular and the open-source compiler stack are converging on the same claim. 'Crossing the CUDA moat with AI kernels' is now a named, funded category with published market maps.",
+   "kill_attempts_survived": 1
+  },
+  {
+   "id": "ts-0149",
+   "date": "2026-08-01",
+   "status": "killed",
+   "summary": "Copper-retirement migration intelligence: discover what every legacy analogue phone line in an enterprise actually does (elevator phone, fire panel, alarm, SCADA telemetry) and orchestrate the cutover, as AT&T decommissions copper across ~500 wire centres and the UK PSTN switches off.",
+   "kill_reason": "Episodic buying event plus hardware incumbents. The FCC adopted rules accelerating copper retirement on 2026-03-27, AT&T began decommissioning ~500 wire centres in June 2026 and spends ~$6B/yr on the legacy network, and BT's PSTN retires 2027-01-31 - a real, dated, national forced migration. But it is a one-time cutover per site (the ts-0121 episodic failure mode), and the value capture belongs to the POTS-replacement device vendors already selling into it (Ooma AirDial, MarketSpark, DataRemote, Bullseye), not to a discovery layer. No recurring AI-native product survives the migration.",
+   "kill_attempts_survived": 1
+  },
+  {
+   "id": "ts-0150",
+   "date": "2026-08-01",
+   "status": "killed",
+   "summary": "Algorithm-discovery service for industrial combinatorial problems: evolve better heuristics and formulations for a customer's scheduling, routing or dispatch problem, verified against their own historical objective.",
+   "kill_reason": "Killed by the reference implementation being a platform owner's internal system given away as research. Google DeepMind's AlphaEvolve is in production across genomics, power grids, quantum computing, Google's own datacentre scheduling (0.7% of fleet-wide compute recovered) and external commercial workloads, with the method fully published. A startup here sells a worse copy of a free, better-resourced system - the ts-0130/ts-0139 pattern.",
+   "kill_attempts_survived": 0
+  },
+  {
+   "id": "ts-0151",
+   "date": "2026-08-01",
+   "status": "killed",
+   "summary": "AI fab scheduling / hidden-capacity engine - raise wafer throughput without new capex, at the moment memory and logic capacity is the binding constraint on the whole electronics economy.",
+   "kill_reason": "Occupied with a marquee partner. Flexciton sells exactly autonomous fab-wide planning and scheduling, is deployed full-fab replacing rules-based schedulers (reported throughput gains and a 75% reduction in manual flow-control transactions), markets 'uncovering hidden capacity without new capital investment', and has announced a partnership with Intel. Applied Materials, Siemens and INFICON hold the surrounding MES/APC layer.",
+   "kill_attempts_survived": 0
+  },
+  {
+   "id": "ts-0152",
+   "date": "2026-08-01",
+   "status": "killed",
+   "summary": "Continuous AI-vs-obfuscation hardening assurance for mobile banking and payments apps, on the thesis that frontier models dissolve the security-through-obscurity the ~$1-2B app-shielding industry rests on.",
+   "kill_reason": "The incumbents got there and published the research. Promon has released an 'App Threat Report 2026 Q1: The State of Code Obfuscation Against AI' and built its own PDB-LLM deobfuscation benchmark (200 programs including jailbreak, root, anti-debug and hook detection logic); Guardsquare, Digital.ai and Appdome hold the same layer; Elastic Security Labs publishes LLM-reversing-versus-LLM-obfuscation research. It is also this ledger's assurance-lab template again, sold to the party that already buys the defence from the incumbent.",
+   "kill_attempts_survived": 1
   }
  ]
 }
