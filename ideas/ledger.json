@@ -329,7 +329,7 @@
       },
       "kill_attempts_survived": 2,
       "brief": "ideas/briefs/0011-dod-autonomy-assurance-harness.md",
-      "revalidation": "2026-07-25 first re-check since 06-18: SURVIVES, and the why-now materially STRENGTHENED - this is the run's biggest held-book upgrade. The FY2026 defense budget gives AI and autonomous systems a $13.4B standalone budget line for the first time ever (RDT&E Defense-Wide is $35.2B), and the Pentagon's AI Acceleration Strategy (2026-01-09) directs the department to become an 'AI-first' warfighting force through seven Pace-Setting Projects. Critically, DoD is now funding the exact capability rather than merely wanting it: DTE&A has funded researchers to build a framework for structuring and executing assurance cases for autonomous systems and to work out the TEV&V implications, and there is a live DoD SBIR topic 'Runtime Assured Autonomy for AI-Driven Unmanned Platforms' ($250k Phase I / $2M Phase II). Novelty caution: the SBIR route invites many small entrants and FFRDCs plus the primes (Anduril ~$28B, Shield AI ~$5B) do their own T&E, but independence from the system builder is the structural requirement no prime can satisfy. Status new->watching; brief written this run (0011). | 2026-07-28 note (no re-check run; incidental signal): the why-now hardened again on two dated fronts. YC's Fall 2026 RFS (applications closed 2026-07-27) carries 'The Future of American Defense' authored by the sitting US Secretary of the Army - the first time a serving service secretary has written a YC request - which puts defense autonomy at the centre of the batch the operator would apply to. Separately, the 2026-07-20 executive order 'Securing America's Defense Supply Chains and Ensuring Domestic Acquisition of Critical Materials' confirms defense-industrial policy is still escalating at EO level. Novelty caution unchanged and now slightly worse: a YC RFS naming defense guarantees Fall-2026 entrants aimed at this area."
+      "revalidation": "2026-07-25 first re-check since 06-18: SURVIVES, and the why-now materially STRENGTHENED - this is the run's biggest held-book upgrade. The FY2026 defense budget gives AI and autonomous systems a $13.4B standalone budget line for the first time ever (RDT&E Defense-Wide is $35.2B), and the Pentagon's AI Acceleration Strategy (2026-01-09) directs the department to become an 'AI-first' warfighting force through seven Pace-Setting Projects. Critically, DoD is now funding the exact capability rather than merely wanting it: DTE&A has funded researchers to build a framework for structuring and executing assurance cases for autonomous systems and to work out the TEV&V implications, and there is a live DoD SBIR topic 'Runtime Assured Autonomy for AI-Driven Unmanned Platforms' ($250k Phase I / $2M Phase II). Novelty caution: the SBIR route invites many small entrants and FFRDCs plus the primes (Anduril ~$28B, Shield AI ~$5B) do their own T&E, but independence from the system builder is the structural requirement no prime can satisfy. Status new->watching; brief written this run (0011). | 2026-07-28 note (no re-check run; incidental signal): the why-now hardened again on two dated fronts. YC's Fall 2026 RFS (applications closed 2026-07-27) carries 'The Future of American Defense' authored by the sitting US Secretary of the Army - the first time a serving service secretary has written a YC request - which puts defense autonomy at the centre of the batch the operator would apply to. Separately, the 2026-07-20 executive order 'Securing America's Defense Supply Chains and Ensuring Domestic Acquisition of Critical Materials' confirms defense-industrial policy is still escalating at EO level. Novelty caution unchanged and now slightly worse: a YC RFS naming defense guarantees Fall-2026 entrants aimed at this area. | 2026-08-06 note (no re-check run; incidental signal): the 2026 Iran war - outbreak 2026-02-28, Strait of Hormuz closed 2026-03-04, an Iranian strike on Ras Laffan removing ~17% of Qatar's LNG export capacity, and what the IEA calls the largest supply disruption in the history of the global oil market - is the first state-on-state war of the frontier-AI era and will pull hard on autonomous-systems fielding decisions and their assurance gates. Directionally supportive of the why-now; novelty caution from the 2026-07-28 note (YC Fall 2026 RFS naming defense, plus the SBIR route inviting many small entrants) is unchanged."
     },
     {
       "id": "ts-0033",
@@ -1465,7 +1465,8 @@
         "composite": 4.5
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0012-evidence-constrained-reconstruction-engine.md"
+      "brief": "ideas/briefs/0012-evidence-constrained-reconstruction-engine.md",
+      "revalidation": "2026-08-06 incidental hardening (no full re-check run): the casualty-severity backdrop strengthened. There were 135 nuclear verdicts in 2024, up 52% year on year, totalling over $31B in awards; US insurers added $16B to prior-year liability reserves in 2024; and capacity for US-exposed casualty risk remains constrained by social inflation, litigation funding and aggressive plaintiff strategy. Rising stakes per physical-fact dispute raise willingness to pay for a defensible reconstruction of what actually happened. A separate reserving-side idea generated from the same signal (ts-0166) was killed as occupied, which leaves the reconstruction wedge intact."
     },
     {
       "id": "ts-0134",
@@ -1573,7 +1574,8 @@
         "composite": 4.3
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0013-firmware-rehosting-engine.md"
+      "brief": "ideas/briefs/0013-firmware-rehosting-engine.md",
+      "revalidation": "2026-08-06 incidental hardening (no full re-check run): the memory signal underneath this idea got materially worse, which strengthens the why-now. DRAM spot prices are up nearly 700% year on year (Bloomberg, July 2026); Samsung, SK Hynix and Micron - over 95% of global DRAM - have systematically reallocated capacity to HBM for AI accelerators; Intel CEO Lip-Bu Tan says there is 'no relief until 2028' and IDC puts meaningful supply relief at 2027-28 when new fabs come online; Samsung raised 32GB DDR5 modules from $149 to $239 and DDR5 contract pricing more than doubled. The downstream damage is now visible in shipped product: Apple raised prices across iPad, Mac, HomePod, Vision Pro and Apple TV effective immediately on 2026-06-25 (shares fell over 6%), smartphone shipments are forecast down 12.9% and PCs down 11.3% for 2026. A two-year forced-obsolescence window on shipped embedded designs is now the consensus industry view rather than a spike thesis. Companion idea ts-0172 (on-device memory-budget deployment compiler) was generated and killed this run, reconfirming that the adjacent framings are occupied while this one is not."
     },
     {
       "id": "ts-0142",
@@ -1766,6 +1768,114 @@
       "summary": "Verified-discovery lab: point Astra-class models that produce machine-checkable Lean proofs at high-value industrial and scientific open problems, and sell the proven results.",
       "kill_reason": "Occupied by dedicated companies before the capability was even a week old. Axiom Math's AxiomProver autonomously produced complete Lean-verified proofs of four previously unsolved problems in early 2026; Math Inc.'s Gauss formalised the strong Prime Number Theorem and the 24-dimensional sphere-packing proof; OpenAI's own Astra debut (2026-08-01, ten open problems, Lean proofs on GitHub, Gowers endorsing one for Annals) means the lab is the competitor. The picks-and-shovels version - build formal environments and verifiable rewards so discovery can be aimed at applied domains - is ledger duplicate ts-0035.",
       "kill_attempts_survived": 1
+    },
+    {
+      "id": "ts-0165",
+      "date": "2026-08-06",
+      "status": "killed",
+      "summary": "Consent-underwriting engine for discretionary siting: predict, parcel by parcel, the probability and time-to-approval of a local land-use decision from the full record of local politics (planning-commission minutes, comment letters, local media, election results, opposition-group activity), then generate the specific benefit package that flips a given board - sold first to data-center site selection, then to all infrastructure siting.",
+      "cross": {
+        "ai_signal": "Cheap long-context inference (GPT-5.6 Luna at $0.20/M input tokens) makes it economically possible to read every planning-commission transcript, comment letter and local news item for thousands of US jurisdictions - a corpus no team could previously touch.",
+        "structural_signal": "Data-center consent collapsed in 2026: 75+ projects worth ~$130B blocked or delayed in Q1 alone (a record), 833 active opposition groups across 49 states (more than doubled), 300+ state bills in the first six weeks of the year, 69 local bans by May, and Gallup at 71% local opposition. Developers must now 'price community consent into siting.'"
+      },
+      "kill_reason": "Occupied by two named players, one of which already killed a prior ledger entry. Transect sells site assessment built on 'expert-curated environmental, permitting, and community sentiment data' - community sentiment is the literal variable, already productised as a data layer. Paces publishes 'Pre-Development at Scale: Modeling Risk in Early-Stage Solar Development' and was the occupant that killed ts-0022. BRG and Carbon Direct sell the consulting version (NIMBY siting risk, 'Community Opposition to AI Data Centers: Lessons Learned', June 2026), and Area Development ran 'Community Risk Can Kill a Project Before It Breaks Ground' in Q2 2026. The diagnosis is industry marketing copy; the square is claimed.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0166",
+      "date": "2026-08-06",
+      "status": "killed",
+      "summary": "Claim-level reserve intelligence for casualty carriers: read every open claim file (adjuster notes, medical records, depositions, plaintiff-firm identity, venue, litigation-funder fingerprints) and produce a per-claim distribution of ultimate loss, so a carrier reserves bottom-up rather than from aggregate triangles and reinsurers can price adverse-development covers.",
+      "cross": {
+        "ai_signal": "Long-horizon parallel agents (GPT-5.6 Sol Ultra at 91.9% on parallelizable long-horizon work) make it possible to run a week-long investigation on each of 200,000 open claim files concurrently.",
+        "structural_signal": "US casualty reserve inadequacy became acute: insurers added $16B to prior-year liability reserves in 2024, there were 135 nuclear verdicts in 2024 (+52% YoY) totalling over $31B, and capacity for US-exposed casualty risk is constrained by social inflation and litigation funding."
+      },
+      "kill_reason": "Thesis is published, productised and academically settled. Lawdify markets exactly this ('Why Reserve Estimation Is the Quietest, Most Consequential AI Use Case in Motor Insurance' - per-claim development predictions aggregated bottom-up and reconciled against traditional triangles); individual-claim reserving is an established actuarial research line (Schneider et al., hybrid neural network for individual claim development, Journal of Risk and Insurance 2025); CLARA Analytics already does subrogation and nuclear-verdict prediction and was the occupant that killed ts-0091, with Gradient AI and Charlee.ai alongside. Secondary flaw: the statement of actuarial opinion is a credential-bound, explainability-constrained artefact - the ts-0122/ts-0134 standards-bound failure mode.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0167",
+      "date": "2026-08-06",
+      "status": "killed",
+      "summary": "Marine war-risk capacity-unlocking engine: price and bind a single transit in seconds against live conflict intelligence, and compute an underwriter's remaining reinsurance-treaty headroom in real time across a book of thousands of moving vessels, on the thesis that Gulf capacity collapsed from an inability to measure aggregation rather than a lack of capital.",
+      "cross": {
+        "ai_signal": "Frontier multimodal reasoning over live AIS, satellite, ownership-graph and attack telemetry can characterise a single voyage's exposure at machine speed, against a risk picture that changes hourly.",
+        "structural_signal": "The Hormuz closure (2026-03-04, after the 2026-02-28 outbreak of the Iran war) collapsed marine war-risk capacity for a single VLCC transit from $2-3B to $500M-$1.5B; hull insurers and P&I clubs cancelled cover because their reinsurers withdrew; Munich Re, Swiss Re and Hannover Re imposed Gulf aggregation sub-limits; Lloyd's launched a new war-risk consortium (2026-06-19) and the US DFC stood up a maritime reinsurance facility at $20B, doubled to $40B in two weeks with Chubb as lead."
+      },
+      "kill_reason": "Occupied on both halves, and fails the venture-scale gate independently. Concirrus ships 'risk aggregation tools for hull, cargo and liability' on an AI-driven specialty underwriting platform; Windward launched a marine insurance suite giving underwriters behavioural intelligence and continuous near-real-time exposure visibility, and published 'Marine Insurance in 2026: Pricing Risk in a Changed Ocean' against this exact crisis. Portfolio exposure aggregation is separately an established insurance-software category (Verisk Sequel, Moody's RMS ExposureIQ). And the marine war-risk premium pool is low single-digit billions even at crisis pricing, against a buyer set of a few dozen syndicates and clubs - the concentrated-buyer failure mode.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0168",
+      "date": "2026-08-06",
+      "status": "killed",
+      "summary": "Contract-portfolio event-exposure engine: build an executable obligation model of every contract a company holds, then simulate a world event against the whole book to compute the net position - which force-majeure clauses trigger, which notice deadlines run, which price reopeners open, what is owed to whom - because today firms discover their position by being sued.",
+      "cross": {
+        "ai_signal": "Multi-day autonomous agents (Qwen3.8-Max, GA 2026-08-03, completing 10+ day projects with continuously revised plans) can construct and maintain a formal obligation model per contract rather than extracting metadata into CLM fields.",
+        "structural_signal": "2026 invalidated a whole population of commercial contracts at once: the Hormuz closure and the Suez-to-Cape reroute broke routing assumptions, QatarEnergy declared and repeatedly extended force majeure on long-term LNG contracts (Italy, Belgium, South Korea, China; extended 2026-07-28 toward mid-October), the memory shortage triggered allocation and FM clauses across electronics supply agreements, and the tariff regime did the same in 2025-26."
+      },
+      "kill_reason": "Killed by the market leader publishing the idea against the identical signal. Icertis published 'How Artificial Intelligence Transforms Contract Management Amid Global Supply Chain Disruptions' keyed explicitly to the Strait of Hormuz force-majeure crisis, describing 'thousands of affected agreements, cascading obligation triggers, and force majeure notices from multiple counterparties,' and ships Vera Analytics Advanced to prompt an entire contract portfolio and get answers in minutes. Luminance, Sirion, Evisort/Workday and Harvey hold the rest. When the incumbent's marketing page is the pitch deck, the square is claimed.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0169",
+      "date": "2026-08-06",
+      "status": "killed",
+      "summary": "LNG long-term contract position engine: a hybrid legal-econometric model that determines a buyer's or seller's live force-majeure, destination-flexibility, volume make-up and price-review position across a portfolio of long-term LNG sale-and-purchase agreements now being renegotiated en masse for the first time since the 1970s.",
+      "cross": {
+        "ai_signal": "Frontier models can hold the hybrid problem an LNG price review actually is - contractual construction plus econometric evidence about market conditions in the buyer's market - which neither a law firm nor a trading analytics vendor spans alone.",
+        "structural_signal": "An Iranian strike on Ras Laffan removed roughly 17% of Qatar's LNG export capacity (~$20B/yr of revenue); QatarEnergy declared force majeure on long-term contracts and extended it repeatedly toward mid-October 2026; the 33 Mtpa North Field East expansion halted; TTF more than doubled to above EUR 61/MWh and JKM passed $25/MMBtu, with cargoes diverting from Europe to Asia."
+      },
+      "kill_reason": "Fails the venture-scale gate on buyer structure and is subsumed by ts-0168's occupant. There are a few hundred long-term LNG counterparties worldwide and a price review is an episodic, once-in-a-decade event per contract - the ts-0051/ts-0090/ts-0111 concentrated-episodic-buyer failure mode - while the general portfolio layer is already Icertis's. Real dislocation, no venture-scale company in it.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0170",
+      "date": "2026-08-06",
+      "status": "killed",
+      "summary": "Construction schedule-feasibility and labor-supply underwriting for the buildout: forecast whether the crews for a given trade, county and month will physically exist, and price the resulting schedule risk for the owner, lender or surety rather than the contractor.",
+      "cross": {
+        "ai_signal": "Long-horizon agents plus cheap exhaustive reading over local labor, permit, wage and project-pipeline records could build a bottom-up model of trade-level crew supply that no aggregate BLS series captures.",
+        "structural_signal": "US construction must add 349,000 net new workers in 2026 and 456,000 in 2027 against a ~500,000-worker gap; immigrants are 34% of the workforce and over 60% in drywall, roofing and plastering, under active enforcement; and $86B of data-center construction alone accounts for ~296,700 jobs, roughly 85% of the entire industry's workforce need for the year - meaning the AI buildout is consuming essentially all net new US construction labor."
+      },
+      "kill_reason": "Occupied by named schedule-risk incumbents. nPlan applies machine learning to construction schedules across thousands of past projects to predict delay and identify schedule risk; ALICE Technologies does simulation-based schedule optimisation; Buildots does progress-linked scheduling; Autodesk Construction IQ covers predictive risk. 2026 coverage already describes schedules as 'living plans that adjust to weather, equipment status, deliveries and crew availability.' The labor-supply framing is a repositioning of an occupied product. The structural fact - that data centers absorb 85% of the industry's annual worker intake - remains the most under-narrated signal of this run and is logged for reuse.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0171",
+      "date": "2026-08-06",
+      "status": "killed",
+      "summary": "Household energy-affordability orchestration engine: for every household in arrears, jointly optimise across ~30 assistance, tariff, arrearage-forgiveness and weatherization programs using its actual metered load, then enrol it automatically - sold to utilities as arrears converted to cash instead of disconnection.",
+      "cross": {
+        "ai_signal": "Cheap high-volume inference plus per-household load disaggregation makes a genuinely per-household joint optimisation feasible at 90M-household scale, where program eligibility is today decided by static rules.",
+        "structural_signal": "The 2026 utility affordability revolt: $18.6B of rate-increase requests in H1 2026 alone (against $29B for all of 2025), residential rates up ~10.2% year on year, 94.9M final disconnection notices issued in 2024 with 13.4M households actually cut off, and roughly $25B of household arrears projected by end-2026."
+      },
+      "kill_reason": "Occupied by an incumbent shipping the exact decision hierarchy, and the buyer has no incentive. Bidgely sells an AI-powered affordability product for utilities with personalised multilingual outreach across email, SMS, web and print and an explicit decision hierarchy - arrears management first for accounts at disconnect risk, rate assistance second for high energy burden, weatherization third, electrification rebates fourth. Independently, regulated utilities recover uncollectibles through rates, so the party holding the arrears does not bear the loss; willingness to pay sits with state programs and advocates, not a commercial buyer.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0172",
+      "date": "2026-08-06",
+      "status": "killed",
+      "summary": "On-device memory-budget deployment compiler: automatically derive, for a given model plus a given system-on-chip memory budget and latency target, a bespoke deployment (mixed precision, sparsity, layer offload, KV-cache policy, OS-level scheduling), because every phone and PC maker has committed to on-device AI features requiring 12-24GB of RAM exactly as RAM became unobtainable.",
+      "cross": {
+        "ai_signal": "70B-parameter models now run fully on-device on the A20 Bionic and Snapdragon 8 Gen 5, so the deployment target is a hard, per-device memory budget rather than a datacentre.",
+        "structural_signal": "DRAM spot prices rose nearly 700% year on year (Bloomberg, July 2026) as Samsung, SK Hynix and Micron - over 95% of global DRAM - reallocated capacity to HBM for AI accelerators; Intel's CEO says there is 'no relief until 2028'; smartphone shipments are forecast down 12.9% and PCs down 11.3% in 2026; Apple raised prices across its entire hardware line on 2026-06-25."
+      },
+      "kill_reason": "Occupied by the silicon vendors themselves plus the model-optimisation category. Qualcomm AI Hub and Apple Core ML ship first-party on-device deployment toolchains for exactly these SoCs; Neural Magic (Red Hat), Deci (NVIDIA), Nota AI and the llama.cpp ecosystem hold the independent layer; and this is the ts-0143 shape - a repositioning of AI-driven code/model optimisation around a price spike rather than a permanent change. Kept as the weaker sibling of ts-0141, which attacks the same memory signal where incumbents are structurally disqualified.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0173",
+      "date": "2026-08-06",
+      "status": "killed",
+      "summary": "Dual-scarcity cooling arbitrage controller for data centers: switch a facility between water-based and dry cooling in real time against two independent local scarcity signals - grid stress and municipal water-system stress - so the site is never the marginal consumer of whichever resource the community is short of.",
+      "cross": {
+        "ai_signal": "Frontier forecasting over grid conditions and a municipal water system the operator does not own, jointly optimised against a facility's thermal state, is a genuinely hard multi-system control problem.",
+        "structural_signal": "Water became the second front of the data-center backlash: seven in ten Americans oppose local data centers with water use a top concern; three companies secured multi-million-gallon-per-day supplies in Virginia, Louisiana and Indiana in February 2026 alone with water infrastructure cost approaching $1B; peak cooling demand could need 697M-1.45B additional gallons per day within four years; Illinois is considering mandating water-efficient cooling; and Google began pushing industry water standards (2026-06-03)."
+      },
+      "kill_reason": "Ledger duplicate of the killed ts-0056 (compute-flexibility orchestration against grid-stress signals) with a water axis added, and the buyer builds it. Wet-versus-dry is largely a build-time mechanical design decision rather than a live control knob, the hyperscalers are organising the response themselves (Google pushing water standards), and the AEI critique that the water fight is a distraction from the grid fight undercuts the willingness to pay.",
+      "kill_attempts_survived": 0
     }
   ]
 }
