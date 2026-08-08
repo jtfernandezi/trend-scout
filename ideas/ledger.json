@@ -536,7 +536,7 @@
     {
       "id": "ts-0054",
       "date": "2026-06-25",
-      "status": "new",
+      "status": "watching",
       "summary": "Correlated-AI-failure catastrophe/accumulation model + per-insured AI-exposure score for primary P&C carriers: maps the foundation-model dependency graph across a carrier's whole commercial book (CGL/D&O/E&O/professional) and simulates the joint loss when thousands of insureds relying on the same few models/agents fail at once, so carriers can move from blanket AI exclusion to selectively pricing the fastest-growing exposure in the economy.",
       "cross": {
         "ai_signal": "Frontier models can now map which foundation models, vendors and agents each insured business depends on and characterize how those systems fail, then simulate correlated/cascading non-malicious AI-error scenarios across an economy of insureds - producing a joint loss distribution. Classical CAT/actuarial models assume independent risks and structurally cannot capture this correlation; the industry itself flags that 'current methods do not measure whether failures could be correlated across multiple insureds simultaneously' - the same independent-rate blind spot that broke pandemic-BI and that made ts-0048 AI-native.",
@@ -556,7 +556,7 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0006-ai-peril-cat-model.md",
-      "revalidation": "2026-07-21 kill-or-commit re-check: SURVIVES but novelty softening. Still no productized independent correlated-AI-failure accumulation model for primary carriers - so the product wedge remains open. BUT the thesis is now widely-published broker/academic copy: Gallagher Re 'identifies systemic risk from AI model failures,' Swiss Re sigma 07/2026, and arXiv papers ('The Insurability Frontier of AI Risk,' 'Your SaaS Is an Insurance Product') all articulate the '80% depend on 3 foundation providers -> correlated accumulation the classical CAT model can't price' framing. Acknowledgment != a built product, so it is not yet occupied, but the novelty score is eroding as the framing commoditizes - a funded entrant is now more likely than at 06-25. Recommend watching closely; commit before the copy becomes a company."
+      "revalidation": "2026-07-21 kill-or-commit re-check: SURVIVES but novelty softening. Still no productized independent correlated-AI-failure accumulation model for primary carriers - so the product wedge remains open. BUT the thesis is now widely-published broker/academic copy: Gallagher Re 'identifies systemic risk from AI model failures,' Swiss Re sigma 07/2026, and arXiv papers ('The Insurability Frontier of AI Risk,' 'Your SaaS Is an Insurance Product') all articulate the '80% depend on 3 foundation providers -> correlated accumulation the classical CAT model can't price' framing. Acknowledgment != a built product, so it is not yet occupied, but the novelty score is eroding as the framing commoditizes - a funded entrant is now more likely than at 06-25. Recommend watching closely; commit before the copy becomes a company. | 2026-08-08 incidental update (no new search, evidence surfaced while killing ts-0178): the correlated-agent-failure frequency assumption underneath this idea hardened materially. OWASP's 2026 report puts prompt injection up 340% year on year and formally unsolved, and a 2026 enterprise survey has 88% of organisations reporting confirmed or suspected AI-agent security incidents in the past year. That is the loss-frequency half of the thesis moving from projection to observed base rate, and it is correlated by construction because the injected surface is the shared foundation-model and tool layer. Status new -> watching. Novelty caution from 2026-07-21 is unchanged and still the binding risk."
     },
     {
       "id": "ts-0055",
@@ -1875,6 +1875,123 @@
         "structural_signal": "Water became the second front of the data-center backlash: seven in ten Americans oppose local data centers with water use a top concern; three companies secured multi-million-gallon-per-day supplies in Virginia, Louisiana and Indiana in February 2026 alone with water infrastructure cost approaching $1B; peak cooling demand could need 697M-1.45B additional gallons per day within four years; Illinois is considering mandating water-efficient cooling; and Google began pushing industry water standards (2026-06-03)."
       },
       "kill_reason": "Ledger duplicate of the killed ts-0056 (compute-flexibility orchestration against grid-stress signals) with a water axis added, and the buyer builds it. Wet-versus-dry is largely a build-time mechanical design decision rather than a live control knob, the hyperscalers are organising the response themselves (Google pushing water standards), and the AEI critique that the water fight is a distraction from the grid fight undercuts the willingness to pay.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0174",
+      "date": "2026-08-08",
+      "status": "killed",
+      "summary": "Remote-operator marketplace and correction-data flywheel for consumer embodied AI: a global pool of trained teleoperators who take over when a home humanoid hits the 30-40% of tasks it cannot do autonomously, staffed from the underemployed-graduate pool, with every human intervention becoming cross-fleet training data.",
+      "cross": {
+        "ai_signal": "Home humanoids shipped to consumers in 2026 at roughly 60-70% autonomy, so the human-in-the-loop fallback is not a temporary scaffold but the product's operating architecture; the interventions are the highest-value robot-learning data in existence because they are precisely the distribution the policy fails on.",
+        "structural_signal": "1X NEO began consumer deliveries in 2026 at $20,000 with explicit remote human assistance, and Zeroth Robotics launched a five-robot consumer/commercial lineup at CES 2026 - against recent-graduate underemployment of 41.5% in Q1 2026 and entry-level jobs disappearing at the worst rate in 37 years, i.e. a large pool of capable people whose cognitive entry rung was just automated but whose embodied judgement was not."
+      },
+      "buyer": "Beachhead: consumer humanoid OEMs (1X, Zeroth) and premium home-service operators needing 24/7 sub-second human fallback they cannot economically staff themselves. Expansion: every embodied product that ships with an autonomy gap - a 'Twilio for physical fallback' plus the cross-embodiment intervention corpus.",
+      "kill_reason": "Occupied by a funded startup with the identical thesis. Adamo came out of stealth in 2025 selling exactly managed teleoperation-as-a-service: a global network of trained teleoperators, sub-40ms teleop software, recruiting/training/24-7 shift coverage from purpose-built control facilities, explicitly positioned as managed-versus-in-house for 2026. JUMPWatts (last-mile fleets), OBI Services (commercial fleets) and Cogito Tech (robotics teleoperation) hold the rest of the layer, and the hybrid architecture is already described as the industry's standing practice. Secondary: ledger adjacency to the killed ts-0036 (teleoperation/egocentric training-data foundry), and the OEMs run their own operator pools in-house today.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0175",
+      "date": "2026-08-08",
+      "status": "killed",
+      "summary": "Binding-price underwriting for local services: a multimodal model that turns a consumer's photos of a job into a firm, guaranteed price a shopping agent can transact against immediately, with the underwriter eating the overrun - making services purchasable by agents for the first time.",
+      "cross": {
+        "ai_signal": "Frontier multimodal reasoning can price a physical job from photographs well enough to take the overrun risk, which converts a human-quoted estimate into an underwritable instrument.",
+        "structural_signal": "Agentic commerce rails went live for catalogue goods in 2026 (OpenAI/Stripe ACP across 1M+ Shopify merchants, Google's Universal Commerce Protocol at NRF January 2026, Stripe/Tempo MPP on 2026-03-18, x402 at ~165M agent transactions), and Google now has consumers' agents phone local businesses in home repair, beauty and pet care - but services have no catalogue, no price and no availability, so agent conversion runs 86% worse than affiliate."
+      },
+      "buyer": "Beachhead: home repair - the exact category Google named - where a consumer's agent needs a firm number now. Expansion: the whole US consumer local-services economy, then the settlement and guarantee rail for agent-purchased services.",
+      "kill_reason": "Occupied at the estimating layer and economically pre-refuted at the binding layer. QuoteIQ ships AI photo estimating with instant homeowner-facing pricing, deposit and booking from $29.99/mo; QuotrPro generates proposals with real-time local prices from job-site photos; Priceguide sells embedded instant estimators from $19/mo. The genuinely differentiated part - a binding price - requires controlling fulfilment, which makes it the Handy/Angi fixed-price model whose unit economics have already failed twice: quote variance across contractors is the contractor's margin, and absorbing it converts a software business into a low-margin labour business.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0176",
+      "date": "2026-08-08",
+      "status": "killed",
+      "summary": "Consumer-agent demand-aggregation marketplace: a venue where a consumer's agent posts a credibly committed intent to buy and merchant agents bid against each other in real time, inverting agentic commerce from agent-shops-on-merchant-terms to a true reverse auction.",
+      "cross": {
+        "ai_signal": "Personal agents that can hold a budget, a spec and a commitment, and evaluate dozens of structured counter-offers in seconds, make a consumer-side reverse auction executable rather than a form-filling exercise.",
+        "structural_signal": "Millions of consumers now run persistent personal agents (OpenClaw past 250,000 GitHub stars and millions of users by mid-2026; ChatGPT at 900M weekly actives), and the payment rails to let those agents actually commit exist as of 2026."
+      },
+      "buyer": "Beachhead: high-consideration consumer purchases where price dispersion is wide and specs are structured. Expansion: all consumer categories, then take rate on committed demand.",
+      "kill_reason": "The concept is already 2026 industry boilerplate rather than an insight - agentic-commerce trend coverage describes buyer agents initiating reverse auctions where dozens of seller bots bid in real time as a current pattern, and the mechanics are productised in B2B procurement (Zycus, Briskon, Procol). Ledger adjacency to the killed ts-0072 (merchant-side agentic counter-offer layer). Independently fatal: the supply side has no reason to join a venue whose entire function is margin compression, so the marketplace has no cold-start value proposition for sellers.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0177",
+      "date": "2026-08-08",
+      "status": "killed",
+      "summary": "Premium-savings-financed home hardening: per-structure AI underwriting of which specific mitigations actually move a given home's insurance premium, then pay for and install them in exchange for a share of the savings - an energy-services-company model applied to the homeowners insurance repricing.",
+      "cross": {
+        "ai_signal": "Per-structure multimodal risk assessment can predict which discrete mitigation on this specific building changes this specific carrier's rate, which is what makes the savings share underwritable rather than a guess.",
+        "structural_signal": "US homeowners insurance is up about 46% since 2021 - roughly three times inflation - reaching about $3,057 in 2026, with premiums rising in 95% of US ZIP codes between 2021 and 2024. This is a national household-budget line, not a coastal niche, and carriers have begun granting explicit hardening discounts."
+      },
+      "buyer": "Beachhead: homeowners in newly repriced non-coastal ZIPs facing a renewal increase they cannot absorb. Expansion: every insured structure, then the mitigation-verification rail carriers underwrite against.",
+      "kill_reason": "Killed by Stand Insurance, which does the whole thing: it coordinates home-hardening work, connects homeowners with contractors, installs sensors, and finances the cost of mitigation, as a reciprocal that also carries the risk. Faura already sells structure-level survivability assessment feeding discounts and grants, and Delos pushes personalised hardening advice off satellite and structure data as risk changes. Ledger adjacency to the killed ts-0011 (mitigation-evidence dossier) and ts-0016 (AI-native climate-property insurer).",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0178",
+      "date": "2026-08-08",
+      "status": "killed",
+      "summary": "Underwritten safety layer for consumer personal agents: a supervisory model that watches a personal agent's live trajectory on a consumer's own machine, gates irreversible actions, and indemnifies the user against loss when the agent is hijacked - sold as a consumer subscription rather than as security software.",
+      "cross": {
+        "ai_signal": "Detecting that an agent has been turned against its principal is a trajectory- and intent-reasoning problem a signature engine cannot do; it requires a model supervising a model, and the guarantee requires modelling agent failure well enough to price it.",
+        "structural_signal": "Prompt injection is up 340% year on year (OWASP 2026) and is formally unsolved, 88% of organisations reported confirmed or suspected agent security incidents in the past year - and OpenClaw simultaneously put agents with shell, file, email and credential access on millions of ordinary consumer machines, a defenceless attack surface that did not exist eighteen months ago."
+      },
+      "buyer": "Beachhead: the self-hosted personal-agent power user running an agent against real money and real accounts. Expansion: bundled consumer security, a market where Norton/McAfee-class incumbents earn billions.",
+      "kill_reason": "Substantively a ledger duplicate of the killed ts-0058 (AI-agent liability insurance carrier/MGA) with the buyer moved from enterprise to consumer, and pre-dead by the platform-owner rule: sandboxing, permission scoping and action gating are core runtime features that OpenClaw, Apple, Google, Anthropic and OpenAI ship themselves and give away. Enterprise agent-security vendors (Palo Alto Prisma AIRS 3.0 from March 2026, Lasso, Nightfall) hold the technical layer and descend down-market. Consumer security is also historically sold through OEM bundling and renewal inertia rather than proactive purchase, so the beachhead is the hardest segment to monetise, not the easiest.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0179",
+      "date": "2026-08-08",
+      "status": "killed",
+      "summary": "The agent-operated business as a franchised product: sell an individual a turnkey business in which agents run fulfilment, support, bookkeeping, marketing and compliance, and the human supplies judgement, local presence and legal accountability - franchising where the operations manual is executable rather than a binder.",
+      "cross": {
+        "ai_signal": "Multi-day autonomous agency plus collapsing token prices means an executable operations manual can actually run a small business end to end, not just advise on it.",
+        "structural_signal": "Recent-graduate underemployment at 41.5% and the worst entry-level hiring market in 37 years have created a large pool of capable people with no employment rung, against a US franchising sector of roughly $900B."
+      },
+      "buyer": "Beachhead: the underemployed graduate or displaced junior professional with capital access but no job. Expansion: the full franchising market, then the operating layer beneath it.",
+      "kill_reason": "The category is already commercialised - 'AI franchise opportunities' are an active 2026 sales category, and franchise-sector coverage already articulates the exact governance framing (who is accountable when an agent misfires in an independently owned unit, who owns the data) as the industry's live 2026 question. The serious, well-capitalised version of the same thesis is the AI roll-up, and that square is contested by balance sheets rather than products: Elad Gil's own-the-asset playbook, General Catalyst's Long Lake at roughly $670M raised and $100M EBITDA in under two years, and Emergence's published AI-native services playbook. Adverse selection is also structural - the buyer segment attracted to a turnkey automated business is the segment already saturated by low-quality operators.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0180",
+      "date": "2026-08-08",
+      "status": "killed",
+      "summary": "AI-native chartered trust company: be the trustee rather than sell the trustee software - continuously read the instrument, adjudicate distribution requests against discretionary standards, account, and communicate with beneficiaries, charging AUM fees against a cost base a bank trust department cannot match.",
+      "cross": {
+        "ai_signal": "The genuine capability delta of 2026 is multi-day autonomy - agents that hold a goal across weeks - which makes persistent low-intensity vigilance nearly free for the first time. A trustee's job is almost entirely persistent vigilance plus bounded discretionary judgement, the exact shape that just repriced.",
+        "structural_signal": "The largest intergenerational wealth transfer in history: roughly $2.5T of inheritances flowing annually today, growing past $3T by 2030, with over $100T expected to move through trusts and estates - administered by corporate trustees charging 1-2% of assets and running on PDFs, email chains and institutional memory."
+      },
+      "buyer": "Beachhead: the individual trustee or family drowning in an administration a bank quoted 1% to run badly. Expansion: AUM-based fees across the transfer wave; $100B of assets under administration is a $1B company.",
+      "kill_reason": "Killed by Axiom Trust in the idea's own words. Axiom emerged from stealth in March 2026 with $11.8M led by Lightspeed, describing itself as the first AI-native trust company, combining regulated fiduciary services with software that parses trust instruments, structures the data, monitors trust activity and generates reporting - explicitly framed around the Great Wealth Transfer and around AI interpreting beneficiaries, distribution standards and trustee discretion at professional accuracy. ProTrustee launched an AI trust-administration platform in May 2026; Fi-Tek, Wealth.com ($65M) and Vanilla hold the adjacent planning layer. This was derived this run from a pure capability lens with no wealth-management input and still landed on a five-month-old company using the identical phrase.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0181",
+      "date": "2026-08-08",
+      "status": "killed",
+      "summary": "AI-native debt buyer: buy consumer paper and collect it with patient agents rather than call centres, on the thesis that an agent that can afford to negotiate individually and indefinitely with every single debtor produces a recovery rate no human shop can match - so the AI edge shows up as asset-level alpha, not as a software fee.",
+      "cross": {
+        "ai_signal": "Cheap multi-day agency makes unlimited patient individual negotiation economic at a per-account value where a human minute has never been affordable; recovery rate becomes a model-quality output.",
+        "structural_signal": "The K-shaped economy is loading household balance sheets - lower-income base spending declining, 4.8 million newly uninsured after the ACA subsidy cliff with a $7.7B rise in uncompensated care demand, and utility arrears heading toward roughly $25B - against a US collections industry of roughly $20B running terrible recovery economics."
+      },
+      "buyer": "Beachhead: charged-off medical and utility paper sold at deep discounts. Expansion: the full consumer charge-off market, priced off a proprietary recovery model.",
+      "kill_reason": "Occupied by mature AI-native operators. January (founded 2016 as Debtsy) claims 30%+ higher recovery than leading agencies with 6x fewer complaints and explicitly serves debt buyers; TrueAccord's patented HeartBeat machine-learning journeys complete 96% of payoffs with no human interaction; InDebted runs ML-tuned outreach plus a conversational AI collector. The recovery-rate edge these ideas rest on is already the incumbents' marketing claim, and the debt-buying balance sheet is a capital game against established buyers rather than a technology wedge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0182",
+      "date": "2026-08-08",
+      "status": "killed",
+      "summary": "Purchase-outcome truth layer for shopping agents: a cross-consumer record of what actually happened after agent-mediated purchases - did it arrive, did it fit, did it break, was the price real, was the return honoured - as the ground truth agents lack and the reason their conversion collapses.",
+      "cross": {
+        "ai_signal": "An agent has no brand intuition, no social proof and no personal history; it can only act on what it can verify, so a machine-readable outcome record is the substitute for everything a human shopper uses.",
+        "structural_signal": "Agent-mediated commerce is real but converting badly - 39% consumer adoption and 805% traffic growth against conversion 86% worse than affiliate - and the diagnosis published across the industry is that merchant data was never built to be legible or verifiable to a machine."
+      },
+      "buyer": "Beachhead: the agent platforms whose conversion is the problem. Expansion: the clearing layer for agent commerce - a credit bureau for merchants and products.",
+      "kill_reason": "Pre-dead by data ownership: whichever platform mediates the purchase accrues the outcome record automatically as exhaust, so the asset cannot be assembled by an outsider and the only plausible buyers are the parties who already have it. Ledger adjacency to the killed ts-0019 (cross-organization agent trust graph) and ts-0037 (answer-engine optimisation / agentic-web brand layer). The consumer-facing version of the same asset has also failed repeatedly (Fakespot, shut down after acquisition by Mozilla) against Amazon, Trustpilot and Google review corpora.",
       "kill_attempts_survived": 0
     }
   ]
