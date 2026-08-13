@@ -304,7 +304,7 @@
    },
    "kill_attempts_survived": 3,
    "brief": "ideas/briefs/0003-robot-policy-assurance-lab.md",
-   "revalidation": "2026-07-23 kill-or-commit re-check (first re-check since 06-18): SURVIVES, still no productized independent behavioral-certification lab for learned robot policies. But the research frontier is heating up fast - mid-2026 arXiv work ('Verifiable Foundation Models for Robot Safety,' 'Modular Safety Guardrails Are Necessary for Foundation-Model-Enabled Robots,' 'Safe robot foundation models') is formalizing exactly the sim-based behavioral-validation problem, and NVIDIA GR00T-Dreams/Isaac Sim + ReSim supply the sim substrate developers self-grade on. Concept maturing toward productization; the independent-lab wedge is open now but a funded entrant is more likely each quarter. Status new->watching."
+   "revalidation": "2026-07-23 kill-or-commit re-check (first re-check since 06-18): SURVIVES, still no productized independent behavioral-certification lab for learned robot policies. But the research frontier is heating up fast - mid-2026 arXiv work ('Verifiable Foundation Models for Robot Safety,' 'Modular Safety Guardrails Are Necessary for Foundation-Model-Enabled Robots,' 'Safe robot foundation models') is formalizing exactly the sim-based behavioral-validation problem, and NVIDIA GR00T-Dreams/Isaac Sim + ReSim supply the sim substrate developers self-grade on. Concept maturing toward productization; the independent-lab wedge is open now but a funded entrant is more likely each quarter. Status new->watching. | 2026-08-13 directional confirmation: robot foundation models proliferated and went open in one quarter - Gemini Robotics 2 on Apptronik Apollo 2, RLWRLD RLDX-1, Genesis GENE-26.5, and Xiaomi-Robotics-1 as open weights trained on 100,000+ hours. Open weights mean learned policies will be deployed by parties with no capacity to validate them, which raises the value of an independent behavioural certification artifact and simultaneously enlarges the population of policies nobody is testing. Novelty position unchanged; no new occupant found this run."
   },
   {
    "id": "ts-0032",
@@ -1446,7 +1446,7 @@
   {
    "id": "ts-0133",
    "date": "2026-07-30",
-   "status": "new",
+   "status": "watching",
    "summary": "Evidence-constrained world-model reconstruction engine for physical-fact litigation and claims: ingests the actual evidence record of an incident (scene photos, dashcam/CCTV, telematics/EDR, medical imaging, depositions, site scans) and generates a physics-consistent, navigable simulation of what happened - together with the machine-readable reliability record showing which evidence constrained which parameter, the uncertainty envelope, and every alternative fact pattern still consistent with the evidence.",
    "cross": {
     "ai_signal": "World models became productized in the last nine months and are the freshest un-applied frontier capability: DeepMind Genie 3 generates interactive, physics- and collision-consistent 3D worlds at 24fps/720p rather than passive video; World Labs shipped Marble plus a World API with persistent assets and programmable interfaces (live at marble.worldlabs.ai as of 2026-07-28); and the research literature has moved to physically-grounded Gaussian world models from video (Mirage2Matter, 2602.00096) and explicit counterfactual world simulation models that answer causal questions from CCTV evidence (Stanford CICL). Separately the July-2026 tri-lab price war (Grok 4.5, GPT-5.6 family, Muse Spark 1.1, Kimi K3) collapsed frontier inference to ~$1/M input and $4-6/M output, so generating and re-generating thousands of candidate reconstructions per case is now economic where it was not six months ago.",
@@ -1466,7 +1466,7 @@
    },
    "kill_attempts_survived": 3,
    "brief": "ideas/briefs/0012-evidence-constrained-reconstruction-engine.md",
-   "revalidation": "2026-08-06 incidental hardening (no full re-check run): the casualty-severity backdrop strengthened. There were 135 nuclear verdicts in 2024, up 52% year on year, totalling over $31B in awards; US insurers added $16B to prior-year liability reserves in 2024; and capacity for US-exposed casualty risk remains constrained by social inflation, litigation funding and aggressive plaintiff strategy. Rising stakes per physical-fact dispute raise willingness to pay for a defensible reconstruction of what actually happened. A separate reserving-side idea generated from the same signal (ts-0166) was killed as occupied, which leaves the reconstruction wedge intact."
+   "revalidation": "2026-08-13 new evidence, status new -> watching. Aurora put second-generation driverless trucks - built to run with no passive observer at all - into commercial service on 10 routes, plans 200+ trucks at ~20 hours a day, and its manufacturing partner Roush is targeting a 1,000-truck annual run rate by end-2026; Kodiak runs the largest driverless Class 8 fleet in the Permian and targets long-haul in H2 2026. Every one of those trucks is a 40-ton vehicle with no human witness inside, so when it is involved in a crash the entire factual record is sensor logs and physical evidence with no driver testimony. That is the exact input this engine is built for, and it hardens the why-now without changing the novelty position."
   },
   {
    "id": "ts-0134",
@@ -2125,6 +2125,126 @@
    },
    "kill_attempts_survived": 3,
    "brief": "ideas/briefs/0014-as-built-disposition-engine.md"
+  },
+  {
+   "id": "ts-0193",
+   "date": "2026-08-13",
+   "status": "killed",
+   "summary": "Autonomous sterile-processing cell for hospitals: identify, inspect, disassemble, reassemble and verify high-mix surgical instrument trays between cases, replacing the chronically vacant sterile-processing technician role.",
+   "cross": {
+    "ai_signal": "Dexterity-first robot foundation models with tactile and force sensing (Gemini Robotics 2 on Apptronik Apollo 2, RLWRLD RLDX-1, Xiaomi-Robotics-1) made high-mix manipulation of small, delicate, near-identical metal objects tractable for the first time in 2026.",
+    "structural_signal": "Chronic sterile-processing vacancy across ~6,000 US hospitals and ~6,000 ambulatory surgery centres, where tray errors delay surgeries and drive infection risk."
+   },
+   "buyer": "Beachhead: sterile-processing director at a high-volume surgical hospital. Expansion: every operating-room-bearing facility, then instrument logistics.",
+   "kill_reason": "Killed on sight as fully occupied and academically claimed. RIF Robotics does exactly this - AI, computer vision and robotics to automate assembly and sterilisation of surgical instruments, with a robotic arm assembling a minor surgical tray at Wellstar Windy Hill in December 2023 and a direct investment from Catalyst by Wellstar. Steris ships the ATLAS workflow automation vehicle and a robotic instrument reprocessing line. The research square is claimed too: arXiv 2602.01679, 'Towards Autonomous Instrument Tray Assembly for Sterile Processing Applications'. The structural half is also not new to 2026 - SPD vacancy is a decade-old condition, so this fails the 'both halves must be current' test."
+  },
+  {
+   "id": "ts-0194",
+   "date": "2026-08-13",
+   "status": "killed",
+   "summary": "Buy-side residential transaction-execution engine: carry a deal from accepted offer to close - inspection renegotiation, appraisal gap, title curative, lender conditions, contingency deadlines - across the twelve counterparties, as the agent layer that used to do this dissolves.",
+   "cross": {
+    "ai_signal": "Frontier long-horizon agents that hold a multi-week, multi-counterparty state machine and act across documents, email and portals.",
+    "structural_signal": "NAR membership fell from a 1.6M pandemic peak to a projected 1.2M in 2026, 47% of prospective buyers and 45% of sellers are considering skipping agents entirely, yet total commissions held at ~5.7% and deals are falling apart more often - value and price diverged."
+   },
+   "buyer": "Beachhead: the brokerage or transaction-coordination team at the moment a deal goes under contract. Expansion: the full US residential closing stack.",
+   "kill_reason": "Killed as saturated by name. BrokerBot (Inman, March 2026) is building a brokerage-wide AI assistant explicitly to 'coordinate transactions from start to finish'; Cambio, YC-backed, raised $18M at a $100M valuation in January 2026 for agentic reasoning over unstructured real-estate documents; ListedKit ships 'Ava', which reads a contract in 60 seconds, at $9.99 per transaction; MaxHome.ai and rebillion.ai occupy the compliance and workflow half. The residual - contingency renegotiation - is a human conversation, not a software gap. Ledger adjacency to killed ts-0029."
+  },
+  {
+   "id": "ts-0195",
+   "date": "2026-08-13",
+   "status": "killed",
+   "summary": "Consent-and-value metering rail for synthetic performance: determine, for any generated frame or voice, whose likeness and performance contributed, whether valid consent exists, and what is owed - the settlement layer under the 2026 Hollywood AI agreements.",
+   "cross": {
+    "ai_signal": "Controllable long-form generative video and voice with multimodal reference conditioning (Seedance 2.5-class) makes contribution attribution both necessary and technically hard.",
+    "structural_signal": "SAG-AFTRA's June 2026 TV/Theatrical Agreement plus the Digital Replica Rider require informed consent and fair compensation for digital replicas, advance notice before licensing a performance for AI training, and permit synthetic performers only where they add 'significant additional value'; Netflix committed to a five-year AI filmmaking infrastructure partnership in January 2026."
+   },
+   "buyer": "Beachhead: studio or agency business affairs at the moment a synthetic performer or replica is used. Expansion: all generative media rights.",
+   "kill_reason": "Killed by an existing SAG-AFTRA-blessed occupant and by a compensation floor that already exists. Narrativ has a signed agreement with SAG-AFTRA implementing informed consent, compensation and individual control for licensed digital voice replicas, with union minimums built in; the Digital Replica Rider itself already sets minimum compensation structures separate from the performance fee, so the 'no floor' diagnosis I was crossing on is stale. Twinnin sells the rider workflow, and Vermillio, Loti, Musical AI, ProRata and Created by Humans hold the wider likeness-and-attribution layer. Independently: entertainment residual pools are low single-digit billions - a venture-scale fail without the general media-attribution expansion, which is the most crowded square in the category."
+  },
+  {
+   "id": "ts-0196",
+   "date": "2026-08-13",
+   "status": "killed",
+   "summary": "Deformable-material manipulation for industrial laundry and garment manufacture: single-piece separation, feeding and sewing of wet, tangled, non-rigid textiles - the largest un-automated manual labour pool on earth.",
+   "cross": {
+    "ai_signal": "2026 dexterity-first models with force and tactile sensing plus differentiable cloth simulation made deformable-object manipulation newly tractable.",
+    "structural_signal": "Immigration enforcement removing the manual workforce (1.2M removals FY2025, >1.5M projected FY2026) collides with garment manufacturing at 15-20% automation penetration against 80%+ in automotive."
+   },
+   "buyer": "Beachhead: a healthcare or hospitality linen plant that cannot staff its soil-sort and feed stations. Expansion: apparel manufacturing globally.",
+   "kill_reason": "Killed as occupied at the exact wedge. sewts, the Munich deformable-material handling company backed by Siemens, raised a $14.4M Series A and sells precisely wet-textile handling for industrial laundries; Covariant's general manipulation platform (>$220M raised) covers textile picking and sorting; a July 2026 deployment reached 3,500 garments per hour in what the coverage calls fashion's last automation holdout, and a June 2026 case study reports staged denim deployments covering 2D pocket work and 3D shaping seams. The remaining gap - full sewing - is described in the literature as technically analogous to autonomous driving, and this is a documented graveyard (SoftWear Automation, Sewbo)."
+  },
+  {
+   "id": "ts-0197",
+   "date": "2026-08-13",
+   "status": "killed",
+   "summary": "Dexterous in-room housekeeping and high-mix janitorial: the 80% of cleaning labour that floor-scrubbing robots never touched - bathrooms, surfaces, linen, restocking, trash - for hotels and commercial buildings.",
+   "cross": {
+    "ai_signal": "Bimanual dexterous humanoids and VLA policies reached fine manipulation in unstructured rooms during 2026.",
+    "structural_signal": "87% of hotels reported staffing shortages in 2025 with housekeeping the hardest to fill, against immigration enforcement removing the hospitality labour pool and office distress at 11.91% forcing owners to cut operating expense."
+   },
+   "buyer": "Beachhead: director of housekeeping at a full-service hotel group. Expansion: all commercial cleaning labour.",
+   "kill_reason": "Killed as occupied and hardware-led. Zerith's H1 humanoid is built for in-room housekeeping, specifically bathrooms, wiping surfaces, cleaning sinks and restocking amenities; PUDU's D9 is a 42-DoF dual-arm humanoid sold into the same buyer; Avidbots, Brain Corp, Tennant and SoftBank hold floor care, and service robot prices have already fallen 40% since 2022 with lease models at $30-50/day. The value accrues to whoever owns the robot, and this is a race against humanoid OEMs with no software wedge. Ledger adjacency to killed ts-0099."
+  },
+  {
+   "id": "ts-0198",
+   "date": "2026-08-13",
+   "status": "killed",
+   "summary": "Integrator-free robot cell deployment: point a camera at a workcell and have the system specify, program, safety-validate and commission a robot line without a systems integrator, opening automation to the long tail of small manufacturers.",
+   "cross": {
+    "ai_signal": "Open-weight robot foundation models (Xiaomi-Robotics-1, 100,000+ hours across 1,700+ scenarios) removed the 'who trains the policy' problem, and world models made safety validation simulatable.",
+    "structural_signal": "Reshoring's binding constraint is people, not capital - ~601k open manufacturing and ~449k open construction jobs, with controls and automation engineers named the hardest fill and commissioning managers already committed to other megaprojects."
+   },
+   "buyer": "Beachhead: a 50-200 person contract manufacturer that has never installed a robot. Expansion: the ~250,000 US small manufacturers.",
+   "kill_reason": "Killed by the platform owner, in public, five weeks ago. Intrinsic (Alphabet) unveiled the Intrinsic Intelligence Cell at Automate 2026 in July - a software-defined modular workcell on IntrinsicOS, presented as a reference architecture whose stated objective is to let smaller manufacturers deploy perception, motion planning and intelligent grasping through simplified software interfaces rather than specialist robot programmers. FANUC launched Cobot and Go at the same show; Realtime Robotics ships Resolver with Visual Components and MELSOFT Gemini integrations; Standard Bots, Formic and Ready Robotics hold the rest. This is the ts-0178 platform-owner rule: the party that owns the runtime gives the deployment layer away."
+  },
+  {
+   "id": "ts-0199",
+   "date": "2026-08-13",
+   "status": "killed",
+   "summary": "Federal-reimbursement recovery engine for local government: continuously reconstruct, from a district's or county's own service records, every dollar claimable under school-based Medicaid, Title IV-E, FEMA public assistance and administrative claiming, and recover it on contingency.",
+   "cross": {
+    "ai_signal": "Frontier document and eligibility reasoning over siloed service logs, IEPs, provider credentials and consent records.",
+    "structural_signal": "State and local finance broke in 2026: ten states face serious FY2026 shortfalls (California $24B through FY2028), 20 of the 25 most populous cities reported FY2026 budget gaps, federal pandemic aid ended, and OBBBA cuts Medicaid and SNAP through the decade."
+   },
+   "buyer": "Beachhead: a large urban school district CFO facing a mid-year cut. Expansion: all US local government revenue recovery.",
+   "kill_reason": "Killed on the venture-scale gate, before novelty. School-based Medicaid returns roughly $4-6B/yr to districts nationally, so a contingency-fee pool is in the hundreds of millions - not a $1B company - and the surrounding market is held by Public Consulting Group, Maximus, Accelify and Sivic Solutions. It also fails the corrected 2026-08-04 heuristic in the diagnostic direction: it is a billable-hour market whose technical barrier is document reasoning, which is exactly the barrier a services-replacement seed company clears. Ledger adjacency to killed ts-0034."
+  },
+  {
+   "id": "ts-0200",
+   "date": "2026-08-13",
+   "status": "killed",
+   "summary": "Competency-substitution and accelerated-certification engine for the uncertified-teacher wave: prove and build subject-matter and pedagogical competence fast enough to close the certification gap districts are legally exposed on.",
+   "cross": {
+    "ai_signal": "Frontier tutoring, assessment and simulated-classroom generation.",
+    "structural_signal": "387,843 US teachers are not fully certified for their assignment across 50 states and DC - roughly one in eight teaching positions unfilled or filled by an uncertified teacher - with attrition driving about 90% of annual new demand and interest in teaching at a 50-year low."
+   },
+   "buyer": "Beachhead: an alternative-certification provider or a state education agency. Expansion: the K-12 labour pipeline.",
+   "kill_reason": "Killed on venture-scale and motion. The realistic revenue is alternative-certification tuition, an occupied market with per-seat pricing measured in low thousands (Teachers of Tomorrow, iTeach, Moreland) and a hard licensure ceiling that is state-by-state; the district buyer has no budget in 2026 by the same signal that creates the problem. Ledger adjacency to killed ts-0068 and ts-0134, both of which died on the same shape: competence manufacturing sold into a credential-bound market."
+  },
+  {
+   "id": "ts-0201",
+   "date": "2026-08-13",
+   "status": "new",
+   "summary": "Learned-dexterity fabrication cell for protein processing: force-controlled robot policies that break down carcasses, debone and trim on the fabrication floor - the highest-headcount, lowest-automation station in food manufacturing - sold per carcass or per cut against the wage line rather than as capital equipment, with the yield gain as the second revenue argument.",
+   "cross": {
+    "ai_signal": "Dexterity crossed from vision-planned rigid trajectories to force-controlled learned policies in a single quarter of 2026. Google DeepMind released Gemini Robotics 2 in late July, unifying vision, language and motion control, and on Apptronik's Apollo 2 with a dexterous hand it completed multi-finger tasks - tying trash bags, unscrewing light bulbs, sealing resealable bags - that require compliance rather than position accuracy. RLWRLD's RLDX-1 is explicitly dexterity-first and adds the two things prior VLAs lacked for this work, force sensing and context memorisation. Xiaomi-Robotics-1 shipped as open weights trained on 100,000+ hours of real manipulation across 1,700+ scenarios, with no observed performance saturation as data and model scale, and Genesis GENE-26.5 targets dexterous manipulation directly. The field's own description is a 'GPT-2.5 moment': capability is real, scaling laws are emerging, and the lab-to-production gap is the opportunity.",
+    "structural_signal": "The workforce that does this job is being physically removed. ICE reported over 1.2M removals in FY2025 with FY2026 projected above 1.5M; immigrants are 33% of meatpacking workers, 25% of agricultural workers and 54% of graders and sorters. US meat processing facilities ran at only 87% of targeted workforce capacity in 2025, with annual turnover above 75% at some large plants, and a single cutting-and-deboning line requires 60-80 workers. Against that, automated deboning of specific livestock sections is documented as still limited to laboratory settings and 'a long way from full automation' - the one large manual labour pool that fixed automation has failed to take in forty years of trying."
+   },
+   "buyer": "Beachhead: the VP of operations at a US pork or beef fabrication plant, at the moment a shift cannot be staffed - the fabrication floor is where headcount is highest, turnover worst and automation penetration lowest. Expansion: across species into poultry further-processing, lamb and seafood, then along the same wet-deformable-biological axis into trimming, portioning, produce packing and rendering - i.e. the whole of food manufacturing's manual layer.",
+   "trigger": "Force-sensing dexterous robot foundation models shipped in July-August 2026 (Gemini Robotics 2, RLDX-1, open-weight Xiaomi-Robotics-1) at the same moment immigration enforcement removed the fabrication-floor workforce, with US plants at 87% of targeted staffing and deboning still lab-only.",
+   "why_incumbents_cant": "The protein equipment OEMs sell one bespoke mechanical machine per cut per species, amortised over 20-year capital installs through dealer networks: Mayekawa's TORIDAS does whole chicken legs and HAMDAS-RX debones pork ham only after a human pre-cut; JBT Marel, Frontmatec, BAADER and Staubli sell the same shape, and JBT Marel's own framing of AI is helping machines 'see better and work more independently from operator judgment' - vision and X-ray cut planning driving rigid trajectories, not compliant force control learned from outcomes. A per-cut service that improves weekly cannibalises their machine margin and requires a data flywheel their architecture has no place for. The horizontal dexterity companies (RLWRLD, Dyna Robotics, FingerVision, Ubiros) sell the model, the sensor or the gripper and not the cut, and none carries FSIS sanitary design or yield accountability. The nearest AI-native neighbour, Chef Robotics, has a food foundation model and a bimanual system but is in prepared-meal assembly for ghost kitchens, catering and institutional dining - a portioning problem with no blade, no bone and no $/lb yield economics.",
+   "scores": {
+    "novelty": 3.5,
+    "why_now": 4.5,
+    "market_venture_scale": 4,
+    "defensibility": 4.5,
+    "yc_fit": 4,
+    "founder_fit": 4,
+    "composite": 4.1
+   },
+   "kill_attempts_survived": 3,
+   "brief": "ideas/briefs/0015-protein-fabrication-dexterity-cell.md"
   }
  ]
 }
