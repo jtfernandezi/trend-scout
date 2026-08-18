@@ -2470,6 +2470,191 @@
         "structural_signal": "Over 40% of agentic projects are expected to be cancelled by end-2027 and fewer than 10% have scaled to measurable value, with 74% of enterprises having already rolled back a customer-facing agent - the missing artifact is a warranty, which is what every professional service is actually sold with."
       },
       "kill_reason": "Occupied by insurers who got there first. Armilla sells AI performance warranties backed by Lloyd's syndicates, AIUC raised specifically to underwrite AI agents, Munich Re has run aiSure since 2018, and Vouch writes AI E&O. Adjacent shapes also already killed here: ts-0178 (underwritten safety layer for consumer agents), ts-0189 (behavioural-equivalence assurance), ts-0190 (cyber MGA on proof of exploitability)."
+    },
+    {
+      "id": "ts-0220",
+      "date": "2026-08-18",
+      "status": "new",
+      "summary": "Care-horizon underwriting: an AI-native financier that reads an older person's longitudinal clinical and functional record to price their individual care trajectory - when they start needing help, how many hours, for how long - and advances the family cash against home equity now, repaid on sale, so care is bought at private-pay rates instead of waiting for Medicaid.",
+      "cross": {
+        "ai_signal": "Frontier long-context multimodal reasoning over a single person's whole longitudinal record - claims, labs, medications, functional status, falls, cognition, imaging, home layout, caregiver availability - now makes individual care-trajectory and time-at-home underwriting possible at consumer cost, which is what killed long-term care insurance when it had to be done with population tables. Waterlily has demonstrated the prediction half against 500M data points and 50,000 families.",
+        "structural_signal": "The private long-term care insurance market has collapsed from 100+ writers at peak to roughly 15 in 2026 while demand explodes: 95% of home and community-based providers report staffing shortages, 77% turn away referrals, the home care workforce is projected to generate 6.1M job openings 2024-2034 (second among all US occupations), 75% of older adults with care needs rely on unpaid family, and roughly $14T of senior home equity sits idle against ~$475B/yr of US long-term services and supports spend."
+      },
+      "buyer": "The adult child (typically a daughter in her 50s) at the trigger moment - a parent's fall, dementia diagnosis, or hospital discharge with a new care requirement - when the family discovers in-home care runs $6,000-10,000/month, Medicare pays none of it, and the only asset is the house.",
+      "trigger": "LTC insurers have exited and cannot re-enter under legacy actuarial method and reserve requirements; HECM reverse mortgages are federally standardised on age and interest rates and are structurally barred from taking health into account, so the person with a three-year care horizon gets the identical offer to one with twenty; Genworth relaunching a medically underwritten SPIA in early 2026 shows the impaired-life category is thawing.",
+      "why_incumbents_cant": "HECM cannot underwrite health by program design, so it systematically misprices the people who need it most. Home-equity investment companies (Point, Hometap, Unlock, Splitero, Fraction) underwrite the house, not the person, and have no clinical capability. LTC insurers that could underwrite health fled after mispricing the risk once and carry reserve and rate-approval constraints that stop re-entry. Waterlily, the closest company, sells the trajectory prediction to advisors and carriers - it informs a decision rather than taking the risk, which is exactly the gap.",
+      "scores": {
+        "novelty": 4,
+        "why_now": 4,
+        "market_venture_scale": 5,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.2
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0017-care-horizon-underwriting.md"
+    },
+    {
+      "id": "ts-0221",
+      "date": "2026-08-18",
+      "status": "new",
+      "summary": "Capacity-now merchant: an engine that evaluates the global pool of stranded and idled process assets against a live capital project's equipment list and process conditions, returns a per-item validated substitution with a re-rating package and schedule delta, and then takes a merchant position - selling American onshoring projects a date rather than a machine.",
+      "cross": {
+        "ai_signal": "Frontier long-context multimodal reasoning over bespoke engineering documents - datasheets, materials of construction, ASME/PED code stamps, inspection and repair history, metallurgy, prior service - at $0.20/$1.20 per million tokens makes per-asset, per-duty fitness judgement cheap for the first time. The assessment used to cost more than the asset, which is why only whole-plant trades ever cleared.",
+        "structural_signal": "Europe is permanently deleting ~37 Mt of chemical capacity (~9% of output), with plant closures up sixfold since 2022, 20,000 jobs gone and 89,000 indirect at risk, and announced investment capacity down from 2.7 Mt in 2022 to 0.3 Mt - the largest liquidation of process assets in decades - while US onshoring (pharma API under a 100% Section 232 tariff, chemicals, batteries, defence) is constrained by equipment lead times measured in years rather than by capital."
+      },
+      "buyer": "The project director or owner's engineer at a US specialty-chemical, API or battery-materials plant under construction whose in-service date is being set by one or two long-lead items - a reactor, a column, a dryer train - at the moment the schedule slips past the financing milestone.",
+      "trigger": "The European closure wave and the US onshoring wave peaked in the same eighteen months, so a historic supply of stranded process assets and a historic scarcity of delivery dates exist simultaneously - and the assessment cost that always separated them just collapsed.",
+      "why_incumbents_cant": "Used-equipment dealers (IPP, EquipNet, Aaron, Federal Equipment, Surplus Record) are catalogue businesses whose sales engineers can only assess what a buyer already asked about - they wait for demand rather than originating a substitution inside a live design. EPC contractors are paid a percentage of installed cost and are structurally disincentivised to specify a used asset. The closing owners (BASF, Dow, Ineos) book the equipment as a decommissioning cost line, not an asset to market.",
+      "scores": {
+        "novelty": 4,
+        "why_now": 4,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.0
+      },
+      "kill_attempts_survived": 2,
+      "brief": null,
+      "note": "Adjacent to ts-0202 (clearing market for long-lead electrical equipment positions) in template - both trade scarce engineered capacity - but a different asset class, a different supply origin (liquidation rather than reservation), and a different transaction (merchant position rather than venue). Flagged deliberately so the operator can judge template repetition."
+    },
+    {
+      "id": "ts-0222",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Discontinuation-driven reformulation engine for specialty chemistry: read a formulator's product, its spec and its regulatory constraints, and generate a validated replacement formula when a European supplier permanently discontinues an ingredient.",
+      "kill_reason": "Occupied by the formulation-informatics incumbents, and specifically on the substitution use case. Citrine Informatics markets PFAS and problematic-ingredient reformulation for coatings, adhesives and sealants with a published case reducing time-to-market from five years to two; Albert Invent was founded by a former Henkel digital R&D leader explicitly for sustainability-driven raw-material substitution; ChemCopilot markets VOC-compliant reformulation compression in 2026. The forced-discontinuation framing is a new reason to buy, not a new product.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0223",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "AI-matched marketplace for used process equipment: list stranded chemical-plant assets and machine-match them to buyers.",
+      "kill_reason": "The marketplace version is occupied by forty-year-old inventory businesses - International Process Plants (15,000+ items, sourced from decommissioned and restructured sites worldwide), EquipNet, Aaron Equipment, Federal Equipment, Surplus Record, HGP - and adding matching to a listing business improves an incumbent rather than creating a company. Logged separately from ts-0221 on purpose: the surviving object is a merchant that originates substitutions inside a live capital project and takes a position, not a venue that waits for a buyer to search.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0224",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Independent outcome-adjudication and settlement rail for agent-priced software: decide whether a vendor's agent actually delivered the contracted outcome so buyer and seller can transact off seats.",
+      "kill_reason": "Occupied and structurally weak. Nevermined already sells outcome-based AI monetisation with ledger-grade metering and instant settlement; Metronome, Orb, m3ter and Amberflo are extending usage billing to agents; and the vendors that matter define their own outcome (Intercom $0.99 per resolution, Zendesk $1.50 per automated resolution with a 72-hour quiet period). Neither side wants a third party between the invoice and the ledger.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0225",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Content-contribution clearing house for AI answers: measure which sources materially determined a generated answer, or a corpus's marginal contribution to model performance, and settle royalties - an ASCAP for AI.",
+      "kill_reason": "Occupied at both ends and blocked in the middle. ProRata, TollBit, ScalePost, Human Native AI and Really Simple Licensing already stake answer-level attribution and licensing; Cloudflare's Pay Per Crawl is becoming Pay Per Use, paying publishers when content creates value, with Apple reportedly in multi-year pay-per-use negotiations. The training-value half is done in-house by the ~30 labs that would be the only buyers - a platform-owner primitive, which this ledger pre-filters.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0226",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Carrier-identity and strategic-freight-fraud engine: verify at machine speed whether the carrier booking a load is who it claims to be, as double brokering, fictitious pickups and cyber-enabled account compromise take over cargo theft.",
+      "kill_reason": "Occupied by funded specialists. Highway is the carrier-identity layer for brokers, alongside Carrier Assure, Descartes MyCarrierPortal, RMIS, Truckstop and DAT identity products, and Overhaul covers in-transit. The why-now is real - cargo losses reached ~$725M in 2025 (+60%) and Q2 2026 losses more than doubled to $304.6M year on year - but the square is taken.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0227",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Ambient home-care supervision that absorbs the non-physical hours of a care visit so an agency's scarce human hours can be reallocated, expanding effective capacity.",
+      "kill_reason": "Occupied. Sensi.AI sells exactly ambient audio AI for home-care agencies and is funded; CarePredict, Vayyar and care.coach cover adjacent sensing. It also runs into this ledger's ts-0213 kill: the binding constraint in home care is a licensed human physically present, and reallocating hours does not create one.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0228",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Real-time coercion and elder-financial-exploitation detection at the bank, riding deepfake voice fraud into the largest pool of household wealth.",
+      "kill_reason": "Occupied. Carefull is built for exactly this and partners with banks and credit unions; EverSafe and True Link hold the rest of the elder-financial-protection square. Deepfake losses of $3.7B visible and a Deloitte projection of $40B in US gen-AI-enabled fraud by 2027 are a real why-now, but detection is a crowded feature market inside institutions that already own the account relationship.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0229",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Payer-grade employer-of-record that pays family members to provide care, industrialising the largest unpriced labour pool in the economy.",
+      "kill_reason": "Occupied. Givers is the funded company doing precisely this - getting family members paid to care for relatives through Medicaid self-direction - alongside Careforth, FreedomCare and the established fiscal intermediaries (Public Partnerships, Acumen). The AI half is eligibility and timekeeping automation, which is a feature of an existing operating model.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0230",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "AI-native alternative business structure law firm that industrialises a high-volume legal fee stream, using Arizona's nonlawyer-ownership regime to own the fees rather than sell software.",
+      "kill_reason": "Occupied on both halves. Darrow already detects legal violations at scale and originates cases; EvenUp, Eve, Supio and Alexi hold plaintiff-side work product; Crosby and Garfield.Law are AI-native firms; and Arizona's ABS pipeline (136 approved entities, 59% of newly licensed 2024 ABSs wholly nonlawyer-owned, plus KPMG Law US) is already a private-equity stampede led by Pravati, Virage, Kayne Anderson and Counsel Financial. Capital is not the scarce input here.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0231",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Spec-based chemical sourcing and equivalence engine: read a formulator's specification and prove equivalence against the global supply of commercial chemical products and their registrations, as Europe converts from producer to importer.",
+      "kill_reason": "Occupied by the chemical marketplace incumbents - Knowde (over $100M raised), ChemDirect, ChemicalCell - and by the distributors whose whole business is substitute recommendation (Brenntag, IMCD). The equivalence-proof half also collapses into ts-0185's already-killed qualification-collapse object.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0232",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Residual-value underwriting and merchant intermediation for compute assets, riding the Nvidia-led $500B financing coalition and the fact that no one can price a cluster whose economics reset monthly.",
+      "kill_reason": "Occupied and platform-adjacent. The San Francisco Compute Company already runs spot and forward markets for GPU clusters, Compute Exchange runs auctions, Silicon Data publishes GPU price indices and reference rates, and the six firms in the Nvidia coalition (Apollo, Blackstone, BlackRock, Brookfield, Goldman, KKR) underwrite with in-house teams and will not outsource the credit view on their own $500B.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0233",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Performance-management and portable-record system for digital workers, plus a labour market where an agent proven at one company can be hired by another - the institution missing now that agents are bought against HR budgets at $800-2,000/month.",
+      "kill_reason": "Platform owners ship the primitive: Microsoft Agent Store and Entra Agent ID, Salesforce AgentExchange, Google and AWS agent marketplaces, plus Moveworks and Sierra's own outcome reporting. It is also substantially this ledger's already-killed ts-0131 (enterprise reward infrastructure) with an HR skin.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0234",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Machine-web serving layer: give the majority-machine web a cheap structured representation for agent readers instead of rendering human pages, now that bots are 57.5% of HTML traffic and AI crawlers quadrupled from 2.6% to 10.1% in eight months.",
+      "kill_reason": "Platform-owner primitive and a crowded square. Cloudflare ships AI Crawl Control, Pay Per Crawl and, from 2026-09-15, default blocking of mixed-use crawlers on ad-bearing pages; Firecrawl, Exa, Parallel, Browserbase and Bright Data hold the retrieval side; and YC's Fall 2026 RFS names Self-Maintaining APIs directly.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0235",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Answer-engine visibility and machine-side demand acquisition for the businesses losing search referrals - small publishers down 60%, mid-sized 47%, Business Insider down more than 85%.",
+      "kill_reason": "Saturated within eighteen months of the problem appearing. Profound, Scrunch AI, Athena, Peec AI and Otterly all sell generative-engine optimisation, and the incumbent SEO suites (Semrush, Ahrefs, Conductor) shipped AI-visibility modules. Textbook one-step extension of a trend.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0236",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Per-vehicle ADAS condition grading to clear the used-car market's newest information asymmetry, as calibrations appear on 34.7% of repair estimates against an estimated 60%+ of vehicles that actually need them.",
+      "kill_reason": "Occupied. UVeye (over $190M raised) does AI vehicle inspection at dealer and auction scale, ACV Auctions built condition intelligence into wholesale, and asTech/Repairify owns the ADAS scan and calibration data itself. The missed-calibration gap is a liability story for insurers, not an opening for a new grader.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0237",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Learned force-controlled welding policies for high-mix structural, pipe and shipyard work, aimed at the submarine and munitions industrial base's welder shortage.",
+      "kill_reason": "Occupied by a heavily funded category leader: Path Robotics raised over $300M explicitly for AI robotic welding that sees and adapts on high-mix parts, with Novarc on pipe welding and Vectis on cobot cells. It would also be a straight template repeat of this ledger's ts-0201.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0238",
+      "date": "2026-08-18",
+      "status": "killed",
+      "summary": "Individual long-term-care trajectory prediction sold to financial advisors and carriers: forecast when a person needs care, for how many hours, and what it costs.",
+      "kill_reason": "Occupied by Waterlily, which does exactly this against 500M data points and 50,000 families and sells into advisors and LTC carriers. Logged deliberately as the informs-a-decision version of ts-0220, which is the take-the-risk version - this pair is the clearest example this run of the transaction pre-prompt adopted on 2026-08-15 doing real work.",
+      "kill_attempts_survived": 0
     }
   ]
 }
