@@ -2655,6 +2655,174 @@
       "summary": "Individual long-term-care trajectory prediction sold to financial advisors and carriers: forecast when a person needs care, for how many hours, and what it costs.",
       "kill_reason": "Occupied by Waterlily, which does exactly this against 500M data points and 50,000 families and sells into advisors and LTC carriers. Logged deliberately as the informs-a-decision version of ts-0220, which is the take-the-risk version - this pair is the clearest example this run of the transaction pre-prompt adopted on 2026-08-15 doing real work.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0239",
+      "date": "2026-08-20",
+      "status": "new",
+      "summary": "Firm water underwriting: sell a Western city, factory or data centre a guaranteed volume of wet water at a fixed price for a term, and source it behind the scenes from a large pool of small agricultural rights via fallowing, forbearance and outright purchase - taking the consumptive-use, transferability and regulatory-approval risk onto a balance sheet, because satellite evapotranspiration and full-corpus reading of state adjudication records finally make a thousand small rights individually priceable.",
+      "cross": {
+        "ai_signal": "Two things converged. Satellite evapotranspiration at field scale is no longer a research product but the official accounting standard - Reclamation and the Upper Colorado River Commission adopted eeMETRIC as the standard method for measuring agricultural consumptive use, and OpenET (NASA, DRI, EDF, Google) publishes field-scale ET for the entire Western US. Separately, frontier long-context reasoning at July 2026 token prices makes it economic to read, for a whole state, every adjudicated decree, transfer application, engineer's no-injury analysis, protest ruling and irrigation-district rule - the corpus that determines whether a given right can actually move and how much of it survives the move. Together they collapse the per-transfer proof cost that has always been $50k-$500k and one to four years, which is precisely why only large transactions ever clear.",
+        "structural_signal": "Every rule governing the Colorado River expires 2026-12-31: the 2007 Interim Guidelines, the 2019 Drought Contingency Plans and the 2023 near-term conservation measures. The states missed their 2026-02-14 deadline to agree replacement rules, so Reclamation published the Final Environmental Impact Statement on 2026-07-31 and will impose an alternative for the 2027 operating year; the proposals range roughly 15-35% of Central Arizona Project allocations depending on Lake Mead levels, against state offers of 27% (Arizona), 17% (Nevada) and 10% (California). On the other side of the same basin, industrial demand is paying record prices for firm supply - Google is guaranteed 1M gallons/day at Mesa rising to 4M, Mesa has adopted a Large Customer Sustainable Water Allowance ordinance, and Arizona created the ADAWS designation specifically to let large users combine limited groundwater with alternative supplies. California's SGMA is doing the same thing more slowly to every groundwater basin in the state."
+      },
+      "buyer": "The developer or utility that cannot break ground without an Assured Water Supply or ADAWS designation - a data centre, fab or municipal provider in the Phoenix AMA or Pinal County - at the moment its CAP allocation is cut for the 2027 operating year. On the supply side, the first counterparty is the Pinal County or Central Arizona irrigation district grower whose allocation is being cut and who has no way to monetise what is left.",
+      "trigger": "Reclamation's Final EIS published 2026-07-31; a Record of Decision and imposed operating rules for January 2027; simultaneously eeMETRIC/OpenET became the accepted consumptive-use measurement, removing the technical objection that always defeated small transfers.",
+      "why_incumbents_cant": "WestWater Research is the acknowledged market leader and it is an advisory firm - acquired by Aetos Capital, exclusive data provider to the Nasdaq water pricing index, selling valuations and appraisals off the Waterlitix comps database. It has advised on roughly $800M of transactions in twenty-five years because it bills hours per deal and sells an opinion rather than taking a position. Water funds that do take positions (Water Asset Management, Greenstone, the former Vidler Water) run human deal teams doing a handful of large transactions and cannot underwrite a thousand forty-acre rights. State engineers and Reclamation are referees, not intermediaries. Utilities buy water; they have no mandate or balance sheet to make a market in it.",
+      "scores": {
+        "novelty": 5,
+        "why_now": 5,
+        "market_venture_scale": 5,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 5,
+        "composite": 4.7
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0018-firm-water-underwriting.md"
+    },
+    {
+      "id": "ts-0240",
+      "date": "2026-08-20",
+      "status": "new",
+      "summary": "Underwritten carrier selection: adjudicate, at tender time, whether a specific motor carrier on a specific lane is a defensible choice - and then indemnify the freight broker for the negligent-selection liability the Supreme Court handed the entire industry in May 2026. Sell the decision with the risk attached, not a score with a disclaimer.",
+      "cross": {
+        "ai_signal": "Frontier models can now read the full unstructured safety record of all ~600,000 US motor carriers - individual roadside inspection narratives, crash reports, FMCSA authority and insurance filing history, cancellations, chameleon-carrier reincarnation patterns, and civil dockets - and resolve entities across reincarnations, then adjudicate a named carrier on a named lane within the seconds a spot tender allows. Existing vetting products resell FMCSA SMS/BASIC percentiles because structured scores were all that was machine-readable; the narrative text, which is where the actual predictive signal about a small carrier lives, was not.",
+        "structural_signal": "On 2026-05-14 the Supreme Court decided Montgomery v. Caribe Transport II unanimously, holding that FAAAA does not preempt state-law negligent-hiring claims against freight brokers because they fall within the safety savings clause. The pleading-stage preemption defence that protected the industry is gone. This lands on a commercial auto liability line that has been unprofitable fourteen years running through fifty-six consecutive quarters of rate increases, with nuclear verdicts up 52% year over year, a median nuclear verdict of $51M, and an average trucking verdict over $22M. Many broker policies exclude negligent-selection claims outright, and Justice Kavanaugh's concurrence explicitly warned that litigation and insurance costs to brokers may be significant even when brokers win."
+      },
+      "buyer": "The risk or compliance owner at a mid-market freight broker doing $50M-$1B of gross revenue, at the contingent-auto and E&O renewal following the ruling, when the carrier adds or reprices a negligent-selection exclusion. They tender thousands of spot loads a week to small carriers on informal judgement recorded in Slack messages and spreadsheet notes, which is exactly the evidence that fails under cross-examination.",
+      "trigger": "Montgomery v. Caribe Transport II, decided 2026-05-14, unanimous. The defence disappeared on a single day and the 2026-2027 renewal cycle is where the cost lands.",
+      "why_incumbents_cant": "Highway, Carrier Assure, Truckstop/RMIS, Assure Assist's MyCarrierPackets and DAT CarrierWatch all sell scores and monitoring on a SaaS seat and expressly disclaim liability for the selection - taking the tail would destroy both their margin structure and their balance sheets, and their pricing has no relationship to loss. The AI-native trucking insurers that raised real money (Nirvana, HDVI, Koffie) underwrite the fleet's own driving behaviour, not the broker's choice of fleet, and price a book annually rather than a decision per load. Legacy broker E&O and contingent-auto carriers have no per-load data ingestion and are responding to the ruling by excluding the peril rather than pricing it, which is what leaves the gap open.",
+      "scores": {
+        "novelty": 5,
+        "why_now": 5,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.3
+      },
+      "kill_attempts_survived": 2,
+      "brief": "ideas/briefs/0019-underwritten-carrier-selection.md"
+    },
+    {
+      "id": "ts-0241",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Farmland operator performance record: score every US farm operator on how much yield they actually extracted from each specific field versus that field's own potential, from satellite time series, and use it to place ground with the right tenant during the tenant-failure wave.",
+      "kill_reason": "Occupied by Tillable, which raised an $8.25M Series A from The Production Board and First Round and already runs the landlord side end to end - listing, farmer price discovery, lease signing, payment, and collection of yield and activity data to track farm performance for land investors - plus AcreValue/Granular (Corteva) and Acres.com on the valuation layer. The farm credit crisis is a genuinely fresh and large structural signal (record $624.7B farm debt, $404.3B of it real estate, $33B of interest expense, bankruptcies up 46% in 2025 to 315 and a third consecutive annual rise), but the product it implies on the leasing side has been built and funded.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0242",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Ag operating credit underwritten on per-field satellite yield prediction rather than collateral and tax returns, for row-crop operators declined at the 2027 renewal.",
+      "kill_reason": "Occupied and mainstream. Satellite-based crop monitoring integrated into credit underwriting for dynamic credit limits and early default detection is described as standard practice in 2026; CropIn and Fasal already underwrite alternative ag credit off satellite and IoT; Growers Edge raised $25M in April 2025 specifically to sell financial products to ag retailers, manufacturers and lenders. Same failure mode as the farmland idea above: the structural distress is real and the product is already funded.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0243",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Property tax fixing: sell a commercial property owner a five-year guarantee of their property tax bill for a premium, taking the assessment and statutory risk, so lenders can size debt against a known expense.",
+      "kill_reason": "Killed on insurance economics rather than novelty - nothing occupies it, and it should stay dead anyway. Property tax outcomes are perfectly correlated within a jurisdiction and near-perfectly within a state: a single statute or a single reassessment cycle moves every parcel in the book at once, so there is no diversification and no reinsurance market for the peril. It also has the why-now backwards - the 2026 revolt (13+ states weighing elimination or caps, Indiana's largest reform in fifty years, Iowa's May 2026 overhaul, Florida's ballot measure) makes forward tax bills more predictable where caps pass, which destroys the thing being sold.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0244",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Medicaid work-requirement exemption engine: continuously assemble and file the evidence that a member is compliant or exempt, sold to Medicaid managed care plans per retained member ahead of the 2027-01-01 deadline.",
+      "kill_reason": "The ts-0034 failure mode, repeated on a newer trigger. CMS's own interim final rule of 2026-06-01 casts managed care plans as the partners who identify members eligible for exemptions because they hold the pregnancy, post-partum, medically-frail and SUD-treatment data, and the MCO platform vendors (MHK and peers) are already publishing 2027 work-requirement product content. The structural half is enormous and dated - 44 states, the whole ACA expansion group, self-attestation limited from 2028 - but the product is member-engagement workflow sitting on data the plan already owns, not a risk position, and it is being built by the incumbents whose contracts already cover it.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0245",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Coverage-cliff underwriting for the 22M people hit by the enhanced-premium-tax-credit lapse: price and finance an episode of care for the newly uninsured.",
+      "kill_reason": "Duplicate of killed ts-0124. PayZen, PatientFi, Cherry, AccessOne and ClearBalance already occupy non-recourse patient financing, and Carrum, MDsave and Sesame occupy pre-priced episodes. The 2026 signal is much worse than when ts-0124 was killed - enhanced subsidies expired 2026-01-01, average subsidised premiums went from $888 to $1,904, the Urban Institute projects 4.8M more uninsured, hospitals face a $31.9B revenue decline and $6.3B more uncompensated care in 2026, and 734 rural hospitals are at closure risk - but a worse version of a solved problem is not a new company.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0246",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Long-horizon agent that carries an immigration case end to end through the 3.2M-case backlog.",
+      "kill_reason": "Occupied plus a diffuse consumer buyer. Immigration legal AI is one of the most crowded vertical-legal niches (Casium, Borderwise, Lawfully, Boundless, Docketwise and others), the work is episodic per matter, and the payer is an individual in financial distress rather than an institution with a recurring budget. The backlog itself is spectacular - 3,195,137 cases at the end of June 2026, 2.31M pending asylum applications, roughly 900-day average waits and about 3,300 cases per judge - but a longer queue does not make a saturated consumer legal market venture-scale.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0247",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Requalification engine for the Chinese absorption of European auto manufacturing: machine-generate the type-approval and PPAP/production-part-approval packages when a Chinese OEM takes over an idle European plant and must requalify the tier-2/3 supplier base.",
+      "kill_reason": "Trips the standing services-replacement filter and duplicates the ledger. The barrier is document reasoning over engineering and quality records, which is exactly the barrier a seed-stage services-replacement company clears, and killed ts-0185 (qualification-collapse engine) and ts-0217 (no-quote capacity unlock for engineered-to-order equipment) already cover the transfer-learning-through-requalification template. The structural signal is real and worth keeping - Chinese brands hit 15% of the European market, Chery is moving into Nissan Sunderland's freed Line 1 for Q3 2027, Stellantis and Dongfeng formed a JV in May 2026 for Rennes, and China is buying the European parts base - but it points at an engineering-services motion.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0248",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Voyage-level IMO 2026 Carbon Intensity Indicator optimisation and green-surcharge minimisation for container lines and shippers.",
+      "kill_reason": "Occupied by funded maritime-AI incumbents - ZeroNorth, Nautilus Labs and Bearing AI have sold vessel performance and voyage optimisation into exactly this buyer for years and CII compliance was the obvious extension the day the regulation was written. The surcharge is real ($150-$400 per container depending on route) but it is a line item the incumbents already manage.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0249",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Terminal throughput engine for US ports whose automation is frozen by labour contract: raise container capacity without new automated equipment.",
+      "kill_reason": "Concentrated buyer and a non-technical constraint. There are a few dozen US terminal operators, the ILA contract explicitly froze new semi-automated and automated equipment outside a narrow list through 2030-09-30, and the ILWU/PMA negotiation covering 22,000 workers at 29 West Coast ports has automation as its defining dispute. The binding constraint is a labour agreement, not an algorithm - shipping a throughput model into a bargaining fight is selling into the middle of someone else's war.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0250",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Experience-manufacturing platform for the entry-level hiring collapse: build the competence that vanished junior jobs used to create.",
+      "kill_reason": "Duplicate of killed ts-0068 and ts-0084, and the same weak-why-now failure mode. The data got dramatically worse - no-experience hiring down roughly 73% from its 2022 peak, recent-graduate unemployment above the overall workforce rate for the first time in decades, 21% of companies freezing entry-level hiring explicitly because of AI - but the party that suffers is the graduate and the enterprise cost lands five to ten years out, so there is still no buyer with a phone ringing today. AI corporate upskilling remains crowded.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0251",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Packaging reformulation engine for the EU Packaging and Packaging Waste Regulation obligations that begin in August 2026, including the near-total PFAS ban in food-contact packaging.",
+      "kill_reason": "Duplicate of killed ts-0222 plus the standing compliance-rail filter. Citrine Informatics, Albert Invent and ChemCopilot already sell PFAS and problematic-ingredient reformulation; a new regulation is a new reason to buy from them, not a new product. Logged because the deadline is genuinely current and will keep surfacing in scans.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0252",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Beneficial-reuse certification and land-application indemnity for treated Permian produced water.",
+      "kill_reason": "Premature rather than occupied, and better as supply for ts-0239 than as a company. The Permian handles more than 22M barrels a day of produced water rising an estimated 39% by 2035, and TCEQ's land-application rulemaking would open treated oilfield water to Texas farmland - but the rules are not final, the long-tail liability regime for what happens to a farm that irrigated with it is entirely unformed, and there is no loss history to price against. Underwriting an indemnity into an undefined liability regime is not a risk position, it is a guess. Revisit when TCEQ finalises.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0253",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "AI-native childcare capacity platform for the $172B/yr childcare crisis.",
+      "kill_reason": "Fails the AI-native gate outright. The crisis is severe and well-measured - $172B/yr in economic cost, $38B of it borne by employers, 455,000 women out of the labour market between January and August 2025, $13,128 average annual cost - but the binding constraints are staff-to-child ratios, state licensing and physical real estate. Frontier AI does not relieve any of the three, and a matching or benefits layer on top is a marketplace, not an AI-native company.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0254",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "Municipal credit repricing engine for the property tax revolt: reprice every ad valorem-secured bond against each state's new statutory cap language.",
+      "kill_reason": "Duplicate of killed ts-0138. MuniBonds.AI, DPC Data's structured municipal corpus and the Lumesis/MMA/Solve/ICE analytics layer already occupy continuous municipal disclosure intelligence, and this is that product with a new input variable.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0255",
+      "date": "2026-08-20",
+      "status": "killed",
+      "summary": "AI-native MGA writing liability for micro-fleet trucking companies priced out by the hard market.",
+      "kill_reason": "Occupied by funded AI-native operators - Nirvana, HDVI and Koffie all underwrite motor carrier liability off telematics and have raised substantially. Logged deliberately alongside ts-0240 as its nearest neighbour: the trucking insurtech capital went to insuring the fleet's own driving, which is precisely why the broker's selection decision is still uninsured.",
+      "kill_attempts_survived": 0
     }
   ]
 }
