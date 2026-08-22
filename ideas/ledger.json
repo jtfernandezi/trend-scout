@@ -1575,7 +1575,7 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0013-firmware-rehosting-engine.md",
-      "revalidation": "2026-08-06 incidental hardening (no full re-check run): the memory signal underneath this idea got materially worse, which strengthens the why-now. DRAM spot prices are up nearly 700% year on year (Bloomberg, July 2026); Samsung, SK Hynix and Micron - over 95% of global DRAM - have systematically reallocated capacity to HBM for AI accelerators; Intel CEO Lip-Bu Tan says there is 'no relief until 2028' and IDC puts meaningful supply relief at 2027-28 when new fabs come online; Samsung raised 32GB DDR5 modules from $149 to $239 and DDR5 contract pricing more than doubled. The downstream damage is now visible in shipped product: Apple raised prices across iPad, Mac, HomePod, Vision Pro and Apple TV effective immediately on 2026-06-25 (shares fell over 6%), smartphone shipments are forecast down 12.9% and PCs down 11.3% for 2026. A two-year forced-obsolescence window on shipped embedded designs is now the consensus industry view rather than a spike thesis. Companion idea ts-0172 (on-device memory-budget deployment compiler) was generated and killed this run, reconfirming that the adjacent framings are occupied while this one is not."
+      "revalidation": "2026-08-06 incidental hardening (no full re-check run): the memory signal underneath this idea got materially worse, which strengthens the why-now. DRAM spot prices are up nearly 700% year on year (Bloomberg, July 2026); Samsung, SK Hynix and Micron - over 95% of global DRAM - have systematically reallocated capacity to HBM for AI accelerators; Intel CEO Lip-Bu Tan says there is 'no relief until 2028' and IDC puts meaningful supply relief at 2027-28 when new fabs come online; Samsung raised 32GB DDR5 modules from $149 to $239 and DDR5 contract pricing more than doubled. The downstream damage is now visible in shipped product: Apple raised prices across iPad, Mac, HomePod, Vision Pro and Apple TV effective immediately on 2026-06-25 (shares fell over 6%), smartphone shipments are forecast down 12.9% and PCs down 11.3% for 2026. A two-year forced-obsolescence window on shipped embedded designs is now the consensus industry view rather than a spike thesis. Companion idea ts-0172 (on-device memory-budget deployment compiler) was generated and killed this run, reconfirming that the adjacent framings are occupied while this one is not. || 2026-08-22 incidental hardening (no full re-check run): the memory signal is now worse again and has moved from price to physical allocation, which is the regime that actually forces redesign. A DRAM chip hit a record $42.45 on 2026-08-07, more than double its May price; OEMs are reporting 80-90% price increases and 58-week lead times, and major OEM clients are receiving only 50-66% of ordered volumes, forcing them to redesign products around whatever supply they can secure rather than what they planned. SK Hynix has warned the shortage may persist past 2030 and IDC now forecasts a 12.9% decline in global smartphone shipments for 2026, the sharpest on record. The shortage has also spread beyond silicon to standard FR-4 and heavy-copper laminates (2026-08-19), so the substitution pressure is now board-level as well as part-level. Allocation rather than price is what turns an EOL notice into a mandatory re-host, and allocation arrived this month."
     },
     {
       "id": "ts-0142",
@@ -2683,7 +2683,7 @@
     {
       "id": "ts-0240",
       "date": "2026-08-20",
-      "status": "new",
+      "status": "watching",
       "summary": "Underwritten carrier selection: adjudicate, at tender time, whether a specific motor carrier on a specific lane is a defensible choice - and then indemnify the freight broker for the negligent-selection liability the Supreme Court handed the entire industry in May 2026. Sell the decision with the risk attached, not a score with a disclaimer.",
       "cross": {
         "ai_signal": "Frontier models can now read the full unstructured safety record of all ~600,000 US motor carriers - individual roadside inspection narratives, crash reports, FMCSA authority and insurance filing history, cancellations, chameleon-carrier reincarnation patterns, and civil dockets - and resolve entities across reincarnations, then adjudicate a named carrier on a named lane within the seconds a spot tender allows. Existing vetting products resell FMCSA SMS/BASIC percentiles because structured scores were all that was machine-readable; the narrative text, which is where the actual predictive signal about a small carrier lives, was not.",
@@ -2702,7 +2702,8 @@
         "composite": 4.3
       },
       "kill_attempts_survived": 2,
-      "brief": "ideas/briefs/0019-underwritten-carrier-selection.md"
+      "brief": "ideas/briefs/0019-underwritten-carrier-selection.md",
+      "revalidation": "2026-08-22 update with substantial new evidence. The severity half of this thesis got confirmed in the hardest possible way: a jury returned a $604M verdict against C.H. Robinson over a 2021 six-vehicle pileup, apportioning liability across broker, carrier and driver with the largest share potentially falling on the broker; C.H. Robinson is appealing (Bloomberg, 2026-08-20). This is the first nine-figure post-Montgomery datapoint and it lands on the exact peril the idea underwrites - the broker's selection decision, not the fleet's driving. Trade coverage is simultaneously reporting that stakeholders see 'limited operational change' in day-to-day brokerage practice, which is the tell: the exposure repriced and the behaviour did not, so the gap between what brokers do and what they are now liable for is widening rather than closing. The open question from the 2026-08-20 run is unchanged and now more urgent - pull five broker contingent-auto or E&O forms written after 2026-05-14 and establish whether negligent selection is being excluded or merely surcharged."
     },
     {
       "id": "ts-0241",
@@ -2823,6 +2824,142 @@
       "summary": "AI-native MGA writing liability for micro-fleet trucking companies priced out by the hard market.",
       "kill_reason": "Occupied by funded AI-native operators - Nirvana, HDVI and Koffie all underwrite motor carrier liability off telematics and have raised substantially. Logged deliberately alongside ts-0240 as its nearest neighbour: the trucking insurtech capital went to insuring the fleet's own driving, which is precisely why the broker's selection decision is still uninsured.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0257",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Turnaround scope-compression engine for refineries: read the plant's full inspection, corrosion-loop and prior-workpack history to decide which equipment actually has to be opened, riding record refining margins and ~11M b/d of global capacity offline.",
+      "kill_reason": "Occupied and quantified. iFactory sells AI risk-prioritised turnaround planning claiming 40-60% reduction in scope additions and 40% reduction in total inspection scope; Prometheus Group and IAMTech both sell shutdown/turnaround/outage platforms; risk-based inspection is a mature codified discipline (API 580/581) with incumbent vendors. The category is not merely occupied, it is occupied by vendors already publishing the exact benefit this idea would claim.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0258",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Construction delay-claim underwriter: read a contractor's entire project record (RFIs, submittals, daily logs, schedule updates, photos) to price a delay or change-order claim, then advance cash against it, riding the 349k-worker construction labour gap and systematic schedule slippage on the data-centre buildout.",
+      "kill_reason": "Occupied on the analysis half and duplicative on the finance half. Magra, Contravault, Nomic and a dozen 'construction claims AI' platforms already generate automated time-impact analyses and notice-of-claim packages (Magra claims $85k of consultant work compressed to 48 hours). The monetisation wrapper is a restatement of ts-0111 (AI case-outcome underwriting for litigation finance), already killed.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0259",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Best-execution indemnity for the post-Rule-611 equity market: reconstruct the counterfactual venue landscape at the microsecond of routing, issue a defensible determination, and indemnify the broker-dealer against best-execution enforcement and class-action exposure once the NBBO stops being a safe harbour.",
+      "kill_reason": "Fails the AI-native gate and the why-now is contingent. The hard part is microsecond counterfactual simulation over depth-of-book tick data - classical quantitative microstructure work that frontier models do not obviously improve - and the transaction-cost-analysis field (S3, Abel Noser, BestEx Research, kdb-based stacks) already owns it. The rescission of Rules 611 and 610(e) is also still only a proposal (SEC 2026-06-11, comments closed 2026-08-17), so the liability the whole business depends on may never be created.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0260",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Forward bid on the ROAD Act's mandatory build-to-rent exit: sell an institutional BTR owner a firm per-parcel price today for the retail sale to an individual homeowner that the statute forces within seven years.",
+      "kill_reason": "Correlated risk - the ts-0243 lesson applied directly. Every put in the book is written on the same national housing market and the same statutory supply wave hitting simultaneously; when it goes wrong it goes wrong for the whole book at once, which is what makes a risk unfinanceable regardless of how good the per-parcel prediction is. The seven-year horizon also removes any urgency to buy it now.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0261",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Institutional-to-retail single-family disposition engine: agent-run conversion of grandfathered institutional rental homes into owner-occupied sales, one house and one sitting tenant at a time, as the ROAD Act permanently closes the institutional acquisition channel.",
+      "kill_reason": "Occupied by scarred incumbents and lacks a clock. Roofstock, Sundae, Pathway Homes, Divvy, Landis and Blackstone's Home Partners of America have all built institutional-to-retail or lease-to-own single-family channels. More importantly the Act imposes no divestiture requirement and grandfathers everything held on 2026-07-11, so the disposition is voluntary and slow - there is no dated forcing event.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0262",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "National accessory-dwelling-unit production engine: machine-generate per-parcel, per-jurisdiction pre-approved ADU designs against every local zoning and building code so factories can build to stock, riding FHA Title I's new authority to insure ADU construction and California's One-Stop-Shop reforms.",
+      "kill_reason": "Occupied on the product and duplicative on the mechanism. Abodu, Samara, Villa, Cottage, United Dwelling and Boxabl already sell factory ADUs, and California already runs a statewide pre-approved ADU design programme. The 'prove standardisation by machine so the factory can make to stock' mechanism is ts-0203, already in the book; the small-dollar lending half is ts-0146, already killed.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0263",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Reconsideration-of-value adjudication engine for the newly mandated consumer appraisal appeal: judge whether an appraisal's comparable selection and adjustments are defensible and generate or rebut the ROV, under ROAD Act Section 704's requirement that FHA, VA, USDA and FHFA maintain consumer-initiated second-appraisal procedures.",
+      "kill_reason": "Occupied by the GSE itself and by funded vendors. Fannie Mae's Collateral Underwriter has scored comparable selection and adjustments on every submitted appraisal for a decade, and Clear Capital, Reggora, Aloft, HouseCanary and Restb.ai all sell appraisal review and automated valuation. Section 704 formalises a procedure rather than creating an unserved determination.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0264",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Merchant of firm memory supply: hold DRAM allocation and inventory positions and sell OEMs a guaranteed delivered quantity on a date, using machine-proven part interchangeability to satisfy commitments with whatever silicon is obtainable.",
+      "kill_reason": "Occupied by real merchants and duplicative of live book entries. Fusion Worldwide, Sourceability, Smith and Converge are established independent distributors who already make exactly this market and hold the inventory. The interchangeability-proving half restates ts-0185 (qualification-collapse engine) and ts-0231, both killed, and the merchant structure restates ts-0202 (slot exchange), which is already in the book.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0265",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Approval-package engine for the FAA's 5G radio-altimeter retrofit: autonomously generate the STC and alternative-means-of-compliance engineering for the ~$7B fleet-wide modification mandated by the final rule of 2026-07-24.",
+      "kill_reason": "Duplicate and episodic. ts-0183 (airworthiness-substantiation engine generating FAA PMA/DER approval packages) is the same product and was already killed. A one-time fleet retrofit is also an episodic programme with a defined end, not a recurring transaction - it fails the venture-scale gate on duration even if the dollar figure is large.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0266",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Look-through AI-concentration engine for public pension funds: compute true exposure to the AI capital cycle across public equity, private funds, index sleeves and second-order channels (utility offtake, REIT tenancy, AI-capex-dependent credit), after Equable found 8-10% of public pension assets - $513-642B - directly exposed to AI-related companies.",
+      "kill_reason": "Sells analysis rather than clearing a market, and it is occupied. MSCI, BlackRock Aladdin and MSCI/Burgiss already do portfolio look-through including private capital, and pension consultants own the fiduciary-documentation relationship. It also restates the operator's own realism-engine family (ts-0064, ts-0069, ts-0086, ts-0054) with a different reader on the other end.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0267",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "RF coexistence determination engine for the FCC's Upper C-band expansion and the aviation altimeter interference regime: predict per-airport and per-deployment whether a proposed transmitter causes harmful interference, replacing years of interagency dispute.",
+      "kill_reason": "Fails the venture-scale gate on buyer concentration. The reachable customer set is three or four national carriers, the FAA, and a handful of satellite operators - a market that can support a valuable consultancy or a licensed tool, but not a billion-dollar company, because there is no expansion path to more buyers.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0268",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Rack-level fuel basis fixing for commercial fleets: predict terminal-by-terminal rack price from refinery outage, pipeline nomination, terminal inventory and weather, and sell trucking, farm, marine and municipal buyers a fixed all-in delivered price for a term, taking the un-hedgeable basis risk.",
+      "kill_reason": "Correlated and occupied. A national product-supply shock - the very thing the thesis is built on, with ~11M b/d of refining capacity offline and US inventories heading to their lowest since 2000 - moves every rack in the country at once, so the book has no independence. Mansfield Energy, Breakthrough Fuel and the fuel-hedging desks already sell fixed delivered pricing to exactly these buyers.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0269",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Sub-threshold single-family operating platform: run large scattered-site rental portfolios on behalf of many independent sub-350-home owner entities, since the ROAD Act makes aggregation above 350 homes illegal but leaves the operating economics intact.",
+      "kill_reason": "Occupied and legally fragile. Doorstead, Belong, Poplar Homes, Latchel and EliseAI already sell AI-assisted institutional-grade single-family property management. Worse, the statutory definition of 'investment control' explicitly reaches managing members and investment managers, so a platform that actually controls the portfolios would itself be aggregated over the threshold - the structure defeats itself.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0270",
+      "date": "2026-08-22",
+      "status": "killed",
+      "summary": "Tenant-to-owner conversion engine for the ROAD Act's build-to-rent carve-out: put every sitting tenant on a machine-run twelve-to-twenty-four-month path to mortgage readiness so the mandated seven-year sale to an individual homeowner has a buyer.",
+      "kill_reason": "Occupied by a bruised category. Home Partners of America (Blackstone), Divvy Homes, Landis and Pathway have all built lease-to-own or path-to-ownership products at scale, and several have contracted sharply. The forcing event is also seven years out, so there is nothing that makes a customer buy this in 2026.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0256",
+      "date": "2026-08-22",
+      "status": "new",
+      "summary": "Control of record: an adjudicated, continuously maintained national map of 'investment control' over US single-family homes, sold as a per-acquisition determination with an indemnity behind it - because from 2027-01-07 the ROAD to Housing Act makes any purchase by an entity controlling 350+ homes a $1M-per-violation offence, the statutory control test reaches through affiliates, GPs, managing members, investment managers and any non-passive 25% equity holder, and Treasury's implementing regulations will almost certainly arrive after the prohibition already bites.",
+      "cross": {
+        "ai_signal": "Two things arrived together. Long-horizon agents that hold a whole corpus for a single decision - Grok 4.6 (2026-08-12) completing jobs across ~53 turns and ~0.5B input tokens, Claude Opus 5 topping the Artificial Analysis agentic index at 55.3, Fable 5 shipping 1M-token context for Mythos-class long-horizon work - make it economic to resolve one entity's full control graph end to end rather than in human-reviewed fragments. And frontier document reasoning is now good enough to apply a statutory test with eleven carve-outs to heterogeneous source text: 3,100+ county deed and assessor records with no common grantee format, 50 state entity registries, operating agreements and LPAs, SEC and state fund filings, and the deed language that distinguishes a passive LP from an entity with investment control. Nobody built this map before because nobody had a reason to know how many homes an entity controls, and the cost of finding out by hand ($500-$5,000 per entity chain) exceeded the value of the answer. The statute created the reason and the models collapsed the cost in the same quarter.",
+        "structural_signal": "The 21st Century ROAD to Housing Act (H.R.6644) became law on 2026-07-11 without signature under the ten-day presentment rule. Section 1001 bars any 'large institutional investor' from purchasing or contracting to purchase single-family homes from 2027-01-07, with civil penalties of up to $1M per violation or three times the purchase price, whichever is greater. 'Large institutional investor' means any for-profit entity that, alone or with affiliated entities, has direct or indirect investment control over 350 or more single-family homes in aggregate; 'investment control' expressly reaches general partners, managing members, investment managers and any holder of more than 25% of any class of equity in the owning entity unless genuinely passive; and the aggregation rule defeats splitting a portfolio across LLCs. Homes held on 2026-07-11 are grandfathered permanently and there is no divestiture requirement, so the entire compliance burden falls on the forward transaction. Treasury must write implementing regulations in consultation with HUD, FHFA and the SEC, but the Act forbids any regulation from altering the definitions, narrowing the exceptions, expanding the covered class or moving the 350 threshold - and practitioners expect the prohibition to take effect before the regulations are finalised. Separately, California enacted its own institutional investor reporting law in early 2026, so the same determination is being demanded by states as well."
+      },
+      "buyer": "First: the general counsel or head of compliance at an SFR aggregator, build-to-rent sponsor or real-estate credit fund in the weeks before 2027-01-07, who has to certify to an investment committee and to lenders that a pending acquisition does not cross the threshold - and who discovers that the 25%-non-passive limb sweeps in fund stakes and JV interests nobody had ever counted as 'homes'. Second, and larger: the title underwriter or closing agent asked for an affirmative endorsement that a transaction is not a prohibited acquisition, on a deal where a prohibited purchase is potentially voidable and the penalty is three times the price.",
+      "trigger": "2027-01-07 - the date Section 1001's prohibition and penalties take effect, on statutory definitions Treasury is barred from narrowing, with implementing regulations likely still unfinished.",
+      "why_incumbents_cant": "The property-data incumbents (Cotality/CoreLogic, ATTOM, Regrid, Reonomy, PropertyRadar, Batch) sell bulk records and skip-tracing contact resolution; their product is a licensed file, not an adjudicated determination, and their business model cannot carry indemnity on a legal conclusion. The AI title-search vendors (Pippin, TerraLedger and the rest) work the chain of title on one parcel - liens, encumbrances, marketability - which is a different question from aggregate control across an entity's whole national footprint. The big title underwriters have the balance sheet to indemnify but no national entity-control graph and a century of underwriting practice organised parcel by parcel. Law firms are producing excellent client alerts on the statute and will bill hours per entity, which is precisely the cost structure that makes per-transaction determination impossible. And the institutions themselves cannot self-certify credibly: the counterparty, the lender and the securitisation trustee all want a determination from someone other than the buyer.",
+      "scores": {
+        "novelty": 5,
+        "why_now": 5,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.3
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0020-single-family-control-of-record.md"
     }
   ]
 }
