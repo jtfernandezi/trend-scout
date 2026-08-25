@@ -710,7 +710,13 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0008-data-center-completion-realism-engine.md",
-      "revalidation": "2026-07-25 first re-check since 06-30: SURVIVES and the thesis is now QUANTIFIED in public - but novelty is softening because a competitor holds the observation layer. Validation: an analytics group signals at least 40% of AI data centers slated for 2026 completion will be delayed (Microsoft/OpenAI projects slipping 3+ months) with companies denying holdups while satellite imagery contradicts them; reporting now describes half of US builds delayed or cancelled and a 7 GW capacity crisis; transformer lead times exceed five years in extreme cases against 12-18 month compute cycles. Decisively, the financial consequence is now published: for a representative 60 MW data center IRR falls from 17.1% on time to 12.6% at three months' delay and 8.8% at six months - a six-month slip nearly halves returns, which is precisely the underwritable quantity this engine prices. Novelty caution: SynMax is commercially selling satellite-imaging + AI predictive analytics on data-center construction progress, i.e. an adjacent player now owns the per-project observation layer this model would need - the same GridUnity-vs-ts-0064 dynamic. The defensible remainder is the correlated equipment-dependency-graph accumulation layer, not progress observation. Status new->watching. | 2026-08-15 the peril this idea prices got both larger and better documented. Practitioners now name electrical equipment as the single most common cause of data-centre delay: switchgear beyond 60 weeks (44 in late 2025), transformers averaging 128 weeks, GSUs 144, high-capacity units to four years, with GSU demand up 274% and substation transformer demand up 116% since 2019 and only ~$2B of North American capacity expansion arriving by 2028. Because the whole industry queues at the same four manufacturers, equipment delay is almost perfectly correlated across a book - exactly the accumulation this idea exists to model. Cancellations quadrupled to 25 in 2025 and 30-50% of the 2026 pipeline is expected to slip or die. Note the adjacency to the new ts-0202: that idea trades the equipment positions this one prices the delay risk of, and a founder could plausibly do either but not both."
+      "revalidation": "2026-07-25 first re-check since 06-30: SURVIVES and the thesis is now QUANTIFIED in public - but novelty is softening because a competitor holds the observation layer. Validation: an analytics group signals at least 40% of AI data centers slated for 2026 completion will be delayed (Microsoft/OpenAI projects slipping 3+ months) with companies denying holdups while satellite imagery contradicts them; reporting now describes half of US builds delayed or cancelled and a 7 GW capacity crisis; transformer lead times exceed five years in extreme cases against 12-18 month compute cycles. Decisively, the financial consequence is now published: for a representative 60 MW data center IRR falls from 17.1% on time to 12.6% at three months' delay and 8.8% at six months - a six-month slip nearly halves returns, which is precisely the underwritable quantity this engine prices. Novelty caution: SynMax is commercially selling satellite-imaging + AI predictive analytics on data-center construction progress, i.e. an adjacent player now owns the per-project observation layer this model would need - the same GridUnity-vs-ts-0064 dynamic. The defensible remainder is the correlated equipment-dependency-graph accumulation layer, not progress observation. Status new->watching. | 2026-08-15 the peril this idea prices got both larger and better documented. Practitioners now name electrical equipment as the single most common cause of data-centre delay: switchgear beyond 60 weeks (44 in late 2025), transformers averaging 128 weeks, GSUs 144, high-capacity units to four years, with GSU demand up 274% and substation transformer demand up 116% since 2019 and only ~$2B of North American capacity expansion arriving by 2028. Because the whole industry queues at the same four manufacturers, equipment delay is almost perfectly correlated across a book - exactly the accumulation this idea exists to model. Cancellations quadrupled to 25 in 2025 and 30-50% of the 2026 pipeline is expected to slip or die. Note the adjacency to the new ts-0202: that idea trades the equipment positions this one prices the delay risk of, and a founder could plausibly do either but not both.",
+      "evidence_updates": [
+        {
+          "date": "2026-08-25",
+          "note": "Labour supply is now the second correlated node alongside electrical equipment. Construction jobs exposed to the data-center buildout are up 216,000 since 2022 (Indeed Hiring Lab, 2026-08), against a 2026 shortfall of more than 530,000 construction workers and up to 499,000 specifically in the data-center segment; industry outlooks now name experienced superintendents, project managers and estimators - not trades hands - as the binding constraint. A delay model built only on transformer and switchgear factory backlogs understates correlation, because the same regional crew pools and the same handful of EPCs are shared across the projects sharing the equipment factories."
+        }
+      ]
     },
     {
       "id": "ts-0070",
@@ -2960,6 +2966,134 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0020-single-family-control-of-record.md"
+    },
+    {
+      "id": "ts-0271",
+      "date": "2026-08-25",
+      "status": "killed",
+      "summary": "AI-native importer of record for foreign sellers, taking full US customs liability as the June-3-2026 'Strengthening Customs Enforcement' EO restricts foreign entities from serving as IOR and imposes bond / tangible-domestic-asset thresholds.",
+      "kill_reason": "Existing category, and the liability does not actually stop with the provider. Importer-of-record-as-a-service is already sold at scale (Tecex, Carra Globe, GCE Logistic, 24hour-ar, Zonos), and practitioner guidance is explicit that appointing a thinly capitalised IOR 'simply adds another party to a shared liability position - if the IOR cannot pay or disputes the debt, the foreign seller is next in line.' The EO reshuffles who is allowed to play by raising capital requirements; it does not create a new product. Folded into ts-0281 as the own-the-entry expansion path instead.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0272",
+      "date": "2026-08-25",
+      "status": "killed",
+      "summary": "Rules-of-origin change hedge: sell a manufacturer a multi-year contract that pays out if USMCA rules of origin move adversely for their specific part, now that the US declined extension on 2026-07-01 and the pact runs on annual reviews to 2036.",
+      "kill_reason": "No beachhead, so it fails Step 3 before novelty. The structural signal is real and large - Art. 34.7.4 annual reviews collapse a 16-year rule horizon to twelve months across ~$1.8T of North American trade - but a derivative on trade-rule outcomes has no counterparty, no reserve base, no reference index and a sales cycle measured in board approvals; you cannot land it fast and you cannot price the first one. The insurable slice of the same signal is determination error, not policy change, which is ts-0281.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0273",
+      "date": "2026-08-25",
+      "status": "killed",
+      "summary": "Part 108 operational-area safety-case and BVLOS approval engine: generate and continuously maintain the systematic safety programme and operational-area approvals the FAA's final BVLOS rule will require of every drone operator.",
+      "kill_reason": "Occupied before the rule has even published. The final Part 108 rule reached OIRA on 2026-07-10 and the drone-ops platforms (Aloft, Airdata, DroneDeploy, FlytBase, Kittyhawk) are already marketing Part 108 readiness on the explicit pitch that compliance records are 'a byproduct of how you operate' - they hold the operator's mission planning, crew briefing and post-flight logging and will absorb the safety-programme layer. The ledger has also already killed two aviation approval-package plays for the same shape (ts-0183 PMA/DER, ts-0265 FAA STC).",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0274",
+      "date": "2026-08-25",
+      "status": "killed",
+      "summary": "Roadside exception and law-enforcement interface network for driverless freight: diagnose any highway exception from truck telemetry, decide remote-fix versus dispatch, and give officers a machine-readable counterpart now that driver-out operations scale in 2026 with no federal rule.",
+      "kill_reason": "Duplicates two prior kills and is only half AI-native. ts-0205 (fleet-level exception resolution for physical AI) and ts-0174 (remote-operator marketplace) were both killed because managed teleoperation and intervention is an established category and every autonomy company treats intervention data as core training IP - Aurora, Kodiak, Waabi and Volvo AS all build launch-and-land terminals and remote assistance in-house. The remaining half, dispatching physical responders to a shoulder, is a service network with no model edge.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0275",
+      "date": "2026-08-25",
+      "status": "killed",
+      "summary": "Cross-national qualification mutual-recognition engine for European defence: prove statistical equivalence so a component qualified in one member state is accepted in another, unlocking the ramp blocked by fragmented national certification regimes.",
+      "kill_reason": "Third pass at the same square. ts-0185 (qualification-collapse engine) was killed by government-funded incumbency - Senvol ML is running a US Navy programme through July 2027 whose stated goal is exactly to substitute in-situ monitoring evidence for the qualification battery, and the standard it produces will be the standard - and ts-0247 (requalification for the Chinese absorption of European auto plants) was killed for duplicating that template. The European fragmentation is real and named as a constraint, but the product is the same transfer-learning-through-requalification engine already killed twice.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0276",
+      "date": "2026-08-25",
+      "status": "killed",
+      "summary": "Program-management judgment agent for capital projects: hold the whole multi-party schedule, detect critical-path threats weeks early and act on them, so one experienced superintendent can run three jobs instead of one.",
+      "kill_reason": "Occupied and previously killed. The signal is sharp - industry reporting now names experienced superintendents, project managers and estimators, not trades labour, as the binding constraint, and European defence names the same scarcity of programme managers - but nPlan, Alice Technologies, Trunk Tools, Buildots, Doxel and Procore's own copilot already occupy schedule risk and look-ahead. The ledger also killed ts-0122 (breaking the supervision ratio in the trades) and ts-0170 (construction schedule-feasibility and labour-supply underwriting).",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0277",
+      "date": "2026-08-25",
+      "status": "killed",
+      "summary": "Customs refund-claim purchaser: advance importers cash today against duty drawback and post-Supreme-Court IEEPA refund entitlements, priced by machine-reading their full entry history.",
+      "kill_reason": "Occupied, and already killed inside ts-0028. YC alone has funded Pax ('AI-native broker that automates and maximises tariff refunds through duty drawback') and Forge (duty drawback as a white-glove service on AI tooling), alongside Charter Brokerage, Alliance Drawback and Tariff Refund HQ. Buying the claim rather than brokering it is a balance-sheet variation on a funded, competitive service.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0278",
+      "date": "2026-08-25",
+      "status": "killed",
+      "summary": "EU AI Act Article 50 rail: machine-readable synthetic-content marking and AI-interaction disclosure for every provider and deployer touching the EU, live 2026-08-02.",
+      "kill_reason": "Trigger eroded and provenance is owned. The Digital Omnibus entered into force 2026-07-27 and deferred the Annex III high-risk obligations to 2027-12-02 and embedded-product high-risk to 2028-08-02, so what actually bit on 2026-08-02 is transparency plus the penalty regime - a disclosure widget, not a market. Content provenance is held by C2PA, Truepic, Adobe and the model providers themselves. Duplicates ts-0195 (consent and value metering for synthetic performance) and ts-0225 (content-contribution clearing house).",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0279",
+      "date": "2026-08-25",
+      "status": "killed",
+      "summary": "Subsurface helium discovery and recovery intelligence, triggered by the 2026 Qatari production strikes that doubled spot helium against semiconductor and MRI demand.",
+      "kill_reason": "Fails the AI-native and venture-scale gates together. The scarcity is real and fresh, but the value accrues to whoever owns the reservoir - Pulsar Helium, Blue Star Helium, Total Helium and New Era Helium are resource companies - and subsurface inference is a capability inside an exploration company rather than a product sold to one. Software sold into a few dozen helium juniors is not a $1B path.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0280",
+      "date": "2026-08-25",
+      "status": "killed",
+      "summary": "Defence sub-tier capacity merchant: contract with primes to deliver parts on a firm date and fulfil through a machine-modelled network of Tier-2/3 shops, absorbing the schedule risk primes cannot.",
+      "kill_reason": "Occupied by well-funded companies doing exactly this. Hadrian builds AI-native precision factories for defence and aerospace, Xometry runs the manufacturing marketplace at scale, and Vendra and Silkline AI are both funded to turn a technical requirement into parts from qualified US suppliers. It also duplicates the ledger's own supply-discovery template (ts-0217, folded into ts-0202). Kept separate from ts-0282 deliberately: the distinction is take-the-order versus fund-the-shop.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0281",
+      "date": "2026-08-25",
+      "status": "new",
+      "summary": "Origin of record: an underwritten country-of-origin determination for imported goods - reconstruct a part's true multi-tier bill of materials, issue a written origin and regional-value-content determination, and indemnify the importer for back duties, interest and penalties if CBP later denies the claim. Tax-liability insurance, but for origin, at the moment the US declined to extend USMCA (2026-07-01) and put rules of origin on an annual review cycle, and the 2026-06-03 customs-enforcement executive order removed the mitigation that used to soften a wrong answer.",
+      "cross": {
+        "ai_signal": "Reconstructing regional value content to the sub-tier has always been an evidence problem, not a math problem: a part contains parts contain parts, from suppliers on three continents who will not disclose their cost build-ups, and CBP wants material-supplier invoices, bills of lading, production records and the cost analysis behind the RVC percentage. Doing that by hand costs more in professional-services diligence than any premium could justify, which is precisely why no one has ever been willing to insure the answer. Frontier long-context models changed the arithmetic in 2026 - twelve models from seven providers shipped in August alone, agentic jobs now run across ~53 turns and ~0.5B input tokens, and GPT-5.6 Luna sits at $0.20/$1.20 per million tokens after an 80% cut - so an underwriter can now afford to actually do the search on every part it insures, and to redo it continuously off the customer's ERP and purchase-order feed as suppliers change. The insurable object is determination error, which is fortuitous and diligence-sensitive, not the duty rate, which is neither.",
+        "structural_signal": "Two dated triggers landed seven weeks apart. On 2026-07-01 the United States declined to confirm extension of the USMCA for a further sixteen years; Mexico and Canada both supported extension, so the agreement now runs on annual joint reviews under Article 34.7.4 until it is extended or expires on 2036-07-01, with a US push for country-specific automotive content thresholds live into the September round and rules of origin widely expected to tighten. On 2026-06-03 the 'Strengthening Customs Enforcement' executive order directed CBP, within 90 days (2026-09-01), to revise every penalty mitigation standard to a floor of not less than 50% of the assessed penalty and to eliminate mitigation for repeat offenders; it also creates a 'good standing' threshold for import privileges and raises bond and tangible-domestic-asset requirements for importers of record. Underneath: CBP verification and audit activity is already up sharply in 2025-26, verification reaches back five years from entry, and a denied claim reliquidates at MFN plus stacked Section 232/301 duty plus interest plus penalties up to four times the unpaid duty. Meanwhile the comparable market proves the appetite - Euclid took a record 554 global tax-liability insurance submissions in 1Q26 against 418 in 1Q25 - and there is no equivalent product for customs."
+      },
+      "buyer": "The VP of trade compliance or CFO at a US mid-market manufacturer or importer with roughly $50M-$1B of annual entered value in USMCA-claimed or Section 232/301-exposed goods - auto parts, industrial machinery, electrical equipment, appliances - at one of two trigger moments: a CBP verification letter or Form 28/29 lands on a claim made up to five years ago, or they have to re-certify origin for the coming year under rules that now change annually and cannot be relied on from last year's file.",
+      "trigger": "2026-09-01, the executive order's 90-day deadline for CBP to floor penalty mitigation at 50% and eliminate it for repeat offenders - which converts a wrong origin call from a negotiable assessment into a fixed, compounding, five-year-deep liability and, via the new 'good standing' test, a threat to import privileges themselves.",
+      "why_incumbents_cant": "Customs brokers are agents, not principals - their powers of attorney and terms explicitly push origin liability back to the importer, and they have no balance sheet to stand behind an answer. Trade-compliance software sells the determination as SaaS and will not put capital behind it: e2open, Descartes, Thomson Reuters ONESOURCE and Trade Insight AI's BOM-driven rules-of-origin engine all ship 'audit-ready' determinations with the risk left where it was, and YC has now funded four companies in the same layer (MarkIt, Trava, Pax, Forge), none of which takes the loss. Sureties write customs bonds that guarantee CBP gets paid; the importer remains fully liable to the surety, so the bond moves the collection risk, never the determination risk. And conventional insurers have reasoned themselves out of the market: the market view is that a duty bill is a known cost imposed by policy rather than a fortuitous event and the Government Action exclusion catches it - correct about the duty, and precisely wrong about the determination, which is the same insurable object as an uncertain tax position or a defect in title.",
+      "scores": {
+        "novelty": 4,
+        "why_now": 5,
+        "market_venture_scale": 5,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.3
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0021-origin-of-record.md"
+    },
+    {
+      "id": "ts-0282",
+      "date": "2026-08-25",
+      "status": "new",
+      "summary": "Capability credit for the defence sub-tier: a lender that underwrites a Tier-2/Tier-3 shop's ability to execute a specific qualified order by machine-reading the technical data package, the shop's machine base, its first-article and non-conformance history and the prime's schedule, then advances the pre-delivery working capital the shop needs to ramp - the $2M-$20M tickets that banks decline on reputational and compliance grounds and DoD's Office of Strategic Capital is too big to write.",
+      "cross": {
+        "ai_signal": "The underwriting question is an engineering judgement, not a credit score: can this forty-person shop actually make twelve thousand of this part, to this print, on this schedule. Answering it means reading a technical data package - drawings with GD&T, material and process specifications, special-process callouts - and mapping it against the shop's actual machine base and spindle availability, its historical first-pass yield on comparable features, its non-conformance and corrective-action record, its raw-material dependency, and the prime's delivery schedule. That is multimodal engineering reasoning over unstructured artefacts, and until 2026 no lender could put a manufacturing engineer on a $5M loan and still make money. Frontier multimodal models now form that judgement per deal at near-zero marginal cost, and every loan written adds a labelled promised-versus-delivered observation that nobody else is accumulating. This is deliberately the opposite of ts-0041, killed for underwriting structured GPU telemetry that needed no frontier model.",
+        "structural_signal": "Demand doubled and the sub-tier cannot finance the ramp. An Oliver Wyman survey of 160-plus US defence supply-chain companies in May 2026 puts the backlog on a path to roughly $900B and describes sub-tier suppliers as the structurally exposed segment with the least financial, operational and digital room to absorb the surge. In Europe, defence orders roughly doubled between 2025 and early 2026 while industrial production edged up only marginally, with limited advance payments to sub-tier suppliers named as a specific named constraint alongside skilled labour and fragmented certification. Banks decline defence SMEs on compliance and reputational grounds and for contracts that may be classified or unpredictable; up to half of lower-tier suppliers do not seek debt finance at all; and payment terms are typically on delivery or milestone, which is the wrong side of the cash-flow problem. Public capital is arriving above the gap, not in it: the FY26 NDAA expanded the Defense Industrial Base Fund and $20B of credit subsidy supports industrial-base lending, while OSC's own credit programme writes $10M-$150M tickets on government timelines. BENS states the thesis directly - private investors cannot underwrite what they cannot see - and Sequoia is steering roughly $10B toward reindustrialisation including defence manufacturing."
+      },
+      "buyer": "The owner of a US Tier-2 or Tier-3 defence machine shop, forging, castings house or electronics manufacturer with 20-200 employees, at the moment a prime offers or awards a multi-year or surge order worth two to five times current revenue and the shop needs $2M-$20M of pre-delivery working capital for material, tooling, a second shift and a machine - the exact ticket its bank declines, its factoring line cannot reach because there is no receivable yet, and OSC will not write because it is too small.",
+      "trigger": "An awarded or offered surge/multi-year order the shop cannot fund to delivery, against a backlog heading to ~$900B and a European order book that doubled while production did not.",
+      "why_incumbents_cant": "Banks carry explicit compliance and reputational exclusions on defence SMEs and have no mechanism to price execution risk on a print they cannot read. Factoring and purchase-order finance price the receivable, which exists only after delivery - the shop's problem is entirely upstream of that. Equipment lenders underwrite the resale value of the machine, not the order, so they fund the wrong asset in the wrong amount. JPMorgan's defence supply-chain inventory finance and the ECA/SBLC stack serve primes and Tier-1s with treasury departments. OSC starts at $10M and moves at government speed. And private credit funds decline for the reason BENS names: they cannot see inside a small shop, and the diligence to see inside costs more than the loan earns - which is exactly the cost that frontier models just collapsed.",
+      "scores": {
+        "novelty": 4,
+        "why_now": 5,
+        "market_venture_scale": 5,
+        "defensibility": 4,
+        "yc_fit": 5,
+        "founder_fit": 4,
+        "composite": 4.5
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0022-defence-subtier-capability-credit.md"
     }
   ]
 }
