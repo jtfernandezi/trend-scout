@@ -23,7 +23,8 @@
       },
       "kill_attempts_survived": 2,
       "brief": "ideas/briefs/0001-sba-buyside-deal-structuring.md",
-      "kill_reason": "Killed under the revised 2026-06-16 thesis (venture-scale is now a hard gate): episodic, low-LTV ETA buyer, market score 3 — no credible $1B path. Brief retained as historical record."
+      "kill_reason": "Killed under the revised 2026-06-16 thesis (venture-scale is now a hard gate): episodic, low-LTV ETA buyer, market score 3 — no credible $1B path. Brief retained as historical record.",
+      "rubric_version": 1
     },
     {
       "id": "ts-0002",
@@ -83,7 +84,8 @@
       },
       "kill_attempts_survived": 2,
       "brief": "ideas/briefs/0002-stop-act-fab-shop-compliance.md",
-      "kill_reason": "Killed under the revised 2026-06-16 thesis (venture-scale is now a hard gate): CA-only tiny-shop niche, market score 3 — no credible $1B path. Brief retained as historical record."
+      "kill_reason": "Killed under the revised 2026-06-16 thesis (venture-scale is now a hard gate): CA-only tiny-shop niche, market score 3 — no credible $1B path. Brief retained as historical record.",
+      "rubric_version": 1
     },
     {
       "id": "ts-0008",
@@ -108,7 +110,8 @@
       },
       "kill_attempts_survived": 2,
       "brief": null,
-      "kill_reason": "Killed under the revised 2026-06-16 thesis: niche CA slab-distributor rail (~50-100 buyers) and not AI-native at venture scale, despite market score 4. Same slab cluster as ts-0007."
+      "kill_reason": "Killed under the revised 2026-06-16 thesis: niche CA slab-distributor rail (~50-100 buyers) and not AI-native at venture scale, despite market score 4. Same slab cluster as ts-0007.",
+      "rubric_version": 1
     },
     {
       "id": "ts-0009",
@@ -304,7 +307,8 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0003-robot-policy-assurance-lab.md",
-      "revalidation": "2026-07-23 kill-or-commit re-check (first re-check since 06-18): SURVIVES, still no productized independent behavioral-certification lab for learned robot policies. But the research frontier is heating up fast - mid-2026 arXiv work ('Verifiable Foundation Models for Robot Safety,' 'Modular Safety Guardrails Are Necessary for Foundation-Model-Enabled Robots,' 'Safe robot foundation models') is formalizing exactly the sim-based behavioral-validation problem, and NVIDIA GR00T-Dreams/Isaac Sim + ReSim supply the sim substrate developers self-grade on. Concept maturing toward productization; the independent-lab wedge is open now but a funded entrant is more likely each quarter. Status new->watching. | 2026-08-13 directional confirmation: robot foundation models proliferated and went open in one quarter - Gemini Robotics 2 on Apptronik Apollo 2, RLWRLD RLDX-1, Genesis GENE-26.5, and Xiaomi-Robotics-1 as open weights trained on 100,000+ hours. Open weights mean learned policies will be deployed by parties with no capacity to validate them, which raises the value of an independent behavioural certification artifact and simultaneously enlarges the population of policies nobody is testing. Novelty position unchanged; no new occupant found this run."
+      "revalidation": "2026-07-23 kill-or-commit re-check (first re-check since 06-18): SURVIVES, still no productized independent behavioral-certification lab for learned robot policies. But the research frontier is heating up fast - mid-2026 arXiv work ('Verifiable Foundation Models for Robot Safety,' 'Modular Safety Guardrails Are Necessary for Foundation-Model-Enabled Robots,' 'Safe robot foundation models') is formalizing exactly the sim-based behavioral-validation problem, and NVIDIA GR00T-Dreams/Isaac Sim + ReSim supply the sim substrate developers self-grade on. Concept maturing toward productization; the independent-lab wedge is open now but a funded entrant is more likely each quarter. Status new->watching. | 2026-08-13 directional confirmation: robot foundation models proliferated and went open in one quarter - Gemini Robotics 2 on Apptronik Apollo 2, RLWRLD RLDX-1, Genesis GENE-26.5, and Xiaomi-Robotics-1 as open weights trained on 100,000+ hours. Open weights mean learned policies will be deployed by parties with no capacity to validate them, which raises the value of an independent behavioural certification artifact and simultaneously enlarges the population of policies nobody is testing. Novelty position unchanged; no new occupant found this run.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0032",
@@ -329,7 +333,8 @@
       },
       "kill_attempts_survived": 2,
       "brief": "ideas/briefs/0011-dod-autonomy-assurance-harness.md",
-      "revalidation": "2026-07-25 first re-check since 06-18: SURVIVES, and the why-now materially STRENGTHENED - this is the run's biggest held-book upgrade. The FY2026 defense budget gives AI and autonomous systems a $13.4B standalone budget line for the first time ever (RDT&E Defense-Wide is $35.2B), and the Pentagon's AI Acceleration Strategy (2026-01-09) directs the department to become an 'AI-first' warfighting force through seven Pace-Setting Projects. Critically, DoD is now funding the exact capability rather than merely wanting it: DTE&A has funded researchers to build a framework for structuring and executing assurance cases for autonomous systems and to work out the TEV&V implications, and there is a live DoD SBIR topic 'Runtime Assured Autonomy for AI-Driven Unmanned Platforms' ($250k Phase I / $2M Phase II). Novelty caution: the SBIR route invites many small entrants and FFRDCs plus the primes (Anduril ~$28B, Shield AI ~$5B) do their own T&E, but independence from the system builder is the structural requirement no prime can satisfy. Status new->watching; brief written this run (0011). | 2026-07-28 note (no re-check run; incidental signal): the why-now hardened again on two dated fronts. YC's Fall 2026 RFS (applications closed 2026-07-27) carries 'The Future of American Defense' authored by the sitting US Secretary of the Army - the first time a serving service secretary has written a YC request - which puts defense autonomy at the centre of the batch the operator would apply to. Separately, the 2026-07-20 executive order 'Securing America's Defense Supply Chains and Ensuring Domestic Acquisition of Critical Materials' confirms defense-industrial policy is still escalating at EO level. Novelty caution unchanged and now slightly worse: a YC RFS naming defense guarantees Fall-2026 entrants aimed at this area. | 2026-08-06 note (no re-check run; incidental signal): the 2026 Iran war - outbreak 2026-02-28, Strait of Hormuz closed 2026-03-04, an Iranian strike on Ras Laffan removing ~17% of Qatar's LNG export capacity, and what the IEA calls the largest supply disruption in the history of the global oil market - is the first state-on-state war of the frontier-AI era and will pull hard on autonomous-systems fielding decisions and their assurance gates. Directionally supportive of the why-now; novelty caution from the 2026-07-28 note (YC Fall 2026 RFS naming defense, plus the SBIR route inviting many small entrants) is unchanged."
+      "revalidation": "2026-07-25 first re-check since 06-18: SURVIVES, and the why-now materially STRENGTHENED - this is the run's biggest held-book upgrade. The FY2026 defense budget gives AI and autonomous systems a $13.4B standalone budget line for the first time ever (RDT&E Defense-Wide is $35.2B), and the Pentagon's AI Acceleration Strategy (2026-01-09) directs the department to become an 'AI-first' warfighting force through seven Pace-Setting Projects. Critically, DoD is now funding the exact capability rather than merely wanting it: DTE&A has funded researchers to build a framework for structuring and executing assurance cases for autonomous systems and to work out the TEV&V implications, and there is a live DoD SBIR topic 'Runtime Assured Autonomy for AI-Driven Unmanned Platforms' ($250k Phase I / $2M Phase II). Novelty caution: the SBIR route invites many small entrants and FFRDCs plus the primes (Anduril ~$28B, Shield AI ~$5B) do their own T&E, but independence from the system builder is the structural requirement no prime can satisfy. Status new->watching; brief written this run (0011). | 2026-07-28 note (no re-check run; incidental signal): the why-now hardened again on two dated fronts. YC's Fall 2026 RFS (applications closed 2026-07-27) carries 'The Future of American Defense' authored by the sitting US Secretary of the Army - the first time a serving service secretary has written a YC request - which puts defense autonomy at the centre of the batch the operator would apply to. Separately, the 2026-07-20 executive order 'Securing America's Defense Supply Chains and Ensuring Domestic Acquisition of Critical Materials' confirms defense-industrial policy is still escalating at EO level. Novelty caution unchanged and now slightly worse: a YC RFS naming defense guarantees Fall-2026 entrants aimed at this area. | 2026-08-06 note (no re-check run; incidental signal): the 2026 Iran war - outbreak 2026-02-28, Strait of Hormuz closed 2026-03-04, an Iranian strike on Ras Laffan removing ~17% of Qatar's LNG export capacity, and what the IEA calls the largest supply disruption in the history of the global oil market - is the first state-on-state war of the frontier-AI era and will pull hard on autonomous-systems fielding decisions and their assurance gates. Directionally supportive of the why-now; novelty caution from the 2026-07-28 note (YC Fall 2026 RFS naming defense, plus the SBIR route inviting many small entrants) is unchanged.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0033",
@@ -402,7 +407,8 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0004-pharma-ai-credibility-lab.md",
-      "revalidation": "2026-07-25 first re-check since 06-20: SURVIVES with an improved international why-now but a softened trigger. FDA and EMA jointly published ten Guiding Principles of Good AI Practice in Drug Development on 2026-01-14, which broadens the wedge to both major regulators, and the 7-step credibility framework with its Credibility Assessment Plan / Report (CAP/CAR) deliverables is now the settled expectation for AI-touched submissions. Softening: as of April 2026 the FDA guidance REMAINS DRAFT rather than final, which places it partly in the ts-0043/ts-0102 contingent-mandate failure mode - the composite 3.8 already reflects the weakest novelty of the held book. Encouragingly the field is still advisory rather than productized: what exists is consultancies and explainer content (GxP-CC, IntuitionLabs, kitsa.ai), not an independent lab. Status new->watching."
+      "revalidation": "2026-07-25 first re-check since 06-20: SURVIVES with an improved international why-now but a softened trigger. FDA and EMA jointly published ten Guiding Principles of Good AI Practice in Drug Development on 2026-01-14, which broadens the wedge to both major regulators, and the 7-step credibility framework with its Credibility Assessment Plan / Report (CAP/CAR) deliverables is now the settled expectation for AI-touched submissions. Softening: as of April 2026 the FDA guidance REMAINS DRAFT rather than final, which places it partly in the ts-0043/ts-0102 contingent-mandate failure mode - the composite 3.8 already reflects the weakest novelty of the held book. Encouragingly the field is still advisory rather than productized: what exists is consultancies and explainer content (GxP-CC, IntuitionLabs, kitsa.ai), not an independent lab. Status new->watching.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0040",
@@ -491,7 +497,8 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0005-private-markets-liquidity-engine.md",
-      "revalidation": "2026-07-21 kill-or-commit re-check: thesis STRENGTHENED, field still open. The crisis intensified since 06-23 - Blackstone BCRED took $3.8B redemption requests in Q1 (7.9% of AUM), Blue Owl OCIC 21.9%, Partners Group gated (June 2026) - and the first systematic academic evidence landed (Fang/Goldstein/Zeng, June 2026, 59 semi-liquid BDCs: 'meeting redemptions imposes costs on those who stay, so everyone runs first' = the reflexive-run dynamic the idea models). Yet the competitive field is still only academics documenting the problem, managers gating reactively, and Morningstar reporting numbers - NO named startup building the behavioral run-prediction + liquidity-orchestration engine. Status new->watching. Strongest kill-or-commit candidate in the ledger; recommend the operator commit or seed a domain expert."
+      "revalidation": "2026-07-21 kill-or-commit re-check: thesis STRENGTHENED, field still open. The crisis intensified since 06-23 - Blackstone BCRED took $3.8B redemption requests in Q1 (7.9% of AUM), Blue Owl OCIC 21.9%, Partners Group gated (June 2026) - and the first systematic academic evidence landed (Fang/Goldstein/Zeng, June 2026, 59 semi-liquid BDCs: 'meeting redemptions imposes costs on those who stay, so everyone runs first' = the reflexive-run dynamic the idea models). Yet the competitive field is still only academics documenting the problem, managers gating reactively, and Morningstar reporting numbers - NO named startup building the behavioral run-prediction + liquidity-orchestration engine. Status new->watching. Strongest kill-or-commit candidate in the ledger; recommend the operator commit or seed a domain expert.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0049",
@@ -556,7 +563,8 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0006-ai-peril-cat-model.md",
-      "revalidation": "2026-07-21 kill-or-commit re-check: SURVIVES but novelty softening. Still no productized independent correlated-AI-failure accumulation model for primary carriers - so the product wedge remains open. BUT the thesis is now widely-published broker/academic copy: Gallagher Re 'identifies systemic risk from AI model failures,' Swiss Re sigma 07/2026, and arXiv papers ('The Insurability Frontier of AI Risk,' 'Your SaaS Is an Insurance Product') all articulate the '80% depend on 3 foundation providers -> correlated accumulation the classical CAT model can't price' framing. Acknowledgment != a built product, so it is not yet occupied, but the novelty score is eroding as the framing commoditizes - a funded entrant is now more likely than at 06-25. Recommend watching closely; commit before the copy becomes a company. | 2026-08-08 incidental update (no new search, evidence surfaced while killing ts-0178): the correlated-agent-failure frequency assumption underneath this idea hardened materially. OWASP's 2026 report puts prompt injection up 340% year on year and formally unsolved, and a 2026 enterprise survey has 88% of organisations reporting confirmed or suspected AI-agent security incidents in the past year. That is the loss-frequency half of the thesis moving from projection to observed base rate, and it is correlated by construction because the injected surface is the shared foundation-model and tool layer. Status new -> watching. Novelty caution from 2026-07-21 is unchanged and still the binding risk."
+      "revalidation": "2026-07-21 kill-or-commit re-check: SURVIVES but novelty softening. Still no productized independent correlated-AI-failure accumulation model for primary carriers - so the product wedge remains open. BUT the thesis is now widely-published broker/academic copy: Gallagher Re 'identifies systemic risk from AI model failures,' Swiss Re sigma 07/2026, and arXiv papers ('The Insurability Frontier of AI Risk,' 'Your SaaS Is an Insurance Product') all articulate the '80% depend on 3 foundation providers -> correlated accumulation the classical CAT model can't price' framing. Acknowledgment != a built product, so it is not yet occupied, but the novelty score is eroding as the framing commoditizes - a funded entrant is now more likely than at 06-25. Recommend watching closely; commit before the copy becomes a company. | 2026-08-08 incidental update (no new search, evidence surfaced while killing ts-0178): the correlated-agent-failure frequency assumption underneath this idea hardened materially. OWASP's 2026 report puts prompt injection up 340% year on year and formally unsolved, and a 2026 enterprise survey has 88% of organisations reporting confirmed or suspected AI-agent security incidents in the past year. That is the loss-frequency half of the thesis moving from projection to observed base rate, and it is correlated by construction because the injected surface is the shared foundation-model and tool layer. Status new -> watching. Novelty caution from 2026-07-21 is unchanged and still the binding risk.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0055",
@@ -653,7 +661,8 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0007-data-center-demand-realism-engine.md",
-      "revalidation": "2026-07-23 kill-or-commit re-check (first re-check since 06-27): thesis PROBLEM now fully front-page-validated - Exelon states only ~22% of its 65-GW pipeline is likely to materialize, ERCOT tracking 226 GW (up from 63 GW end-2024, ~3/4 data centers), phantom requests estimated 5-10x real builds. BUT novelty SOFTENING on two fronts: (1) the incumbent 'solution' so far is tariff design (AEP Ohio 25-MW eligibility / 85% min-billing / termination fees cut its queue 30->13 GW), a policy lever, not a demand-realism model; (2) GridUnity (interconnection-queue management software) is now publicly framing 'phantom data centers flooding the load queue' - adjacent and could extend toward per-project materialization scoring. Still no independent, cross-utility, correlated-materialization probability-of-energization engine productized. Survives the gate; watch GridUnity closely. Status new->watching. | 2026-08-15 strong confirming evidence, thesis sharpened. ERCOT is now working a 438 GW large-load queue (up from the 410 GW figure carried in the 08-13 scan) against a 2,600 GW national interconnection backlog with median time to commercial operation approaching five years. The realism gap is now measured rather than argued: data-centre project cancellations more than quadrupled to 25 in 2025, 30-50% of the 2026 US pipeline is expected to be delayed or cancelled, only about a third of announced capacity is actually under construction, and at least 188 local opposition groups now operate across 40 states. A new and load-bearing driver appeared for the correlated half of the thesis - electrical equipment. Switchgear lead times moved from 44 weeks in late 2025 to beyond 60 weeks; power transformers average 128 weeks and generator step-up transformers 144, with high-capacity units at four years; data centres alone need ~74 GW of three-phase transformer capacity in 2026, about equal to everything replaced annually across the entire US grid. Equipment is now an independent, shared, correlating constraint on energization, not a footnote to it."
+      "revalidation": "2026-07-23 kill-or-commit re-check (first re-check since 06-27): thesis PROBLEM now fully front-page-validated - Exelon states only ~22% of its 65-GW pipeline is likely to materialize, ERCOT tracking 226 GW (up from 63 GW end-2024, ~3/4 data centers), phantom requests estimated 5-10x real builds. BUT novelty SOFTENING on two fronts: (1) the incumbent 'solution' so far is tariff design (AEP Ohio 25-MW eligibility / 85% min-billing / termination fees cut its queue 30->13 GW), a policy lever, not a demand-realism model; (2) GridUnity (interconnection-queue management software) is now publicly framing 'phantom data centers flooding the load queue' - adjacent and could extend toward per-project materialization scoring. Still no independent, cross-utility, correlated-materialization probability-of-energization engine productized. Survives the gate; watch GridUnity closely. Status new->watching. | 2026-08-15 strong confirming evidence, thesis sharpened. ERCOT is now working a 438 GW large-load queue (up from the 410 GW figure carried in the 08-13 scan) against a 2,600 GW national interconnection backlog with median time to commercial operation approaching five years. The realism gap is now measured rather than argued: data-centre project cancellations more than quadrupled to 25 in 2025, 30-50% of the 2026 US pipeline is expected to be delayed or cancelled, only about a third of announced capacity is actually under construction, and at least 188 local opposition groups now operate across 40 states. A new and load-bearing driver appeared for the correlated half of the thesis - electrical equipment. Switchgear lead times moved from 44 weeks in late 2025 to beyond 60 weeks; power transformers average 128 weeks and generator step-up transformers 144, with high-capacity units at four years; data centres alone need ~74 GW of three-phase transformer capacity in 2026, about equal to everything replaced annually across the entire US grid. Equipment is now an independent, shared, correlating constraint on energization, not a footnote to it.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0065",
@@ -716,7 +725,8 @@
           "date": "2026-08-25",
           "note": "Labour supply is now the second correlated node alongside electrical equipment. Construction jobs exposed to the data-center buildout are up 216,000 since 2022 (Indeed Hiring Lab, 2026-08), against a 2026 shortfall of more than 530,000 construction workers and up to 499,000 specifically in the data-center segment; industry outlooks now name experienced superintendents, project managers and estimators - not trades hands - as the binding constraint. A delay model built only on transformer and switchgear factory backlogs understates correlation, because the same regional crew pools and the same handful of EPCs are shared across the projects sharing the equipment factories."
         }
-      ]
+      ],
+      "rubric_version": 2
     },
     {
       "id": "ts-0070",
@@ -797,7 +807,8 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0009-prediction-market-integrity-intelligence.md",
-      "revalidation": "2026-07-23 kill-or-commit re-check (first re-check since 07-02): institutionalization ACCELERATED hard - Kalshi raised $1B at a $22B valuation, ICE completed a $2B Polymarket commitment, the two jointly backed a $35M VC fund, and Pascal raised $9M (07-16) to challenge them; prediction-market prices are now genuine financial infrastructure. The consumer-side independent integrity + resolution-truth wedge (ts-0077) is STILL not built by any named startup. Mild novelty headwind: Kalshi/Polymarket are aggressively building their OWN exchange-side surveillance (employment-disclosure mandates, whistleblower portals, 24/7 surveillance teams, per-market risk-scoring), which both confirms the exchange-side square is taken (ts-0078, killed) AND could make some institutions trust the venue's own integrity signal rather than an independent one - narrowing, not closing, the buy-side 'independent truth' story. Survives the gate; the buy-side/data-consumer integrity layer remains open. Status new->watching."
+      "revalidation": "2026-07-23 kill-or-commit re-check (first re-check since 07-02): institutionalization ACCELERATED hard - Kalshi raised $1B at a $22B valuation, ICE completed a $2B Polymarket commitment, the two jointly backed a $35M VC fund, and Pascal raised $9M (07-16) to challenge them; prediction-market prices are now genuine financial infrastructure. The consumer-side independent integrity + resolution-truth wedge (ts-0077) is STILL not built by any named startup. Mild novelty headwind: Kalshi/Polymarket are aggressively building their OWN exchange-side surveillance (employment-disclosure mandates, whistleblower portals, 24/7 surveillance teams, per-market risk-scoring), which both confirms the exchange-side square is taken (ts-0078, killed) AND could make some institutions trust the venue's own integrity signal rather than an independent one - narrowing, not closing, the buy-side 'independent truth' story. Survives the gate; the buy-side/data-consumer integrity layer remains open. Status new->watching.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0078",
@@ -887,7 +898,8 @@
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0010-compute-supply-realism-engine.md",
       "note": "Buildout-adjacent: the 4th chokepoint systemic-square after ts-0064 (demand realism), ts-0069 (construction/power delivery) and the ts-0041 GPU-debt cluster. Distinct object (accelerator/silicon delivery via CoWoS+HBM, not power/land/construction) and distinct buyer (chip-financiers/procurement). Surfaced because it cleanly clears all three gates and is not a duplicate; flagged honestly because the operator already holds three buildout systemic-square ideas.",
-      "revalidation": "2026-07-25 first re-check since 07-07: SURVIVES, thesis validated and BROADENED, with no builder identified. CNAS ('American AI Companies Can't Get Enough Chips') calculates 2nm logic capacity is already triple-overbooked for 2026, with NVIDIA, AMD and Google having pre-bought virtually every available TSMC wafer while smaller startups queue for late-2028 slots. The constraint is now explicitly systemic rather than chip-specific: through Q1 2026 shortages spread beyond semiconductors into helium, substrate materials, power components, optics and thermal infrastructure, with lead times from 20 to 128+ weeks across eight distinct shortage categories - which widens the dependency graph this engine would price rather than narrowing it. Enterprises are being told to treat compute as constrained infrastructure. Novelty holding: the analysis is coming from think tanks and trade press (CNAS, SemiAnalysis-style commentary), not from a productized independent delivery-realism model embedded in an underwriting workflow. Status new->watching."
+      "revalidation": "2026-07-25 first re-check since 07-07: SURVIVES, thesis validated and BROADENED, with no builder identified. CNAS ('American AI Companies Can't Get Enough Chips') calculates 2nm logic capacity is already triple-overbooked for 2026, with NVIDIA, AMD and Google having pre-bought virtually every available TSMC wafer while smaller startups queue for late-2028 slots. The constraint is now explicitly systemic rather than chip-specific: through Q1 2026 shortages spread beyond semiconductors into helium, substrate materials, power components, optics and thermal infrastructure, with lead times from 20 to 128+ weeks across eight distinct shortage categories - which widens the dependency graph this engine would price rather than narrowing it. Enterprises are being told to treat compute as constrained infrastructure. Novelty holding: the analysis is coming from think tanks and trade press (CNAS, SemiAnalysis-style commentary), not from a productized independent delivery-realism model embedded in an underwriting workflow. Status new->watching.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0087",
@@ -1472,7 +1484,8 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0012-evidence-constrained-reconstruction-engine.md",
-      "revalidation": "2026-08-13 new evidence, status new -> watching. Aurora put second-generation driverless trucks - built to run with no passive observer at all - into commercial service on 10 routes, plans 200+ trucks at ~20 hours a day, and its manufacturing partner Roush is targeting a 1,000-truck annual run rate by end-2026; Kodiak runs the largest driverless Class 8 fleet in the Permian and targets long-haul in H2 2026. Every one of those trucks is a 40-ton vehicle with no human witness inside, so when it is involved in a crash the entire factual record is sensor logs and physical evidence with no driver testimony. That is the exact input this engine is built for, and it hardens the why-now without changing the novelty position."
+      "revalidation": "2026-08-13 new evidence, status new -> watching. Aurora put second-generation driverless trucks - built to run with no passive observer at all - into commercial service on 10 routes, plans 200+ trucks at ~20 hours a day, and its manufacturing partner Roush is targeting a 1,000-truck annual run rate by end-2026; Kodiak runs the largest driverless Class 8 fleet in the Permian and targets long-haul in H2 2026. Every one of those trucks is a 40-ton vehicle with no human witness inside, so when it is involved in a crash the entire factual record is sensor logs and physical evidence with no driver testimony. That is the exact input this engine is built for, and it hardens the why-now without changing the novelty position.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0134",
@@ -1581,7 +1594,8 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0013-firmware-rehosting-engine.md",
-      "revalidation": "2026-08-06 incidental hardening (no full re-check run): the memory signal underneath this idea got materially worse, which strengthens the why-now. DRAM spot prices are up nearly 700% year on year (Bloomberg, July 2026); Samsung, SK Hynix and Micron - over 95% of global DRAM - have systematically reallocated capacity to HBM for AI accelerators; Intel CEO Lip-Bu Tan says there is 'no relief until 2028' and IDC puts meaningful supply relief at 2027-28 when new fabs come online; Samsung raised 32GB DDR5 modules from $149 to $239 and DDR5 contract pricing more than doubled. The downstream damage is now visible in shipped product: Apple raised prices across iPad, Mac, HomePod, Vision Pro and Apple TV effective immediately on 2026-06-25 (shares fell over 6%), smartphone shipments are forecast down 12.9% and PCs down 11.3% for 2026. A two-year forced-obsolescence window on shipped embedded designs is now the consensus industry view rather than a spike thesis. Companion idea ts-0172 (on-device memory-budget deployment compiler) was generated and killed this run, reconfirming that the adjacent framings are occupied while this one is not. || 2026-08-22 incidental hardening (no full re-check run): the memory signal is now worse again and has moved from price to physical allocation, which is the regime that actually forces redesign. A DRAM chip hit a record $42.45 on 2026-08-07, more than double its May price; OEMs are reporting 80-90% price increases and 58-week lead times, and major OEM clients are receiving only 50-66% of ordered volumes, forcing them to redesign products around whatever supply they can secure rather than what they planned. SK Hynix has warned the shortage may persist past 2030 and IDC now forecasts a 12.9% decline in global smartphone shipments for 2026, the sharpest on record. The shortage has also spread beyond silicon to standard FR-4 and heavy-copper laminates (2026-08-19), so the substitution pressure is now board-level as well as part-level. Allocation rather than price is what turns an EOL notice into a mandatory re-host, and allocation arrived this month."
+      "revalidation": "2026-08-06 incidental hardening (no full re-check run): the memory signal underneath this idea got materially worse, which strengthens the why-now. DRAM spot prices are up nearly 700% year on year (Bloomberg, July 2026); Samsung, SK Hynix and Micron - over 95% of global DRAM - have systematically reallocated capacity to HBM for AI accelerators; Intel CEO Lip-Bu Tan says there is 'no relief until 2028' and IDC puts meaningful supply relief at 2027-28 when new fabs come online; Samsung raised 32GB DDR5 modules from $149 to $239 and DDR5 contract pricing more than doubled. The downstream damage is now visible in shipped product: Apple raised prices across iPad, Mac, HomePod, Vision Pro and Apple TV effective immediately on 2026-06-25 (shares fell over 6%), smartphone shipments are forecast down 12.9% and PCs down 11.3% for 2026. A two-year forced-obsolescence window on shipped embedded designs is now the consensus industry view rather than a spike thesis. Companion idea ts-0172 (on-device memory-budget deployment compiler) was generated and killed this run, reconfirming that the adjacent framings are occupied while this one is not. || 2026-08-22 incidental hardening (no full re-check run): the memory signal is now worse again and has moved from price to physical allocation, which is the regime that actually forces redesign. A DRAM chip hit a record $42.45 on 2026-08-07, more than double its May price; OEMs are reporting 80-90% price increases and 58-week lead times, and major OEM clients are receiving only 50-66% of ordered volumes, forcing them to redesign products around whatever supply they can secure rather than what they planned. SK Hynix has warned the shortage may persist past 2030 and IDC now forecasts a 12.9% decline in global smartphone shipments for 2026, the sharpest on record. The shortage has also spread beyond silicon to standard FR-4 and heavy-copper laminates (2026-08-19), so the substitution pressure is now board-level as well as part-level. Allocation rather than price is what turns an EOL notice into a mandatory re-host, and allocation arrived this month.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0142",
@@ -2130,7 +2144,8 @@
         "composite": 4.1
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0014-as-built-disposition-engine.md"
+      "brief": "ideas/briefs/0014-as-built-disposition-engine.md",
+      "rubric_version": 2
     },
     {
       "id": "ts-0193",
@@ -2250,7 +2265,8 @@
         "composite": 4.1
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0015-protein-fabrication-dexterity-cell.md"
+      "brief": "ideas/briefs/0015-protein-fabrication-dexterity-cell.md",
+      "rubric_version": 2
     },
     {
       "id": "ts-0202",
@@ -2275,7 +2291,8 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0016-longlead-equipment-clearing.md",
-      "note": "Deliberately distinct from the held buildout cluster: ts-0064 scores probability-of-energization for utilities/PUCs/lenders and ts-0069 prices correlated construction delay for insurers. Both are risk models sold to observers. This is a transactional venue that moves physical positions between principals and earns a take rate - different object, different buyer, different business. ts-0203 is the manufacturing fork of the same technical claim."
+      "note": "Deliberately distinct from the held buildout cluster: ts-0064 scores probability-of-energization for utilities/PUCs/lenders and ts-0069 prices correlated construction delay for insurers. Both are risk models sold to observers. This is a transactional venue that moves physical positions between principals and earns a take rate - different object, different buyer, different business. ts-0203 is the manufacturing fork of the same technical claim.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0203",
@@ -2299,7 +2316,8 @@
         "composite": 4.2
       },
       "kill_attempts_survived": 2,
-      "note": "Manufacturing fork of ts-0202 - same technical claim (machine-computed specification equivalence), different company: a factory and an inventory position rather than a venue and a take rate. Surfaced separately and honestly because the buyer, capital profile and risk are genuinely different and the operator should choose, not because it is an independent insight. ts-0202 is the capital-light way to acquire the specification corpus this needs."
+      "note": "Manufacturing fork of ts-0202 - same technical claim (machine-computed specification equivalence), different company: a factory and an inventory position rather than a venue and a take rate. Surfaced separately and honestly because the buyer, capital profile and risk are genuinely different and the operator should choose, not because it is an independent insight. ts-0202 is the capital-light way to acquire the specification corpus this needs.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0204",
@@ -2499,7 +2517,8 @@
         "composite": 4.2
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0017-care-horizon-underwriting.md"
+      "brief": "ideas/briefs/0017-care-horizon-underwriting.md",
+      "rubric_version": 2
     },
     {
       "id": "ts-0221",
@@ -2524,7 +2543,8 @@
       },
       "kill_attempts_survived": 2,
       "brief": null,
-      "note": "Adjacent to ts-0202 (clearing market for long-lead electrical equipment positions) in template - both trade scarce engineered capacity - but a different asset class, a different supply origin (liquidation rather than reservation), and a different transaction (merchant position rather than venue). Flagged deliberately so the operator can judge template repetition."
+      "note": "Adjacent to ts-0202 (clearing market for long-lead electrical equipment positions) in template - both trade scarce engineered capacity - but a different asset class, a different supply origin (liquidation rather than reservation), and a different transaction (merchant position rather than venue). Flagged deliberately so the operator can judge template repetition.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0222",
@@ -2684,7 +2704,8 @@
         "composite": 4.7
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0018-firm-water-underwriting.md"
+      "brief": "ideas/briefs/0018-firm-water-underwriting.md",
+      "rubric_version": 2
     },
     {
       "id": "ts-0240",
@@ -2709,7 +2730,8 @@
       },
       "kill_attempts_survived": 2,
       "brief": "ideas/briefs/0019-underwritten-carrier-selection.md",
-      "revalidation": "2026-08-22 update with substantial new evidence. The severity half of this thesis got confirmed in the hardest possible way: a jury returned a $604M verdict against C.H. Robinson over a 2021 six-vehicle pileup, apportioning liability across broker, carrier and driver with the largest share potentially falling on the broker; C.H. Robinson is appealing (Bloomberg, 2026-08-20). This is the first nine-figure post-Montgomery datapoint and it lands on the exact peril the idea underwrites - the broker's selection decision, not the fleet's driving. Trade coverage is simultaneously reporting that stakeholders see 'limited operational change' in day-to-day brokerage practice, which is the tell: the exposure repriced and the behaviour did not, so the gap between what brokers do and what they are now liable for is widening rather than closing. The open question from the 2026-08-20 run is unchanged and now more urgent - pull five broker contingent-auto or E&O forms written after 2026-05-14 and establish whether negligent selection is being excluded or merely surcharged."
+      "revalidation": "2026-08-22 update with substantial new evidence. The severity half of this thesis got confirmed in the hardest possible way: a jury returned a $604M verdict against C.H. Robinson over a 2021 six-vehicle pileup, apportioning liability across broker, carrier and driver with the largest share potentially falling on the broker; C.H. Robinson is appealing (Bloomberg, 2026-08-20). This is the first nine-figure post-Montgomery datapoint and it lands on the exact peril the idea underwrites - the broker's selection decision, not the fleet's driving. Trade coverage is simultaneously reporting that stakeholders see 'limited operational change' in day-to-day brokerage practice, which is the tell: the exposure repriced and the behaviour did not, so the gap between what brokers do and what they are now liable for is widening rather than closing. The open question from the 2026-08-20 run is unchanged and now more urgent - pull five broker contingent-auto or E&O forms written after 2026-05-14 and establish whether negligent selection is being excluded or merely surcharged.",
+      "rubric_version": 2
     },
     {
       "id": "ts-0241",
@@ -2965,7 +2987,8 @@
         "composite": 4.3
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0020-single-family-control-of-record.md"
+      "brief": "ideas/briefs/0020-single-family-control-of-record.md",
+      "rubric_version": 2
     },
     {
       "id": "ts-0271",
@@ -3069,7 +3092,8 @@
         "composite": 4.3
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0021-origin-of-record.md"
+      "brief": "ideas/briefs/0021-origin-of-record.md",
+      "rubric_version": 2
     },
     {
       "id": "ts-0282",
@@ -3093,7 +3117,8 @@
         "composite": 4.5
       },
       "kill_attempts_survived": 3,
-      "brief": "ideas/briefs/0022-defence-subtier-capability-credit.md"
+      "brief": "ideas/briefs/0022-defence-subtier-capability-credit.md",
+      "rubric_version": 2
     }
   ]
 }
