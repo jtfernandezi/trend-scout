@@ -131,6 +131,29 @@ GitHub Actions cron (Tue/Thu/Sat 06:00 UTC)
 
 ---
 
+## The method, and why it changed
+
+Originally the agent invented ideas by *crossing* an AI capability with a
+structural shift, then novelty-checked them. By late July that stopped working:
+the 2026-07-28 run developed nine ideas and killed all nine — seven because a
+named, funded company was already selling the exact thing, found on the *first*
+search every time. The filter was fine. The input was exhausted.
+
+So on 2026-08-19 the method inverted: **proven pattern, narrowed buyer.** Start
+from companies demonstrably winning, extract the mechanism, and find the segment
+the winner *structurally cannot* follow you into. The novelty check ("does this
+exist?") became the **config-change test** ("could the leader serve this segment
+next quarter by flipping a setting?") — because the new method starts inside an
+occupied space on purpose.
+
+The failure mode it guards against is named explicitly in the prompt: *"Company
+X is hot, so build company X for a smaller audience"* is how startups die. An
+idea only survives if the agent can name the structural reason the leader won't
+follow — wrong sales motion, wrong price floor, wrong compliance posture,
+channel conflict. *"They haven't gotten around to it"* is an automatic kill.
+
+---
+
 ## Repo layout
 
 | Path | What it is |
