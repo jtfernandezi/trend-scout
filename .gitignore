@@ -1,1 +1,42 @@
+# OS
 .DS_Store
+Thumbs.db
+
+# Secrets — this project reads secrets from ~/.config/trend-scout/secrets.env
+# and from GitHub Actions secrets. Nothing secret should ever live in the repo;
+# these patterns are defense-in-depth against an accidental `git add -A`
+# (the workflow commits with -A, so a stray file here would be pushed).
+.env
+.env.*
+!.env.example
+*.env
+secrets.env
+secrets.*
+credentials*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa*
+.netrc
+.npmrc
+.claude/settings.local.json
+
+# Machine-generated / operational output
+*.log
+logs/
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.sql.gz
+n8n-*.json
+workflow-export*.json
+
+# Scratch
+tmp/
+.tmp/
+scratch/
+*.bak
+*.orig

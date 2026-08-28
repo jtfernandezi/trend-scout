@@ -1,31 +1,231 @@
 # Trend Scout
 
-Finds startup ideas worth pitching at YC by scanning current trends, making
-a non-obvious second-order leap, and adversarially novelty-checking the
-result before keeping anything.
+**An autonomous research agent that argues with its own past conclusions.**
 
-Runs Tue/Thu/Sat at 3am (America/Mexico_City) via GitHub Actions + headless
-Claude Code. See `automation/README.md` for how it's wired, and
-`automation/trend_research_prompt.md` for the actual research logic.
+Three mornings a week, unattended, it scans startups with real traction,
+extracts the mechanism that makes them work, and looks for a buyer the
+category leader is structurally locked out of serving. Then it tries to kill
+what it just found — and re-opens verdicts it reached weeks ago when new
+evidence contradicts them.
 
-## Layout
+It has run **31 scheduled passes over 10 weeks**, produced **282 ideas**, and
+**killed 260 of them (92.2%)**. The kill rate is the product. An idea
+generator that likes its own output is worthless; the engineering problem
+here was building something that reliably talks itself out of things.
 
-- `automation/` — the prompt, the GitHub Actions workflow, the Telegram script
-- `sources/watchlist.md` — where it looks for signals
-- `scoring/rubric.md` — how surviving ideas get scored
-- `ideas/ledger.json` — every idea ever proposed (new/watching/promising/building/killed)
-- `ideas/briefs/` — full write-ups for ideas that score well
-- `reports/YYYY/YYYY-MM-DD.md` — one file per run, the durable daily archive
+```
+scan traction → extract mechanism → narrow to a locked-out buyer
+                                          ↓
+                          adversarial kill check (3 tests)
+                                          ↓
+                    260 killed ←──────────┴──────────→ 22 survive
+                                                             ↓
+                                          re-audited on later runs
+                                          against new evidence
+                                                             ↓
+                                       "SURVIVES, but novelty softening"
+```
 
-## Status
+---
 
-Scaffolded 2026-06-16. Two manual dry-runs done (outside this repo) to
-validate the scan→leap→novelty-check loop before building the automation —
-both rounds killed every idea generated, which validated that the novelty
-filter has teeth but showed the prompt needed to force buyer-specific,
-trigger-specific ideas instead of category-level ones. That fix is baked
-into `trend_research_prompt.md`.
+## The unusual part: the system audits its own back catalog
 
-First cloud run completed successfully 2026-06-16 (`reports/2026/2026-06-16.md`):
-4 ideas logged, 1 survivor at composite 3.83 (below the 4.0 brief threshold),
-3 killed on the novelty check. Schedule is live (Tue/Thu/Sat 09:00 UTC).
+Most idea pipelines are write-only — they emit a verdict and move on. This one
+returns to ideas it already blessed and re-litigates them against evidence that
+didn't exist when it first ran.
+
+A real example from the ledger, idea `ts-0054` (independent accumulation model
+for correlated AI failures), first scored 4.3 and marked `watching` on
+2026-06-25. Re-checked 2026-07-21:
+
+> **SURVIVES but novelty softening.** Still no productized independent
+> correlated-AI-failure accumulation model for primary carriers — so the product
+> wedge remains open. BUT the thesis is now widely-published broker/academic
+> copy: Gallagher Re "identifies systemic risk from AI model failures," Swiss Re
+> sigma 07/2026, and arXiv papers…
+
+That is the agent reporting that its own earlier conclusion is decaying, citing
+sources published after it made the call, and *lowering its confidence without
+being asked to*. Twelve ideas carry re-check records like this. Some
+strengthened (`ts-0032` upgraded when the FY2026 defense budget created a
+$13.4B standalone AI line); some softened; the point is that the verdict is
+never final.
+
+**The safety model that makes this sound.** An agent that revises its own
+history is exactly the kind of thing that should worry you, so the write path
+is deliberately narrow:
+
+- **The model never commits.** The research step has *write-file* permission
+  only. Committing, pushing, and notification are separate workflow steps the
+  model does not control — so a confused run can produce a bad file, but it
+  cannot rewrite history, force-push, or touch anything outside the repo.
+- **Append-only reasoning.** Re-checks are *added* to a ledger entry as dated
+  records. The original call and its score stay in the file. The agent can
+  change its mind; it cannot quietly erase having been wrong.
+- **Silence is a failure, not a success.** The commit step fails the build on
+  an empty diff. A run that produces nothing gets flagged loudly instead of
+  passing as a green check — the failure mode that actually bites unattended
+  automation.
+- **Blast radius sized to permissions.** This agent writes markdown into its
+  own repo and nothing else, which is *why* it's allowed to commit straight to
+  `main` with no PR gate. That posture is a consequence of what it can damage,
+  not a default I apply everywhere.
+
+---
+
+## What it produced
+
+| | |
+|---|---|
+| Scheduled runs completed | **31** (2026-06-16 → 2026-08-25) |
+| Missed scheduled slots | **1** (July 4) |
+| Ideas evaluated | **282** |
+| Killed | **260 (92.2%)** |
+| Survived to `watching` / `new` | **22** |
+| Full briefs written | **22** |
+| Ideas re-audited on later runs | **12** |
+
+<p align="center">
+  <img src="docs/img/telegram-digest.png" alt="Telegram digest from the Trend Scout bot: '2 survivors, 10 kills', followed by the top-scoring idea and its plain-English explanation" width="420">
+</p>
+
+<p align="center"><em>Every run ends with a push notification — survivor count, kill
+count, and each surviving idea explained in plain English. Representative output;
+the full report and every kill reason land in the repo at the same time.</em></p>
+
+Every kill is logged with its reason, which is the part that compounds: the
+agent reads its own kill list before each run so it doesn't re-discover and
+re-kill the same dead idea. A representative entry:
+
+> `ts-0013` — **Why-now collapsed.** The May 2026 final rule scaled 1071 back:
+> the covered-institution threshold was raised tenfold to 1,000 originations…
+
+---
+
+## Architecture
+
+```
+GitHub Actions cron (Tue/Thu/Sat 06:00 UTC)
+        │
+        ├── headless Claude Code  ← automation/trend_research_prompt.md
+        │      reads:  ledger (all 282 prior verdicts), last 3 reports,
+        │              rubric, watchlist
+        │      writes: report + digest + ledger update + briefs
+        │      (WRITE-FILE ONLY — reads the web, but cannot commit or push)
+        │
+        ├── commit & push          ← fails loudly on empty diff
+        └── Telegram digest        ← separate step, secrets scoped here
+```
+
+**Design choices worth defending:**
+
+- **The prompt is the program.** [`automation/trend_research_prompt.md`](automation/trend_research_prompt.md)
+  is 207 lines of specification — ordered gates, named failure modes, explicit
+  kill tests. The interesting engineering is in constraining a model's judgment,
+  not in glue code. There is deliberately almost no application code.
+- **JSON ledger over a database.** 282 entries don't need Postgres, and a
+  diffable ledger means every verdict change shows up in `git log` as a
+  reviewable line. The audit trail is free.
+- **Markdown as the durable artifact.** Reports render on GitHub, diff cleanly,
+  and stay readable with no runtime. Nothing here needs a server.
+
+---
+
+## What I'd do differently
+
+- **The rubric changed mid-flight and I didn't version it.** Early ideas were
+  scored on `novelty` and `solo_buildable_during_mba`; later ones on
+  `novelty` and `why_now`. Both sets sat in the same ledger under the same
+  `scores` key, so composites from June and August weren't comparable — and
+  nothing recorded which rubric produced a given number. This was the clearest
+  mistake in the project. **Now fixed:** every scored entry carries a
+  `rubric_version`, the prompt names the exact score keys it must write, and
+  [`scoring/rubric.md`](scoring/rubric.md) documents all three versions. Caught
+  it while shipping v3 — which would otherwise have been the third silent
+  schema change.
+- **The self-audit is emergent, not specified.** The re-check behavior I lead
+  with above is the most valuable thing the system does — and the prompt never
+  actually asks for it. It arose from one line telling the model it *may* update
+  a `watching` idea with new evidence. That's luck, not design: it fires
+  inconsistently (some ideas re-checked twice, some never). It should be an
+  explicit step with a cadence rule.
+- **No test for prompt regressions.** When I rewrote the method on 2026-08-19,
+  my only signal that the new prompt was better was reading the next few
+  reports. A golden-set eval — fixed signals, expected kills — would have caught
+  quality drift immediately.
+- **`--dangerously-skip-permissions` is doing real work.** It's the right call
+  for a sandboxed agent whose only write target is its own markdown, but it
+  means the safety story rests entirely on the workflow's step separation
+  rather than on the model's own constraints. I'd want a second layer before
+  pointing this pattern at anything stateful.
+
+---
+
+## The method, and why it changed
+
+Originally the agent invented ideas by *crossing* an AI capability with a
+structural shift, then novelty-checked them. By late July that stopped working:
+the 2026-07-28 run developed nine ideas and killed all nine — seven because a
+named, funded company was already selling the exact thing, found on the *first*
+search every time. The filter was fine. The input was exhausted.
+
+So on 2026-08-19 the method inverted: **proven pattern, narrowed buyer.** Start
+from companies demonstrably winning, extract the mechanism, and find the segment
+the winner *structurally cannot* follow you into. The novelty check ("does this
+exist?") became the **config-change test** ("could the leader serve this segment
+next quarter by flipping a setting?") — because the new method starts inside an
+occupied space on purpose.
+
+The failure mode it guards against is named explicitly in the prompt: *"Company
+X is hot, so build company X for a smaller audience"* is how startups die. An
+idea only survives if the agent can name the structural reason the leader won't
+follow — wrong sales motion, wrong price floor, wrong compliance posture,
+channel conflict. *"They haven't gotten around to it"* is an automatic kill.
+
+---
+
+## Repo layout
+
+| Path | What it is |
+|---|---|
+| [`automation/trend_research_prompt.md`](automation/trend_research_prompt.md) | **The core.** The full research specification. |
+| [`.github/workflows/trend-scout.yml`](.github/workflows/trend-scout.yml) | Cron, step separation, empty-diff guard. |
+| [`scoring/rubric.md`](scoring/rubric.md) | Hard gates + scoring dimensions. |
+| [`sources/watchlist.md`](sources/watchlist.md) | Where it looks, and why traction sources lead. |
+| [`ideas/ledger.json`](ideas/ledger.json) | All 282 verdicts, kill reasons, re-checks. |
+| [`ideas/briefs/`](ideas/briefs/) | 22 full write-ups for ideas that cleared the brief threshold. |
+| [`reports/2026/`](reports/2026/) | One report per run — the durable archive. |
+
+---
+
+## Running it
+
+**Honest status: this repo is the agent's specification and its complete
+output archive. It is not a library you `pip install`.**
+
+*What runs standalone:*
+
+```bash
+# Requires: Claude Code CLI + an authenticated Claude subscription.
+claude -p "$(cat automation/trend_research_prompt.md)" --model opus
+```
+
+Executed from a clone, this performs a real research pass and writes a report,
+a digest, and ledger updates into your working tree. This is the whole system —
+there is no hidden service.
+
+*What needs infrastructure you'd have to supply:*
+
+- **The schedule** needs a GitHub repo with Actions enabled and a
+  `CLAUDE_CODE_OAUTH_TOKEN` secret (`claude setup-token`).
+- **Telegram digests** need `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`. Without
+  them the research still runs; only the notification step is skipped.
+- **Local manual runs** read those two from `~/.config/trend-scout/secrets.env`.
+
+No secrets are stored in this repository, and none ever have been —
+[`automation/telegram_digest.sh`](automation/telegram_digest.sh) sources them
+from outside the tree, and the workflow reads them from Actions secrets.
+
+## License
+
+MIT — see [LICENSE](LICENSE).

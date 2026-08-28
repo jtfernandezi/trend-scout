@@ -1,18 +1,19 @@
 name: Trend Scout
 
-# Headless Claude Code scans current startup/tech trends, makes a non-obvious
-# second-order leap, and adversarially novelty-checks the result. No live system
-# to protect (unlike the stocks audit), so output commits straight to main: one
-# report file + ledger update per run.
+# Headless Claude Code scans startups with current traction, extracts the
+# mechanism, narrows to a buyer the leader can't serve, and adversarially
+# checks that the wedge holds. This agent writes only markdown into its own
+# repo — no stateful system to protect — so output commits straight to main:
+# one report file + ledger update per run.
 #
 # The research step only WRITES files (ledger, report, briefs, digest). The
 # workflow — not the model — then commits, pushes, and sends the Telegram digest
 # in dedicated steps, and FAILS LOUDLY if the run produced no changes. This stops
 # a run from silently "succeeding" without committing anything.
 #
-# Runs in the cloud (Mac off), overnight so it doesn't compete with daytime
-# token budget, and avoids Sunday so it never collides with the stocks
-# weekly-audit's token usage in the same week.
+# Runs in the cloud (laptop off), overnight so it doesn't compete with daytime
+# token budget, and avoids Sunday so it doesn't collide with another scheduled
+# agent's token usage in the same week.
 
 on:
   schedule:
