@@ -78,7 +78,7 @@ is deliberately narrow:
 | | |
 |---|---|
 | Scheduled runs completed | **31** (2026-06-16 → 2026-08-25) |
-| Missed scheduled slots | **1** (July 4) |
+| Runs that failed to produce a report | **2** (July 4, Aug 27 — Claude quota exhausted; both failed loudly, neither committed) |
 | Ideas evaluated | **282** |
 | Killed | **260 (92.2%)** |
 | Survived to `watching` / `new` | **22** |
