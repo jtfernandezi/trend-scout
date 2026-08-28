@@ -131,59 +131,6 @@ GitHub Actions cron (Tue/Thu/Sat 06:00 UTC)
 
 ---
 
-## What I'd do differently
-
-- **The rubric changed mid-flight and I didn't version it.** Early ideas were
-  scored on `novelty` and `solo_buildable_during_mba`; later ones on
-  `novelty` and `why_now`. Both sets sat in the same ledger under the same
-  `scores` key, so composites from June and August weren't comparable — and
-  nothing recorded which rubric produced a given number. This was the clearest
-  mistake in the project. **Now fixed:** every scored entry carries a
-  `rubric_version`, the prompt names the exact score keys it must write, and
-  [`scoring/rubric.md`](scoring/rubric.md) documents all three versions. Caught
-  it while shipping v3 — which would otherwise have been the third silent
-  schema change.
-- **The self-audit is emergent, not specified.** The re-check behavior I lead
-  with above is the most valuable thing the system does — and the prompt never
-  actually asks for it. It arose from one line telling the model it *may* update
-  a `watching` idea with new evidence. That's luck, not design: it fires
-  inconsistently (some ideas re-checked twice, some never). It should be an
-  explicit step with a cadence rule.
-- **No test for prompt regressions.** When I rewrote the method on 2026-08-19,
-  my only signal that the new prompt was better was reading the next few
-  reports. A golden-set eval — fixed signals, expected kills — would have caught
-  quality drift immediately.
-- **`--dangerously-skip-permissions` is doing real work.** It's the right call
-  for a sandboxed agent whose only write target is its own markdown, but it
-  means the safety story rests entirely on the workflow's step separation
-  rather than on the model's own constraints. I'd want a second layer before
-  pointing this pattern at anything stateful.
-
----
-
-## The method, and why it changed
-
-Originally the agent invented ideas by *crossing* an AI capability with a
-structural shift, then novelty-checked them. By late July that stopped working:
-the 2026-07-28 run developed nine ideas and killed all nine — seven because a
-named, funded company was already selling the exact thing, found on the *first*
-search every time. The filter was fine. The input was exhausted.
-
-So on 2026-08-19 the method inverted: **proven pattern, narrowed buyer.** Start
-from companies demonstrably winning, extract the mechanism, and find the segment
-the winner *structurally cannot* follow you into. The novelty check ("does this
-exist?") became the **config-change test** ("could the leader serve this segment
-next quarter by flipping a setting?") — because the new method starts inside an
-occupied space on purpose.
-
-The failure mode it guards against is named explicitly in the prompt: *"Company
-X is hot, so build company X for a smaller audience"* is how startups die. An
-idea only survives if the agent can name the structural reason the leader won't
-follow — wrong sales motion, wrong price floor, wrong compliance posture,
-channel conflict. *"They haven't gotten around to it"* is an automatic kill.
-
----
-
 ## Repo layout
 
 | Path | What it is |
