@@ -2731,7 +2731,14 @@
       "kill_attempts_survived": 2,
       "brief": "ideas/briefs/0019-underwritten-carrier-selection.md",
       "revalidation": "2026-08-22 update with substantial new evidence. The severity half of this thesis got confirmed in the hardest possible way: a jury returned a $604M verdict against C.H. Robinson over a 2021 six-vehicle pileup, apportioning liability across broker, carrier and driver with the largest share potentially falling on the broker; C.H. Robinson is appealing (Bloomberg, 2026-08-20). This is the first nine-figure post-Montgomery datapoint and it lands on the exact peril the idea underwrites - the broker's selection decision, not the fleet's driving. Trade coverage is simultaneously reporting that stakeholders see 'limited operational change' in day-to-day brokerage practice, which is the tell: the exposure repriced and the behaviour did not, so the gap between what brokers do and what they are now liable for is widening rather than closing. The open question from the 2026-08-20 run is unchanged and now more urgent - pull five broker contingent-auto or E&O forms written after 2026-05-14 and establish whether negligent selection is being excluded or merely surcharged.",
-      "rubric_version": 2
+      "rubric_version": 2,
+      "last_reviewed": "2026-08-29",
+      "evidence_updates": [
+        {
+          "date": "2026-08-29",
+          "note": "Confirmed and strengthened. Montgomery v. Caribe Transport II was decided 9-0, holding that state negligent-hiring claims against freight brokers are not preempted by the FAAAA; two months later a Texas jury returned $604M against C.H. Robinson, its motor carrier and the driver over a 2021 fatal pileup, with the largest share of liability potentially falling on the broker. The August 2026 compliance picture adds two things the original entry did not have: FMCSA is now under direct industry pressure to publish an adequate-carrier-vetting standard, and brokers tightening their own vetting are beginning to shut carriers with Conditional safety ratings out of brokered freight entirely. That is the market pricing selection risk without an underwriter - which is the demand signal - but it also raises the competitive question of whether a published federal standard would commoditise the determination and leave only the indemnity. Keep watching; do not promote until FMCSA's direction on a vetting standard is clearer."
+        }
+      ]
     },
     {
       "id": "ts-0241",
@@ -3119,6 +3126,160 @@
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0022-defence-subtier-capability-credit.md",
       "rubric_version": 2
+    },
+    {
+      "id": "ts-0283",
+      "date": "2026-08-29",
+      "status": "new",
+      "summary": "AI-native complex-rehab and home-mobility provider: enter through the repair backlog the PE-owned CRT duopoly will not economically serve - diagnose a broken power wheelchair remotely from photos, video and controller logs across a mixed-vintage multi-brand installed base, identify the exact part, dispatch a generalist technician or ship a self-fit kit - then use the earned patient relationship to take the new-chair sale, reconstructing the user's seated posture and function from consumer capture, generatively designing the seating and mobility configuration, and additively manufacturing it instead of assembling someone else's catalogue.",
+      "cross": {
+        "ai_signal": "Every hard part of this is multimodal reasoning that did not work at consumer capture quality until now. Fault diagnosis and part identification run against an installed base with no VIN system, no standard parts catalogue, mixed vintages and six manufacturers, from a user's phone photos, a video of the failure, and a controller error log - the same class of problem as reading a technical data package, applied to a device rather than a print. Configuration means reconstructing seated posture, pelvic and trunk alignment, anthropometry, pressure distribution and functional reach from ordinary video plus the clinical record, then generatively designing a seating geometry that satisfies clinical, anatomical and manufacturability constraints at once. And the money only arrives if a model writes the medical-necessity, face-to-face and repair-justification documentation that survives a Medicare or Medicare Advantage audit - the same rulebook-repair mechanism Candid Health is compounding at 190% YoY, pointed at a device claim rather than a professional claim.",
+        "structural_signal": "The US complex rehab technology market was $5.27B in 2024 and is forecast at $8.26B by 2034; the wider US home medical equipment base and the $44B-to-$90B global medical equipment repair services market sit behind it. Delivery of a custom power chair takes two to five months and roughly a third of prescribed mobility devices are not delivered before discharge. Repairs are worse: routine multi-month waits, 7-21 days just for Medicare Advantage paperwork approval, and a June 2026 bill from Rep. Pressley aimed specifically at streamlining wheelchair repair. The two PE-owned providers that hold the market - Numotion with 150 branches, 500+ ATPs and 1,000+ service techs, and National Seating & Mobility - carry the exact cost structure that makes fast repair unprofitable. Meanwhile three funded companies in twelve months (Hike Medical $22.5M, CustoMED $6M, Kalogon $5.75M in June 2026 with a Medicare-coded 3D-printed cushion line) have proven that AI-driven design plus additive manufacture plus owning the reimbursement is a working combination in adjacent custom-device categories."
+      },
+      "source_pattern": "Hike Medical raised $22.5M across seed and Series A (2026-08-25 roundup) for an integrated orthotics/prosthetics system combining software, insurance and 3D printing, naming a $100B addressable market; CustoMED raised $6M for AI-powered 3D-printed orthopaedic solutions; Kalogon raised $5.75M in June 2026 led by Enable Ventures and shipped a Medicare-coded 3D-printed variable-density lattice seating line. Three funded companies at the same job - collapse a craft-labour-bound, reimbursement-funded custom device category with AI design plus additive manufacture - inside twelve months. The documentation half is validated separately by the 2026 autonomous-RCM cluster: Candid Health's $120M Series D on 2026-07-22 at 190% YoY contracted run-rate growth, 180% net dollar retention and 200+ provider organisations, alongside Commure $70M, Adonis $40M, Anomaly $17M and Amperos $16M - more than $500M into machine-repaired claims in one year.",
+      "wedge": "Channel conflict plus labour-model cannibalisation, on both halves. Numotion and NSM are distributors: their gross margin is the spread and the rebate on Permobil, Quantum and Sunrise product, so manufacturing their own additively-designed seating attacks the supplier relationships that are their P&L. Their service revenue is billed per visit against a field organisation of 500+ ATPs and 1,000+ technicians, so remote diagnosis and self-fit kits destroy the utilisation of the asset they own. Both are PE-owned and levered, which makes deliberate cannibalisation strictly harder to authorise, not easier. The manufacturers cannot follow either: Permobil already ships connected-chair remote diagnostics through MyPermobil, but it reaches only its own new chairs and it sells through Numotion and NSM, so going direct on service or on the sale would blow up its distribution. Kalogon, the nearest AI-native player, sells its cushions through Numotion and NSM - it is a supplier to the incumbents, not a replacement for them. Nobody in the chain is structurally free to serve the mixed-vintage installed base directly.",
+      "buyer": "Initially the wheelchair user or their caregiver - an adult with a spinal cord injury, MS, ALS, muscular dystrophy or advanced cerebral palsy who depends on a Group 3 power chair - and behind them the payer (Medicare, Medicare Advantage, Medicaid or commercial) who is billed for the repair or the replacement. Later the referring seating clinic and the rehab hospital discharge planner, who currently have no provider they can promise a date to.",
+      "trigger": "The chair breaks and the user is immobilised - a dead motor, a failed joystick or controller, a torn sling, a battery that will not hold - and the incumbent quotes weeks for an assessment visit before the paperwork even starts. Secondary trigger: the five-year Medicare replacement window opens, or a discharge planner needs a custom chair configured before a patient leaves inpatient rehab.",
+      "why_incumbents_cant": "See wedge. Numotion and NSM would have to abandon per-visit field labour revenue, become a manufacturer against their own supplier rebates, and rebuild the intake around consumer capture - three simultaneous reversals, not a config change. Permobil's connected diagnostics cannot reach other manufacturers' chairs or older units and cannot be sold direct without destroying its channel. Kalogon and Matrix supply the incumbents. Hike Medical and CustoMED sit one device class over in orthotics, prosthetics and orthopaedic surgery, with different codes, a different credentialed clinician and a different fabrication process.",
+      "expansion_path": "Repair on the CRT installed base (roughly $0.5-1B of US service spend, urgent, unserved, and the cheapest possible way to earn the patient) -> the new custom chair and seating sale on the same relationship, inside the $5.3B-to-$8.3B US CRT market -> all custom-fitted mobility and seating -> the full home medical equipment base an ageing and disabled population depends on, a ~$60B US category whose service layer alone is a $44B-to-$90B global market, and where every incumbent is a low-margin distributor of someone else's catalogue.",
+      "scores": {
+        "wedge_durability": 4,
+        "pattern_strength": 4,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 5,
+        "composite": 4.2
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0023-ai-native-complex-rehab-provider.md",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0284",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Autonomous claim repair for workers' compensation and auto no-fault medical billing: hold every state's fee schedule and jurisdictional form rules and get the provider's bill paid first time, re-pointing the autonomous-RCM mechanism at the payer system that does not adjudicate under X12 commercial rules.",
+      "kill_reason": "Killed by the occupancy test. DaisyBill already owns this exact square: daisyWizard applies the correct state fee schedule and calculates exact reimbursement per bill, it runs a proprietary network of electronic connections to comp payers and their clearinghouses, and it is used by thousands of US providers with a task-based workflow covering authorisation, payment and appeal. Medata and Mitchell hold the bill-review side. The segment is not underserved - it is served by a specialist that has been compounding the fee-schedule corpus for a decade.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "Candid Health $120M Series D 2026-07-22, 190% YoY contracted run-rate growth, 180% NDR, 200+ provider organisations; >$500M into AI RCM in 2026 (Commure $70M, Adonis $40M, Anomaly $17M, Amperos $16M)."
+    },
+    {
+      "id": "ts-0285",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Autonomous dental revenue cycle for DSOs: adjudicate CDT claims against per-payer rules with the clinical image attachment, in a market Candid's CMS-1500 professional-claim data model does not fit.",
+      "kill_reason": "Killed by the occupancy test, decisively. Overjet is the enterprise dental AI vendor with 300+ payer integrations for insurance verification, a payer layer that ties claims to clinical findings, named large-DSO logos, and published claims of 25% case-acceptance lift and 18x ROI; Zentist's Remit AI, VideaHealth, Ventus and Pearl fill the rest. DSOs with 50+ locations are already being sold 40% RCM cost reduction in 90 days. The image-attachment data-model argument that made this look structural is exactly the capability the occupants were founded on.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "Candid Health $120M Series D and the 2026 autonomous-RCM cluster."
+    },
+    {
+      "id": "ts-0286",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Frontier re-adjudication of every claim paid on a self-funded employer's behalf, checked against the plan document and the network contract, sold to plan sponsors under their ERISA fiduciary exposure - the mirror image of provider-side autonomous RCM.",
+      "kill_reason": "Killed by the occupancy test. Payment integrity is a mature multi-billion-dollar industry, not an opening: Cotiviti, Zelis, Machinify, Rialtic, 6 Degrees Health, ClaimInformatics and the TPA-side audit firms all sell exactly this, and the large carriers run their own. The ERISA fiduciary why-now is real but it changes who is anxious, not what product exists.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "Candid Health $120M Series D and the 2026 autonomous-RCM cluster."
+    },
+    {
+      "id": "ts-0287",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Agentic provider enrolment and credentialing: unblock the 90-180 days of dead revenue before a new clinician can bill, the step upstream of every RCM product.",
+      "kill_reason": "Killed by the occupancy test. Medallion, Verifiable, Certify, Andros and Modio are all funded and selling into this precise workflow, and the CAQH/PECOS/state-portal plumbing they have built is the entire moat. There is no structural block on anyone here - just a queue of competitors.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "Candid Health $120M Series D and the 2026 autonomous-RCM cluster."
+    },
+    {
+      "id": "ts-0288",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Emerald AI for industrial process loads: a model that predicts the metallurgical, yield and product-quality consequence of curtailing an arc furnace, electrolyser or chlor-alkali line, so a heavy industrial can sell firm flexibility and jump the interconnection queue.",
+      "kill_reason": "Killed by the config-change and occupancy tests together. Industrial demand response is already the largest DR segment on earth at roughly 75 GW; Voltus manages 8.1 GW, delivered 816,000 MWh of grid relief in 2025 and paid its customers a record $240M; CPower forecasts VPPs as an imperative and, with Bentaus and Supermicro, already demonstrated AI compute responding to CAISO dispatch in under 20 milliseconds in February 2026. Adding a process-impact model is a feature these aggregators buy or build, not a company they cannot become.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "Emerald AI $150M Series A at $1.05B on 2026-08-25 (DCVC and Energize, with NVIDIA, Siemens, GE Vernova, RWE, Aramco, Samsung, In-Q-Tel), five completed demonstrations, a 256-GPU cluster cut 25% for three hours in Phoenix, and the first-in-the-nation Flexible Load Interconnection Program with Silicon Valley Power."
+    },
+    {
+      "id": "ts-0289",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Firm-curtailment guarantee for flexible-load interconnection: stand between the utility and a large load, sell the utility a bankable megawatt of curtailability, and pay the penalty when the load fails to curtail.",
+      "kill_reason": "Killed by the config-change test. Demand-response aggregators already carry performance obligations with penalties for non-delivery - that is what a capacity DR contract is - so the risk-bearing half is a pricing decision for Voltus or CPower rather than a new company. Emerald itself is selling 'verified, dispatchable flexibility' into the Silicon Valley Power programme, and the transferable-flexibility market this idea needs does not exist in any tariff yet.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "Emerald AI $150M Series A at $1.05B, 2026-08-25."
+    },
+    {
+      "id": "ts-0290",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Adversarial assurance for the agent that has write access: continuously attack a deployed enterprise agent inside the customer's live systems and certify what it is allowed to do.",
+      "kill_reason": "Killed by the occupancy test. This is the most heavily funded square in AI security right now - Zenity took $125M in the first half of August 2026, Patronus $50M for simulation worlds that stress-test agents, Arga Labs $10M from General Catalyst on 2026-08-26 for exactly the enterprise-complexity training and testing problem, and the agent-identity half belongs to Okta XAA, Microsoft Entra Agent ID, Astrix and Oasis. The pattern is real and the square is full.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "Alice raised $140M in August 2026 with roughly $100M ARR, 500%+ growth over two years, and engagements with 8 of the 10 leading AI model labs."
+    },
+    {
+      "id": "ts-0291",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Post-hoc forensic reconstruction of what a deployed AI system actually did, to an evidentiary standard, sold to plaintiffs, regulators and insurers as the EU AI Act penalty regime bites.",
+      "kill_reason": "Killed by the segment-viability test. The buyer is episodic - a matter, not a subscription - the delivery is expert services with a courtroom-shaped cost structure, and nothing compounds between engagements because each system, log format and legal theory is bespoke. It also duplicates the shape of ts-0133 in the operator's own book, which already covers evidence-constrained reconstruction for litigation.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "Alice ~$100M ARR; the EU AI Act penalty regime and GPAI enforcement powers effective 2026-08-02; California's chatbot transparency law effective 2026-08-02."
+    },
+    {
+      "id": "ts-0292",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Independent adversarial assurance lab for AI agents given supervisory control of chemical, refining, water and power processes, producing the IEC 61511 / ISA-84 safety case a non-deterministic controller cannot otherwise get.",
+      "kill_reason": "Killed as a duplicate of the operator's own book. This is the third re-point of the same shape already held as ts-0031 (behavioural certification for robot foundation-model policies) and ts-0032 (test-and-evaluation assurance harness for DoD autonomous systems), both still watching. Generating a fourth instance of an idea already sitting unacted-on twice is template-following, not discovery.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "The August 2026 agent-assurance cluster: Alice $140M at ~$100M ARR, Patronus $50M, Arga Labs $10M."
+    },
+    {
+      "id": "ts-0293",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "HappyRobot's operational voice-agent mechanism narrowed to a vertical where the call is itself a regulated legal act - collections, emergency dispatch, or utility outage handling.",
+      "kill_reason": "Killed by the config-change test at the top and the occupancy test underneath. HappyRobot has explicitly named insurance, energy, telecoms and airlines as its expansion path off this round, so 'a vertical they have not reached' is a roadmap item rather than a structural block. The genuinely regulated niches are already held: Skit.ai, Prodigal and TrueAccord in collections; Prepared, Carbyne and RapidSOS in 911; Assort Health and Hello Patient in clinical.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "HappyRobot $150M Series C at $1.2B on 2026-08-04, revenue up more than fivefold since its Series B, net dollar retention above 150%, 150+ enterprise customers including DHL, Kuehne+Nagel, Naturgy, Repsol and Uber, and one customer expanding tenfold in a year."
+    },
+    {
+      "id": "ts-0294",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "AI-native value-based enablement for the independent rural practice: take the risk contract on an existing rural physician's panel and supply the documentation, risk-capture and care-management labour that makes a small panel profitable, instead of building clinics.",
+      "kill_reason": "Killed by the occupancy test, immediately. Aledade is this company at national scale and is explicitly rural-weighted, with thousands of independent practices under management, alongside Privia, agilon, Evolent, Pearl Health and Wellvana. The AI layer is what all of them are now adding; it is not a wedge into a market they cannot reach.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "Hopscotch Primary Care $53M Series D (2026-08-18 roundup): 15,000+ rural patients, 90%+ retention, profitable in one region."
+    },
+    {
+      "id": "ts-0295",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Driverless paratransit and non-emergency medical transportation: apply bounded-ODD autonomy to the fixed, geofenced, catastrophically expensive trips that transit agencies are legally obliged to provide at $40-70 each.",
+      "kill_reason": "Killed by the segment-viability test and the ts-0213 lesson. The binding constraint is not the driving - it is a human physically securing a wheelchair and providing door-through-door assistance, which the statute effectively requires and no autonomous vehicle supplies, so removing the driver removes the wrong cost. May Mobility and Waymo are already running accessible AV pilots with transit agencies on top of that.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "Gatik $200M Series D on 2026-08-25 with $600M+ contracted revenue and 85,000 fully driverless orders completed."
+    },
+    {
+      "id": "ts-0296",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Cross-silicon numerical-equivalence certification: prove that a model deployed on inference ASICs, GPUs and hyperscaler accelerators behaves identically, for regulated buyers who cannot accept silicon-dependent output.",
+      "kill_reason": "Killed by the occupancy test and buyer concentration. The compiler and quantisation stack that owns this - MLIR, ONNX, the vendor toolchains and MLPerf - is where the work already happens, and the buyer set is roughly a dozen chip vendors and four hyperscalers, all of whom treat numerics validation as core internal engineering rather than something to purchase.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "Etched $700M growth round on 2026-08-18 with $1B+ in customer contracts and Jane Street as a customer; Velaura AI $110M Series A engaged with three of the four largest cloud providers."
+    },
+    {
+      "id": "ts-0297",
+      "date": "2026-08-29",
+      "status": "killed",
+      "summary": "Underwritten packaging-compliance determination for the EU Packaging and Packaging Waste Regulation, whose core obligations became applicable on 2026-08-12: recyclability grade, recycled content and modulated EPR fee per SKU per member state.",
+      "kill_reason": "Killed by the occupancy test. Extended-producer-responsibility compliance is a mature service industry - Ecoveritas, Lorax EPI, Reconomy, Source Intelligence and Assent on the software and filing side, SGS, Intertek and UL on the testing and certification side - and the PPWR gives all of them a well-signposted product extension they have been building toward since February 2025. The determination half also restates ts-0281 (origin of record) one regulation over.",
+      "kill_attempts_survived": 0,
+      "source_pattern": "PPWR core provisions applicable 2026-08-12 across the EU single market, with the German Packaging Law Implementation Act in force the same day."
     }
   ]
 }
