@@ -3100,7 +3100,14 @@
       },
       "kill_attempts_survived": 3,
       "brief": "ideas/briefs/0021-origin-of-record.md",
-      "rubric_version": 2
+      "rubric_version": 2,
+      "evidence_updates": [
+        {
+          "date": "2026-09-01",
+          "note": "The first of the two dated triggers landed on schedule. The 2026-06-03 'Strengthening Customs Enforcement' executive order's 90-day deadline is 2026-09-01: CBP's revised penalty mitigation standards, with a floor of not less than 50% of the assessed penalty and no mitigation for repeat offenders, take effect today. The 180-day provision - every importer of record must hold minimum tangible domestic assets or bonding, submit expanded disclosures and maintain 'good standing' - falls around 2026-11-30 and is the one that actually determines who is allowed to carry origin risk. Enforcement priorities are named as forced labour, misclassification, undervaluation and illegal transshipment; the middle two are exactly what an origin determination is about. Nothing here weakens the thesis; the next checkpoint is the November good-standing rule, which sets the capital bar for the underwriter itself."
+        }
+      ],
+      "last_reviewed": "2026-09-01"
     },
     {
       "id": "ts-0282",
@@ -3280,6 +3287,114 @@
       "kill_reason": "Killed by the occupancy test. Extended-producer-responsibility compliance is a mature service industry - Ecoveritas, Lorax EPI, Reconomy, Source Intelligence and Assent on the software and filing side, SGS, Intertek and UL on the testing and certification side - and the PPWR gives all of them a well-signposted product extension they have been building toward since February 2025. The determination half also restates ts-0281 (origin of record) one regulation over.",
       "kill_attempts_survived": 0,
       "source_pattern": "PPWR core provisions applicable 2026-08-12 across the EU single market, with the German Packaging Law Implementation Act in force the same day."
+    },
+    {
+      "id": "ts-0298",
+      "date": "2026-09-01",
+      "status": "killed",
+      "summary": "Franchisee-side AI operator: the AI chief marketing and technology officer for the multi-unit franchisee - local demand generation inside brand constraints, unit-level P&L truth, and a machine-read of the franchise agreement, operations manual and mandated-supplier price files to establish what the franchisor is actually permitted to charge.",
+      "source_pattern": "Owner.com $240M Series D at $2.3B on 2026-08-28 (Goldman Sachs Alternatives), past $100M ARR, more US locations than Domino's or Taco Bell, >$1B of restaurant sales running through it in 2026 and 100M American consumers having used it. FRANdata/IFA 2026: 19.3% of franchisees control 58.8% of all franchise locations.",
+      "buyer": "Multi-unit franchisee operator (5-50 units) in food service, fitness or auto services.",
+      "trigger": "Franchise-agreement renewal, a mandated remodel or technology-fee increase, or the annual advertising-fund accounting.",
+      "wedge": "Owner is structurally locked out - it sells exclusively to independent operators, and a franchisee's website, app, ordering and POS are mandated by the brand. Franchisor-aligned vendors face total channel conflict on the adversarial half.",
+      "kill_reason": "Killed by the occupancy test, then confirmed by segment viability. The buyable halves are all taken: SOCi and Rallio own localised marketing for franchise units at scale, Operandio and Delightree own multi-unit franchise operations, GrowthFactor (from $200/mo, self-serve) owns franchise unit-economics and site analytics, and MarginEdge, xtraCHEF/Toast and Buyers Edge Platform already do invoice line-item price-compliance auditing against contracted price files. The one genuinely empty seat - representing the franchisee against the franchisor - is empty for a reason that blocks us rather than the leader: that demand routes to lawyers and forensic accountants as an episodic matter, not a subscription, which is the ts-0001 and ts-0291 failure again. Owner's inability to follow is real and irrelevant, because Owner is not the leader in this segment.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0299",
+      "date": "2026-09-01",
+      "status": "killed",
+      "summary": "AI-native operator for the independent pharmacy: run the whole non-clinical business - reimbursement recovery, PBM audit defence, adherence and refill demand, front-of-store - for a category closing roughly one store a day.",
+      "source_pattern": "Owner.com mechanism ($100M+ ARR, $2.3B, 2026-08-28) re-pointed at a local business whose demand is assigned by a payer network rather than chosen by a consumer.",
+      "buyer": "Owner-pharmacist of a one-to-three-store independent pharmacy.",
+      "trigger": "A reimbursement-below-cost quarter or a PBM audit recoupment letter.",
+      "wedge": "Owner cannot serve it: the transaction is a prescription adjudicated through a claims switch under HIPAA and state pharmacy-board rules, not an online consumer order, and Owner's entire acquisition stack assumes direct consumer demand.",
+      "kill_reason": "Killed by the occupancy test. RXAI is a pharmacist-built AI operating system for independent pharmacies doing exactly this - mining claims and inventory to recover reimbursement, flag audit risk and drive refills - alongside Datascan, PioneerRx and Liberty on the system-of-record side. The adjacent money is also taken: Latent raised $80M at roughly $600M with $20M+ annualised revenue on prior-authorisation paperwork, and Queue raised $12.6M for autonomous robotic dispensing. Real wedge against Owner, no wedge against the people already there.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0300",
+      "date": "2026-09-01",
+      "status": "killed",
+      "summary": "Closed-loop silicon validation service for AI chip-design agents: standing shuttle capacity plus an automated bring-up and test harness, so a design agent can get real measured silicon back in weeks instead of two quarters - the Adaptyv mechanism moved from proteins to transistors.",
+      "source_pattern": "Adaptyv Bio $40M Series A on 2026-08-28 (Highland Europe, with YC doubling down): 100+ customers including Roche, Novo Nordisk, Chai Discovery and Boltz, lab throughput up over 5x and revenue roughly 10x in a year, DNA synthesis brought in-house. The mechanism: AI design outran physical validation, so the scarce good is experiments per week and whoever industrialises the loop owns the resulting dataset.",
+      "buyer": "Fabless chip startup or an internal silicon team using agentic RTL and verification tools.",
+      "trigger": "Missing a foundry shuttle window, which costs 8-12 weeks of schedule.",
+      "wedge": "EDA vendors sell software and cannot own fab capacity without antagonising the foundries that are their channel; foundries schedule multi-project wafers quarterly through their own sales organisations.",
+      "kill_reason": "Killed by the occupancy test. ChipFoundry already sells AI-powered custom SoC design and tapeout with 2026 shuttle reservations; Cognichip, ChipAgents and Agentrys hold the agentic design layer; Cadence shipped agentic chip-design tools on 2026-02-10 and Siemens demonstrated self-verifying agent flows gated on Calibre and Questa at DAC 2026; GlobalFoundries, TSMC and SMIC run their own MPW shuttle programmes. The loop is being closed by the incumbents and by funded startups simultaneously.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0301",
+      "date": "2026-09-01",
+      "status": "killed",
+      "summary": "Adversarial engagement agents for the enterprise: when a caller or emailer fails verification at the IT help desk or in a vendor payment-change thread, do not hang up - hand them to an agent that plays the credulous employee, consumes the attacker's scarce human attention and harvests their infrastructure and tradecraft live.",
+      "source_pattern": "Apate.AI A$11.4M seed on 2026-08-31 (Lobby Capital, OIF, Investible) with a US move. Deployed inside Commonwealth Bank: 2.5M+ autonomous conversations with threat actors, 250,000+ intelligence artifacts, roughly 600,000 fraudsters engaged monthly, and bank and telco deployments across Australia, the UK, South Africa and South East Asia.",
+      "buyer": "CISO or fraud lead at a mid-market or enterprise company facing vendor email compromise and help-desk social engineering.",
+      "trigger": "A failed help-desk identity challenge, or a flagged bank-detail change on a live invoice thread.",
+      "wedge": "Apate's product engages inbound consumer-scam traffic on behalf of banks and telcos; deceiving an attacker from a corporate identity inside a customer's ITSM and identity stack is a different product, a different integration and a CISO sales motion.",
+      "kill_reason": "Killed by the config-change test and then by the venture-scale gate. Netcraft already ships AI-powered preemptive domain disruption plus conversational engagement with attackers, and Abnormal owns the email plane where vendor email compromise - now 61% of all business email compromise - actually lands; adding engagement to an existing detection product is a feature decision, not a second company. The harder objection is the $1B gate: cost-imposition security has repeatedly failed to become a standalone category (Illusive, Attivo, TrapX all sold cheap or died) because no CISO carries a budget line for wasting an attacker's time.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0302",
+      "date": "2026-09-01",
+      "status": "killed",
+      "summary": "Machine-measured waste composition as the statutory measurement of record for US packaging extended-producer-responsibility fees: replace sampling-and-extrapolation with continuous perception at the sorting line, and sell producers the fee determination it implies.",
+      "source_pattern": "Greyparrot $27M Series B (2026-07-28, total $60M): analyzers on sorting belts in 20+ countries, more than one trillion waste objects detected, customers WM, Veolia, Biffa, Circular Services and FCC, and - the mechanism-defining fact - the UK Environment Agency accepted Greyparrot's AI-derived composition data for statutory compliance reporting in Q1 2026 in Biffa and FCC submissions.",
+      "buyer": "Consumer-packaged-goods producer facing modulated EPR fees in Oregon, Colorado, California, Maine, Minnesota, Maryland and Washington.",
+      "trigger": "The first fee assessment under a state producer-responsibility organisation's modulated schedule.",
+      "wedge": "None that survived: the leader is already in the seat.",
+      "kill_reason": "Killed by the config-change test, decisively. Greyparrot already sells the producer-side product - Deepnest, used by Unilever, L'Oreal and Kenvue to see how their packaging performs after disposal - and already holds the regulatory precedent that makes the category possible. A US state EPR expansion is a geography rollout for them, not a second company. Also duplicates the shape of ts-0297 one regulation over.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0303",
+      "date": "2026-09-01",
+      "status": "killed",
+      "summary": "Drone-enabled re-architecture of regional diagnostics: when small autonomous aircraft hit truck cost parity, hospital networks stop needing a lab per site and centralise into one automated reference lab per region, with 30-minute point-to-point sample transfer.",
+      "source_pattern": "Airbound $37M Series A on 2026-08-25 (Greenoaks, with DoorDash, Lachy Groom, Lightspeed, Humba): 13,000+ autonomous missions with zero failures, 40 diagnostic samples per flight and ten round trips daily for Narayana Health, which cancelled ground transfers on the route within one week, and an Andhra Pradesh agreement scaling to 10,000 flights a day.",
+      "buyer": "Regional hospital network or reference-lab operator consolidating testing capacity.",
+      "trigger": "A lab-staffing failure or an equipment replacement decision at a satellite site.",
+      "wedge": "Airbound's cost advantage is Indian manufacturing and Indian airspace liberalisation; it is a manufacturer-operator, not a diagnostics company.",
+      "kill_reason": "Killed by the occupancy test in the US and by economics elsewhere. Zipline, Wing and Matternet already run medical logistics networks at scale in the US, and the FAA's Part 108 BVLOS rule is still unpublished - ground the ledger already covered when it killed ts-0273. In the geographies where the airspace is permissive, the consolidated-reference-lab seat is occupied by large incumbents (Dr Lal PathLabs, Metropolis, Redcliffe), and the business you would be starting is a capital-heavy laboratory company whose AI content is logistics scheduling.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0304",
+      "date": "2026-09-01",
+      "status": "killed",
+      "summary": "Robot foundation models pointed at hospital sterile processing: decontaminate, inspect, count and assemble surgical instrument trays against each kit's instructions for use, in a department running 30-40% vacancy rates where every tray requires 100% inspection.",
+      "source_pattern": "Generalist AI $200M (8VC, 2026-08) for a robot-learning foundation model, alongside Skild AI at $14B with revenue from zero and deployment at BMW - general manipulation policies are now funded and beginning to earn.",
+      "buyer": "Perioperative services director at a hospital or surgical-centre group.",
+      "trigger": "A surgical case delayed or cancelled by an incomplete or unsterile tray.",
+      "wedge": "Attempted: AAMI ST79 validation, a per-instrument data model and hospital capital procurement make this a second product for a general robotics lab rather than a config change.",
+      "kill_reason": "Killed by the occupancy test. Robotic tray assembly using imaging to detect missing or damaged instruments is already deployed in large hospitals, AI and robotics adoption across central sterile services is estimated at 5-15% worldwide as of late 2025, Censis ships AI in sterile processing on top of the tracking system of record, and Steris, Getinge and Belimed own the washers, sterilisers and the service contracts that come with them. The offsite version is also taken (Steris IMS, Agiliti, Synergy Health). Closest call of the run, but the room is not empty.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0305",
+      "date": "2026-09-01",
+      "status": "killed",
+      "summary": "Owner.com localised for Japan: an AI operator for the several hundred thousand independent Japanese restaurants, sold on staff replacement rather than demand generation, built on LINE, PayPay and Japanese-language voice ordering.",
+      "source_pattern": "Owner.com $240M at $2.3B, past $100M ARR, 2026-08-28, with stated intent to expand internationally.",
+      "buyer": "Owner-operator of an independent Japanese restaurant facing an unfillable staffing gap.",
+      "trigger": "Losing a floor or phone shift with no replacement available.",
+      "wedge": "Geography: LINE, PayPay, Tabelog, Japanese labour law and Japanese-language voice are a rebuild, not a localisation toggle.",
+      "kill_reason": "Killed by the occupancy test and by the method's own stated failure mode. The highest-value piece - AI phone answering for Japanese small businesses - is held by IVRy, which has raised repeatedly through 2025-26, with Toreta, TableCheck, Ebica and Recruit's AirREGI holding reservations and POS. Beyond occupancy this is the textbook 'company X for a smaller audience' construction the method exists to prevent: the mechanism is not re-pointed, only re-translated.",
+      "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0306",
+      "date": "2026-09-01",
+      "status": "killed",
+      "summary": "Neutral adjudication and mandate layer for agent-initiated consumer purchases: a verifiable, revocable authority document saying what a consumer's agent may buy and on what terms, plus an independent adjudicator for the new dispute class of 'my agent bought the wrong thing'.",
+      "source_pattern": "The agentic-commerce cluster: Universal Commerce Protocol announced by Google and Shopify at NRF in January 2026 with Amazon, Meta, Microsoft, Salesforce and Stripe on its tech council; OpenAI and Stripe's Agentic Commerce Protocol; Visa embedded in ChatGPT on 2026-06-10; Etsy and 1M+ Shopify merchants live; eComID $17M for a cross-retailer shopping passport; and Instinct's $250M Series B at $2.5B for a consumer agent that completes purchases.",
+      "buyer": "Merchant or card issuer facing agent-initiated transactions they cannot attribute or dispute.",
+      "trigger": "The first chargeback wave on agent-initiated orders.",
+      "wedge": "Attempted: the rails owners are conflicted because their incentive is to maximise agent transaction volume, so they cannot be the neutral adjudicator between consumer agent, merchant and issuer.",
+      "kill_reason": "Killed by the config-change test. The conflict argument is true and does not matter, because the networks are shipping the layer anyway - Visa's Trusted Agent Protocol, Mastercard Agent Pay, Cloudflare's Web Bot Auth, and the UCP and ACP specifications themselves all define agent identity, mandate and liability, and the card networks have run dispute adjudication for fifty years. Also duplicates ts-0224 (outcome adjudication for agent-priced software) and ts-0233 one market over.",
+      "kill_attempts_survived": 0
     }
   ]
 }
