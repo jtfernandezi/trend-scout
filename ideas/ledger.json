@@ -3395,6 +3395,212 @@
       "wedge": "Attempted: the rails owners are conflicted because their incentive is to maximise agent transaction volume, so they cannot be the neutral adjudicator between consumer agent, merchant and issuer.",
       "kill_reason": "Killed by the config-change test. The conflict argument is true and does not matter, because the networks are shipping the layer anyway - Visa's Trusted Agent Protocol, Mastercard Agent Pay, Cloudflare's Web Bot Auth, and the UCP and ACP specifications themselves all define agent identity, mandate and liability, and the card networks have run dispute adjudication for fifty years. Also duplicates ts-0224 (outcome adjudication for agent-priced software) and ts-0233 one market over.",
       "kill_attempts_survived": 0
+    },
+    {
+      "id": "ts-0307",
+      "date": "2026-09-03",
+      "status": "new",
+      "summary": "Retracement engine plus licensed survey firm: an AI-native land surveying company that reconstructs where a property boundary legally is - reading the deed chain, adjoining deeds, plats, prior surveys and found monument evidence, applying the legal hierarchy of evidence, and reconciling the result against LiDAR and photogrammetric field capture - then stamps and delivers the survey itself, taking the professional liability rather than selling software to the firms that carry it.",
+      "cross": {
+        "ai_signal": "Boundary retracement is the rare professional judgment that is simultaneously a long-context legal-document problem and a geometric constraint problem, and neither half worked before frontier models. The machine must read a chain of title and the deeds of every adjoiner - often two centuries of metes-and-bounds prose with calls to trees, stones and dead neighbours - reconcile conflicting descriptions under the surveyor's evidentiary hierarchy (senior rights, then monuments, then courses and distances, then area), and then solve the resulting constraints against measured field evidence: found pins, fences, occupation lines, and a point cloud. Transfyr's $25M seed on 2026-08-26 is the same mechanism one domain over - multimodal models turning undocumented physical reality into a machine-readable record. Nothing in the incumbent stack (Trimble Business Center, Carlson, Leica) does the reasoning; it does the drafting after a licensed human has already done the thinking.",
+        "structural_signal": "The profession is collapsing on a demand spike. US licensed surveyors fell from 56,200 in 2010 to 47,770 in 2020; average age of a licensee is 57-60; 94% of US construction firms reported difficulty hiring qualified surveyors in 2024. Meanwhile developers are on track to add a record 43.4 GW of new utility-scale solar in 2026 (+60% on 2025), the data-centre buildout is siting at unprecedented rate, and BEAD is putting $42.5B of fibre into the ground - every one of those projects needs boundary, topographic and ALTA/NSPS work first. On top of that a dated trigger: the 2026 ALTA/NSPS Minimum Standard Detail Requirements took effect 2026-02-23, added the Table A Item 20 encroachment summary, and moved adjoining-deed research onto the surveyor - the title insurer no longer has to supply adjoiner deeds - adding 2-4 hours of exactly the research labour a model removes. Global land surveying is a ~$14.17B market in 2026. Private equity has spent five years rolling up survey firms, which is a labour-arbitrage answer to a licensed-labour shortage and cannot remove the hours."
+      },
+      "source_pattern": "The 'agent-native professional services' cluster confirmed by the YC Summer 2026 batch (235 companies, Demo Day 2026-09-10, industrials up from 12.8% to 23%): multiple startups positioning as AI-run accounting firms, law practices and insurance carriers rather than as tools for them, alongside funded instances outside the batch - Casey and Fernstone as AI-native commercial insurance brokerages, Last Accounting Company as a full-stack AI accounting firm where agents do the work and a certified accountant signs. Separately, Transfyr launched on 2026-08-26 with a $25M seed led by General Catalyst (Lux, Breakout, SV Angel; angels including David Baker, Chris Re and Kevin Weil), founded by Ginkgo's former head of AI and the founding director of ARPA-H, proving that sensor stacks plus multimodal models can capture skilled physical work that never gets written down. Mechanism: the firm itself - licence, liability and deliverable - is the product, with agents doing the expert work and a much thinner layer of licensed humans signing.",
+      "wedge": "Channel conflict at the vendors, and hourly-billing economics at the practitioners. Trimble, Hexagon/Leica, Topcon, Carlson and Bentley sell instruments, dealer services and per-seat CAD to the ~10,000 US survey firms; delivering finished stamped surveys would put them in competition with their entire customer base and their dealer channel, and would require carrying professional liability and PLS licensure in fifty states that an instrument maker has no basis for. The survey firms cannot follow either: they are 3-8 person owner-operated practices billing the licensed hours that this removes, with no capacity to build multimodal retracement models - and the PE roll-ups buying them are levered labour-arbitrage vehicles whose thesis is utilisation, not elimination. Title insurers are structurally excluded on the other side: they deliberately except survey matters from coverage precisely so they never carry boundary risk, so becoming the surveyor reverses their own risk posture.",
+      "buyer": "The party who needs a stamped survey on a clock and cannot get one: a solar, storage or data-centre development manager holding a portfolio of sites; a commercial real estate lender or title agency ordering ALTA/NSPS surveys for closings; a national homebuilder or fibre builder. All of them buy in volume from one relationship, which is why the first ten are reachable without a retail motion.",
+      "trigger": "A closing, permit, interconnection application or construction start is gated on a survey and the local firm quotes six to ten weeks. Secondary trigger: a title commitment raises a boundary or encroachment exception that has to be resolved before funding, now under the 2026 ALTA/NSPS standard that puts adjoiner-deed research on the surveyor.",
+      "why_incumbents_cant": "See wedge. Trimble and Hexagon would have to compete with every customer and dealer they have and take on fifty-state licensure and E&O. The survey firms would have to delete their own billable hours. The PE roll-ups can buy firms but not remove the licensed labour that is the constraint. And the nearest thing to an occupant found on search is a single Georgia one-man licensed practice using LLM agents in its own back office - no funded player is niching this way.",
+      "expansion_path": "Volume boundary, topographic and ALTA/NSPS work for energy, data-centre, fibre and CRE buyers (a reachable slice of a ~$14B global, ~$12-13B US surveying services market with a collapsing labour supply) -> construction staking and as-built verification on the same sites -> the accumulated by-product: a machine-readable national boundary graph carrying every deed call, found monument and resolved conflict, which is the geometric record nobody owns and which title, permitting, parcel data and land-rights products all currently approximate.",
+      "scores": {
+        "wedge_durability": 4,
+        "pattern_strength": 4,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 5,
+        "composite": 4.2
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0024-ai-native-land-survey-firm.md",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0308",
+      "date": "2026-09-03",
+      "status": "new",
+      "summary": "The government-contract ledger: an AI-native accounting system of record that makes a twelve-person defence-tech company DCAA-adequate from day one - judging the allowability of every transaction against FAR Part 31 and the contract, maintaining segregated direct and indirect cost pools and compliant timekeeping, producing provisional billing rates and the incurred-cost submission, and standing behind the pre-award accounting system survey - instead of the outsourced govcon CPA firm that does it by hand today.",
+      "cross": {
+        "ai_signal": "The product is a ledger whose posting rules are natural-language regulation. Every transaction has to be judged against FAR Part 31 allowability, the contract's own terms, CAS where it applies, and the company's disclosed accounting practice - then allocated to the right direct contract or indirect pool, because that allocation is what determines billable revenue. Then the same corpus has to produce the provisional rate proposal and the incurred-cost submission and answer a DCAA auditor's questions about them five years later. That is exactly the class of work the 2026 AI-native ERP cluster proved machines can now do on a general ledger, pointed at a rulebook rather than at revenue recognition.",
+        "structural_signal": "Defence and dual-use venture investment exceeded $15B in 2025 and is pacing past $18B in 2026, cumulative funding across the top 60+ defence startups is over $33B, and the YC Summer 2026 batch alone has eight defence companies. Every one of them hits the same wall: a DoD SBIR Phase II - typically $1.0-$1.5M - is a federal cost-type contract carrying the same accounting standards as a $50M prime, and DCAA runs a pre-award accounting system survey (SF 1408) before the award. Today that is solved by hiring a fractional govcon CPA firm - Team 80, Jameson, Redstone GCI, Cherry Bekaert, Amerifusion - at hourly rates, or by buying Deltek Costpoint, whose realistic entry cost is a six-figure implementation through a VAR channel. Deltek was taken out at $2.8B in 2016; Unanet, JAMIS, PROCAS and BigTime split the rest."
+      },
+      "source_pattern": "Rillet raised a $100M Series C at a $1B valuation on 2026-08-19 led by Iconiq (Sequoia, a16z, Bain Capital Ventures, Oak HC/FT, Battery, FirstMark, Scale, Creandum), its third round in twelve months and $200M+ total: 600+ customers, ARR doubled in the last three months, and customers including Mercor - which is scaling past $2B ARR with a finance team of three. Two more funded companies are at the identical job: Campfire ($100M+, Accel and YC) and DualEntry ($90M Series A, Lightspeed and Khosla), inside a tracked field of 53 AI-native accounting and finance-ops companies. Mechanism: the general ledger can now be constructed and closed by agents reading source transactions, so the accounting system of record - not a tool sitting beside it - is winnable.",
+      "wedge": "Two structurally blocked leaders, on different axes. Deltek is blocked on economics and channel: Costpoint's revenue model is a six-figure implementation sold and delivered through implementation partners, with the complexity itself as the product - an AI-native system that makes compliance automatic destroys both the partner channel and the seat count, and Deltek is PE-owned and levered, which makes deliberate cannibalisation harder to authorise rather than easier. The govcon CPA firms are blocked on their own business model: their revenue is billable partner and staff hours, their liability model is a partner signature on an engagement, and neither survives being productised into a system that takes standing responsibility for a client's accounting-system adequacy. And the AI-native ERP leaders - Rillet, Campfire, DualEntry - cannot follow with a config change: FAR allowability, indirect pools, incurred-cost submissions and a government audit posture are a second ledger and a second product, sold to a buyer their entire go-to-market is not pointed at.",
+      "buyer": "The founder or first finance hire at a defence or dual-use hardware startup - twelve to eighty people, venture-backed, no govcon controller - at the moment a cost-type federal award is in reach. Widening from there to the small and mid-sized businesses that make up the long tail of federal contracting.",
+      "trigger": "The pre-award accounting system survey. A DoD SBIR Phase II, an OTA converting to a cost-type follow-on, or a first cost-reimbursable prime or subcontract - at which point the company must demonstrate segregated cost pools, compliant timekeeping and exclusion of unallowable costs before the money can be obligated, on a timetable that will not accommodate a Costpoint implementation.",
+      "why_incumbents_cant": "See wedge: Deltek's price floor and VAR channel, the CPA firms' hourly-billing and partner-liability model, and a second-product problem for the AI-native ERP leaders. Search surfaced no AI-native occupant of this segment - only the legacy vendors (Deltek, Unanet, JAMIS, PROCAS, BigTime, XTIVIA) and the CPA firms selling the work as labour.",
+      "expansion_path": "Defence-tech startups at their first cost-type award (small in dollars, but the highest-growth cohort in the economy and a cohort that compounds into large contractors) -> the long tail of small and mid-sized federal contractors currently priced out of Costpoint -> up-market displacement of Costpoint and Unanet in a category whose leader was worth $2.8B a decade ago -> the adjacent govcon back office the ledger already holds the data for: pricing and proposal cost volumes, subcontractor flow-downs, closeouts and audit defence, across a federal contracting economy obligating well over $700B a year.",
+      "scores": {
+        "wedge_durability": 4,
+        "pattern_strength": 5,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 5,
+        "founder_fit": 4,
+        "composite": 4.3
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0025-govcon-ledger-for-defence-tech.md",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0309",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "Bordereaux and delegated-authority ledger for MGAs, carriers and reinsurers: parse thousands of heterogeneous premium and claims bordereaux into a canonical policy and claim ledger and reconcile bound-to-paid across the delegated chain.",
+      "source_pattern": "Rillet raised a $100M Series C at a $1B valuation on 2026-08-19 led by Iconiq (Sequoia, a16z, Bain Capital Ventures, Oak HC/FT, Battery, FirstMark, Scale, Creandum), its third round in twelve months and $200M+ total: 600+ customers, ARR doubled in the last three months, and customers including Mercor - which is scaling past $2B ARR with a finance team of three. Two more funded companies are at the identical job: Campfire ($100M+, Accel and YC) and DualEntry ($90M Series A, Lightspeed and Khosla), inside a tracked field of 53 AI-native accounting and finance-ops companies. Mechanism: the general ledger can now be constructed and closed by agents reading source transactions, so the accounting system of record - not a tool sitting beside it - is winnable.",
+      "wedge": "Attempted: the insurance statutory data model - policy, premium, treaty, cession - is a different ledger from Rillet's accrual corporate GL, so serving it means a second product rather than a dimension.",
+      "kill_reason": "Killed by the occupancy test, on the first search. Brisc ships a Bordereaux & CashOps AI agent claiming a 97%+ automated match rate across Excel, PDF, CSV and email attachments; Unitary reports 99% of bordereaux processed without human involvement within five weeks of deployment; FurtherAI, Pibit.AI and WIR Innovation all sell into the same workflow. The segment is served by credible players already niching exactly this way.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0310",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "Escrow and trust-accounting system of record for title and escrow agencies: per-beneficiary sub-ledgers with statutory daily three-way reconciliation, built AI-native rather than bolted onto a title production system.",
+      "source_pattern": "Rillet raised a $100M Series C at a $1B valuation on 2026-08-19 led by Iconiq (Sequoia, a16z, Bain Capital Ventures, Oak HC/FT, Battery, FirstMark, Scale, Creandum), its third round in twelve months and $200M+ total: 600+ customers, ARR doubled in the last three months, and customers including Mercor - which is scaling past $2B ARR with a finance team of three. Two more funded companies are at the identical job: Campfire ($100M+, Accel and YC) and DualEntry ($90M Series A, Lightspeed and Khosla), inside a tracked field of 53 AI-native accounting and finance-ops companies. Mechanism: the general ledger can now be constructed and closed by agents reading source transactions, so the accounting system of record - not a tool sitting beside it - is winnable.",
+      "wedge": "Attempted: money held for others, reconciled per beneficiary to a specific bank account under state licensure and criminal commingling liability, is a ledger primitive Rillet's schema has no concept of.",
+      "kill_reason": "Killed by the occupancy test and the venture-scale gate together. Rynoh, ResWare, RamQuest and Elite Software already do automated three-way reconciliation and ALTA-compliant trust reporting, and Rynoh ships an AI assistant in October 2026. Beyond occupancy, the segment dead-ends: escrow trust accounting is a compliance utility bought by a few thousand agencies, and the ledger already killed the adjacent title/escrow automation idea as ts-0029.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0311",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "AI operator for the independent grocery store: run the non-clinical business of a single-location grocer end to end - pricing, ordering, shrink, loyalty, digital storefront - the way Owner.com runs an independent restaurant.",
+      "source_pattern": "Owner.com's $240M Series D at $2.3B on 2026-08-28 past $100M ARR, and Rundoo's $30M Series B on 2026-08-19 (Battery, with Bessemer and CRV; $48M total, 500+ independent supply stores) - two proofs that a physical business too small to employ a buyer, a pricer or a marketer can have those roles supplied by the system of record itself.",
+      "wedge": "Attempted: grocery's perishable, high-SKU, low-margin operations differ enough from restaurant operations to look like a data-model wedge.",
+      "kill_reason": "Killed by the config-change test, from the previous run's own notes. Owner.com's publicly stated roadmap is every independent US restaurant, then international, then salons, spas and independent grocers - the segment is literally the next item on the leader's list, which is the definition of a config change rather than a structural block.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0312",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "Independent validation of deployed AI agents as regulated models for banks: perform the second-line effective challenge and produce the SR 11-7 validation report an examiner will accept for an agent that takes action rather than a model that scores.",
+      "source_pattern": "The agent supply-chain cluster: AIR out of stealth on 2026-09-01 with $50M across two seeds weeks apart (Sequoia then Greenoaks) to discover agents inside companies and vet the skills and tools they use; Lasso Security $30M on 2026-09-02 for sub-5ms CPU-resident guardrails; Neo Security $100M (Bessemer, a16z) for agentic software controls; Glow $100M (Sequoia, Cyberstarts, Greenoaks, Redpoint) for AI endpoint security - roughly $330M for adjacent jobs in ten weeks.",
+      "wedge": "Attempted: SR 11-7 requires validation by a party independent of both the developer and the user, which structurally bars a vendor that also builds the guardrails - and the artifact is a report signed to an examiner, not a dashboard, bought by the model risk group rather than the CISO.",
+      "kill_reason": "Killed by the occupancy test. ValidMind already sells agentic AI governance explicitly framed to SR 11-7 and the EU AI Act with policy-as-code and immutable audit trails, alongside DeepInspect and a named vendor category with published comparison lists. The independence argument is true and does not matter when the segment already has funded occupants.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0313",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "AI-native statutory books for multi-country scaleups: maintain local-GAAP books, filings and audit packs in every country a fast-growing company has an entity in, replacing outsourced global compliance and reporting.",
+      "source_pattern": "Rillet raised a $100M Series C at a $1B valuation on 2026-08-19 led by Iconiq (Sequoia, a16z, Bain Capital Ventures, Oak HC/FT, Battery, FirstMark, Scale, Creandum), its third round in twelve months and $200M+ total: 600+ customers, ARR doubled in the last three months, and customers including Mercor - which is scaling past $2B ARR with a finance team of three. Two more funded companies are at the identical job: Campfire ($100M+, Accel and YC) and DualEntry ($90M Series A, Lightspeed and Khosla), inside a tracked field of 53 AI-native accounting and finance-ops companies. Mechanism: the general ledger can now be constructed and closed by agents reading source transactions, so the accounting system of record - not a tool sitting beside it - is winnable.",
+      "wedge": "Attempted: per-country charts of accounts, local GAAP transformation, clearance e-invoicing and locally licensed signers are forty countries of regulated presence, not a config option - and the incumbents (TMF, Vistra) are labour-arbitrage roll-ups whose P&L is headcount.",
+      "kill_reason": "Killed by the occupancy test. Commenda has raised ~$9.9M and positions on exactly this - entity management, indirect tax, transfer pricing and corporate tax/accounting consolidated across 70+ countries for companies with 5-30 international entities. The innovator's-dilemma read on the incumbents is confirmed (Vistra's new 'Geni' AI advisor routes clients to its own network of 9,000 experts) but the opening already has a funded occupant.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0314",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "AI-native fund-accounting system of record for cities, counties, special districts and school districts: budgetary and encumbrance control, GASB reporting and Single Audit support for entities with no finance staff, migrating them off Munis and spreadsheets without a two-year implementation.",
+      "source_pattern": "Rillet raised a $100M Series C at a $1B valuation on 2026-08-19 led by Iconiq (Sequoia, a16z, Bain Capital Ventures, Oak HC/FT, Battery, FirstMark, Scale, Creandum), its third round in twelve months and $200M+ total: 600+ customers, ARR doubled in the last three months, and customers including Mercor - which is scaling past $2B ARR with a finance team of three. Two more funded companies are at the identical job: Campfire ($100M+, Accel and YC) and DualEntry ($90M Series A, Lightspeed and Khosla), inside a tracked field of 53 AI-native accounting and finance-ops companies. Mechanism: the general ledger can now be constructed and closed by agents reading source transactions, so the accounting system of record - not a tool sitting beside it - is winnable.",
+      "wedge": "Attempted: fund accounting, encumbrance control at the purchase order and state uniform charts of accounts are a different ledger primitive, and Tyler's implementation cost floor structurally excludes the small-entity tail.",
+      "kill_reason": "Killed by the occupancy test with the config-change test behind it. OpenGov already sells cloud ERP and budgeting to small and mid-sized governments and was acquired by Cox at a $1.8B valuation; Springbrook and BS&A hold the same tail. And the leader in the narrowed market is Tyler, with 3,500 Munis sites - an incumbent, not a structurally blocked one. The block here runs against us (per-entity procurement, board votes, glacial cycles), which is the ts-0298 failure mode.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0315",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "AI-native make-ready engineering for the fibre buildout: reconstruct a utility pole and its attachments from field capture, run the NESC loading and clearance analysis, and produce the make-ready design for the 6-12 million poles BEAD requires.",
+      "source_pattern": "Transfyr's $25M seed led by General Catalyst on 2026-08-26 - sensor stacks plus multimodal models capturing physical execution and turning it into machine-readable structure - re-pointed from the laboratory bench to the field.",
+      "wedge": "Attempted: the incumbent make-ready engineering firms bill per pole through offshore drafting teams, so removing the drafting hours removes their revenue.",
+      "kill_reason": "Killed by the occupancy test. Neara closed an AUD 90M Series D led by TCV in February 2026 for a physics-enabled utility digital twin that simulates pole moves, clearance and loading directly; Katapult Pro holds the attacher side with field data, pole loading, make-ready design and FCC shot-clock tracking. Both sides of the segment are occupied by funded players.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0316",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "Continuous workforce identity: prove the human behind a remote hire is who they claim, at application, at interview and during employment, against AI-generated candidates and state-sponsored infiltration.",
+      "source_pattern": "Yardstik's $30M Series B on 2026-08-28 ($65M total) plus the confirmed scale of the problem - one screening startup finding mid-to-high-risk North Korean IT-worker patterns in a large share of remote applications, and 6,500+ identified cases globally.",
+      "wedge": "Attempted: an FCRA consumer-reporting posture makes real-time deception detection legally awkward for the background-check incumbents, and identity vendors verify at onboarding rather than continuously.",
+      "kill_reason": "Killed by the occupancy test. Endorsed has analysed more than 11 million job applications for exactly this fraud pattern; Persona shipped a dedicated Candidate Verification product on 2026-03-11 matching government ID to a live selfie with device, behavioural and network signals to catch deepfake impersonation; Socure and SpyCloud publish detection playbooks. The segment is crowded and the ledger has already killed adjacent identity ideas at ts-0228 and ts-0301.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0317",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "Software-first re-mining operator for tailings and waste rock: acquire encumbered mine-waste facilities and run them with a machine-run operating system, recovering copper and critical minerals the majors treat as closure liability.",
+      "source_pattern": "Mariana Minerals' $310M Series B at $1.5B on 2026-08-03 led by Khosla (a16z, Breakthrough Energy, Greenoaks, BHP Ventures, Mitsubishi; $400M total), which restarted an idled Utah copper mine in four months on MarianaOS - proof that a software-first operating company can run a physical asset with a fraction of the organisation it used to take.",
+      "wedge": "Attempted: Mariana must own assets big enough to matter to a $1.5B company, and majors cannot reopen a closed tailings facility without resetting closure liability and permits - an accounting and permitting conflict rather than a preference.",
+      "kill_reason": "Killed by the occupancy test. Phoenix Tailings has raised roughly $149M for AI-driven extraction of critical minerals from mining waste, acquired Machinery Partner in May 2026 specifically to add AI, automation and digital manufacturing, and is scaling from a 40 t/yr plant to 400 t/yr with federal support. The mine-waste-to-critical-minerals segment has a funded occupant with plants in the ground.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0318",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "Technical data package regeneration for defence sustainment: rebuild manufacturable, dimensioned, tolerance-bearing models and quality documentation for legacy parts whose engineering data no longer exists.",
+      "source_pattern": "Hadrian's $1.37B Series D at ~$7.87B on 2026-08-06, whose Opus platform generates quoting, programming, machining and inspection so a fully automated factory stands up in under six months, plus Meshy AI's $400M Series B at $1.5B for generative 3D.",
+      "wedge": "Attempted: generative mesh models produce appearance, not constraint-satisfying manufacturable geometry, so the buyer needing dimensional accuracy and a quality package is a different product.",
+      "kill_reason": "Killed by the occupancy test. Novineer is already selling AI reverse engineering into defence sustainment and is written up as the category example; Parts Life, PHT Aerospace and Cherokee Federal hold the services side; and the Pentagon has stood up its own funded reverse-engineering programme for systems whose technical data no longer exists. The ledger also already covers the neighbouring ground at ts-0192, ts-0217 and ts-0282.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0319",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "Ambient multimodal batch record for GMP and cell-and-gene manufacturing: cameras and sensors watching the manual steps of a regulated production suite, producing the release documentation and the deviation record rather than having an operator type it.",
+      "source_pattern": "Transfyr's $25M seed led by General Catalyst on 2026-08-26 to capture bench execution, operator intent, environmental variables and instrument telemetry with multimodal models.",
+      "wedge": "Attempted: Transfyr is an R&D observability product sold to scientists, with no Part 11 posture or validation package, so the GxP floor looked like a second product bought by Quality rather than Research.",
+      "kill_reason": "Killed by the occupancy test. Tulip raised a $120M Series D at $1.3B in January 2026 led by Mitsubishi Electric explicitly for AI-native frontline manufacturing including electronic batch records and compliance; Apprentice, Oncotelic's June 2026 GMP platform and Batchline occupy the same suite. The ledger also holds prior kills on this ground.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0320",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "Ambient capture of manual industrial work: watch high-mix manual assembly and maintenance with cameras, produce the work record and the process knowledge, and turn a retiring expert's tacit method into machine-readable instructions.",
+      "source_pattern": "Transfyr's $25M seed on 2026-08-26, plus the YC Summer 2026 batch's shift to 23% industrials.",
+      "wedge": "Attempted: the tacit-knowledge problem is worth more on a factory floor than at a laboratory bench, and Transfyr's life-science go-to-market cannot reach it.",
+      "kill_reason": "Killed by the occupancy test. Invisible AI and Retrocausal already sell camera-based observation of manual assembly work; Tulip ($1.3B), Augmentir and L2L hold the frontline-operations layer. The re-point is the obvious one and it was made years ago.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0321",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "AI-native Phase I environmental site assessment firm: generate the ASTM E1527 report - historical aerials, Sanborn maps, regulatory database review, site reconnaissance - and sign it as the Environmental Professional, taking the deliverable rather than selling tools to consultants.",
+      "source_pattern": "The 'agent-native professional services' cluster confirmed by the YC Summer 2026 batch (235 companies, Demo Day 2026-09-10, industrials up from 12.8% to 23%): multiple startups positioning as AI-run accounting firms, law practices and insurance carriers rather than as tools for them, alongside funded instances outside the batch - Casey and Fernstone as AI-native commercial insurance brokerages, Last Accounting Company as a full-stack AI accounting firm where agents do the work and a certified accountant signs. Separately, Transfyr launched on 2026-08-26 with a $25M seed led by General Catalyst (Lux, Breakout, SV Angel; angels including David Baker, Chris Re and Kevin Weil), founded by Ginkgo's former head of AI and the founding director of ARPA-H, proving that sensor stacks plus multimodal models can capture skilled physical work that never gets written down. Mechanism: the firm itself - licence, liability and deliverable - is the product, with agents doing the expert work and a much thinner layer of licensed humans signing.",
+      "wedge": "Attempted: LightBox and EDR sell the historical-records data to every consultant, so becoming the consultant would destroy their channel.",
+      "kill_reason": "Killed by the config-change test. The consultancies are already doing it themselves - EKI publishes its own AI Phase I programme, LightBox is shipping AI into the workflow it already owns the data for, and generic document tooling (V7 Go) covers the extraction. Unlike boundary retracement, the Phase I is report assembly against a checklist rather than a defensible judgment, so there is no reasoning moat for a new firm to hold.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0322",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "AI-native geotechnical engineering firm: infer subsurface conditions from regional boring databases, geology and remote sensing so a project drills less, and deliver the PE-sealed geotechnical report for the data-centre and energy buildout.",
+      "source_pattern": "The 'agent-native professional services' cluster confirmed by the YC Summer 2026 batch (235 companies, Demo Day 2026-09-10, industrials up from 12.8% to 23%): multiple startups positioning as AI-run accounting firms, law practices and insurance carriers rather than as tools for them, alongside funded instances outside the batch - Casey and Fernstone as AI-native commercial insurance brokerages, Last Accounting Company as a full-stack AI accounting firm where agents do the work and a certified accountant signs. Separately, Transfyr launched on 2026-08-26 with a $25M seed led by General Catalyst (Lux, Breakout, SV Angel; angels including David Baker, Chris Re and Kevin Weil), founded by Ginkgo's former head of AI and the founding director of ARPA-H, proving that sensor stacks plus multimodal models can capture skilled physical work that never gets written down. Mechanism: the firm itself - licence, liability and deliverable - is the product, with agents doing the expert work and a much thinner layer of licensed humans signing.",
+      "wedge": "Attempted: the same shape as the surviving survey idea - a licensed stamped deliverable, fragmented hourly-billing incumbents, and a demand wave from the buildout.",
+      "kill_reason": "Killed by the occupancy test. A purpose-built platform (GeoAI) already spans boring-log ingestion through subsurface modelling to PE-sealed design reports, and GroundedAI raised $2M in July 2026 for AI subsurface understanding in tunnelling. The workflow layer is taken and the remaining moat is thin.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0323",
+      "date": "2026-09-03",
+      "status": "killed",
+      "summary": "AI-native ERP for nonprofits and grant-funded organisations: fund accounting, restricted net assets, grant tracking and Uniform Guidance compliance built machine-first.",
+      "source_pattern": "Rillet raised a $100M Series C at a $1B valuation on 2026-08-19 led by Iconiq (Sequoia, a16z, Bain Capital Ventures, Oak HC/FT, Battery, FirstMark, Scale, Creandum), its third round in twelve months and $200M+ total: 600+ customers, ARR doubled in the last three months, and customers including Mercor - which is scaling past $2B ARR with a finance team of three. Two more funded companies are at the identical job: Campfire ($100M+, Accel and YC) and DualEntry ($90M Series A, Lightspeed and Khosla), inside a tracked field of 53 AI-native accounting and finance-ops companies. Mechanism: the general ledger can now be constructed and closed by agents reading source transactions, so the accounting system of record - not a tool sitting beside it - is winnable.",
+      "wedge": "Attempted: restricted funds and grant-level accounting looked like a ledger primitive the corporate AI-native ERPs would need a second product for.",
+      "kill_reason": "Killed by the config-change test. Sage Intacct serves both corporate and nonprofit customers off one dimensional general ledger, and Intuit Enterprise Suite shipped fund accounting, grant tracking and multi-entity consolidation into a general product - which proves that restriction and fund tracking are a dimension, not a second ledger. Any of Rillet, Campfire or DualEntry could add the dimensions; the sector's shrinking budgets and Blackbaud's incumbency make it worse, not better.",
+      "rubric_version": 3
     }
   ]
 }
