@@ -414,7 +414,13 @@
    "kill_attempts_survived": 3,
    "brief": "ideas/briefs/0004-pharma-ai-credibility-lab.md",
    "revalidation": "2026-07-25 first re-check since 06-20: SURVIVES with an improved international why-now but a softened trigger. FDA and EMA jointly published ten Guiding Principles of Good AI Practice in Drug Development on 2026-01-14, which broadens the wedge to both major regulators, and the 7-step credibility framework with its Credibility Assessment Plan / Report (CAP/CAR) deliverables is now the settled expectation for AI-touched submissions. Softening: as of April 2026 the FDA guidance REMAINS DRAFT rather than final, which places it partly in the ts-0043/ts-0102 contingent-mandate failure mode - the composite 3.8 already reflects the weakest novelty of the held book. Encouragingly the field is still advisory rather than productized: what exists is consultancies and explainer content (GxP-CC, IntuitionLabs, kitsa.ai), not an independent lab. Status new->watching.",
-   "rubric_version": 2
+   "rubric_version": 2,
+   "evidence_updates": [
+    {
+     "date": "2026-09-08",
+     "note": "Updated 2026-09-08. New evidence, all of it pointing the same way: the FDA is actively pulling AI into the submission pathway rather than waiting for it. The agency published a Request for Information in the Federal Register on 2026-04-29 for an AI-Enabled Optimization of Early-Phase Clinical Trials pilot programme, and announced its Real-Time Clinical Trials initiative with two proof-of-concept trials reporting endpoints and data signals to the agency in real time. Alongside it, CluePoints launched AI clinical data review tooling with a top-10 pharma partner. Each of these creates a model whose output reaches a reviewer, and none of them comes with an independent credibility assessment. Still no occupant found. Related to the new ts-0336, which sits on the evidence-generation side of the same submission."
+    }
+   ]
   },
   {
    "id": "ts-0040",
@@ -3744,6 +3750,144 @@
    "source_pattern": "Stability AI's $76M Series B, announced late August 2026 and closing 2026-09-01, in which Universal Music Group, Sony Music Group and Warner Music Group all took equity in the same AI company for the first time, alongside Electronic Arts, AMD Ventures, Coatue, Greycroft, Sean Parker and Eric Schmidt - following Stable Audio 3.0, trained on licensed data. Corroborating cluster in generative media generally: Higgsfield at $400M Series B and a $5.4B valuation, doubled from $2B in under six months; Tripo AI at roughly $446M; Meshy at $400M and $1.5B.",
    "wedge": "Attempted: the majors are now inside the model companies, which implies revenue sharing that nobody can currently compute, and no model vendor can credibly audit its own attribution.",
    "kill_reason": "Killed by the occupancy test. Attribution for generative media is an established and funded category, not a gap: Sureel sells per-output attribution for AI-generated content, Musical AI sells attribution and licensing settlement for music specifically, ProRata.ai sells proportional attribution and revenue share, Vermillio sells likeness and catalogue attribution and licensing, and Human Native and Created by Humans hold the licensing-marketplace side. The buyer is also concentrated to the point of fragility - three labels and a handful of model vendors.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0336",
+   "date": "2026-09-08",
+   "status": "new",
+   "summary": "Regulatory-grade patient interviewing: an AI-native clinical research organisation whose product is the machine-conducted qualitative patient interview - in-trial and exit interviews, concept elicitation and cognitive debriefing - run under ICH-GCP with IRB approval, 21 CFR Part 11 records and live adverse-event escalation, so that the patient's own account of a therapy becomes an evidence artefact a sponsor can file with FDA, EMA and an HTA body rather than a consultancy deliverable priced in interviewer hours.",
+   "cross": {
+    "ai_signal": "The instrument is the model. A concept-elicitation or cognitive-debriefing interview is an adaptive, open-ended, hour-long conversation in which the interviewer must probe without leading, recognise when a new concept has appeared, and know when saturation has been reached; it is then coded against a concept matrix by two independent human coders. Every one of those steps is a frontier-model capability that did not exist two years ago, and none of them is a form-filling task. Three further things are only possible with frontier models and are the reason this is not a cheaper version of the same service: (1) saturation can be computed live across a running cohort rather than declared after the fact, so the sample size stops being a guess; (2) every interview can be conducted in the participant's own language and coded into one concept space, which is what makes a global rare-disease cohort reachable at all; (3) a model listening to a patient describe their symptoms can detect a reportable adverse event inside the conversation and escalate it against the 24-hour clock - a duty that is precisely why a consumer research tool cannot be pointed at trial participants. Simile's and Conveo's traction is the proof the underlying interviewing capability now works at enterprise scale.",
+    "structural_signal": "Two funded companies at the identical job inside five weeks - Simile at a $2B valuation and Conveo at a $50M Series A - which is the market confirming that machine-conducted human inquiry is real. Both are aimed at commercial insight, and the healthcare versions that exist (User Intuition, Glaut AIMI) are aimed at pharma market research, not at evidence. The regulated half is explicitly held to be off-limits: the field's own 2026 write-ups state that IRB-governed clinical studies and vulnerable populations 'require human moderation'. Meanwhile in-trial interviewing is described in the peer-reviewed literature as growing rapidly inside clinical development while published guidelines on how to conduct it remain scarce - a fast-growing regulated practice with no settled method and no product. The regulator is moving toward this, not away: FDA published a Request for Information on 2026-04-29 for an AI-Enabled Optimization of Early-Phase Clinical Trials pilot, and announced its Real-Time Clinical Trials initiative with two proof-of-concept trials reporting endpoints to the agency in real time."
+   },
+   "source_pattern": "Simile - more than $200M Series B at a $2B post-money valuation on 2026-07-30, five months after a $100M Series A; revenue up fivefold since public launch, tens of millions of simulations run, customers including CVS Health, Wealthfront, Deloitte and Gallup. Conveo - $50M Series A announced 2026-09-02 (DST Global, Balderton, Visionaries, 6 Degrees, Y Combinator; $55.8M total), with more than 400 enterprises on the platform, infrastructure running across 50+ Fortune 500 companies, and multi-million-dollar enterprise contracts for its StoryLines product. Mechanism carried over: a model can now conduct an adaptive open-ended interview, and interpret it, well enough that the trained human interviewer stops being the constraint on how many people you can ask.",
+   "wedge": "Regulatory posture plus an innovator's-dilemma conflict, one for each candidate follower. (1) Conveo and Simile cannot cross: serving this segment means becoming a GCP-regulated clinical service provider - IRB submissions and informed consent, 21 CFR Part 11 validated systems with audit trails, pharmacovigilance intake with a 24-hour adverse-event clock, site and sponsor contracts, HIPAA and GDPR special-category handling, and standing behind the data in an FDA inspection. That is a second company with a second regulatory identity, not a settings change, and their supply side is consumer panels rather than consented trial participants recruited through investigator sites and advocacy organisations. (2) The actual leaders in the narrowed market are services firms whose revenue is the interviewer hour - IQVIA Patient Centered Solutions, PPD/Thermo Fisher, RTI Health Solutions, Adelphi Values, Clinigma. Automating the interview deletes the billable unit and the CRO pass-through margin at the same time; they have had capable models for eighteen months and have shipped none. (3) The eCOA incumbents - Signant, Clario, Medidata - are built around structured questionnaire capture on provisioned devices; qualitative evidence is a different data model (free narrative coded to a concept matrix) and a different buyer inside the sponsor, so it arrives by acquisition, not by release note.",
+   "buyer": "The patient-centred outcomes or clinical outcome assessment lead inside a mid-cap biotech or a specialty CRO - the person who has to defend a novel or modified endpoint. Beachhead of choice is rare disease and oncology, where cohorts are small, geographically scattered and multilingual, which is exactly where a human interviewer panel breaks and where regulators most want patient experience data.",
+   "trigger": "A dated evidence obligation: an FDA or EMA meeting where the sponsor must show content validity for the endpoint it intends to use; a protocol going final that needs in-trial interviews written into it; or an EU Joint Clinical Assessment dossier that requires patient input the sponsor has not collected. Each of these has a calendar date and a budget line already attached to it.",
+   "why_incumbents_cant": "See wedge. The occupancy search found the adjacent commercial market taken and the regulated market empty. AI-moderated interviewing in healthcare is occupied by User Intuition (HIPAA-aligned AI interviews with patients, caregivers and providers) and Glaut AIMI (pharma brand trackers), and Conveo publishes a pharma page - all of it commercial insight work. In-trial and exit interviewing for regulatory evidence is sold by IQVIA, PPD, RTI-HS and Clinigma as human-moderated services. Phases (YC 2026) does AI voice interviews for trial eligibility screening, which is recruitment rather than evidence. Cambridge Cognition's AQUA and Signant's central rating programme cover clinician-administered scale quality assurance, a different artefact. No funded company was found conducting GCP- and IRB-governed qualitative patient interviews with a model.",
+   "expansion_path": "Rare-disease and oncology in-trial and exit interviews, plus concept elicitation and cognitive debriefing for COA development - a services pool of a few hundred million dollars, deliberately small and deliberately the place where the method gets accepted by reviewers -> become the qualitative arm of record inside the trial, sitting beside eCOA rather than beneath it, which is a $2.5B+ market growing at mid-teens and held by Signant, Clario and Medidata -> post-market and real-world evidence, where the same instrument answers effectiveness and tolerability questions payers ask after approval -> HTA and reimbursement dossiers, where the EU Joint Clinical Assessment has made patient input a mandatory input to a pricing decision across 27 countries and widens to all new medicines by 2030 -> the compounding asset is a cross-indication corpus of coded patient experience linked to outcomes: the concept libraries, the meaningful-change thresholds and the saturation curves that every future endpoint gets argued against, which is a standards position rather than a vendor position.",
+   "scores": {
+    "wedge_durability": 4,
+    "pattern_strength": 5,
+    "market_venture_scale": 4,
+    "defensibility": 4,
+    "yc_fit": 4,
+    "founder_fit": 4,
+    "composite": 4.2
+   },
+   "kill_attempts_survived": 3,
+   "brief": "ideas/briefs/0027-regulatory-grade-patient-interviewing.md",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0337",
+   "date": "2026-09-08",
+   "status": "killed",
+   "summary": "The AI clinical rater: have a model administer and score the interview-based rating scales that are the primary endpoint in CNS trials - HAM-D, MADRS, PANSS, ADAS-Cog - eliminating the rater drift and inflated placebo response that sink psychiatric drug programmes.",
+   "source_pattern": "Simile and Conveo prove machine-conducted interviewing works at enterprise scale; the CNS endpoint is an interview, and inter-rater variability is the best-documented cause of failed psychiatric trials.",
+   "wedge": "Attempted: the eCOA vendors capture structured questionnaires, not clinician-administered interviews, and central rating is a human services business.",
+   "kill_reason": "Killed by the occupancy and config-change tests together. Cambridge Cognition's AQUA already records, diarises and transcribes HAM-D, MADRS and PANSS sessions and scans them for scale-specific quality indicators - it holds the audio, the scale library and the regulatory relationships, so administering rather than auditing is a release, not a rebuild. Signant Health runs a central rating programme staffed by qualified psychiatrists across more than 1,300 CNS trials. And the sponsors are doing it themselves: MindMed scores every HAM-A and MADRS interview with five instances of a custom LLM and takes a consensus, which is the product this idea would sell, built in-house and presented at conference.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0338",
+   "date": "2026-09-08",
+   "status": "killed",
+   "summary": "RADV audit-defence engine for Medicare Advantage plans: for every submitted HCC, reconstruct the medical-record evidence against MEAT criteria, defend the supportable diagnoses and withdraw the rest, as CMS expands risk-adjustment audits from about 60 contracts a year to roughly 550.",
+   "source_pattern": "CMS expanded its certified coder capacity from 40 to approximately 2,000 to audit all RADV-eligible MA contracts annually, with PY2018 findings due to start issuing mid-2026 - a dated regulatory trigger with an enormous implementation gap.",
+   "wedge": "Attempted: the audit is a per-chart evidentiary reconstruction that risk-adjustment analytics vendors were not built to do.",
+   "kill_reason": "Killed by the occupancy test, decisively. RAAPID sells a RADV AI audit solution pairing an LLM with a clinical knowledge graph to validate each HCC against MEAT evidence in both directions; Reveleer's Evidence Validation Engine maps diagnoses to HCCs with claimed 99% accuracy; Martlet.ai launched a RADV audit-readiness platform explicitly for the CMS audit expansion; Inferscience sells real-time MEAT-criteria HCC validation; Charta Health sells a RADV operational layer for concurrent audits. Five named vendors on the exact narrowing. A secondary weakness: a September 2025 federal ruling vacated the extrapolation provisions, so the burning-platform economics are on appeal.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0339",
+   "date": "2026-09-08",
+   "status": "killed",
+   "summary": "Machine-conducted witness interviewing for safety-critical incidents: within hours of a recordable event, a model independently interviews every witness in their own language using a cognitive-interview protocol, cross-references contradictions and drafts the causal analysis, for operators under OSHA process safety, FRA, FAA and Joint Commission investigation duties.",
+   "source_pattern": "The Conveo and Simile mechanism, pointed at the one interview whose quality determines a regulatory finding and where trained investigators are scarcest.",
+   "wedge": "Attempted: EHS platforms hold the incident workflow but the industry states plainly that the witness interview is the part AI cannot do.",
+   "kill_reason": "Killed by the config-change test, with a second block pointing the wrong way. Haven Safety AI is already an AI-native platform for incident investigation and root-cause analysis, and the EHS incumbents - VelocityEHS, Intelex, Cority, EHS Insight - ship AI copilots that draft investigation narratives, cluster contributing factors and write regulatory submissions; adding the intake conversation is an increment on a system that already owns the record. The second block is against us rather than the leader: a post-incident interview is discoverable, is often conducted under privilege by counsel, and is subject to union representation rights, so the buyer's own lawyers and labour agreements - not a technology gap - decide whether a machine may ask the question at all.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0340",
+   "date": "2026-09-08",
+   "status": "killed",
+   "summary": "Private worker interviewing as the supply-chain human-rights instrument: interview thousands of factory and farm workers privately on their own phones, in their own language, off the audited site, replacing the coached on-site worker interview that makes social audits unreliable.",
+   "source_pattern": "The Conveo and Simile mechanism, pointed at the weakest evidentiary link in forced-labour due diligence under UFLPA and the EU due-diligence regime.",
+   "wedge": "Attempted: an adaptive private interviewer is a different instrument from an SMS survey.",
+   "kill_reason": "Killed by the occupancy test. EcoVadis ships Worker Voice, built on Ulula's technology, with risk-cadenced worker surveys - annual at well-performing sites, six-monthly where issues are flagged - plus a continuous grievance mechanism between cycles, sold into exactly the brands this would target, and reaching workers regardless of location, language or literacy. The category (Ulula, &Wider, WOVO, LRQA/ELEVATE) predates the mechanism and the distribution is already consolidated inside a ratings incumbent. Secondary weakness: the EU due-diligence obligation that would have supplied the trigger was materially weakened by the 2025-26 Omnibus.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0341",
+   "date": "2026-09-08",
+   "status": "killed",
+   "summary": "Deposition-grade claimant interviewing for mass torts: a model conducts a structured recorded intake interview with every claimant in an MDL inventory, cross-checks it against records, and produces a court-ready plaintiff fact sheet plus a defensible vetting record for the firm and its litigation funder.",
+   "source_pattern": "The Conveo and Simile mechanism, pointed at an inventory of hundreds of thousands of claimants that courts are now dismissing wholesale for unvetted filings.",
+   "wedge": "Attempted: privilege, admissibility and contingency-fee economics put this outside a consumer research tool's reach.",
+   "kill_reason": "Killed by the occupancy test. Supio sells exactly this to mass tort firms - routing incoming records, extracting the qualifying criteria of diagnosis, exposure window and causation evidence, and flagging what is missing before a case advances, explicitly at docket scale - and sits inside a funded plaintiff-side field (EvenUp, Eve, Darrow, Alexi) that the ledger already used to kill ts-0230. Mass-tort intake qualification is described in mid-2026 trade coverage as operational rather than experimental at leading plaintiff firms.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0342",
+   "date": "2026-09-08",
+   "status": "killed",
+   "summary": "The oral examination as the credential of record: a model conducts an adaptive spoken examination on a candidate's own submitted work and issues a defensible competence record, for institutions whose written assessment stopped proving anything.",
+   "source_pattern": "The Conveo and Simile interviewing mechanism plus the Mercor mechanism of model-underwritten competence, pointed at the collapse of written assessment integrity, with roughly 45% of institutions redesigning assessment by mid-2026.",
+   "wedge": "Attempted: proctoring vendors verify identity, not competence.",
+   "kill_reason": "Killed by the occupancy test. VivaEdu sells assessment-assurance infrastructure to universities with self-recorded oral verification at cohort scale and audit-ready evidence, backed by Durham University Venture Lab; NYU Stern runs Viva, which conducts personalised oral exams graded by a panel of three LLMs that read and revise each other; AutoViva embeds generative-AI coursework authentication inside Moodle; Eklavvya and a named tool category sell online viva delivery. Both the startup seat and the in-house institutional build are taken, and the buyer is a slow committee with a low contract value.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0343",
+   "date": "2026-09-08",
+   "status": "killed",
+   "summary": "Model-underwritten competence for forward-deployed engineers: assess, certify and supply the embedded engineers whose scarcity, not model quality, is the binding constraint on enterprise AI deployments.",
+   "source_pattern": "The clearest labour signal in the scan: AWS committed $1B to a forward-deployed engineering organisation and Microsoft $2.5B to Frontier Company with roughly 6,000 embedded experts; FDE postings were up about 729% year on year by April 2026; companies planning to hire FDEs went from 5-10% to 70% within two quarters; and roughly 95% of enterprise AI pilots deliver no measurable impact, with the failures on the deployment side.",
+   "wedge": "Attempted: Mercor grades experts for labs, not implementation engineers inside enterprises.",
+   "kill_reason": "Killed by the occupancy test, and by naming the wrong leader. The marketplace already exists in triplicate - WorkGenius supplies pre-vetted forward-deployed engineers in 48 hours, FDE Agency sells pre-vetted FDEs with simulation-based assessment, and offshore-arbitrage suppliers sell certified FDEs at 40-70% below US compensation - alongside Mercor, Andela and Turing. More fundamentally, the two largest buyers of this labour are building the supply themselves with $3.5B of committed capital, so the party we would sell to is the party that decided to become the competitor.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0344",
+   "date": "2026-09-08",
+   "status": "killed",
+   "summary": "AI-native actuarial firm: employ the qualified actuaries and sign the annual Statement of Actuarial Opinion for captives, risk retention groups and small carriers, reading every claim file rather than only the aggregate triangles, and own the fee instead of selling software to the people who bill it.",
+   "source_pattern": "The AI-native professional firm shape proven across the 2026-09-03 run, applied to a mandatory annual signature-bound filing in a market of several thousand captives that incumbents cannot serve economically.",
+   "wedge": "Attempted: Milliman and Oliver Wyman will not work a $20k engagement and the small shops are capacity-bound and paid by the hour, while a software vendor can never sign the opinion.",
+   "kill_reason": "Killed as a duplicate on the ledger's own prior reasoning. ts-0166 killed claim-level reserve intelligence and recorded the governing objection explicitly: the statement of actuarial opinion is a credential-bound, explainability-constrained artefact - the ts-0122/ts-0134 standards-bound failure mode - and an actuary who cannot show the reviewer a defensible method cannot sign. The analytical half is also occupied (Lawdify on per-claim reserve development, CLARA Analytics, Gradient AI, Charlee.ai, plus an established individual-claim reserving research literature). What is left after removing the unsignable and the occupied is a small services firm.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0345",
+   "date": "2026-09-08",
+   "status": "killed",
+   "summary": "Complaint interviewing and reportability determination for medical devices: a model calls the reporter within hours of a complaint, conducts the structured interview, decides MDR reportability against 21 CFR Part 803, and produces the inspection-ready record, under the QMSR regime that took effect 2026-02-02.",
+   "source_pattern": "The Conveo mechanism plus a dated regulatory trigger - FDA's new inspection programme CP 7382.850 effective 2026-02-02 - against complaint volumes the industry says have outgrown manual triage.",
+   "wedge": "Attempted: QMS vendors hold the complaint record but not the conversation with the patient or clinician.",
+   "kill_reason": "Killed by the occupancy test. Smarteeva sells AI post-market surveillance for medtech; Lexim.ai sells the 2026 post-market surveillance rebuild; Assyro and ComplianceQuest sell MDR complaint management with AI at every step from intake to PSUR; and AI voice agents doing MDR complaint intake with structured adverse-event capture are already described as production deployments handling 60-80% of patient support volume. The conversation and the determination are both already sold.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0346",
+   "date": "2026-09-08",
+   "status": "killed",
+   "summary": "AI-native structural engineering firm for the Florida condominium safety regime: perform milestone inspections and structural integrity reserve studies at machine speed against a 2026-12-31 statutory deadline backed by $500-a-day fines.",
+   "source_pattern": "A statute with a hard date and a documented engineering backlog - exactly the trigger shape the 2026-09-05 method note asked this run to lead with.",
+   "wedge": "Attempted: incumbent Florida engineering firms are capacity-bound and bill by the inspection.",
+   "kill_reason": "Killed on venture scale first and occupancy second. The deliverable requires a licensed professional's physical visual inspection of a specific building, so the AI content is report assembly rather than the work; the purchase recurs on a ten-year cycle at a five-figure ticket; and the market is one state. Occupancy is dense and named on the first search page - M2E, FPAT, Building Mavens, FL Engineering and hundreds of comparable Florida firms already market milestone-plus-SIRS bundles. A one-state, once-a-decade, licence-bound inspection is the concentrated-episodic-buyer failure mode of ts-0183 and ts-0265.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0347",
+   "date": "2026-09-08",
+   "status": "killed",
+   "summary": "Neutral training-data consortium: a legally independent entity that assembles a corpus across direct competitors under a structure none of them would grant a vendor, trains a shared private model on it, and returns the model rather than the data.",
+   "source_pattern": "River AI raised $1.1B led by General Catalyst and AMP with Nvidia, AMD Ventures, Y Combinator and Temasek into a two-month-old company on 2026-08-11, on the thesis that enterprises will train and own private open-weight models instead of renting frontier ones.",
+   "wedge": "Attempted: River sells a training API to a single tenant and cannot be the neutral party between rivals.",
+   "kill_reason": "Killed by the occupancy test. The neutral-federation seat is taken and funded: Owkin in life sciences, Rhino Federated Computing ($42.4M raised, a further $11.3M on 2026-01-27, and running the live FAITE consortium that trains biologics models across member organisations in a regulated environment), Apheris ($20.8M), Devron and integrate.ai. The consortium-as-a-product motion this idea proposed is the one Rhino already operates.",
    "rubric_version": 3
   }
  ]
