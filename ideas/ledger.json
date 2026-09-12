@@ -317,6 +317,10 @@
         {
           "date": "2026-09-10",
           "note": "2026-09-10: the buyer for this idea changed, and that is the update. Through 2026 the assumed customer was the robot maker or the deploying enterprise; the insurance market has now moved in front of both. Goodfault underwrites humanoids and software agents on one engine, explicitly 'priced on what the machine is permitted to do, with credits for safeguards enforced in code' and from fleet telemetry where it exists, and the trade press states plainly that ISO 10218 and ISO 3691-4 are 'the difference between a risk an underwriter can price and one they have to decline'. An underwriter buying behavioural evidence is a better customer than a robot maker buying a stamp: it pays because the evidence reduces its own loss cost, it renews annually, and it can make the certificate a condition of cover. Standards evidence tightened in the same direction - ISO 10218-1:2025 and 10218-2:2025 replaced the 2011 editions and absorbed ISO/TS 15066, but the mobile-robot and humanoid provisions are not expected until 2027-2028, leaving a two-year window in which learned policies are deployed near people with no applicable standard. Capital context: physical AI took $47.4B across 521 deals in H1 2026, roughly 4x H2 2025, and robotics startups have raised $18.8B in 2026 against $15B in all of 2025. Still no occupant found for independent behavioural certification of learned policies. A fourth re-point of this shape (ts-0359) was killed this run as a duplicate; the evidence belongs here. Status unchanged at watching, but this is the third consecutive run in which the surrounding conditions improved and the seat stayed empty."
+        },
+        {
+          "date": "2026-09-12",
+          "note": "2026-09-12: the first credible occupant of the neighbouring seat has appeared, and it narrows this idea rather than killing it. Robocurve (YC Summer 2026, Demo Day 2026-09-10) is building 'real-world evaluations of physical AI' - open-source tooling and independent, reproducible benchmarks scoring how well robot models do real jobs, from Jenga and sandwiches up to constructing a data centre, on the explicit argument that labs evaluate in-house, no independent group runs continuous benchmarking as a service, and simulation-strong models degrade on contact with the world. That is the same observation this entry was founded on. What it is not: Robocurve is a Public Benefit Corporation publishing open benchmarks, and a PBC whose legitimacy rests on openness structurally cannot also sell the confidential, per-deployment, liability-bearing certificate an underwriter conditions cover on - the two products poison each other. So the seat this entry actually claims (paid behavioural assurance sold to the insurer, re-run on every over-the-air policy update) remains empty, but the public-benchmark half of the thesis is now taken, and any version of this idea that leads with 'independent benchmarks' rather than 'insurable evidence' is dead. Context strengthened again: humanoid startups raised $8.6B by mid-2026, 1.8x all of 2025; Agility's Digit is past 65,000 operating hours across nine customer facilities (GXO, Schaeffler, Toyota Motor Manufacturing Canada, Mercado Libre); the widely-cited payback arithmetic - break-even against one worker at about 14 months - is stated to assume 80% uptime, which is an assurance question wearing an operations costume. Fourth consecutive run in which conditions improved; first run in which somebody moved into the neighbourhood."
         }
       ]
     },
@@ -585,6 +589,10 @@
         {
           "date": "2026-09-10",
           "note": "2026-09-10: the accumulation question this idea prices has become concrete rather than theoretical. Enterprise agent security and governance took $435M across 12 financings between April and September 2026 - Zenity ($125M Series C) and Obsidian ($85M Series D) inside 48 hours, and AIR out of stealth on 2026-09-01 with $50M in two rounds weeks apart ($10M led by Sequoia, $40M led by Greenoaks), 20+ customers with about a quarter large enterprises. The datapoint that matters for correlated loss: AIR reports filtering out about 27% of the agent add-ons and skills it finds online, and its strongest early demand comes from financial services and pharmaceutical companies. A quarter of a shared, externally-sourced skill supply being unsafe is precisely the shape of a correlated exposure - many insureds pulling the same component from the same public registry - and it is now measured rather than hypothesised. On the pricing side Goodfault has begun underwriting AI agents and physical AI on one engine, which means primary carriers will shortly need a view on aggregation across their book whether or not they write the risk deliberately. Status unchanged at watching; no occupant found for the correlated-AI-failure accumulation model itself."
+        },
+        {
+          "date": "2026-09-12",
+          "note": "2026-09-12: two datapoints, one supportive and one that sharpens who the buyer is. Supportive: AI startups took 95.2% of all insurtech funding in Q1 2026 on $1.63B of total insurtech investment, and the industry's own commentary now states flatly that existing policies are silent, ambiguous or exclude autonomous software, that cyber and E&O are excluding AI claims, and that traditional insurers lack the data and technical capability to assess deployed AI systems. That last clause is the thesis of this entry restated by the market. Sharpening: Risklytics (YC Summer 2026) is selling insurance for frontier-technology businesses including robotics and data centres - a primary writer entering the risk, exactly as Goodfault did, and the third such entrant logged in five weeks. The pattern to note is that the money keeps arriving on the primary-writing side and never on the accumulation side; nobody is building the correlated-failure model that tells a carrier what its whole book does when the shared dependency fails. That asymmetry is the reason this entry is still open, and it is also a warning: if primary writers keep multiplying, the accumulation model gets bought by a reinsurer rather than sold to fifty carriers, which changes the venture-scale story. Worth revisiting the expansion path next time this entry is touched."
         }
       ]
     },
@@ -4102,6 +4110,229 @@
       "buyer": "The practice manager at a community oncology, paediatric specialty or rare-disease practice.",
       "trigger": "An off-label denial with a treatment window closing.",
       "kill_reason": "Killed by the occupancy test. VerityAuth.ai sells exactly this - oncology prior authorisations approved faster and every denial appealed automatically using NCCN-cited evidence, generating the compendia-cited appeal letter and peer-to-peer talking points in two minutes. Staffingly runs payer-portal navigation, J-code and CPT lookup, NCCN compendia citation matching, denial-reason pattern recognition across twelve months of decisions and clinical packet assembly from the EHR. Counterforce Health gives oncology practices free AI-powered appeals. Above them the category is dense with funded players (SamaCare, Cohere, Develop Health, Glidian, OncoHealth, CoverMyMeds). The legal wedge is real and the beachhead is nonetheless taken - which is the run's sharpest single lesson: a structural block on the leader does not imply an empty segment.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0365",
+      "date": "2026-09-12",
+      "status": "new",
+      "summary": "Benefit of record for the pension endgame: an independent, machine-reconstructed determination of what a defined-benefit scheme actually owes each member - read the entire deed-and-rules history, every amendment, announcement and trustee minute, work out which provisions bound which member on which date, recompute the entitlement against sixty years of administration data, and stand behind the answer - sold to the bulk-annuity insurer and the trustee board at the moment a buy-in has to become a buyout.",
+      "cross": {
+        "ai_signal": "The determination is not a data-cleansing task and it is not a calculation task; it is a reading task that ends in a number. A scheme's benefit basis lives in a definitive trust deed plus forty years of deeds of amendment, announcements to members, board minutes, actuarial certificates and correspondence, written by different lawyers in different decades, frequently contradicting each other and frequently defective in execution. Establishing which provision governed a given member on a given date - and therefore what that member's pension increase, normal retirement age, spouse's benefit and GMP offset actually are - is precisely the layered document judgement that frontier models became able to perform this cycle, and it is why Trafalgar House's own eight-month trial concluded that models can support rules interpretation and write the calculation code but that the specification still needs a human: that is a statement about 2025 models and about a mid-size administrator's engineering, not about the ceiling. Three further things are only possible with a model in the loop: the reconstruction can be run for every member rather than a sample, so error rates stop being estimated and start being counted; it can be re-run instantly against a proposed benefit specification, which is what collapses the buy-in-to-buyout timetable; and the derivation for each member can be emitted with its evidence chain attached, which is what makes it something an insurer will price against rather than a consultant's opinion.",
+        "structural_signal": "The bottleneck is stated openly by the market. XPS's Q3 2026 trustee update has around 300 schemes reaching buyout in 2026 against more than 40bn pounds of deal volume, after roughly 160 buy-in-to-buyout conversions in 2025 (up 30% year on year) - and simultaneously reports that schemes are taking longer to get to buyout and that the backlog at insurers is increasing, with data and governance demands named as the cause. PASA has had to reissue data-readiness guidance for buy-ins and buyouts. Standard Life's four-month full buyout of the 700m pound Deloitte scheme is held up as remarkable, which tells you what the norm is. The Pensions Regulator has published an AI plan telling trustees they remain accountable for outcomes, which is an invitation to buy an assured determination rather than a tool. And the 31 October 2026 dashboards connection deadline forces every occupational scheme with 100 or more members that has not fully bought out to expose its benefit data to members - roughly 85% of pension records are already live on dashboards, which means the remaining schemes are the ones whose data is worst."
+      },
+      "source_pattern": "Harvey - 550M dollar growth round at a 15.5bn dollar valuation announced 2026-09-09 (Diffusion and Lightspeed leading; Sequoia, Kleiner Perkins, a16z, Coatue, Conviction, GIC, Goldman Sachs Alternatives), with revenue above 400M dollars and use inside 80% of the top 100 US law firms. Mechanism carried over: a frontier model can read a large, messy, historical private document corpus and produce the output a senior professional would have produced, to a standard the profession is willing to sign its name to. Harvey proves the capability and sells it as seats to the professionals; the re-point sells the determination itself, with the liability attached, to the party who pays when it is wrong.",
+      "wedge": "Both candidate followers are conflicted in the same direction, and the conflict is the product. (1) The administrators - Capita, Equiniti, Aptia, Trafalgar House - wrote the calculation code and made the payments that a reconstruction re-derives. An honest machine audit of a scheme's benefits is an itemised inventory of that administrator's own historical errors, and the rectification exercise that follows is billed by the firm that caused it. They cannot credibly sell 'we independently checked ourselves', and their own trial write-ups position AI as an aid to their administrators rather than as an external check on them. (2) The actuarial consultancies - WTW, Aon, Mercer, Hymans Robertson, Barnett Waddingham, XPS - authored the benefit specifications and ran the data cleanse being audited. They are the drafter, not the auditor, and the manual project fees are the revenue being deleted. (3) Harvey cannot follow at all: it sells seats to law firms, has no basis to carry a calculation liability, and cannot be the counterparty an insurer prices a data-risk loading against. Independence here is a structural property of who you are not, which is the one thing an incumbent cannot ship in a release note.",
+      "buyer": "Two people on the same transaction who split the cost of getting it wrong: the pricing actuary at a bulk-annuity insurer (Standard Life, Legal & General, Rothesay, Pension Insurance Corporation, M&G/Prudential, Aviva, Just), who today prices a data-risk loading and a post-transaction true-up because the scheme's own benefit specification cannot be trusted; and the endgame lead on the trustee board, whose sponsor pays that loading. The first ten are reachable without a retail motion - there are fewer than ten insurers writing UK bulk annuities and they are all at the same conferences.",
+      "trigger": "A buy-in has completed and the scheme must now reach buyout: every member's entitlement has to be specified exactly, verified, and accepted by the insurer before the policy converts and the trustees are discharged. Secondary triggers with dates attached: the 31 October 2026 dashboards connection deadline for occupational schemes with 100 or more members that have not fully bought out; and a sponsor seeking to release surplus under the Pensions Regulator's 2026 defined-benefit surplus flexibilities, which is impossible to justify without first knowing what is actually owed.",
+      "why_incumbents_cant": "See wedge. The occupancy search found no funded startup anywhere in this segment. What exists is (a) incumbent administrators experimenting internally - Trafalgar House's eight-month trial on rules interpretation and calculation specification, and public-sector systems reporting that 35% now use AI for at least one purpose, overwhelmingly member-service call deflection; (b) data-specialist arms of the consultancies (PwC's pensions data specialist practice, ITM, Heywood's de-risking tooling), which are the conflicted parties named above; and (c) generic 'AI agents for pension plans' content with no product behind it. Nobody is selling an independent reconstruction of the benefit itself to the insurer.",
+      "expansion_path": "UK defined-benefit buyout - 40bn pounds a year of premium, ~300 schemes a year, with 5,000 schemes and 1.2 trillion pounds still to transact - is the beachhead, and it is a beachhead precisely because the insurer is a repeat buyer with a quantified loss from the status quo -> run-on and surplus release under the 2026 flexibilities, where the same reconstruction is the precondition for taking money out -> becoming the administrator once the benefits are re-derived and machine-readable, against a UK administration market of well over a billion pounds a year held by firms whose cost base is people -> the Netherlands, where the Wet toekomst pensioenen forces every scheme to convert roughly 1.5 trillion euros of accrued entitlement into individual pots before 2028, the largest forced benefit-reconstruction event in the world -> US pension risk transfer at roughly 40-50bn dollars a year, already carrying its own litigation over annuity-provider selection, plus the US public-plan world -> the compounding asset is a cross-scheme corpus of deeds, amendments and the benefit interpretations that insurers and their lawyers have already accepted, which is a standards position rather than a vendor position.",
+      "scores": {
+        "wedge_durability": 4,
+        "pattern_strength": 4,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.0
+      },
+      "kill_attempts_survived": 3,
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0366",
+      "date": "2026-09-12",
+      "status": "new",
+      "summary": "Coverage archaeology as a machine: reconstruct a company's pre-1986 liability insurance programme out of its own historical paper - decades of board minutes, purchase ledgers, broker correspondence, litigation files, acquisition schedules and microfilm - resolve sixty years of carrier renamings and corporate successions, rebuild the standard-form terms year by year where the policy itself is gone, and produce the evidentiary coverage chart that funds a PFAS, environmental or abuse settlement; paid out of the coverage recovered rather than by the hour.",
+      "cross": {
+        "ai_signal": "This is the single most model-shaped task found in this run, and the reason it has never been productised is that until now the only available method was a human reading boxes. Four things have to happen at once: multimodal reading of degraded scans, microfilm, carbon copies and handwritten purchase ledgers; entity resolution across sixty years of carrier mergers, redomestications, pool arrangements and corporate reorganisations, so that a 1968 premium payment to a name that no longer exists is tied to the balance sheet that must answer for it today; inference of a missing policy's actual terms from its form number, issuing carrier and year, exploiting the fact that pre-1986 comprehensive general liability was written on standardised bureau forms; and assembly of the whole thing into a chronological chart with an evidence chain per cell, defensible in court as secondary evidence of coverage. Each step is a frontier-model capability and none of them is document search. The economic asymmetry is what makes it a company rather than a feature: a single reconstruction can unlock nine figures of occurrence-based limits, so the work is worth paying for even at a low hit rate.",
+        "structural_signal": "The demand is dated, enormous and simultaneous. Total PFAS liability is estimated at 120-165bn dollars, of which 18-20bn has settled with water systems and 100bn-plus of personal-injury exposure is unresolved; the aqueous film-forming foam multidistrict litigation held 15,246 filed cases as of August 2026. The insurance industry added the absolute pollution exclusion in about 1986, so the only policies that respond to contamination that began in the 1950s-1980s are pre-1986 occurrence-based comprehensive general liability policies - which is exactly the paper that has been lost. In parallel, three childhood sexual abuse lookback windows are open at once: New York City to 29 July 2027, California to 31 December 2027, Rhode Island to 30 June 2028, against dioceses, school systems, youth organisations and municipalities whose plans of reorganisation are funded by historical insurance and by nothing else. The Archdiocese of San Francisco's 395m dollar settlement of 530 claims in June 2026 - the largest ever in a Catholic diocese bankruptcy - is what that looks like when the policies are found. The trade press has moved the field from 'niche' to 'necessity' in its own words."
+      },
+      "source_pattern": "Two patterns, one for the capability and one for the economics. Capability: Harvey - 550M dollars at a 15.5bn dollar valuation on 2026-09-09, revenue above 400M dollars, in use at 80% of the top 100 US law firms - proves that frontier models perform senior-professional document judgement over a large private historical corpus at a standard the profession will sign. Economics: Forus - 150M dollar Series C at a 3bn dollar valuation on 2026-09-08, thousands of practices, 9 of the 15 largest biopharma companies, free to both doctors and patients - proves the model where the party who profits when the transaction completes pays for the agent network that clears the paperwork blocking it. Here the party who profits is the policyholder recovering limits, and they will happily pay out of the recovery.",
+      "wedge": "Four separate parties are blocked, each for a different structural reason. (1) The occupants are not technology companies and cannot become them: PolicyFind, Restorical Research, Arcina Risk Group and the Insurance Archaeology Group are hourly research boutiques whose published technology stacks are WordPress, PHP, Cloudflare and Google Fonts, with no venture funding, no engineering and - billing by the hour on a task whose value is the recovery - no incentive to delete their own unit. (2) The brokers who would be the natural owners of the historical record, Marsh, Aon and Gallagher, are the parties whose record-keeping failure created the gap; putting their own archives under systematic machine reconstruction manufactures discoverable evidence against themselves, which is a board-level veto, not a roadmap decision. (3) The carriers are the adverse party by construction - the chart is built to be used against them - so no insurer-side vendor can sell it. (4) Harvey and the legal-AI category sell per-seat software to firms that bill by the hour; taking a contingent position in someone else's insurance asset is a different balance sheet, a different regulatory posture and a different risk appetite, not a pricing tier.",
+      "buyer": "The general counsel or risk officer of a company that has just been tendered a legacy claim - a CERCLA potentially-responsible-party letter or a PFAS suit at a manufacturer, metal finisher, airport, military-adjacent fire-training site, textile mill or paper mill - and, as the second beachhead, the restructuring officer or plan trustee of a diocese, school system, youth organisation or municipality inside an open abuse lookback window, whose reorganisation plan is funded by historical insurance and nothing else. Both are reachable through the same twenty policyholder-side coverage law firms (Anderson Kill, Reed Smith, Covington, Blank Rome, Pillsbury), which is how the first ten arrive.",
+      "trigger": "A tender with a deadline: a PRP letter, an AFFF complaint served, an abuse claims bar date in a bankruptcy, or an acquirer's diligence finding assumed legacy liability with no identified coverage. The clock is the point - coverage counsel cannot brief a coverage position they cannot document, and the boutiques quote months.",
+      "why_incumbents_cant": "See wedge. The occupancy search was run first and run twice: on the segment (insurance archaeology, coverage reconstruction, PFAS and abuse coverage recovery) and on the category plus AI. It returned four named boutiques, all human-labour research shops, zero funded startups, zero AI-native entrants, and an insurtech funding picture in which 95.2% of Q1 2026 insurtech dollars went to AI startups pointed at claims processing and underwriting for carriers - that is, at the adverse party's side of this transaction.",
+      "expansion_path": "Contingent-fee reconstruction for PFAS and abuse defendants is the beachhead, chosen because the trigger is dated and the payoff per engagement is large enough to fund the corpus -> the standing coverage-asset register for any company carrying legacy liability, sold into M&A diligence, successor-liability disputes and environmental reserve setting, which converts a project business into a subscription over the same data -> valuing and then financing the recovery, and finally buying the coverage claim outright, which puts the company on the policyholder side of a pool estimated at 120-165bn dollars for PFAS alone, opposite the legacy-liability acquirers (Enstar, RiverStone, Marco) who have built multi-billion-dollar businesses on the carrier side of exactly this asset class -> the compounding asset is a corpus nobody else can assemble: carrier form libraries indexed by year and bureau form number, historical policy-number schemas, broker and agency record layouts, and a corporate-successor graph, all of which make each engagement cheaper than the last and none of which can be bought.",
+      "scores": {
+        "wedge_durability": 5,
+        "pattern_strength": 4,
+        "market_venture_scale": 4,
+        "defensibility": 5,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.3
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0028-coverage-archaeology-engine.md",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0367",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "Quote and feasibility agent for high-mix precision machining: read the customer's model and the shop's machine list and price the job, collapsing the estimator who is the real constraint on a machine shop's throughput.",
+      "source_pattern": "CloudNC - 20M dollar Series B extension on 2026-09-08 (Nimble Ventures, with Lockheed Martin Ventures participating), total funding 128M dollars, CAM Assist in use at more than 1,000 machine shops worldwide including Lockheed Martin and Major Tool and Machine.",
+      "wedge": "Attempted: the estimator is a different person from the programmer, so a CAM vendor would need a commercial data model rather than a geometric one.",
+      "buyer": "The owner or estimator at a 10-80 person contract machine shop.",
+      "trigger": "An RFQ arrives with a 48-hour response window and the estimator is three days behind.",
+      "kill_reason": "Killed by the config-change test, in the most literal form available: CloudNC has publicly announced Quote Agent, addressing 'one of the most manual and commercially important steps in machining: assessing new jobs and preparing quotes', shipping later in 2026. The leader is not merely able to follow, it has already announced the follow. Paperless Parts and Xometry hold the rest of the segment.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0368",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "Casting methoding engine: generate the gating, riser and process design for a shape casting from part geometry, alloy and requirement, so a foundry can quote and pour a new part without the retiring metallurgist who is currently the only person who can do it.",
+      "source_pattern": "CloudNC (see ts-0367) proves that geometry-to-process-plan generation sells into fragmented metalworking; defence demand for complex castings is described by the trade as unprecedented and foundry lead times are the binding constraint.",
+      "wedge": "Attempted: subtractive toolpath generation and solidification physics are different disciplines with different data models, so CloudNC would be starting a second company.",
+      "buyer": "The chief metallurgist or owner of an independent sand or investment foundry.",
+      "trigger": "A defence or aerospace customer asks for a new casting and the shop cannot quote it without weeks of trial-and-error simulation.",
+      "kill_reason": "Killed by the occupancy test. PhysicsX publishes 'Real-Time Intelligence in the Foundry: AI for Casting Quality and Efficiency' and is explicitly making casting optimisation AI-native across aerospace, defence and automotive; Foundry Lab has sold its digital metal casting system to the New Jersey Innovation Institute in partnership with US Army DEVCOM, on the claim that its castings need no requalification; Fabri has raised 13.5M dollars for 'new-age casting'. Underneath them MAGMA, ESI ProCAST and Flow-3D Cast own the simulation record and have shipped autonomous optimisation for years - the platform-owner question answers itself.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0369",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "Adaptive repair-machining engine for aerospace maintenance, repair and overhaul: scan the worn part, infer the as-found geometry against a nominal that no longer applies, and generate the blend, weld-prep and finish toolpaths for turbine airfoil repair.",
+      "source_pattern": "CloudNC (see ts-0367), re-pointed from making new parts to repairing worn ones, where there is no valid nominal model and the scarce expertise is worse.",
+      "wedge": "Attempted: CloudNC's product assumes a nominal CAD model, and MRO by definition has none.",
+      "buyer": "The repair engineering lead at an engine or industrial gas turbine MRO shop.",
+      "trigger": "A repair scheme has to be developed for a part the shop has not seen before, against an airline's turnaround clock.",
+      "kill_reason": "Killed by the occupancy test, and the occupant has been there for years. Acme Manufacturing sells Robotic Auto Path Generation specifically for aerospace MRO engine blade repair, claiming 3-4x faster than CNC grinding or manual finishing, and runs a joint blade-repair cell with Optomec combining directed energy deposition with automated abrasive blending driven by a vision system. Adaptive machining from touch and laser scanning of worn components is described in the trade press as established practice, not an opening.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0370",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "Weld program generation for high-mix structural fabrication: scan the fit-up, generate the robot path and the parameters, and produce the weld procedure evidence, so a job-shop fabricator can robot-weld batches of one.",
+      "source_pattern": "CloudNC (see ts-0367) plus a welder shortage that the trade calls the 2026 inflection point for robotic welding adoption.",
+      "wedge": "Attempted: the leader in robotic welding is a hardware channel, not a software company.",
+      "buyer": "The operations manager at a structural or miscellaneous-metals fabricator running batches under twenty.",
+      "trigger": "A skilled welder retires and the shop cannot fill the seat.",
+      "kill_reason": "Killed by the occupancy test, densely. Forge Robotics (YC) builds robot-mounted vision and AI feature detection producing a real-time 3D map that drives the arm through every step from raw stock to welded part; AMR builds American-made robotic welding cells with computer-vision seam tracking and post-weld inspection; EVS-AI ships 3D auto-scan to path generation claiming 80-95% reduction in first-piece programming time; Valk Welding ships AI product recognition inside its automatic robot programming software. Four credible occupants, one of them YC-funded.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0371",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "Harvey for the firms Harvey will not sell to: the same document-judgement capability priced and packaged for solo attorneys and boutiques, self-serve and published, below the enterprise floor.",
+      "source_pattern": "Harvey - 550M dollars at 15.5bn dollars on 2026-09-09, revenue above 400M dollars, 80% of the top 100 US law firms.",
+      "wedge": "Attempted: Harvey is roughly 1,200 dollars per seat per month with an approximately 25-seat minimum, about 360,000 dollars a year to start, sold demo-first through a sales team on negotiated annual contracts - economics that genuinely cannot reach a ten-lawyer boutique.",
+      "buyer": "The managing partner of a solo or sub-twenty-lawyer firm.",
+      "trigger": "A matter arrives that needs document review the firm cannot staff.",
+      "kill_reason": "Killed by the occupancy test. The pricing wedge is real and everybody found it: Bind ships AI-native contract lifecycle management at a published 90 dollars per seat per month with no minimums; General Legal (YC W26) is building AI legal services for exactly this tier; Legora is named as Harvey's closest competitor and takes the firms too small for Harvey's sales motion; and there is now an entire comparison-content industry ('best Harvey alternatives for solo and small firms') which is what a saturated segment looks like from the outside.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0372",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "Agency-side procurement intelligence: an agent that drafts the solicitation, runs the required market research and evaluates the bids for the public body doing the buying, on the argument that the vendors selling bid-writing to contractors are conflicted out of ever selling evaluation to the buyer.",
+      "source_pattern": "Cato - 6M euro seed announced 2026-09-07 (Keen Venture Partners, Vento, Heartfelt, Moonstone, BHeroes and others; 7.6M euros total), automating public tender discovery and bidding against Italy's 309.7bn euro public procurement market.",
+      "wedge": "Attempted: procurement-integrity rules and plain commercial conflict stop AutogenAI, GovDash, SamSearch, GovEagle and Civio from selling evaluation to the agency they help contractors beat.",
+      "buyer": "The procurement director at a city, county, school district or state agency.",
+      "trigger": "A solicitation has to go out and the department has no one who can write it.",
+      "kill_reason": "Killed by the platform-owner rule, which the 2026-09-10 method note added to the config-change test for exactly this case. The buyer's system of record is agency-side eProcurement, and it has already shipped: PlanetBids launched AI drafting and editing of RFx documents and scopes of work in 2025 for the small cities, school districts and water districts that are the beachhead, and OpenGov, Jaggaer, Euna, Bonfire and Periscope own the rest of the record. The conflict argument is sound and irrelevant - the party that is not conflicted is the one that already owns the workflow.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0373",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "AI-native third-party administrator for retirement plans: hold the nondiscrimination testing, plan documents, Form 5500 filings and correction work for small and mid-size 401(k) plans, against a TPA industry of thousands of tiny firms with retiring analysts.",
+      "source_pattern": "Savvy Wealth - 100M dollar Series C at a 600M dollar valuation announced 2026-09-09 (up from 225M dollars in July 2025), 150-plus advisers on the platform, an average of 19 hours a week saved per adviser - proof that an AI-native operating platform can recruit licensed practitioners out of an incumbent back office.",
+      "wedge": "Attempted: recordkeepers only serve the plans they record-keep, and bundled providers avoid cross-tested, cash-balance and multiple-employer complexity.",
+      "buyer": "The principal of an independent TPA firm, or the plan sponsor buying around one.",
+      "trigger": "Year-end testing season, or an operational failure that needs an EPCRS correction.",
+      "kill_reason": "Killed by the occupancy test. Stax.ai is an AI-powered retirement and 401(k) platform built for TPAs, pushing census data into compliance workflows with algorithms flagging risks before they become violations; Payroll Integrations launched TPA Connect off a 20M dollar round specifically to automate year-end Form 5500 and compliance testing across employers, payroll and recordkeepers, with ADP, QuickBooks Online, Empower and Transamerica wired in; Human Interest unveiled AI 401(k) compliance monitoring in August 2026 behind a compliance guarantee; BotMinds does the document extraction layer.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0374",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "Ambient documentation for the child welfare caseworker: capture the home visit and produce the case note, the court report and the federal data submission, against the 4.3 hours a day a federal study found caseworkers spend on paperwork.",
+      "source_pattern": "The ambient clinical documentation cluster (Abridge, Ambience) proves the mechanism; the re-point moves it to a workforce with worse turnover and a note that is a legal document.",
+      "wedge": "Attempted: clinical scribes are built on HIPAA and EHR integration, while the child welfare record lives in a state CCWIS system under different confidentiality law and ends up in front of a judge.",
+      "buyer": "The deputy director of a state or county child welfare agency.",
+      "trigger": "A caseworker vacancy rate that has stopped being survivable, or an ACF technology grant landing.",
+      "kill_reason": "Killed by the occupancy test. Binti - already the established child welfare software vendor - ships Smart Dictation, which listens and turns shorthand or audio into professional narratives and prompts when information is missing, and publishes the buyer-education content for the whole category. The federal money is flowing to the incumbent's customers: ACF awarded 6M dollars across 10 jurisdictions in 2026 to advance technology use. Platform owner plus occupant, same company.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0375",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "Agentic control code for industrial automation: generate, verify and maintain IEC 61131-3 ladder and structured text for machine builders and plant engineers, on the argument that the coding-agent leaders cannot touch vendor-proprietary project files on air-gapped networks where a bug injures someone.",
+      "source_pattern": "Cognition's 2bn dollar round and Replit at 9bn dollars establish that coding agents are the fastest-compounding software category; the re-point takes them to code with no GitHub corpus.",
+      "wedge": "Attempted: no public training corpus, binary project formats, air-gapped deployment and physical-injury consequences.",
+      "buyer": "The controls engineering manager at a machine builder or a process plant.",
+      "trigger": "A line changeover or a retiring controls engineer.",
+      "kill_reason": "Killed by the platform-owner rule. Siemens ships AI PLC code generation inside TIA Portal across SCL, ladder and FBD; Rockwell ships a copilot in FactoryTalk Design Studio; PLC Copilot is a purpose-built commercial tool reading IEC 61131-3 from real projects; Wipro PARI, with AWS, reports cutting PLC code generation from 3-4 days to about 10 minutes per requirement at up to 85% accuracy. The parties that own the engineering toolchain have all shipped, which is the answer the checklist item exists to produce.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0376",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "State and local counter-drone: detection, classification and pilot attribution built for the agencies that may legally detect but not mitigate, funded out of FEMA's 500M dollar counter-UAS grant programme for FY2026-27.",
+      "source_pattern": "9 Mothers - YC, roughly 200M dollar valuation, 1.6M dollars of booked sales and a single contract expected to expand to 35M dollars, having delivered multiple EDDA autonomous counter-drone systems to the Department of War.",
+      "wedge": "Attempted: mitigation authority under 6 U.S.C. 124n sits with four federal departments, so an effector company legally cannot sell its actual product to a police department, and the segment needs prosecution-grade attribution instead.",
+      "buyer": "The emergency management or aviation security lead at a county, port authority, airport or prison system.",
+      "trigger": "A FEMA counter-UAS grant award, or a drone incursion that made the local news.",
+      "kill_reason": "Killed by the occupancy test and duplicative of ts-0187. Motorola Solutions completed its 1.5bn dollar acquisition of D-Fend Solutions on 2026-08-20 and now sells detection into precisely the public-safety channel it already owns; Axon owns Dedrone; DroneShield, Hidden Level and Airsight hold the rest, and the trade catalogues 45 counter-UAS vendors. More than 4bn dollars of US counter-drone spend in 2026 has produced a crowd, not a gap.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0377",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "Deployment and field service for physical AI: an independent company that installs, integrates, safety-validates and keeps running the humanoid and autonomous mobile robot fleets that robot makers are shipping faster than they can support.",
+      "source_pattern": "The physical-AI cluster: Mind Robotics 500M dollar Series A, Rhoda AI 450M dollar Series A, 8.6bn dollars into humanoid startups by mid-2026 (1.8x all of 2025), Agility's Digit past 65,000 operating hours across nine customer facilities including GXO, Schaeffler, Toyota Motor Manufacturing Canada and Mercado Libre.",
+      "wedge": "Attempted: robot makers should not want a low-margin services business, and legacy system integrators cannot hire machine-learning engineers.",
+      "buyer": "The plant or distribution centre operations director taking delivery of a first robot fleet.",
+      "trigger": "Go-live, when a humanoid's 14-month payback assumes 80% uptime nobody has committed to.",
+      "kill_reason": "Killed by the config-change test. Uptime is not an unserved need, it is the business model the robot makers already chose: robots-as-a-service bundles deployment, service and uptime into the subscription because that is how the category sells past procurement, and Formic has built exactly this - financing plus service for deployed industrial robots - as a funded company. Whatever a robot maker's theoretical margin objection, they are already doing it.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0378",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "Right-of-way entitlement reconstruction for utilities and pipelines: determine from the deed record what a given easement actually permits, so a transmission upgrade, reconductoring project or fibre build is not stopped by rights nobody can find.",
+      "source_pattern": "Harvey (see ts-0365) for the reading capability; the transmission buildout for the demand, with Oncor and LCRA CCN filings pending at the PUCT and 500kV approvals moving through state commissions in 2026.",
+      "wedge": "Attempted: Trimble and Esri sell software, land-services firms bill hourly, and the utility cannot staff it.",
+      "buyer": "The right-of-way manager at an investor-owned utility, transmission developer or pipeline operator.",
+      "trigger": "A line upgrade or new corridor where the easement file will not support the work planned.",
+      "kill_reason": "Killed by the platform-owner rule, and materially overlapping ts-0307. Quorum owns right-of-way and land management for pipelines and utilities; On Demand Land is a cloud right-of-way platform that already applies OCR on import to link documents to parcels and corridors. The system of record exists, the record holders have started machine-reading it, and the remaining judgement layer is a feature release for them.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0379",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "Independent audit of agentic advertising: measure what an autonomous media-buying agent actually bought and what it was worth, sold to the advertiser, on the argument that agencies own the trading desks and ad-tech vendors cannot audit the supply chain they sit in.",
+      "source_pattern": "Clay - 115M dollar Series D at 7.1bn dollars on 2026-09-09, up from 3.1bn dollars in August 2025 - plus a 2026 in which two thirds of US ad buyers say they will pay closer attention to agentic buying.",
+      "wedge": "Attempted: a genuine conflict of interest at both the agency and the verification vendor.",
+      "buyer": "The marketing procurement lead at a large advertiser.",
+      "trigger": "The annual media audit, or the first quarter of autonomous spend.",
+      "kill_reason": "Killed by the occupancy test. Independent audit of agentic supply chains is already being performed and published: Jounce audited H1 2026 agentic campaign results, measuring made-for-advertising inventory under 1% with 80% of inventory above DoubleVerify's benchmark. DoubleVerify and IAS hold verification, and the industry has settled on 'governed autonomy' - spend caps, approval gates and audit trails inside the buying platforms - which puts the audit trail where the money already is.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0380",
+      "date": "2026-09-12",
+      "status": "killed",
+      "summary": "The machine forward-deployed engineer: an agent that performs the deployment work itself - mapping the customer's data, writing the integration, standing the system up inside the customer's environment - sold to AI vendors whose revenue is gated on deployment labour that costs 300-550k dollars a head.",
+      "source_pattern": "Forward-deployed engineer hiring grew more than 1,000% year on year through early 2026, with Google Cloud, OpenAI, Anthropic, Palantir, Salesforce, Adobe, Accenture and EY all launching or expanding FDE practices; posted comp bands cluster at 300-550k dollars with frontier-lab principal roles clearing 1M dollars.",
+      "wedge": "Attempted: coding-agent vendors sell seats to a customer's own developers and cannot enter a third party's production environment under someone else's liability, and the consultancies bill hours.",
+      "buyer": "The VP of customer engineering at a vertical AI company with signed pilots that have not gone live.",
+      "trigger": "A pilot with a six-week go-live and no engineer to send.",
+      "kill_reason": "Killed by the occupancy test, and previously approached from the supply side in ts-0343. 8090 Solutions raised 135M dollars led by Salesforce Ventures for an AI agent platform that delivers enterprise software; Distyl AI and Fractional AI sell AI delivery as a business; and the frontier labs and Palantir run their own FDE practices as a competitive weapon rather than a cost they want removed. The bottleneck is real and it is the thing everybody is already selling into.",
       "rubric_version": 3
     }
   ]
