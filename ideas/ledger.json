@@ -4334,6 +4334,217 @@
       "trigger": "A pilot with a six-week go-live and no engineer to send.",
       "kill_reason": "Killed by the occupancy test, and previously approached from the supply side in ts-0343. 8090 Solutions raised 135M dollars led by Salesforce Ventures for an AI agent platform that delivers enterprise software; Distyl AI and Fractional AI sell AI delivery as a business; and the frontier labs and Palantir run their own FDE practices as a competitive weapon rather than a cost they want removed. The bottleneck is real and it is the thing everybody is already selling into.",
       "rubric_version": 3
+    },
+    {
+      "id": "ts-0381",
+      "date": "2026-09-15",
+      "status": "new",
+      "summary": "AI-native correctional health provider: bid for and run county jail medical and mental-health contracts as an AI-native clinical organisation - reconstructing a person's medication list and acute risk at 3am booking from fragmentary county, pharmacy and hospital records, documenting care where nobody types, and converting custodial care into the Medicaid claims that section 1115 reentry waivers made billable for the first time - entering as the three largest incumbent contractors emerge from or sit in bankruptcy and counties re-tender.",
+      "cross": {
+        "ai_signal": "Three tasks in this setting are frontier-model tasks and were not solvable before. (1) Intake reconstruction: a person arrives at booking at 3am, often intoxicated, withdrawing or psychotic, unable to give a reliable history, and the evidence of what they take and what will kill them in 72 hours is scattered across a county EHR, a state prescription drug monitoring database, a homeless-services record, prior bookings and a hospital discharge summary - assembling a defensible medication and risk list out of that is entity resolution plus clinical judgement over fragments, not a form. (2) Documentation where there is no workstation: care happens at a cell door, in a transport van, in a segregation unit, so the record has to be captured by voice and camera and turned into a clinical note, a sick-call disposition and a billable encounter. (3) Release-timing prediction: jails have an average length of stay under thirty days and no predetermined release date, which is exactly why CMS itself describes county jails as the hard case for the pre-release benefit - deciding today who will leave inside the ninety-day pre-release window, from charge, bail status, court calendar and history, is a prediction problem and it is what makes jail reentry billing possible at all.",
+        "structural_signal": "Three of the largest correctional healthcare contractors went bankrupt inside two years: Corizon with more than a billion dollars of settlements on its balance sheet, Armor Health liquidated, and Wellpath - the largest, with more than 2bn dollars of 2023 revenue - filing in November 2024 with 644M dollars of debt against roughly 1,500 lawsuits, exiting in 2025 with an HIG settlement. Counties are actively switching: Shasta County, California signed a three-year 25M dollar contract with a new provider after deaths under Wellpath, and Lackawanna County declined to renew. On the money side, CMS has approved 19 section 1115 reentry demonstrations with nine more pending, letting jails and prisons bill Medicaid for pre-release services for the first time in the programme's history, and is offering enhanced federal match for the IT systems needed to do it; California's Justice-Involved Reentry Initiative has been bringing facilities live quarterly through 1 October 2026. Meanwhile the correctional EHRs that exist were never designed to produce a billable claim - the public record is explicit that many do not track procedures, services, devices or drugs by CPT code at all."
+      },
+      "source_pattern": "The mechanism is the YC Summer 2026 batch's clearest structural shift - 'AI-run X' replacing 'AI copilot for X', with agent-native firms Rational, Billow AI and Last Accounting Company in accounting and Osmaura and Erinys in law, and YC's own request for startups stating it plainly: sell the service, not the software, because the spend on services is many times the spend on software and most services are already outsourced. The paying evidence that the shape works at scale is Savvy Wealth - 100M dollar Series C at a 600M dollar valuation on 2026-09-09, up from 225M dollars in July 2025, 150-plus advisers, 19 hours a week saved each - an AI-native operating company that recruits licensed practitioners off incumbents rather than selling them software.",
+      "wedge": "Four blocks, each structural. (1) The big EHRs cannot follow: Epic and Oracle Health model a patient and an encounter, while a jail is modelled on custody - housing location, cell moves, segregation status, transport, court dates, sick-call kites, use-of-force events - so serving it is a second product and a second compliance posture, sold through sheriffs and county boards of supervisors, a procurement motion neither company runs. (2) The incumbent correctional contractors are conflicted against their own product: their margin comes from a fixed per-inmate-per-month capitation, and a system that documents every unmet clinical need manufactures the evidence for the deliberate-indifference litigation that has already bankrupted three of them - they cannot buy an honest record. (3) The incumbent correctional EHR vendors are small, unfunded and have no claims engine; the public record says many cannot generate a superbill. (4) The ambient-scribe leaders sell seats into health systems running Epic, have no custody data model, no Medicaid reentry claim path, and no way to operate where there is no clinician workstation.",
+      "buyer": "The county sheriff or jail administrator and the county board of supervisors who together hold the jail medical contract, plus the county health director where the jail sits under health-department control; secondarily the state Medicaid agency standing up the reentry benefit and looking for facilities that can actually bill.",
+      "trigger": "A jail medical contract coming up for re-tender or non-renewal - most often after an in-custody death, a settlement or a Department of Justice or state inspection finding - landing in the same period the state's section 1115 reentry benefit goes live for that facility, which turns an unfunded mandate into a revenue line the incumbent cannot collect.",
+      "why_incumbents_cant": "The occupancy test was run first and three ways: correctional or jail health plus AI startup plus 2026 funding; jail Medicaid billing and pre-release services software vendors; and the Y Combinator directory for corrections and justice-involved healthcare. It returned incumbent contractors (NaphCare, Advanced Correctional Healthcare, Mediko, YesCare), legacy correctional EHRs (CorrecTek, CorEMR, NextGen corrections), policy and advocacy organisations, one nonprofit YC company in supervision analytics (Recidiviz) - and no venture-backed AI-native entrant of any kind. The one AI story in corrections in the public record is agencies surveilling inmate phone calls, which is the opposite side of the building.",
+      "expansion_path": "County jails, of which there are roughly 3,000 in the United States against a US correctional healthcare spend of about 9bn dollars, are the beachhead because the contract is small enough to win, the incumbent is distressed and the reentry benefit is new money -> state prison systems and regional jail authorities, where contracts are eight and nine figures and the same clinical record and billing engine apply -> the reentry care-coordination layer itself, paid by Medicaid managed-care plans who inherit a very high-cost member at the gate and will pay for a warm handoff, which converts a government-procurement business into a payer-funded one -> the general case of care for people the state is responsible for: juvenile facilities, state psychiatric hospitals, civil commitment, and the health-related social needs population under the same 1115 authority -> the compounding asset is longitudinal clinical and outcome data on the least-documented population in American healthcare, which nobody else is assembling and which is exactly what prices the risk when this becomes a capitated business.",
+      "scores": {
+        "wedge_durability": 5,
+        "pattern_strength": 4,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.2
+      },
+      "kill_attempts_survived": 3,
+      "brief": "ideas/briefs/0029-ai-native-correctional-health.md",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0382",
+      "date": "2026-09-15",
+      "status": "new",
+      "summary": "AI-native arbodienst: become a certified Dutch occupational health service where a machine conducts the structured functional assessment, drafts the statutory problem analysis and reintegration plan on the Wet verbetering poortwachter clock, predicts return-to-work trajectory and wage-sanction risk, and a scarce registered company doctor reviews and signs under the task-delegation the law already permits - sold to employers who are paying 250 to 400 euros a day per absent employee and facing a third year of wage liability if the file is inadequate.",
+      "cross": {
+        "ai_signal": "The binding constraint in this market is a licensed human whose supply is fixed by a training pipeline, and frontier models attack exactly the part of that human's work that is not the licensed judgement. The machine conducts the structured absence interview by voice in Dutch, builds a functional-capacity picture from what the employee says and from the employer's job description, drafts the statutory problem analysis and the action plan against the protocol, tracks every poortwachter deadline across a whole employer's caseload, predicts which cases are drifting toward the two-year mark and which files will fail a UWV review, and presents the doctor a decision rather than a blank form. Dutch practice already recognises the delegation route - task-delegated case managers and practice supporters working under the company doctor's responsibility are the profession's own proposed answer to the shortage - so the legal shape exists and the missing piece was a system good enough to delegate to. Certified European clinical AI now exists as proof: Tandem Health's coding assistant reached EU MDR Class IIa in February 2026 and its scribe followed, the first in Europe, and InterSystems IntelliCare became the first AI-native medical record system certified Class IIa in May 2026.",
+        "structural_signal": "The Dutch obligation is absolute and expensive: an employer must continue paying a sick employee for 104 weeks at 70% of wages, commonly topped to 100% by collective agreement, at an all-in cost of 250 to 400 euros per absent employee per day, and if the UWV judges the reintegration file inadequate it can impose a loonsanctie extending payment by up to a further year. The professional supply is collapsing against that: the Dutch capacity plan for 2024-2027 states that at least 258 new company doctors a year are needed and only about 90 start, and the wait to see one has stretched from one or two weeks to four or five against a statutory six-week deadline for the problem analysis. That is a legally mandated service whose supply is falling, whose deadline is fixed, and whose failure has a priced consequence."
+      },
+      "source_pattern": "Tandem Health - 86.49M euro (100M dollar) Series B on 2026-09-14 led by the EQT Scaleup Europe Fund with Kinnevik, Northzone, Amino Collective and Visionaries - supporting more than 10,000 care organisations, the first AI scribe in Europe certified as an EU MDR Class IIa medical device and delivered through Accurx to more than 5,000 NHS customers. The mechanism it proves is that a frontier model's clinical output can now carry regulated standing in Europe, and that European clinical AI is a fundable category on its own rather than a localisation of a US product. The 'own the licensed firm rather than sell it software' half of the shape is proven by the YC Summer 2026 agent-native services cluster and by Savvy Wealth's 100M dollar Series C at a 600M dollar valuation on 2026-09-09.",
+      "wedge": "Geography plus an incumbent whose revenue is the thing being automated. A certified arbodienst must be accredited, must employ company doctors registered in the Dutch BIG and NVAB registers, and carries statutory liability for a reintegration file that is assessed by the UWV under Dutch employment law - a posture no US health-AI company has any standing to assume and no amount of localisation confers. The incumbent arbodiensten (ArboNed and HumanCapitalCare, Zorg van de Zaak, 365) are staffing businesses: their revenue is the company doctor's hour and their competitive advantage is the size of their doctor roster, so a system that makes one doctor do the work of ten deletes their pricing model and their moat at once - they are adopting AI as a productivity tool precisely because they cannot adopt it as a business model. The ambient-documentation leaders, Tandem included, sell into care organisations where the output is a clinical note; here the output is a legal document in an employment dispute, judged by a benefits agency, and the customer is the employer.",
+      "buyer": "The HR director or owner of a Dutch employer with 50 to 1,000 employees - the segment large enough to have continuous long-term absence and too small to run its own occupational health function - buying the statutory arbo contract; and the case manager inside larger employers who is personally accountable for the poortwachter file.",
+      "trigger": "An employee passes six weeks of absence, which is the statutory deadline for the problem analysis, at a moment when the incumbent arbodienst cannot offer a company doctor appointment for four or five weeks; and, once a year, the renewal date of the employer's arbo contract, which is when switching is frictionless.",
+      "why_incumbents_cant": "Occupancy was searched in Dutch and in English across arbodienst, bedrijfsarts, verzuim and poortwachter plus startup, AI-native and funding. What exists is incumbent arbodiensten publishing about adopting AI tools, small absence-management software vendors and consultancies, and an SME-focused arbo service - no venture-backed AI-native occupational health provider in the Netherlands, and no US entrant, which is what the certification and liability posture predicts.",
+      "expansion_path": "Dutch SME employers buying a statutory arbo contract are the beachhead because the purchase is mandatory, annual and switchable -> up-market to large Dutch employers and to the absence-heavy sectors (healthcare, education, logistics, government) where a single employer's sick-pay bill runs into tens of millions -> take the risk rather than the fee: Dutch verzuimverzekering, the insurance employers buy against exactly the 104-week wage obligation, is priced today on payroll and sector because no one can price duration, and the party that shortens duration and holds the outcome data can underwrite it - this is the leg that makes the company large rather than merely good -> Europe, where occupational health provision is statutory almost everywhere and the doctor shortage is not confined to the Netherlands: Belgium's external prevention services, Germany's mandatory works-doctor coverage under the ASiG and the six-week reintegration management duty under section 167 SGB IX, France's mandatory prevention and occupational health services, and Italy's competent physician - a mandated market covering most of the EU workforce -> the compounding asset is longitudinal return-to-work outcome data by diagnosis, occupation and employer, which no incumbent has assembled because none of them ever had a structured record.",
+      "scores": {
+        "wedge_durability": 4,
+        "pattern_strength": 4,
+        "market_venture_scale": 4,
+        "defensibility": 4,
+        "yc_fit": 4,
+        "founder_fit": 4,
+        "composite": 4.0
+      },
+      "kill_attempts_survived": 3,
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0383",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "AI-native Steuerberater practice: hold the German tax-adviser licence and run the statutorily reserved bookkeeping, payroll and tax work for the Mittelstand with agents, entering through the profession's succession crisis rather than selling software into DATEV.",
+      "source_pattern": "The YC Summer 2026 agent-native professional services cluster (Rational, Billow AI, Last Accounting Company in accounting; Osmaura and Erinys in law) plus YC's own request for startups instruction to sell the service rather than the software.",
+      "wedge": "Attempted: the German Steuerberatungsgesetz reserves the work to licensed advisers, which excludes every US AI accounting company outright, and DATEV is a cooperative owned by the Steuerberater themselves and therefore structurally unable to ship anything that deletes its owners' billable hours.",
+      "buyer": "The owner of a German tax practice facing retirement with no successor, and the Mittelstand company whose adviser has just dropped it.",
+      "trigger": "A practice succession or an adviser terminating an engagement.",
+      "kill_reason": "Killed by the occupancy test on the first search. Taxforce, a Berlin company, has raised a 5M euro seed led by Tenet to build what it describes as Germany's first AI-native tax consultancy, already operating as a digital AI-native Steuerberatung for freelancers, professionals and companies and starting from the medical sector. The wedge argument is correct and someone funded is already standing in it.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0384",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "Works-council clearance and continuous monitoring for AI deployment in Germany: determine what a deployed AI system actually does with employee data, generate the evidence pack a Betriebsrat needs to agree a Betriebsvereinbarung under section 87(1)(6) BetrVG, and monitor the live system against the agreement on every model change.",
+      "source_pattern": "Mistral AI's 3bn euro Series D on 2026-09-08 at a post-money above 21bn euro, with roughly 1bn euro of ARR expected by year end, 125-plus enterprise customers and framework agreements with the French and German governments through 2030 - European enterprise AI deployment at scale is now real.",
+      "wedge": "Attempted: German co-determination is an enforceable veto (a works council can obtain an injunction and an AI rollout is legally ineffective without an agreement), the works council may engage an expert at the employer's expense under section 80(3) BetrVG, and the vendor selling the employer's AI is conflicted out of advising the body that must approve it.",
+      "buyer": "The works council chair and the HR or IT lead at a German employer with more than a few hundred employees.",
+      "trigger": "An AI rollout blocked at the works-council stage.",
+      "kill_reason": "Killed on the venture-scale gate, and on the config-change test underneath it. The negotiated artefact is a document produced once per deployment, and the market around it is already served by law firms, template vendors and AI-governance content (paperclipped, eu-konform, skill-sprinters and every German employment practice), which is the shape of a consulting market rather than a compounding product. The continuous-monitoring half, which is the only part with venture shape, is a feature any German HR system of record - Personio owns the employee record at 14,000-plus companies - or any AI-governance platform can ship, and the EU AI Act deadline that would have forced it has been deferred to 2027-12-02 by the Digital Omnibus (see ts-0278).",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0385",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "Independent diagnostics and service for mixed-brand lifts and escalators, built on the EU Data Act right to redirect a machine's own controller data to a third party, attacking the elevator OEMs' service-contract monopoly.",
+      "source_pattern": "The EU Data Act's access-by-design duty under Article 3(1) became applicable to connected products placed on the EU market after 2026-09-12, three days before this run, with the Chapter II user access and third-party redirection rights already live since 2025-09-12.",
+      "wedge": "Attempted: elevator OEM profit is concentrated in service contracts on their own installed base and they have historically locked independents out through proprietary controller tooling, so opening the data is a direct attack on their own highest-margin revenue and they will not arm the attacker.",
+      "buyer": "The building owner or facility manager with a mixed-brand portfolio, and the independent lift maintenance company serving them.",
+      "trigger": "A service contract renewal, or a lift lockout.",
+      "kill_reason": "Killed by the occupancy test. Independents already solved the data problem without the regulation: iFactory sells an OEM-agnostic retrofit sensor mesh and gateway explicitly designed to attach to Otis, Schindler, KONE and ThyssenKrupp controllers by reading physical telemetry rather than proprietary data boards, and uptime.ac has been publishing operating elevator predictive-maintenance practice for years. The market routed around the data moat with hardware long before the Data Act removed it, which means the regulation confers no advantage on a new entrant.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0386",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "Independent extended warranty and uptime cover for post-warranty mixed-brand industrial and construction equipment, priced per machine from the machine's own newly accessible telemetry rather than from a table.",
+      "source_pattern": "The EU Data Act access-by-design duty live from 2026-09-12, against OEM aftermarket economics in which extended warranty and service plans are among the highest-margin lines in the industry.",
+      "wedge": "Attempted: an OEM can only underwrite its own machines and will not undercut its own extended-warranty margin, so a mixed-brand fleet is a customer no OEM can serve.",
+      "buyer": "The owner of a mixed-brand equipment fleet at the moment the factory warranty expires.",
+      "trigger": "Factory warranty expiry, typically in year two or three.",
+      "kill_reason": "Killed by the occupancy test. Machinery Scope already sells independent extended warranty across equipment types, makes and models in agriculture and construction; AmTrust Warranty and Specialty Risk is a leading underwriter of equipment service contracts and physical damage for exactly this equipment; EPG Global runs multi-jurisdictional extended warranty programmes for many of the world's ten largest agricultural and construction machinery manufacturers; and Circuitry.ai already sells AI decision models trained on lifecycle transactions and real-time connected product data to optimise service outcomes. Behind all of them sits HSB and Munich Re, who have underwritten equipment breakdown with inspection engineers for a century.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0387",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "Independent service and uptime for hospital medical equipment fleets, using the EU Data Act and US right-to-repair pressure to break the OEM service monopoly on imaging, infusion and ventilator estates.",
+      "source_pattern": "The EU Data Act access-by-design duty live from 2026-09-12, plus the long-running independent-service-organisation fight over OEM servicing restrictions in medical devices.",
+      "wedge": "Attempted: OEM medical-device service contracts are a high-margin annuity and the OEM cannot service a competitor's estate, while the hospital's fleet is mixed by construction.",
+      "buyer": "The clinical engineering or biomedical director at a hospital system.",
+      "trigger": "OEM service contract renewal, or a capital equipment refresh.",
+      "kill_reason": "Killed by the occupancy test. Healthcare predictive maintenance is an established funded category - 21 disclosed equity rounds across 17 companies raising 784M dollars between August 2022 and July 2026 - and the hospital-side asset layer is held by Nuvolo, Glassbeam and the outsourced clinical-engineering incumbents TRIMEDX and Agiliti, who already run mixed-brand estates as a service. There is no empty seat here, only a well-capitalised one.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0388",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "Condition truth for equipment lessors: read a machine's real lifetime duty cycle out of its own data and price residual value and end-of-lease condition per asset instead of from a depreciation table.",
+      "source_pattern": "The EU Data Act access-by-design duty live from 2026-09-12; lessors carry residual risk on open-end books and price it from backward-looking curves.",
+      "wedge": "Attempted: OEM captive finance arms profit from residual opacity and from certified-pre-owned margin, and can only see their own machines, while a lessor's book is mixed-brand.",
+      "buyer": "The residual-value or remarketing head at an equipment lessor or captive finance arm.",
+      "trigger": "Lease maturity or a portfolio refinance.",
+      "kill_reason": "Killed by the occupancy test. Telematics-driven residual-value work is already a product line, not an opening: Targa Telematics markets converting journey data into preserved asset value, Geotab publishes the leasing-profit thesis directly, envue sells digital twins for fleet remarketing, Trackunit holds the mixed-brand construction fleet layer, and Simon-Kucher is selling AI-enhanced residual-value forecasting to leasing companies as a named multi-billion-euro pricing lever. When the strategy consultancies are selling the idea, the wedge has closed.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0389",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "The AI-native importer and distributor of record for the EU Cyber Resilience Act: take the Article 19 and 20 obligations for non-EU hardware brands - verify the conformity assessment, hold the declaration for ten years, and run the vulnerability reporting - by machine-assessing firmware the importer did not build.",
+      "source_pattern": "CRA Article 14 reporting obligations became applicable on 2026-09-11, four days before this run, carrying fines up to 15M euro or 2.5% of worldwide turnover, with pre-market importer verification following on 2027-12-11.",
+      "wedge": "Attempted: the obligations carry no SME threshold, the importer has no source code and no engineering, and the manufacturer-side tooling is built for people who own the build.",
+      "buyer": "The EU entity of a non-EU connected-product brand, and EU distributors of imported hardware.",
+      "trigger": "A product being placed on the EU market, or a vulnerability disclosure.",
+      "kill_reason": "Killed by the occupancy test with the trigger date working against it. The obligation that actually bites now is manufacturer reporting; the importer verification duty is fifteen months away, which makes this a 2027 sale. Meanwhile the CRA services market already exists - iCertifi sells the CRA authorised representative role, Carra Globe and getreadycompliance sell importer compliance, the Big Four are selling CRA readiness, and ONEKEY, Exein and Cybellum hold the firmware and SBOM product layer. The ledger has also already killed the two halves of this shape separately at ts-0271 (importer of record for customs) and ts-0358 (holding the in-country regulatory role).",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0390",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "The European integration estate for AI applications: the write-capable connectivity layer into nationally fragmented European accounting, payroll and back-office systems, sold to US AI companies whose agents cannot act inside a European customer's system of record.",
+      "source_pattern": "Chift - 10.5M euro Series A on 2026-09-14 led by BlackFin Capital Partners - connects more than 120 European financial systems for 150-plus software companies serving over 50,000 SMEs across 10-plus countries, with revenue up tenfold since its 2024 seed.",
+      "wedge": "Attempted: Europe's back office is nationally fragmented with no dominant vendor, so the per-country integration estate is uneconomic for a US company to build and is the real barrier to US AI applications entering Europe.",
+      "buyer": "The VP of engineering or international GM at a US AI application company opening in Europe.",
+      "trigger": "A European launch or a first large European customer.",
+      "kill_reason": "Killed by the occupancy test, which is also the source pattern - the company that proves the mechanism is the company sitting in the seat. Chift is funded, growing tenfold a year and already aggregating the exact estate; Kombo holds the European HR and payroll equivalent; and the US unified-API vendors (Merge, Codat, Rutter) are the ones who would be buying rather than competing. There is no version of this that is not 'be Chift, later'.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0391",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "AI-native indigent defence: an evidence and motion engine for public defenders, built on the structural fact that the company selling the police their body-camera record cannot sell to the defence.",
+      "source_pattern": "Harvey - 550M dollars at a 15.5bn dollar valuation on 2026-09-09, revenue above 400M dollars, 80% of the top 100 US law firms - proves frontier-model document judgement at professional standard, at a price (roughly 1,200 dollars per seat per month, 25-seat minimum) that excludes every public defender office in the country.",
+      "wedge": "Attempted: an absolute channel conflict - Axon owns the body-camera evidence record and sells Draft One to police, so it can never sell to the adverse party - plus a procurement motion and a CJIS data posture the legal-AI leaders do not have.",
+      "buyer": "The chief public defender of a county or statewide system, and contract-defender panels.",
+      "trigger": "A caseload crisis, a consent decree, or an indigent-defence grant cycle.",
+      "kill_reason": "Killed by the occupancy test, decisively. JusticeText is exclusive to public defenders, is at 4.0M dollars of ARR across more than 4,100 attorneys, supports 7 of the 22 statewide-administered public defender systems in the United States, and has already expanded from body-camera and interrogation video into written discovery as a multimodal evidence platform. The wedge is real, it was found first, and it is being executed.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0392",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "A machine-made clearing market for short-dated and returned pharmaceutical inventory: read the serialised pedigree and predict where a nearly expired pack will actually be dispensed, so it is redistributed rather than destroyed.",
+      "source_pattern": "Highstock - 30M dollar Series A on 2026-09-14 led by Andreessen Horowitz with Greylock, 35.5M dollars total - proves that a model can match stranded physical inventory to a buyer discreetly enough that the seller's pricing is not damaged.",
+      "wedge": "Attempted: the reverse-distribution oligopoly is paid to destroy product and licensing plus serialisation requirements make cross-entity redistribution hard, which should keep generalist marketplaces out.",
+      "buyer": "The pharmacy director of a hospital system or a wholesaler's inventory lead.",
+      "trigger": "An expiry horizon on high-value stock.",
+      "kill_reason": "Killed by the occupancy test and by the AI-native gate together. Hospital-side expiry and redistribution is Bluesight's published product line, distribution ERPs already sell expiry and batch control as a feature, and the 'expiry exchange marketplace' is a well-worn opportunity-blog concept rather than an unworked seam. What remains after the matching is a licensed physical distribution business with thin margins, not a frontier-model company.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0393",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "A priced secondary market for decommissioned AI datacentre hardware: predict residual performance and failure risk of retired accelerators from their own operating telemetry and underwrite the resale, as 2023-vintage fleets roll off lease.",
+      "source_pattern": "Highstock's 30M dollar a16z-led Series A for machine-matched stranded inventory, against AI server refresh cycles compressing from five to seven years down to eighteen to thirty-six months.",
+      "wedge": "Attempted: hyperscalers reuse or destroy rather than resell, OEMs will not cannibalise new sales, and brokers cannot price burn-in condition.",
+      "buyer": "The infrastructure lead retiring a fleet, and the neocloud buying secondary capacity.",
+      "trigger": "Lease expiry or a generation refresh.",
+      "kill_reason": "Killed by the occupancy test. Compute Exchange opened a secondary market for used H100 and A100 GPUs in July 2026 with order sizes from hundreds to tens of thousands of units; the certified-refurbishment market already prices H100s at 15,000-20,000 dollars with documented warranty and burn-in premia of 8-12%; and CoreWeave, Lambda and Crusoe are already the well-capitalised buyers of retired hyperscaler fleets. The pricing layer this idea proposed to build is published market commentary.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0394",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "Certified clinical AI for the pharmacy counter: structured consultation, decision support and the auditable clinical record for community pharmacists now making treatment decisions under NHS Pharmacy First and its European equivalents.",
+      "source_pattern": "Tandem Health - 86.49M euro Series B on 2026-09-14, 10,000-plus care organisations, first AI scribe in Europe certified EU MDR Class IIa, delivered through Accurx to more than 5,000 NHS customers - proves a frontier model's clinical output can carry regulated standing in Europe.",
+      "wedge": "Attempted: pharmacy runs on different patient medication record systems and reports clinical services into a different NHS system, so the scribe leaders' integration estate does not reach it.",
+      "buyer": "The owner of an independent community pharmacy group delivering Pharmacy First.",
+      "trigger": "A commissioned clinical service with a payment and an audit trail attached.",
+      "kill_reason": "Killed by the occupancy test and the config-change test together. PharmBot AI, founded by a UK pharmacist, is already running structured Pharmacy First consultations with reported savings of 15 to 20 minutes per consultation; Community Pharmacy England is publishing formal AI and ambient-scribing guidance for the sector, which is what a market with vendors in it looks like. And the integration argument is not structural: Accurx already sits inside NHS primary care and Pharmacy First is entering its clinical-records phase, so the leader reaches this counter with a roadmap item, not a second company.",
+      "rubric_version": 3
+    },
+    {
+      "id": "ts-0395",
+      "date": "2026-09-15",
+      "status": "killed",
+      "summary": "AI-native independent medical examination and disability determination: conduct the assessment and produce the defensible determination on a claimant's file, sold to disability insurers and state determination services drowning in backlog.",
+      "source_pattern": "Harvey and Rogo (30M dollars from Barclays, Citi Ventures, Societe Generale and MUFG Innovation Partners, 344M dollars total) prove institutions will fund and adopt the vendor that automates their most expensive analyst labour over unstructured documents.",
+      "wedge": "Attempted: the examination is a licensed act and the determination carries appeal exposure, which should exclude generalist document AI.",
+      "buyer": "The claims operations lead at a disability carrier, and state disability determination services.",
+      "trigger": "A claim backlog or an appeal reversal rate.",
+      "kill_reason": "Killed by the occupancy test. EvolutionIQ's AI claims guidance platform has been expanded across all of The Standard's disability products after a 2024 implementation; Wisedocs, DigitalOwl and Medrecords AI hold structured medical-record review for adjusters and reviewers; and insurer full-scale AI adoption went from 8% to 34% between 2024 and 2025, with unstructured document processing named the top AI investment priority by 64% of insurers. This is the most heavily vendored corner of insurance operations.",
+      "rubric_version": 3
     }
   ]
 }
