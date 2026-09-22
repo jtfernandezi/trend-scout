@@ -321,6 +321,10 @@
     {
      "date": "2026-09-12",
      "note": "2026-09-12: the first credible occupant of the neighbouring seat has appeared, and it narrows this idea rather than killing it. Robocurve (YC Summer 2026, Demo Day 2026-09-10) is building 'real-world evaluations of physical AI' - open-source tooling and independent, reproducible benchmarks scoring how well robot models do real jobs, from Jenga and sandwiches up to constructing a data centre, on the explicit argument that labs evaluate in-house, no independent group runs continuous benchmarking as a service, and simulation-strong models degrade on contact with the world. That is the same observation this entry was founded on. What it is not: Robocurve is a Public Benefit Corporation publishing open benchmarks, and a PBC whose legitimacy rests on openness structurally cannot also sell the confidential, per-deployment, liability-bearing certificate an underwriter conditions cover on - the two products poison each other. So the seat this entry actually claims (paid behavioural assurance sold to the insurer, re-run on every over-the-air policy update) remains empty, but the public-benchmark half of the thesis is now taken, and any version of this idea that leads with 'independent benchmarks' rather than 'insurable evidence' is dead. Context strengthened again: humanoid startups raised $8.6B by mid-2026, 1.8x all of 2025; Agility's Digit is past 65,000 operating hours across nine customer facilities (GXO, Schaeffler, Toyota Motor Manufacturing Canada, Mercado Libre); the widely-cited payback arithmetic - break-even against one worker at about 14 months - is stated to assume 80% uptime, which is an assurance question wearing an operations costume. Fourth consecutive run in which conditions improved; first run in which somebody moved into the neighbourhood."
+    },
+    {
+     "date": "2026-09-22",
+     "note": "2026-09-22: the open question carried since 2026-09-19 - is the buyer the deploying enterprise's insurer, or the robot maker who needs a stamp to sell? - is now answered, and the answer is the insurer, because the maker-stamp flank has been taken by the platform owner. NVIDIA launched Halos for Robotics on 2026-06-22, extending its autonomous-vehicle safety architecture to industrial and humanoid robots and standing up an inspection lab to help partners reach third-party certification; ISO 10218-1:2025 and 10218-2:2025 have replaced the 2011 editions with system-level integration, functional safety, cybersecurity and a robot classification scheme. A robot maker who needs a stamp to sell will take the one the silicon vendor arranges, for free, inside the stack it already builds on. The insurer cannot: the 2026 assurance literature makes the point directly, that a governance discount conditioned on third-party certification is only as good as the certifier, and that insurers who accept certifications uncritically create a race to the bottom in assurance quality - which is an explicit instruction to underwriters not to accept the vendor-arranged stamp. That is a conflict NVIDIA cannot resolve for policies trained and served on its own stack, and it is the seat this entry should claim. Two cautions recorded against it. First, the shape is now visibly being built one category over: Artificial Intelligence Underwriting Company came out of stealth in July 2025 with a 15M dollar seed selling insurance, audits and the AIUC-1 certification standard for autonomous agents - software agents today, and there is no structural reason it stops there. Second, this entry has now been held at watching for three months. The recommendation for the next run that opens it is to stop re-validating and either commit to the insurer-facing version or kill it; the evidence has improved for five consecutive runs and the marginal value of a sixth confirmation is close to zero. Status unchanged at watching; scores still carry rubric_version 2 and are not comparable to v3 composites."
     }
    ]
   },
@@ -4888,6 +4892,179 @@
    "buyer": "The board treasurer or community manager of an association facing a critical-repair finding it cannot fund.",
    "trigger": "A reserve study or milestone inspection that lands with a repair bill larger than the association's entire reserve.",
    "kill_reason": "Killed by the config-change test - there is no structural block, only a risk-appetite difference - with occupancy alongside. Community-association lending is an established specialty with a dozen credible balance sheets already marketing reserve-shortfall and restoration loans (Axos, NCB, Truist, Byline, First Citizens, Popular, plus non-bank lenders such as Gelt Financial), the segment is described in the trade as low-default, and HOA Loan Services launched an AI loan portal in June 2025. Competing on price against insured deposits with venture equity points the economics the wrong way; 'we would take more risk' is a credit decision any of them can make next quarter.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0423",
+   "date": "2026-09-22",
+   "status": "new",
+   "summary": "AI-native municipal advisor for small and rural public issuers: register as a municipal advisor, take the statutory fiduciary seat on the issuer's side of the table, and run the whole pre-issuance job by machine - reading the audited financials, the existing debt and its covenants, the rate and enrolment studies, the budget and the prior official statements to produce the debt-capacity analysis, the structuring recommendation, the drafted disclosure and the continuing-disclosure calendar - for the tens of thousands of school districts, water and sewer districts, small cities and special districts whose deals are too small to pay for a banker's week.",
+   "source_pattern": "Corridor: 25M dollar seed announced 2026-09-21 led by Bain Capital Ventures with BoxGroup and Definition Capital, plus angels from OpenAI, Ramp, Scale AI, Oscar, Medallion, Reducto and Tennr, built on the explicit observation that small accounts generate lower commissions while taking the same amount of a licensed advisor's time, so the licensed advisory industry ignores them. The mechanism sits in a six-company cluster: American Growth Insurance (about 70M dollars of committed equity, an AI-first operating model tested across 10 agencies reporting more than 50 percent higher agency profitability, targeting 10M dollars of revenue by end-2026), Beacon (225M dollar Series C, more than 500M dollars raised in a year, roughly one acquisition a week, more than 50 percent EBITDA growth across the portfolio), Long Lake (about 670M dollars raised, 100M dollars of EBITDA inside two years), Current formerly Crete (more than 300M dollars of revenue across 30-plus accounting firms) and Integral (18M euro Series A, Mosaic Ventures and Reid Hoffman, agents do the work and licensed experts stand behind the result).",
+   "cross": {
+    "ai_signal": "Three jobs here were not doable at this price before. (1) Reading the issuer: a small district's financial reality lives in a 200-page annual comprehensive financial report as a scanned PDF, a decade of board minutes, a rate study, an enrolment projection, existing bond covenants with additional-bonds tests and rate covenants, and state debt-limit statutes - and the analysis of what this issuer can actually afford, at what structure, is document reasoning across all of it. (2) Drafting the disclosure: the SEC's Office of Municipal Securities said on 2026-09-16 that a municipal advisor participating in preparing an official statement faces primary and secondary antifraud liability under Securities Act Section 17(a) and Exchange Act Section 10(b) regardless of contractual disclaimers, and must perform an appropriate level of inquiry into accuracy and completeness - an inquiry that is exactly a machine's job to run exhaustively across the issuer's own record and exactly what no human can afford to do on a 4M dollar issue. (3) Maintaining it: continuing-disclosure obligations under Rule 15c2-12, material event notices, arbitrage rebate computations and covenant compliance are persistent low-intensity vigilance across thousands of issuers, which is the capability that repriced in 2026.",
+    "structural_signal": "A 4 trillion dollar market with roughly 50,000 distinct issuers and about 500bn dollars of annual issuance, in which advisory capacity is concentrated on the large deals because the fee is a function of par. The small issuer's practical alternatives are to take a bank's direct-placement terms with no fiduciary on its side, or to rely on the underwriter - who under the SEC Municipal Advisor Rule owes it no fiduciary duty at all."
+   },
+   "wedge": "Three different structural blocks, one per class of would-be follower. (a) The underwriters and placement banks are barred: under the SEC Municipal Advisor Rule a broker-dealer acting as underwriter to an issue owes the issuer no fiduciary duty and cannot simultaneously be its municipal advisor on that issue, so the institution that wants to buy or place the paper can never sit in this seat. Serving the segment properly means telling the issuer not to take the bank's loan. (b) The established municipal advisory firms (PFM, Hilltop, Baker Tilly, Stifel, the regional shops) are priced out: their unit of production is a senior banker's week and their fee schedule is tied to par, so a 3-5M dollar issue cannot carry a staffed engagement. Pointing existing salespeople at 30,000 small issuers is not a configuration change; it is a different cost structure. (c) The issuer-software vendors (BondLink, on the 2026 GovTech 100 and supporting more than 100bn dollars of client par in 2025; DebtBook, which shipped AI briefing and AI-analyst features in 2026) sell tools to the finance office and are structurally reluctant to register: becoming a municipal advisor means assuming a statutory fiduciary duty and, per the 2026-09-16 SEC statement, direct antifraud liability for disclosure - a different liability posture, a different insurance programme, and direct competition with the advisory firms that are today their channel into issuers.",
+   "buyer": "Beachhead: the finance director, business manager or superintendent of a school district, water/sewer authority, small city or special district issuing between roughly 2M and 25M dollars, who today has no independent advisor and takes the structure the bank or underwriter proposes.",
+   "trigger": "A bond election passing, a state revolving fund or USDA Rural Development loan offer arriving, a call date on existing debt, a rate study landing with a capital number the current debt service cannot carry, or a continuing-disclosure failure surfacing at the next issue.",
+   "expansion_path": "Beachhead is per-deal advisory on small issues. Expand first into the recurring layer the same relationship owns - continuing disclosure, material event notices, arbitrage rebate, covenant monitoring, debt-portfolio management - which converts a lumpy deal fee into annual revenue per issuer. Then into origination: aggregate hundreds of small issues into pooled, rated programmes and earn placement economics on flow rather than advisory fees on par. The compounding asset underneath is a continuously maintained, machine-readable financial and disclosure record for every small issuer in America, in a 4 trillion dollar market whose disclosure is famously late, unstructured and incomparable - which is separately valuable to the buy side.",
+   "scores": {
+    "wedge_durability": 4,
+    "pattern_strength": 5,
+    "market_venture_scale": 4,
+    "defensibility": 4,
+    "yc_fit": 4,
+    "founder_fit": 4,
+    "composite": 4.2
+   },
+   "rubric_version": 3,
+   "brief": "ideas/briefs/0031-ai-native-municipal-advisor.md",
+   "kill_attempts_survived": 1
+  },
+  {
+   "id": "ts-0424",
+   "date": "2026-09-22",
+   "status": "new",
+   "summary": "AI-native certification house that holds the FAA delegated authority: own an Organization Designation Authorization rather than sell tools to the people who hold one, and issue supplemental type certificates and parts approvals for aircraft modifications - generating the certification plan, the compliance checklist against the applicable part, the system safety assessment, the test plans and the requirement-to-evidence matrix by machine, with unit members reviewing and signing - then retain the resulting certificate library as a royalty-bearing asset rather than billing the hours that produced it.",
+   "source_pattern": "The same AI-native licensed-firm cluster (Beacon 225M dollar Series C and roughly one acquisition a week; American Growth Insurance about 70M dollars committed with more than 50 percent agency profitability improvement across a 10-agency pilot; Integral 18M euro Series A; Corridor 25M dollar seed 2026-09-21), pointed at a delegated public authority rather than a private licence. Demand-side evidence: the GAO found that of 23 electric aircraft type certification projects started with the FAA since 2018 only 6 have been approved, the FAA has been expanding the ODA programme on industry input, and flight-test and certification engineers are named among the scarcest roles in US aerospace.",
+   "cross": {
+    "ai_signal": "A certification campaign is, materially, the production of a defensible evidence corpus: a certification plan, the means-of-compliance selection against 14 CFR Part 23/25/27/29, the functional hazard assessment and safety analyses under ARP4754A/ARP4761, structural and electrical substantiation, test plans and reports, conformity records, instructions for continued airworthiness, and a matrix tying every applicable requirement to the evidence that closes it. Today this is produced by armies of engineers writing documents. A model that holds the regulatory corpus, the precedent library of prior approvals and the actual design data, and generates that package for a designee to interrogate, is a frontier-model job and was not possible before.",
+    "structural_signal": "Modification approvals are the volume business and the delegable one: roughly 1,500-2,000 supplemental type certificates a year in the US, campaign costs of hundreds of thousands to low millions of dollars each, driven by avionics mandates, connectivity retrofits, cargo conversions, interiors, engine and sustainability upgrades, defence modification work, and an incoming wave of uncrewed and advanced-air-mobility approvals."
+   },
+   "wedge": "Two classes of follower are structurally blocked and it is worth being precise about which. (a) The tooling incumbents cannot sign. Ansys SCADE, LDRA, Parasoft, Vector and Visure hold the qualified toolchains and sell to applicants; a tool vendor cannot hold an ODA, cannot issue a certificate, and cannot take the liability for an approval - and their customers are the OEMs and consultancies who would be disintermediated. The newly funded tooling entrant (Xcert AI, automating compliance, requirements, test procedures and documentation for aerospace certification) is on the same side of that line. (b) An OEM's own ODA is scoped to its own products and cannot be pointed at third parties. Meanwhile the incumbent certification consultancies (Envoy Aerospace, JANA, AeroTEC, Duncan, MTEC) bill per engineering hour, so automating the campaign deletes the revenue that pays for it - the per-unit-of-professional-time test the 2026-09-17 run established. What the wedge does NOT block is a well-capitalised AI roll-up buying an ODA holder outright; that is the honest limit and is priced into the wedge score.",
+   "buyer": "Beachhead: the programme or engineering lead at a modification shop, avionics or systems supplier, cargo converter, defence integrator or uncrewed-aircraft manufacturer whose product cannot be sold until an approval exists, and whose current path is an hourly consultancy plus an FAA queue.",
+   "trigger": "A customer purchase order or fleet commitment conditioned on an approval that does not yet exist, or a programme schedule that has already slipped once on certification.",
+   "expansion_path": "Beachhead is fixed-price modification approvals with a schedule commitment. The compounding asset is the certificate portfolio itself: a supplemental type certificate is property, and every subsequent installation under it pays a royalty, so a machine-generated portfolio accumulates annuity revenue independent of new campaigns. Expand across EASA and other bilateral validations, into parts manufacturer approvals, into defence airworthiness, and into the uncrewed and advanced-air-mobility approval wave - and ultimately into the same shape wherever a government delegates approval authority to private organisations.",
+   "scores": {
+    "wedge_durability": 3,
+    "pattern_strength": 4,
+    "market_venture_scale": 4,
+    "defensibility": 4,
+    "yc_fit": 4,
+    "founder_fit": 4,
+    "composite": 3.8
+   },
+   "rubric_version": 3,
+   "kill_attempts_survived": 1
+  },
+  {
+   "id": "ts-0425",
+   "date": "2026-09-22",
+   "status": "killed",
+   "summary": "AI-native appointed actuary: hold the credential and sign the statement of actuarial opinion for captives, risk retention groups and small carriers, reconstructing reserves from claim-level data by machine against consultancies that bill by the hour.",
+   "source_pattern": "Corridor and the AI-native licensed-firm cluster, re-pointed at a credentialed sign-off that small entities struggle to buy.",
+   "wedge": "Attempted: an actuarial software vendor cannot sign an opinion, and the big consultancies' revenue is the actuary's hour.",
+   "buyer": "The risk manager or captive owner needing an annual signed opinion.",
+   "trigger": "The statutory filing deadline or a new captive formation.",
+   "kill_reason": "Killed by the occupancy test on the first search. Huscarl raised 5.6M dollars led by FRST for an autonomous AI actuary platform that ingests unstructured data at volume, builds bespoke risk models and orchestrates actuarial workflows end to end, with every study reviewed and signed by a credentialed human actuary - and it names ongoing appointed-actuary services for captives and outsourced underwriting for group captives and risk retention groups as its products. That is this idea, funded, with the same human-in-the-loop sign-off architecture.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0426",
+   "date": "2026-09-22",
+   "status": "killed",
+   "summary": "Robot-operated radiopharmacy network: distributed hot-cell production and dose preparation for radioligand therapy, where half-life forces local manufacture and licensed nuclear pharmacists are the throughput limit.",
+   "source_pattern": "Multiply Labs (75M dollar Series B on 2026-09-17, total above 100M, AstraZeneca Ventures, Lingotto, Legend Biotech, Casdin, Lux, Founders Fund; 74 percent lower cost per dose and up to 100x manual throughput) plus the radiopharma capacity crunch.",
+   "wedge": "Attempted: an NRC or Agreement State materials licence plus cGMP plus nuclear pharmacist licensure is a barrier a robotics vendor cannot hold.",
+   "buyer": "Oncology centres and radioligand sponsors short of dose capacity.",
+   "trigger": "A therapy launch or a trial whose enrolment is capped by dose supply.",
+   "kill_reason": "Killed by the occupancy test. Nucleus RadioPharma already operates as a purpose-built full-service radiopharmaceutical CDMO, and the whole industry has converged on the view that manufacturing is the moat - the named 2026 bottlenecks (high-specific-activity isotope supply, GMP hot-cell capacity with automated handling, integrated radiochemistry CDMOs) are being financed directly by strategics and by clinical-stage sponsors building their own capacity. An entrant arrives after the capital, without the isotope supply agreements, into a segment whose incumbents are already automating.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0427",
+   "date": "2026-09-22",
+   "status": "killed",
+   "summary": "Claims-integrity adjudicator for class action settlements: independently determine which claims against a settlement fund are real, on the defendant's and the court's behalf, as generative-AI claim farming industrialises fraud.",
+   "source_pattern": "The documented collapse in claim integrity - fraudulent claims rising from roughly 400,000 in 2021 to more than 80 million in 2023, and a 6M dollar cosmetics settlement drawing 6.5 million claims of which about 110,000 were valid.",
+   "wedge": "Attempted channel conflict: settlement administrators are selected by plaintiffs' counsel and paid partly on claim volume, so suppressing claims cuts their own revenue and antagonises their selector.",
+   "buyer": "Defence counsel and the corporate defendant funding the settlement, plus the approving court.",
+   "trigger": "A settlement whose claims rate has gone visibly abnormal.",
+   "kill_reason": "Killed by the occupancy test. Certum Group markets exactly this as a named product line - Class Action Settlement Integrity - and publishes the market-defining research on bot and organised-crime claim fraud; the administrators (JND, Epiq, Kroll, Angeion) have in parallel shipped AI anomaly detection into their own workflows, and PwC sells the forensic layer. The wedge is real and the seat is taken.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0428",
+   "date": "2026-09-22",
+   "status": "killed",
+   "summary": "AI-native independent adjusting firm for catastrophe surge: hold adjuster licences in every state, capture the loss with low-skill local labour and drones, and produce the estimate and coverage determination by machine, against independent adjusting firms whose revenue is a licensed human per claim.",
+   "source_pattern": "The adjuster supply collapse - entry-level adjuster postings down close to 50 percent since early 2024, claims-adjusting employment down about 21 percent year over year through May 2026, nearly 400,000 insurance professionals projected to retire by end-2026.",
+   "wedge": "Attempted: an independent adjusting firm is paid per claim inspected by a licensed human, so automating the inspection deletes its revenue, and carriers outsource surge capacity by definition.",
+   "buyer": "The catastrophe claims leader at a regional or specialty property carrier.",
+   "trigger": "A named storm making landfall in the carrier's concentration.",
+   "kill_reason": "Killed by the config-change test in its strongest form - the platform owner has already executed it. Verisk owns Xactimate, the dominant property estimating standard in North America, and has launched XactAI, a suite of generative-AI capabilities built directly into that workflow to automate summarisation, documentation and estimate production. Every independent adjusting firm and carrier gets the identical leverage by upgrading software they already licence, which means the automation is a feature of the incumbent's stack rather than a wedge against it. Snapsheet, Tractable, CCC and Mitchell hold the remaining adjacent ground.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0429",
+   "date": "2026-09-22",
+   "status": "killed",
+   "summary": "AI-native genetic counselling provider: conduct pre-test and post-test counselling at machine scale with licensed counsellors signing, against a certified workforce of roughly 5,600 that cannot grow fast enough for expanding genomic testing.",
+   "source_pattern": "The licensed-firm cluster pointed at a credentialed clinical role in documented shortage (Arizona cited as having about 30 certified counsellors against a need of roughly 97).",
+   "wedge": "Attempted: a testing laboratory cannot be the impartial counsellor on its own test, and the counsellor is licensed in about thirty states.",
+   "buyer": "Health systems and laboratories whose testing volume exceeds counselling capacity.",
+   "trigger": "A new screening programme or oncology pathway that mandates counselling.",
+   "kill_reason": "Killed by the occupancy test. Igentify already sells an AI-based platform that onboards patients, obtains consent and delivers education to extend each counsellor's caseload; Genome Medical has raised 75M dollars operating telehealth genetic counselling through provider partnerships; and the National Society of Genetic Counselors adopted a 2026 position on integrating AI into practice, which is what an occupied, consolidating category looks like from the outside.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0430",
+   "date": "2026-09-22",
+   "status": "killed",
+   "summary": "AI-native Chapter 7 estate administration firm: staff panel trustees and use machine asset discovery across public, financial and transactional records to convert no-asset consumer bankruptcy cases into asset cases, off a fee that has just been doubled by statute.",
+   "source_pattern": "The Bankruptcy Administration Improvement Act of 2025, signed 2026-02-06, doubling the Chapter 7 no-asset trustee fee from 60 to 120 dollars - the first increase since 1994 - against the fact that 96 percent of Chapter 7 cases are no-asset because nobody is paid enough to look.",
+   "wedge": "Attempted: a software vendor cannot be the trustee, and Stretto and TrusteSolutions sell case-management software to trustees rather than holding the appointment.",
+   "buyer": "The US Trustee Program making panel appointments, and creditors in consumer estates.",
+   "trigger": "A panel vacancy or a district backlog.",
+   "kill_reason": "Killed by the venture-scale gate, which is a hard gate and was applied before any occupancy question. Trustee compensation is set by statute and capped by a sliding commission schedule on distributions, the flat fee is 120 dollars against roughly 370,000 annual filings, the appointment is discretionary, per-district and non-transferable, and total national Chapter 7 trustee compensation is a low-hundreds-of-millions pool even if every no-asset case were converted. This is the same ceiling that killed ts-0405, and the pattern is now general: court-appointed and statutorily compensated roles cannot reach a billion-dollar outcome, because the appointing authority - not the market - sets the price.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0431",
+   "date": "2026-09-22",
+   "status": "killed",
+   "summary": "AI-native accredited certification body for the EU deforestation regime: hold the accreditation and issue the third-party verification that importers need for plot-level deforestation-free claims before the 2026-12-30 deadline.",
+   "source_pattern": "The 30 December 2026 EUDR compliance date across cattle, cocoa, coffee, palm, rubber, soya and wood, plus satellite-AI verification becoming cheap.",
+   "wedge": "Attempted: an accredited certification body cannot also consult, which blocks the consultancies, and the accreditation takes years.",
+   "buyer": "Importers and traders placing covered commodities on the EU market.",
+   "trigger": "The compliance deadline and the first customs rejection.",
+   "kill_reason": "Killed twice over. First, the barrier does not exist as assumed: EUDR obliges the operator to file a due-diligence statement through TRACES, not to obtain third-party certification, so there is no accredited seat to hold and no gate to stand in. Second, the layer that does exist is crowded - IntegrityNext, osapiens, TraceX, Deeplai and the incumbent schemes (Rainforest Alliance) all sell plot-level satellite verification and DDS generation already. This is the 2026-09-15 lesson repeating: a dated regulation is worth nothing if it does not actually create a barrier, and a dated regulation everyone can read is a starting gun.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0432",
+   "date": "2026-09-22",
+   "status": "killed",
+   "summary": "AI-native commissioning authority for data-centre energization: hold the commissioning agent role on hyperscale and colocation projects and guarantee the energization date, against a certified commissioning workforce that nearly 60 percent of operators say they cannot find.",
+   "source_pattern": "The buildout's most binding human constraint - commissioning agents who understand phased energization and uptime risk are named among the scarcest roles of 2026, as leased capacity from 2024-2025 activation cycles arrives simultaneously in H2 2026 into 2027.",
+   "wedge": "Attempted: the commissioning authority is a certified, independent third party that the contractor and the owner cannot be, and incumbents bill per engineer-day.",
+   "buyer": "The delivery lead at a hyperscaler, colocation developer or neocloud whose revenue starts at energization.",
+   "trigger": "A phased energization date at risk.",
+   "kill_reason": "Killed by the config-change test. The leverage this idea depends on is already a purchasable product available to every incumbent commissioning firm: Facility Grid, used by the largest commissioning providers, has an autonomous agent that auto-configures templates, equipment hierarchies and test plans from imported specifications - setup in minutes rather than days - rolling out through 2026, and CxPlanner ships CxAI against the same admin load. An entrant's only remaining advantage is being willing to staff fewer witnesses, which is a pricing decision any incumbent can make next quarter, and the physical witnessing of integrated systems tests stays human either way.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0433",
+   "date": "2026-09-22",
+   "status": "killed",
+   "summary": "AI-native Rural Emergency Hospital operator: convert closing rural hospitals to the Rural Emergency Hospital designation and run them with a thin on-site clinical crew under continuous machine-supervised remote physician coverage.",
+   "source_pattern": "The Rural Emergency Hospital designation as a new Medicare provider type with a monthly facility payment, against 417 rural hospitals assessed as vulnerable to closure and more than 200 closed or converted since 2010; the licensed-firm cluster supplies the operating model.",
+   "wedge": "Attempted: a software vendor cannot hold a hospital licence or a Medicare provider agreement, and there is no acquirable book because the assets are closing rather than trading.",
+   "buyer": "The board of a rural hospital that has run out of money.",
+   "trigger": "A closure vote or a failed bond covenant.",
+   "kill_reason": "Killed on the AI-native gate first and the occupancy test second. The leverage in the model is remote physician coverage of a thin on-site crew, which is telehealth and predates frontier AI by a decade - Avel eCare and Equum Medical already sell virtual emergency-department staffing into exactly these hospitals, which makes the operating thesis a purchase rather than an invention. The economics are also moving the wrong way: conversions are running at roughly ten or eleven a year, the model is being tested by Medicaid changes under the 2025 reconciliation law, and the first REH to convert and then close outright did so in June 2026.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0434",
+   "date": "2026-09-22",
+   "status": "killed",
+   "summary": "Robot-operated sterile compounding facility: an FDA-registered 503B outsourcing facility where robots rather than gowned humans perform aseptic manipulation, sold to hospital pharmacies as ready-to-administer doses.",
+   "source_pattern": "Multiply Labs, 75M dollar Series B on 2026-09-17 with AstraZeneca Ventures, Lingotto and Legend Biotech joining Casdin, Lux and Founders Fund, reporting 74 percent lower cost per dose and up to 100x the throughput of manual manufacturing, and explicitly selling robotic clusters as capex that customers own and operate rather than as an outsourced service.",
+   "wedge": "Attempted: Multiply Labs' own positioning is the wedge - it sells clusters to manufacturers who want to keep control of capacity, so operating a rival outsourcing facility would compete with its customers; and a robotics vendor is not a pharmacy.",
+   "buyer": "Health-system pharmacy directors buying ready-to-administer sterile doses.",
+   "trigger": "A USP 797 finding, a recall, or a drug shortage the hospital cannot compound through.",
+   "kill_reason": "Killed by the config-change test with occupancy alongside. The incumbent 503B outsourcing facilities are paid per dose, so automation raises their margin instead of destroying it - the exact inversion the 2026-09-17 run identified - and they are already doing it: Nephron runs robotics at scale and Omnicell has sold robotic IV compounding and insourcing for years, alongside QuVa, Leiters, SCA and Fresenius. There is no structural reason the incumbents cannot buy the same robots, and several already have.",
    "rubric_version": 3
   }
  ]
