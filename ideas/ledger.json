@@ -287,7 +287,7 @@
   {
    "id": "ts-0031",
    "date": "2026-06-18",
-   "status": "watching",
+   "status": "killed",
    "summary": "Independent third-party behavioral-certification lab for robot foundation-model policies: adversarially simulates a humanoid/AMR's learned neural policy in world-model sims to find dangerous failure modes before deployment and on every OTA policy update, issuing a certification artifact insurers and safety teams accept.",
    "cross": {
     "ai_signal": "Frontier world models (NVIDIA Cosmos, Genie) + generative adversarial scenario synthesis can now simulate a non-deterministic VLA robot policy's behavior across millions of out-of-distribution situations cheaply; NVIDIA's robot-dexterity scaling law and GR00T/pi0-class policies make policies powerful but opaque and frequently updated.",
@@ -325,8 +325,14 @@
     {
      "date": "2026-09-22",
      "note": "2026-09-22: the open question carried since 2026-09-19 - is the buyer the deploying enterprise's insurer, or the robot maker who needs a stamp to sell? - is now answered, and the answer is the insurer, because the maker-stamp flank has been taken by the platform owner. NVIDIA launched Halos for Robotics on 2026-06-22, extending its autonomous-vehicle safety architecture to industrial and humanoid robots and standing up an inspection lab to help partners reach third-party certification; ISO 10218-1:2025 and 10218-2:2025 have replaced the 2011 editions with system-level integration, functional safety, cybersecurity and a robot classification scheme. A robot maker who needs a stamp to sell will take the one the silicon vendor arranges, for free, inside the stack it already builds on. The insurer cannot: the 2026 assurance literature makes the point directly, that a governance discount conditioned on third-party certification is only as good as the certifier, and that insurers who accept certifications uncritically create a race to the bottom in assurance quality - which is an explicit instruction to underwriters not to accept the vendor-arranged stamp. That is a conflict NVIDIA cannot resolve for policies trained and served on its own stack, and it is the seat this entry should claim. Two cautions recorded against it. First, the shape is now visibly being built one category over: Artificial Intelligence Underwriting Company came out of stealth in July 2025 with a 15M dollar seed selling insurance, audits and the AIUC-1 certification standard for autonomous agents - software agents today, and there is no structural reason it stops there. Second, this entry has now been held at watching for three months. The recommendation for the next run that opens it is to stop re-validating and either commit to the insurer-facing version or kill it; the evidence has improved for five consecutive runs and the marginal value of a sixth confirmation is close to zero. Status unchanged at watching; scores still carry rubric_version 2 and are not comparable to v3 composites."
+    },
+    {
+     "date": "2026-09-24",
+     "note": "Killed. AIUC 40M dollar Series A (Ribbit) plus NVIDIA Halos cover both buyer flanks."
     }
-   ]
+   ],
+   "kill_test": "occupancy (commit-or-kill resolved)",
+   "kill_reason": "Killed 2026-09-24, resolving the commit-or-kill instruction from the 2026-09-22 run. Both buyers are now covered by funded players who can extend to this with a configuration change. The robot-maker side went to the platform owner: NVIDIA's Halos for Robotics (2026-06-22) stands up an inspection lab to take partners to third-party certification. The insurer side, the version this entry was going to commit to, is being built one category over at scale: AIUC closed a 40M dollar Series A led by Ribbit Capital in September 2026 (55M dollars total), and its AIUC-1 standard ties certification to Lloyd's-backed cover with limits up to 50M dollars, already held by Cursor, ElevenLabs, Harvey, KPMG, Lovable, UiPath and Fin. Its co-founder was COO of METR. Extending an agent certification-plus-insurance standard to embodied agents is the obvious next step for AIUC, and for an entrant starting from zero it would be a race against a funded company with Lloyd's capacity already signed. Held at watching for three months across six runs; the sixth confirmation was not going to change the answer."
   },
   {
    "id": "ts-0032",
@@ -567,7 +573,7 @@
   {
    "id": "ts-0054",
    "date": "2026-06-25",
-   "status": "watching",
+   "status": "killed",
    "summary": "Correlated-AI-failure catastrophe/accumulation model + per-insured AI-exposure score for primary P&C carriers: maps the foundation-model dependency graph across a carrier's whole commercial book (CGL/D&O/E&O/professional) and simulates the joint loss when thousands of insureds relying on the same few models/agents fail at once, so carriers can move from blanket AI exclusion to selectively pricing the fastest-growing exposure in the economy.",
    "cross": {
     "ai_signal": "Frontier models can now map which foundation models, vendors and agents each insured business depends on and characterize how those systems fail, then simulate correlated/cascading non-malicious AI-error scenarios across an economy of insureds - producing a joint loss distribution. Classical CAT/actuarial models assume independent risks and structurally cannot capture this correlation; the industry itself flags that 'current methods do not measure whether failures could be correlated across multiple insureds simultaneously' - the same independent-rate blind spot that broke pandemic-BI and that made ts-0048 AI-native.",
@@ -602,7 +608,9 @@
      "date": "2026-09-17",
      "note": "2026-09-17: the accumulation thesis keeps being confirmed by the shape of the funding rather than by anyone building the model. Of nineteen AI-agent financings tracked across August and September 2026, eight target the control layer - Zenity (125M), Obsidian (85M), Alice (140M), AIR Security (50M from Sequoia and Greenoaks), Cymphony (30M), AI Score (5.4M), Arrakis Security (8M) and FriskAI (3.6M) - the third consecutive month in which governance leads the category by deal count, summarised in the trade coverage as investors buying the brakes faster than the car. Every one of those is a control on a single insured's own agents; none of them measures what happens across a book when the shared dependency fails. The asymmetry logged on 2026-09-12 is now four months old and unchanged, which is the argument for the entry staying open and also the argument that the window is a finite one. Status unchanged at watching. The open question from 2026-09-12 - whether this gets acquired by a reinsurer rather than sold to fifty carriers - was not re-tested this run."
     }
-   ]
+   ],
+   "kill_test": "occupancy (open question resolved)",
+   "kill_reason": "Killed 2026-09-24, answering the 2026-09-12 open question of whether this is sold to fifty carriers or bought by a reinsurer: it is being built by the reinsurance brokers and catastrophe modellers themselves. CyberCube treats AI as a force multiplier and has publicly called on aggregation modellers to build in AI-specific dynamics; Guy Carpenter published a 2026 assessment of AI risk quantification; Gallagher Re has identified systemic risk from AI model failures; Verisk names AI aggregation as a focus area; and Testudo launched AI insurance in January 2026 with Gallagher Re and MIT. The primary carrier's accumulation model will come bundled from the modeller and broker it already pays, which is the purchasability kill set out in the 2026-09-22 method note."
   },
   {
    "id": "ts-0055",
@@ -757,7 +765,7 @@
    },
    "kill_attempts_survived": 3,
    "brief": "ideas/briefs/0008-data-center-completion-realism-engine.md",
-   "revalidation": "2026-07-25 first re-check since 06-30: SURVIVES and the thesis is now QUANTIFIED in public - but novelty is softening because a competitor holds the observation layer. Validation: an analytics group signals at least 40% of AI data centers slated for 2026 completion will be delayed (Microsoft/OpenAI projects slipping 3+ months) with companies denying holdups while satellite imagery contradicts them; reporting now describes half of US builds delayed or cancelled and a 7 GW capacity crisis; transformer lead times exceed five years in extreme cases against 12-18 month compute cycles. Decisively, the financial consequence is now published: for a representative 60 MW data center IRR falls from 17.1% on time to 12.6% at three months' delay and 8.8% at six months - a six-month slip nearly halves returns, which is precisely the underwritable quantity this engine prices. Novelty caution: SynMax is commercially selling satellite-imaging + AI predictive analytics on data-center construction progress, i.e. an adjacent player now owns the per-project observation layer this model would need - the same GridUnity-vs-ts-0064 dynamic. The defensible remainder is the correlated equipment-dependency-graph accumulation layer, not progress observation. Status new->watching. | 2026-08-15 the peril this idea prices got both larger and better documented. Practitioners now name electrical equipment as the single most common cause of data-centre delay: switchgear beyond 60 weeks (44 in late 2025), transformers averaging 128 weeks, GSUs 144, high-capacity units to four years, with GSU demand up 274% and substation transformer demand up 116% since 2019 and only ~$2B of North American capacity expansion arriving by 2028. Because the whole industry queues at the same four manufacturers, equipment delay is almost perfectly correlated across a book - exactly the accumulation this idea exists to model. Cancellations quadrupled to 25 in 2025 and 30-50% of the 2026 pipeline is expected to slip or die. Note the adjacency to the new ts-0202: that idea trades the equipment positions this one prices the delay risk of, and a founder could plausibly do either but not both.",
+   "revalidation": "2026-07-25 first re-check since 06-30: SURVIVES and the thesis is now QUANTIFIED in public - but novelty is softening because a competitor holds the observation layer. Validation: an analytics group signals at least 40% of AI data centers slated for 2026 completion will be delayed (Microsoft/OpenAI projects slipping 3+ months) with companies denying holdups while satellite imagery contradicts them; reporting now describes half of US builds delayed or cancelled and a 7 GW capacity crisis; transformer lead times exceed five years in extreme cases against 12-18 month compute cycles. Decisively, the financial consequence is now published: for a representative 60 MW data center IRR falls from 17.1% on time to 12.6% at three months' delay and 8.8% at six months - a six-month slip nearly halves returns, which is precisely the underwritable quantity this engine prices. Novelty caution: SynMax is commercially selling satellite-imaging + AI predictive analytics on data-center construction progress, i.e. an adjacent player now owns the per-project observation layer this model would need - the same GridUnity-vs-ts-0064 dynamic. The defensible remainder is the correlated equipment-dependency-graph accumulation layer, not progress observation. Status new->watching. | 2026-08-15 the peril this idea prices got both larger and better documented. Practitioners now name electrical equipment as the single most common cause of data-centre delay: switchgear beyond 60 weeks (44 in late 2025), transformers averaging 128 weeks, GSUs 144, high-capacity units to four years, with GSU demand up 274% and substation transformer demand up 116% since 2019 and only ~$2B of North American capacity expansion arriving by 2028. Because the whole industry queues at the same four manufacturers, equipment delay is almost perfectly correlated across a book - exactly the accumulation this idea exists to model. Cancellations quadrupled to 25 in 2025 and 30-50% of the 2026 pipeline is expected to slip or die. Note the adjacency to the new ts-0202: that idea trades the equipment positions this one prices the delay risk of, and a founder could plausibly do either but not both. || 2026-09-24 update (status unchanged at watching; no kill attempted): the progress-capture input layer is scaling fast but is owned by the contractor. Buildots raised 130M dollars on 2026-09-14 with revenue tripling yearly and portfolio agreements at JE Dunn and Mortenson, and Built's Draw Agent covers the lender's per-draw view (see ts-0439, killed on occupancy). Neither prices correlated delay across a book, which is still this entry's claim. Open question for the next run that opens it: whether GC-owned progress data will ever reach a delay-in-start-up underwriter, or whether the model has to be built from equipment-supply and interconnection data alone.",
    "evidence_updates": [
     {
      "date": "2026-08-25",
@@ -5065,6 +5073,162 @@
    "buyer": "Health-system pharmacy directors buying ready-to-administer sterile doses.",
    "trigger": "A USP 797 finding, a recall, or a drug shortage the hospital cannot compound through.",
    "kill_reason": "Killed by the config-change test with occupancy alongside. The incumbent 503B outsourcing facilities are paid per dose, so automation raises their margin instead of destroying it - the exact inversion the 2026-09-17 run identified - and they are already doing it: Nephron runs robotics at scale and Omnicell has sold robotic IV compounding and insourcing for years, alongside QuVa, Leiters, SCA and Fresenius. There is no structural reason the incumbents cannot buy the same robots, and several already have.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0435",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "AI-native CMMC third-party assessment organization (C3PAO): hold the Cyber AB authorization and run CMMC Level 2 certification assessments for defence subcontractors with machine evidence review against the 320 NIST 800-171 assessment objectives, priced for the small shops the incumbent assessors queue last.",
+   "source_pattern": "Comp AI, 34M dollar Series A on 2026-09-17 (Roo Capital, Grand Ventures), 15x ARR growth and more than 1,000 customers for AI-native compliance automation - re-pointed from the company preparing for the audit to the body that issues the certificate.",
+   "wedge": "Attempted: an assessor may not consult on what it certifies, so the readiness platforms (Comp AI, Vanta, Drata) cannot hold the seat; incumbent C3PAOs bill by the assessor-day.",
+   "buyer": "Owner or IT lead of a 10-200 person defence subcontractor handling controlled unclassified information.",
+   "trigger": "A solicitation requiring CMMC Level 2 third-party certification as a condition of award.",
+   "kill_test": "trigger + occupancy",
+   "kill_reason": "Killed twice. The trigger is not live: the Department of Defense suspended CMMC Phase 2 on 2026-07-13, pausing the mandatory Level 2 third-party milestone that was due to start on 2026-11-10, so the 6-12 month assessor backlog this idea fed on is now a paused programme under review. And the seat is taken in the exact form: Fortreum launched an AI-native CMMC Assessment Readiness Review in June 2026 alongside its own in-house C3PAO, and Zifino sells up to 3x auditor throughput to assessors, which means an incumbent C3PAO can buy the automation instead of losing to it.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0436",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "AI-native SOC 2 attest firm: a peer-reviewed CPA firm whose auditors are machines doing the evidence testing, with licensed CPAs signing, priced for the thousands of startups that compliance-automation platforms have made audit-ready.",
+   "source_pattern": "Comp AI (15x ARR, 1,000+ customers, 34M dollar Series A 2026-09-17) and the wider readiness-platform category, re-pointed at the auditor seat those platforms are barred from holding under AICPA independence rules.",
+   "wedge": "Attempted: independence rules bar a readiness vendor from auditing its own customers' controls, and audit firms bill by the staff-hour.",
+   "buyer": "Founder or head of security at a 20-300 person software company that needs its first or second SOC 2 Type II report.",
+   "trigger": "An enterprise customer's security questionnaire that stalls a deal until a report exists.",
+   "kill_test": "occupancy",
+   "kill_reason": "Killed by the occupancy test. Thoropass already runs the bundled model through a separate peer-reviewed CPA entity (Thoropass Assurance) with First Pass AI prescreening evidence, reporting average audit cycles cut from 73 to 29 days across more than 300 audits; Chiaro and Consilium Labs sell AI-assisted SOC 2 attest to startups; and the Delve scandal (a 32M dollar YC company accused of pre-generated auditor conclusions and certification mills) has made 'AI audit in days' a trust liability rather than a pitch in this exact buyer segment.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0437",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "AI-native private-provider building plan review firm: hold the licensed plan-reviewer and inspector seat that Florida 553.791, California AB 253 and Texas SB 1202 now let an owner hire instead of the city, and return code-compliance determinations by machine within days, with licensed engineers signing.",
+   "source_pattern": "PermitFlow (54M dollar Series B led by Accel, about 500M dollar valuation, over 20bn dollars of construction value) plus the construction-AI cluster this week: Buildots 130M dollars with revenue tripling yearly, Adaptive 30M dollar Series B with 750+ operators, Scaffold 15M dollar seed on 200,000+ homes.",
+   "wedge": "Attempted: applicant-side expediters cannot be the independent approver, and the AI plan-review vendors (Archistar, CivCheck, CodeComply) sell to cities, so becoming the private provider would compete with their own customers.",
+   "buyer": "Builder, developer or homeowner whose residential or commercial permit is stuck past the statutory review clock.",
+   "trigger": "A missed municipal shot clock (30 days under California AB 253) that opens the private-reviewer option, or a Florida owner electing a private provider for the 25-50 percent permit-fee reduction.",
+   "kill_test": "config change (purchasability)",
+   "kill_reason": "Killed by the config-change test in its purchasability form. The automation is for sale to the incumbents: CodeComply.Ai sells AI code review explicitly to 'plan reviewers and submitters' and is distributed through CivicPlus, PlanCheckPro.ai sells AI plan review software, and existing Florida private providers already advertise 24-hour single-family reviews and same-day virtual inspections. Plan review is priced per job by the market, so an incumbent private provider that licenses the tool captures the same speed and keeps the margin - the 503B inversion from ts-0434 again. The statutory seat is real, but it is held by thousands of licensed engineers who can all buy the same software.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0438",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "AI-native certified independent dispute resolution entity for the No Surprises Act: hold CMS certification and decide surprise-billing payment disputes between out-of-network providers and health plans by machine, with qualified reviewers signing, at the volume the incumbents cannot clear.",
+   "source_pattern": "The AI-native licensed-firm cluster (Beacon, AGI, Integral, Corridor; this week Radley and Locke from YC S26) pointed at a delegated federal adjudication seat; demand evidence: providers initiated 2.6 million new IDR disputes in 2025, up 77 percent, and the federal administrative fee fell from 115 to 15 dollars per party for disputes from 2026-06-11.",
+   "wedge": "Attempted: the seat requires CMS certification and conflict-of-interest independence from both plans and providers, so neither side's revenue-cycle vendors can hold it.",
+   "buyer": "Initiating providers and responding health plans, who pay the entity fee per dispute.",
+   "trigger": "Every failed open negotiation on an out-of-network claim.",
+   "kill_test": "price-setter test (ts-0430 rule) + config change",
+   "kill_reason": "Killed on the rule the 2026-09-22 run established: the granting body sets the price. CMS sets the certified entity fee range (425 to 800 dollars for a single dispute in 2026, up to 1,125 for batches), and a machine that decides faster cannot charge more. It also fails the config-change test in the ts-0434 form: incumbent entities are paid per determination, so automation raises their margin rather than threatening it, and they will adopt it. The pool is large (roughly 1-2bn dollars a year at current volume) but it is capped, split across about fifteen certified entities, and one rule change away from repricing.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0439",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "Independent progress-of-record for construction lenders and sureties: machine-verified percent-complete from site capture, sold to the parties the general contractor's own progress tool reports against, not to the GC.",
+   "source_pattern": "Buildots, 130M dollars (2026-09-14), revenue tripling yearly, portfolio agreements with JE Dunn, Mortenson and STO - sold to general contractors.",
+   "wedge": "Attempted, channel conflict: a tool the GC pays for cannot credibly feed the GC's lender or surety a progress truth that might withhold a draw or trigger a default.",
+   "buyer": "Construction lender's draw administrator or a surety's bond-claims team on a large project.",
+   "trigger": "A monthly draw request, or a surety's warning signs of contractor default.",
+   "kill_test": "occupancy",
+   "kill_reason": "Killed by the occupancy test. The lender side of the channel conflict was built first: Built Technologies' Draw Agent, trained on its proprietary draw-package dataset, rolled out fully in early 2026 with first-pass review in under three minutes and same-day funding for up to 80 percent of draws; Rabbet builds structured inspector percent-complete into the draw itself. The correlated-delay version for financiers is already held in this ledger as ts-0069.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0440",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "Subcontractor-side billing and claims agent: read the subcontract, schedule, daily logs and correspondence to assemble pay applications, change-order claims and retainage releases and enforce lien and prompt-payment deadlines - the side of the table the GC-paid construction accounting agents cannot take.",
+   "source_pattern": "Adaptive, 30M dollar Series B led by Tidemark (Sept 2026), agentic construction accounting used by more than 750 construction operators - on the builder and GC side.",
+   "wedge": "Attempted, channel conflict: an agent paid by the GC to process sub invoices cannot also argue the sub's claims against that GC.",
+   "buyer": "Controller or owner of a specialty trade subcontractor (electrical, mechanical, concrete) with 10-500 staff.",
+   "trigger": "Retainage or a change order unpaid past 90 days; Siteline's 2026 survey says 43 percent of subs wait that long.",
+   "kill_test": "occupancy",
+   "kill_reason": "Killed by the occupancy test. Siteline (Menlo-backed) already describes itself as the pay app and lien waiver software built for subcontractors and publishes the defining 2026 survey on sub payment delays; Procore owns Levelset's lien-rights workflow; Billd finances the gap. The counterparty side of this channel conflict was founded years before the GC-side AI leader.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0441",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "AI-native small-group health plan for the states where level-funded plans cannot be sold: bring Angle Health's minute-quote machine underwriting and clinical steering to small employers in states that bar or sharply restrict small-group stop-loss.",
+   "source_pattern": "Angle Health, 600M dollars at a 2.7bn dollar valuation (2026-09-18: 200M Series C plus 400M tender, Vitruvian), 120 percent revenue growth, nearly 1bn dollars of annualized premium-equivalents, 5,000+ employer groups, four straight profitable quarters, available in 47 states; with Thatch (108M dollars at 1bn, 7x revenue) and Corridor (25M seed) it makes three small-employer health raises in ten days.",
+   "wedge": "Attempted, compliance posture: Angle's product is a level-funded plan built on stop-loss, which some states (New York most clearly) bar for small employers, so Angle cannot sell there without becoming a fully insured carrier.",
+   "buyer": "Owner or office manager of a 2-50 person employer in a state where level funding is unavailable.",
+   "trigger": "Annual small-group renewal.",
+   "kill_test": "AI-native gate",
+   "kill_reason": "Killed on the AI-native gate, which the law itself triggers. Where level funding is barred, small groups buy fully insured ACA plans with community rating: the premium cannot vary with the group's health, so a model that underwrites a census in minutes has nothing to price. What is left is administration and care steering, and neither needs a new carrier in a closed market. The block is structural, but it blocks the entrant as well as the leader.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0442",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "AI-native nationally recognized rating organization for private letter ratings: rate private credit and private placements held by insurers with machine analysis of every loan document, covenant package and monthly borrower financial, defensible under the NAIC's 2026 scrutiny of privately rated securities.",
+   "source_pattern": "The AI-native licensed-firm cluster plus the private-credit boom; the NAIC reports more than 80 percent of private ratings on insurer investments come from small and mid-sized NRSROs (Egan-Jones and KBRA the majority), and it began reviewing credit rating providers under a new structure from 2026-01-01.",
+   "wedge": "Attempted: SEC registration as an NRSRO plus conflict rules that bar a rating agency from advising on structures it rates; incumbents staff by analyst.",
+   "buyer": "Chief investment officer or credit team at a life insurer holding privately rated private credit.",
+   "trigger": "An NAIC Securities Valuation Office challenge to a private rating, or a capital charge moving on a downgrade.",
+   "kill_test": "segment viability + config change",
+   "kill_reason": "Killed on segment viability and the config-change test. Registration as an NRSRO requires a track record of issuing ratings and certifications from qualified institutional buyers, so there is a multi-year clock before the product can be sold for regulatory capital, the only use that matters here. Once there, the entrant competes with Egan-Jones, KBRA and DBRS, who are paid per rating and can buy the same document-reading tools. The NAIC's problem with small-agency ratings is credibility, not analyst hours, and a new agency has less of it.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0443",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "Independent daily valuation agent for semi-liquid private credit vehicles: machine re-mark of every loan in a non-traded BDC, interval fund or private-credit ETF from borrower financials and covenant data, at the daily frequency quarterly third-party valuation cannot reach.",
+   "source_pattern": "The private-credit wealth-channel buildout plus this week's AI-native fund-tooling rounds (Pave Finance 15M dollar Series A on 130bn dollars AUM; Kaiko 110M dollars).",
+   "wedge": "Attempted, architecture: Houlihan Lokey, Kroll and Lincoln value positions quarterly with analyst teams, and a daily mark across thousands of loans is a different cost structure, not a faster version of theirs.",
+   "buyer": "Valuation designee or CFO at a sponsor of semi-liquid private-credit vehicles under SEC Rule 2a-5.",
+   "trigger": "Launching a daily-NAV vehicle, or a board valuation committee questioning stale marks after a borrower blowup.",
+   "kill_test": "occupancy",
+   "kill_reason": "Killed by the occupancy test. 73 Strings already sells AI-powered data extraction, monitoring and deterministic, auditable valuation workflows to private-credit managers (55M dollar Series B led by Goldman Sachs with Blackstone, Golub, Hamilton Lane and Fidelity International; serves institutions managing close to 10 trillion dollars), and the incumbent valuation firms are its channel. The redemption-run side of the same vehicles is already held as ts-0048.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0444",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "AI-native independent ESOP trustee for small-company ownership transitions: take the ERISA fiduciary seat on the employee side of an owner's sale to an ESOP, with machine valuation diligence and annual re-valuation, priced for companies worth 5-30M dollars that the incumbent trustees will not take.",
+   "source_pattern": "The small-account licensed-advisory pattern (Corridor's 25M dollar seed; the municipal advisor survivor ts-0423) pointed at retiring owners.",
+   "wedge": "Attempted: the seller's ESOP advisors are conflicted out of the trustee seat, and incumbent trustees' fee floors exclude small deals.",
+   "buyer": "Retiring owner of a 30-200 employee company and their ESOP advisor.",
+   "trigger": "Owner succession plus the DOL adequate-consideration rulemaking.",
+   "kill_test": "venture-scale gate + trigger",
+   "kill_reason": "Killed on the venture-scale gate, with the trigger also not live. The US forms a few hundred new ESOPs a year on a base of roughly 6,000 plans, so trustee and annual valuation fees together are a pool in the low hundreds of millions, and the expansion into other ownership-transition work is a different business. The DOL's January 2025 adequate-consideration proposal was withdrawn, and a new proposal is only targeted for November 2026.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0445",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "AI-native anatomic pathology practice: acquire or build community pathology groups, digitize the glass, and have machines read the routine case volume with pathologists signing - Radley's radiology roll-up pointed at pathology.",
+   "source_pattern": "Radley (YC S26), buying radiology practices and running them with AI, at 4.6M dollars annualized revenue and 2.2M dollars in contracts at Demo Day (2026-09-10), inside the AI-native licensed-firm cluster.",
+   "wedge": "Attempted, channel conflict: AI pathology vendors sell to labs and cannot become the practice without competing with their customers.",
+   "buyer": "Hospital systems and payers buying anatomic pathology reads.",
+   "trigger": "Pathologist retirements and case-volume growth outrunning the specialty.",
+   "kill_test": "config change (purchasability)",
+   "kill_reason": "Killed by the config-change test. Pathology is paid per case under fee-for-service, so an incumbent lab that licenses the algorithms keeps the whole saving, and the incumbents have already done so: Quest bought PathAI's Memphis lab and licensed its digital pathology platform, and the largest vendor went to Tempus. The AI vendors left the operating business on purpose, which shows the channel conflict is real, but the automation still reaches the incumbents through a licence, so an entrant has nothing they cannot buy.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0446",
+   "date": "2026-09-24",
+   "status": "killed",
+   "summary": "Union-partnered skilled-trades training-data cooperative: license building-trades members' consented, instrumented work (electrical, plumbing, pipefitting) to robot-model labs under a collectively bargained data agreement that pays members royalties.",
+   "source_pattern": "The YC S26 physical-AI data cluster: Datoric (nearly seven figures of revenue in its last 30 days, 300,000+ contributors), Markov (33,000+ hours of expert computer-use data sold), DeepReach (475 capture devices across 100+ partners in 7 countries).",
+   "wedge": "Attempted, channel and labour-law posture: recording represented workers is a mandatory bargaining subject, so crowd-contributor platforms cannot reach unionised job sites without the union.",
+   "buyer": "Robot foundation-model labs buying dexterous trade-skill data.",
+   "trigger": "Robot labs' push into construction and facilities work.",
+   "kill_test": "AI-native gate + segment viability",
+   "kill_reason": "Killed on two tests. AI-native gate: the product is a data licence, and frontier AI is the customer rather than the engine. Segment viability: building-trades unions have shown no willingness to license their members' work to train their replacements, so there is no reachable first ten. The only precedent, performer unions licensing voices, was negotiated as protection, not as a revenue line.",
    "rubric_version": 3
   }
  ]
