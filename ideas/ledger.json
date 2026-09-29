@@ -2731,7 +2731,7 @@
   {
    "id": "ts-0239",
    "date": "2026-08-20",
-   "status": "new",
+   "status": "watching",
    "summary": "Firm water underwriting: sell a Western city, factory or data centre a guaranteed volume of wet water at a fixed price for a term, and source it behind the scenes from a large pool of small agricultural rights via fallowing, forbearance and outright purchase - taking the consumptive-use, transferability and regulatory-approval risk onto a balance sheet, because satellite evapotranspiration and full-corpus reading of state adjudication records finally make a thousand small rights individually priceable.",
    "cross": {
     "ai_signal": "Two things converged. Satellite evapotranspiration at field scale is no longer a research product but the official accounting standard - Reclamation and the Upper Colorado River Commission adopted eeMETRIC as the standard method for measuring agricultural consumptive use, and OpenET (NASA, DRI, EDF, Google) publishes field-scale ET for the entire Western US. Separately, frontier long-context reasoning at July 2026 token prices makes it economic to read, for a whole state, every adjudicated decree, transfer application, engineer's no-injury analysis, protest ruling and irrigation-district rule - the corpus that determines whether a given right can actually move and how much of it survives the move. Together they collapse the per-transfer proof cost that has always been $50k-$500k and one to four years, which is precisely why only large transactions ever clear.",
@@ -2751,7 +2751,13 @@
    },
    "kill_attempts_survived": 3,
    "brief": "ideas/briefs/0018-firm-water-underwriting.md",
-   "rubric_version": 2
+   "rubric_version": 2,
+   "evidence_updates": [
+    {
+     "date": "2026-09-29",
+     "note": "New supply-side evidence. Rainmaker raised a 100M dollar Series B (announced 2026-09-21) after producing 145M+ verified gallons from drone cloud seeding for Oregon and Utah. It says seeded water will cost less than desalination and fallowing payments from the 2026-27 season. This confirms two things the original entry assumed: Western agencies will pay per unit for new wet water, and verification, not supply, is what unlocks the purchase. For this entry it adds a low-cost source to a firm-water book, and it is not a competitor, because Rainmaker sells raw, variable, weather-dependent volume in upstream basins and does not guarantee a firm volume to a downstream data centre. Status moved to watching. Re-score under rubric v3 at the next revisit; the stored scores are still v2."
+    }
+   ]
   },
   {
    "id": "ts-0240",
@@ -5372,6 +5378,123 @@
    "trigger": "OEM aftermarket price inflation and parts shortages.",
    "kill_test": "AI-native gate + config change + duplicate",
    "kill_reason": "Killed on three counts. AI-native gate: PMA cost and time are dominated by materials testing, FAA review and each airline's engineering acceptance (and by lessor return conditions that restrict PMA content), not by drafting the data package. Config change: HEICO, Jet Parts Engineering and ATS already buy AI 3D scanning for PMA development and would adopt any design tool. Duplicate: the substantiation engine was killed as ts-0183, and the delegated-approval seat is held at ts-0424.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0458",
+   "date": "2026-09-29",
+   "status": "killed",
+   "summary": "Placement agents for London-market and Lloyd's brokers: read the submission, build the Market Reform Contract, and assemble the subscription line across syndicates, for the non-US wholesale market that Outmarket's AMS-integrated US agency product does not reach.",
+   "source_pattern": "Outmarket: 34.5M dollar Series B led by SignalFire on 2026-09-28 at a 335M dollar valuation, four months after a 17M dollar Series A; 10,000+ active users, 300+ agencies, more than 25% of the Top 100 US agencies; entering the carrier market next.",
+   "wedge": "Geography + data model: Lloyd's placement runs on MRC slips, subscription lines and PPL/Blueprint Two, not on a US agency management system.",
+   "buyer": "London-market wholesale and specialty broker placing a cyber, marine or property risk across a syndicate panel.",
+   "trigger": "Blueprint Two digital placement plus the market's rising expense ratio.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Marsh launched Broker WorkBench, an AI placement platform for London-market brokers, on 2026-09-22. Artificial Labs raised a 45M dollar Series B in February 2026 for digital broking and smart consortia; Ki quotes capacity algorithmically; Vera auto-generates MRCs for cyber brokers. The flank is held by the biggest broker plus three funded specialists.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0459",
+   "date": "2026-09-29",
+   "status": "killed",
+   "summary": "AI-native licensed retail commercial agency that owns the commission rather than selling software to agencies, positioned on the far side of Outmarket's channel conflict with its 300 agency customers.",
+   "source_pattern": "Outmarket: 34.5M dollar Series B led by SignalFire on 2026-09-28 at a 335M dollar valuation, four months after a 17M dollar Series A; 10,000+ active users, 300+ agencies, more than 25% of the Top 100 US agencies; entering the carrier market next.",
+   "wedge": "Channel conflict: Outmarket cannot compete with the agencies it sells to.",
+   "buyer": "Small and mid-sized business buying workers' comp, GL and professional liability.",
+   "trigger": "Renewal, or a hard-market non-renewal.",
+   "kill_test": "Occupancy (counterparty side first)",
+   "kill_reason": "The counterparty side is taken, as the 2026-09-24 rule predicted. Harper (YC W25) raised 46.8M dollars in February 2026 and runs a nearly autonomous licensed agency across 160+ carriers; Fernstone, Aiden Risk and Corgi (full-stack carrier) sit in the same seat.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0460",
+   "date": "2026-09-29",
+   "status": "killed",
+   "summary": "Buy-side AI risk manager for mid-market companies with no in-house risk manager: audit the whole insurance programme against the business's real exposures, benchmark the broker's commission and run the broker RFP, which Outmarket cannot sell without turning on its agency customers.",
+   "source_pattern": "Outmarket: 34.5M dollar Series B led by SignalFire on 2026-09-28 at a 335M dollar valuation, four months after a 17M dollar Series A; 10,000+ active users, 300+ agencies, more than 25% of the Top 100 US agencies; entering the carrier market next.",
+   "wedge": "Channel conflict: the product is aimed at the agencies Outmarket sells to.",
+   "buyer": "Mid-market CFO at renewal or after a denied claim.",
+   "trigger": "Premium increase at renewal, or a coverage gap exposed by a claim.",
+   "kill_test": "Occupancy + purchasability",
+   "kill_reason": "Coverage-gap analysis is given away free as the acquisition hook of AI-native brokerages (Harper, Aiden Risk, Fernstone) and by incumbent brokers as part of the commission. The buyer does not see what it pays its broker and will not pay a separate fee for an audit. The monetisation path is to become the broker, which is ts-0459.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0461",
+   "date": "2026-09-29",
+   "status": "killed",
+   "summary": "Independent attribution and verification of seeded precipitation: a third-party measurement-and-verification house that certifies how many acre-feet a cloud-seeding operator actually produced, for the water agencies now paying for seeded water.",
+   "source_pattern": "Rainmaker: 100M dollar Series B announced 2026-09-21 (DCVC, Lowercarbon, Upfront); 145M+ verified gallons from drone glaciogenic seeding over four months for Oregon and Utah; expects seeded water to undercut desalination and fallowing payments in the 2026-27 season.",
+   "wedge": "Adjacent buyer with a different trigger: whoever pays for seeded water needs a signer independent of the operator, and Rainmaker cannot certify itself.",
+   "buyer": "State water resources division or water district paying per verified acre-foot.",
+   "trigger": "First per-unit seeded-water contracts in the 2026-27 winter season.",
+   "kill_test": "Occupancy + venture-scale gate",
+   "kill_reason": "The independent seat already has public-sector holders: the Desert Research Institute and SAWPA are building a Cloud Seeding Technology Validation Protocol as a third-party validation programme, and NCAR runs state feasibility evaluations (Montana, 2025). Rainmaker's own radar closed loop is the product the buyer is choosing. The buyers are a few Western state agencies, and a verification fee on a market this size does not reach 1bn dollars.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0462",
+   "date": "2026-09-29",
+   "status": "killed",
+   "summary": "AI-native flood-MAR recharge operator: forecast high-flow diversion windows, schedule floodwater onto hundreds of growers' fields, and sell verified recharged acre-feet to SGMA groundwater agencies in basins with no upwind mountains for cloud seeding to work.",
+   "source_pattern": "Rainmaker: 100M dollar Series B announced 2026-09-21 (DCVC, Lowercarbon, Upfront); 145M+ verified gallons from drone glaciogenic seeding over four months for Oregon and Utah; expects seeded water to undercut desalination and fallowing payments in the 2026-27 season.",
+   "wedge": "Architecture: Rainmaker's physics works only for winter orographic clouds over Western mountains, so Central Valley groundwater basins cannot buy its water.",
+   "buyer": "Groundwater sustainability agency in a critically overdrafted San Joaquin Valley basin.",
+   "trigger": "State Water Board probation, plus the 2040 SGMA sustainability deadline.",
+   "kill_test": "AI-native gate + purchasability + occupancy",
+   "kill_reason": "The job is hydrologic forecasting, remote sensing and scheduling optimisation. Those are classic modelling tools, and frontier models are not required. The binding constraint is diversion permitting (AB 2026 is still pending), not planning. The buyers are public agencies that set recharge incentives politically, which is the price-setter problem named on 2026-09-22. Sustainable Conservation's Runoff to Recharge programme and regional engineering firms already provide field suitability and GSA coordination.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0463",
+   "date": "2026-09-29",
+   "status": "killed",
+   "summary": "AI footage review and compliance-of-record for the EU Control Regulation's remote electronic monitoring mandate, which requires CCTV REM on fishing vessels of 18m and over from 2028-01-10. This re-points Quartermaster's vessel-mounted sensing from surveillance to regulated catch compliance.",
+   "source_pattern": "Quartermaster: 140M dollars (100M Series B led by Insight Partners plus 40M venture debt) on 2026-09-28, four months after a 43M dollar Series A; SmartMasts on 650+ working vessels in 25 countries, 46M sq km covered; data sold to governments, shipping companies and insurers.",
+   "wedge": "Data model and regulatory posture: deck-level catch and discard evidence with chain of custody for a fisheries authority is a different product from mast-level maritime domain awareness.",
+   "buyer": "EU vessel owner of 18m and over facing the REM mandate, and the member-state control authority reviewing footage.",
+   "trigger": "The REM obligation applying from 2028-01-10.",
+   "kill_test": "Occupancy + purchasability",
+   "kill_reason": "This is an old category with local incumbents, the 2026-09-26 pattern. Anchor Lab (founded 2012, AI modules, 80+ new systems last year), Satlink, Teem Fish and Archipelago Marine Research already sell REM with machine review. The payer is a vessel owner buying the cheapest compliant box, and the EU fleet at 18m and over is a few thousand vessels.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0464",
+   "date": "2026-09-29",
+   "status": "killed",
+   "summary": "Behaviour-based hull and P&I underwriting intelligence from persistent vessel sensing, sold to marine insurers pricing dark-fleet, sanctions and routing risk.",
+   "source_pattern": "Quartermaster: 140M dollars (100M Series B led by Insight Partners plus 40M venture debt) on 2026-09-28, four months after a 43M dollar Series A; SmartMasts on 650+ working vessels in 25 countries, 46M sq km covered; data sold to governments, shipping companies and insurers.",
+   "wedge": "Adjacent buyer: insurers rather than governments.",
+   "buyer": "Marine hull and P&I underwriter at renewal.",
+   "trigger": "Dark-fleet growth and sanctions exposure raising marine loss uncertainty.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Windward sells a dedicated marine insurance suite for behaviour-based underwriting, and Kpler/MarineTraffic sell the same signal. Quartermaster already names insurers as a data customer, so serving them is a sales assignment.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0465",
+   "date": "2026-09-29",
+   "status": "killed",
+   "summary": "ISO 42001 and AI-management-system certification automation for US SMEs, the US counterpart of Complaion's EU product.",
+   "source_pattern": "Complaion: 13.5M euro seed led by Eurazeo on 2026-09-28; 900+ companies certified; automates about 80% of ISO and EU AI Act compliance for European SMEs.",
+   "wedge": "Geography.",
+   "buyer": "US SME selling to an enterprise that demands ISO 42001.",
+   "trigger": "Enterprise procurement questionnaires asking for an AI management system.",
+   "kill_test": "Config change",
+   "kill_reason": "Vanta and Drata already ship ISO 42001 frameworks. The certifier seat for compliance frameworks was closed on 2026-09-24. Neither side of the job is open.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0466",
+   "date": "2026-09-29",
+   "status": "killed",
+   "summary": "AI-native unified investment-operations platform for insurers' general accounts, covering statutory and IFRS 17 investment accounting, NAIC reporting and ALM, which Ridgeline's asset-manager data model does not cover.",
+   "source_pattern": "Ridgeline: 250M dollar Series E at 1.425bn dollars on 2026-09-16; 750bn dollars+ of assets committed; expanding managed services, Canada and Europe.",
+   "wedge": "Data model: insurance investment accounting is liability-driven and statutory, not fund accounting.",
+   "buyer": "Chief investment officer or investment accounting lead at a mid-size life or P&C carrier.",
+   "trigger": "IFRS 17 and NAIC reporting load, plus legacy-system end of life.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Clearwater Analytics is a public company built precisely for insurer investment accounting and regulatory reporting, and it bought Enfusion and Beacon in 2025 to add front office and risk. Pre-AI incumbents such as SS&C and FIS cover the rest. The flank was settled before Ridgeline existed.",
    "rubric_version": 3
   }
  ]
