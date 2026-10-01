@@ -5496,6 +5496,124 @@
    "kill_test": "Occupancy",
    "kill_reason": "Clearwater Analytics is a public company built precisely for insurer investment accounting and regulatory reporting, and it bought Enfusion and Beacon in 2025 to add front office and risk. Pre-AI incumbents such as SS&C and FIS cover the rest. The flank was settled before Ridgeline existed.",
    "rubric_version": 3
+  },
+  {
+   "id": "ts-0467",
+   "date": "2026-10-01",
+   "status": "killed",
+   "summary": "AI-native LIHTC and affordable-housing compliance: machine-run tenant income certifications, recertifications and HOTMA-compliant rent calculations for tax-credit and HUD-assisted properties, where one file error can cost millions in recaptured credits.",
+   "source_pattern": "EliseAI: 350M dollars at a 4bn dollar valuation on 2026-09-29 (a16z, Bessemer); passed 200M dollars ARR after five straight years of 100 percent growth; powers about one in six US apartment units; 350+ enterprise customers including 70 percent of the 50 largest US rental operators.",
+   "wedge": "Data model: affordable housing runs on income certification, AMI tables, set-asides and IRS Form 8823 exposure rather than market-rate leasing.",
+   "buyer": "Compliance director at an affordable-housing owner-operator with a LIHTC and Section 8 portfolio.",
+   "trigger": "HOTMA sections 102 and 104 enforced from 2027-01-01 (Notice PIH 2026-15), plus annual state agency file audits.",
+   "kill_test": "Config change + Occupancy",
+   "kill_reason": "EliseAI already sells an affordable-housing product. Its ResidentAI extracts and validates pay stubs and updates income calculations for LIHTC, Section 8, HOME and bond properties, it has automated recertification in late beta, and it is hiring affordable-housing compliance analysts. Tire Swing, LeaseBase and Haven AI already sell LIHTC certification automation. The data-model wedge is one the leader has already crossed.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0468",
+   "date": "2026-10-01",
+   "status": "killed",
+   "summary": "AI caseworker software for public housing authorities' Housing Choice Voucher programs: intake, waitlist, annual recertification, HOTMA rent recalculation and landlord payments.",
+   "source_pattern": "EliseAI: 350M dollars at a 4bn dollar valuation on 2026-09-29 (a16z, Bessemer); passed 200M dollars ARR after five straight years of 100 percent growth; powers about one in six US apartment units; 350+ enterprise customers including 70 percent of the 50 largest US rental operators.",
+   "wedge": "Sales motion and procurement: EliseAI sells to private operators, while about 2,100 PHAs buy through public procurement on legacy PHA systems.",
+   "buyer": "Executive director or HCV director at a mid-size PHA with a recertification backlog.",
+   "trigger": "HOTMA enforcement from 2027-01-01 combined with staff vacancies and backlogs.",
+   "kill_test": "Occupancy + Config change",
+   "kill_reason": "Bob.ai already sells AI recertification to PHAs (Pittsburgh paid it 160,392 dollars; New Haven and Tampa are live). Yardi, the dominant PHA system vendor, is rolling out PHA-specific AI agents through 2026, and Emphasys is moving the same way. The procurement barrier blocks EliseAI but not the incumbents already inside it.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0469",
+   "date": "2026-10-01",
+   "status": "killed",
+   "summary": "AI-native outsourced voucher administrator: contract to run whole HCV programs for understaffed housing authorities, with models doing the casework and a small licensed staff signing.",
+   "source_pattern": "EliseAI: 350M dollars at a 4bn dollar valuation on 2026-09-29 (a16z, Bessemer); passed 200M dollars ARR after five straight years of 100 percent growth; powers about one in six US apartment units; 350+ enterprise customers including 70 percent of the 50 largest US rental operators.",
+   "wedge": "Channel conflict: EliseAI sells software to operators and would not take on a public agency's operating liability.",
+   "buyer": "PHA board or HUD-directed recovery situation (e.g. Milwaukee's 2024 move to outsource vouchers after HUD flagged fraud risk).",
+   "trigger": "A HUD troubled-agency designation or a backlog crisis.",
+   "kill_test": "Occupancy + Venture-scale gate + Purchasability",
+   "kill_reason": "An old category with incumbents. Nan McKay already runs voucher programs for Miami-Dade and parts of Chicago, and Quadel runs about 12,000 vouchers in Tennessee and Baltimore. The price is HUD's administrative fee, set by formula and prorated, so the buyer cannot pay more for better service. The whole national HCV administrative-fee pool is only a few billion dollars a year, so a contracted share does not reach 1bn dollars.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0470",
+   "date": "2026-10-01",
+   "status": "new",
+   "summary": "AI-native technical-review firm for the government side of defense hardware programs: hold the systems engineering and technical assistance (SETA) seat for a program office and use agents to check every contractor deliverable (requirements, design-review packages, test reports, CDRLs) against the program's requirements. Federal organisational-conflict-of-interest rules bar the contractors' own engineering-tool vendors from that seat.",
+   "source_pattern": "Flow Engineering: 50M dollar Series B at a 750M dollar valuation on 2026-09-30 (Valor, Atreides, Sequoia), a year after a Sequoia-led Series A. Since then it added GM PPU, RV Tech (Rivian and Volkswagen), Anduril, Stoke Space, Intuitive Machines and Pacific Fusion; Rivian usage grew from 40 to 1,500 users in seven months; 96 percent of customers came inbound. Mechanism: agents keep CAD, requirements, simulation and test data in continuous agreement on hardware programs.",
+   "cross": {
+    "ai_signal": "Flow proves frontier models can now hold a hardware program's requirements, design data and test evidence in one graph and find where they disagree. That reasoning is the core of a program office's technical review: read thousands of pages of contractor deliverables, trace each requirement to its verification evidence, and flag what is missing, inconsistent or unsupported before a design review or a milestone decision.",
+    "structural_signal": "Government-side technical capacity is shrinking while the volume of programs grows. In 2025 the Pentagon cancelled 5.1bn dollars of consulting contracts and cut civilian staff. The 2025-26 acquisition transformation replaced program executive offices with portfolio acquisition executives, and the Air Force finished consolidating into 17 of them in July 2026, so each office now oversees more platforms and many more non-traditional vendors (Anduril, Saronic, Stoke) on faster schedules. The FAR Council's 2025 organisational-conflict-of-interest rewrite makes the reviewer's independence more explicit, not less."
+   },
+   "wedge": "Two blocks, both structural. (1) Flow and its peers cannot follow. Their customers are the contractors being reviewed, so taking the government reviewer seat on the same programs creates an impaired-objectivity and unequal-access conflict of interest under FAR 9.505. That conflict usually disqualifies the firm from the seat, and serving both sides would also put their contractor customers' data and trust at risk. (2) The incumbent SETA firms (Booz Allen, MTSI, SAIC, Leidos and hundreds of small businesses) can buy AI tools but face an innovator's dilemma. Their revenue is billed full-time staff on time-and-materials and cost-plus vehicles, so a review done in hours instead of staff-months deletes the revenue. The honest limit is that an incumbent could set up a fixed-price AI-native unit; the score prices that in.",
+   "buyer": "Beachhead: the chief engineer or program manager in a fast-moving, under-staffed program office that buys from non-traditional hardware vendors on accelerated schedules: Space Force Space RCO and SDA, Army and Air Force portfolio acquisition executive offices, DIU-transitioned programs, and AFRL and AFWERX programs moving to production.",
+   "trigger": "A design review (PDR or CDR), a production or milestone decision, or a test-readiness review is coming, the contractor has delivered a large technical data package, and the office has too few engineers to review it properly. Often this follows the cancellation or shrinking of a SETA task order.",
+   "expansion_path": "Enter through SBIR Phase I and II awards and small-business set-aside SETA task orders. SBIR Phase III allows sole-source follow-on awards, which is the fastest legal path to a scaled government contract. Defense SETA and advisory-and-assistance services are a market of tens of billions of dollars a year; Booz Allen alone has about 12bn dollars of revenue, and MTSI just won a 371M dollar Space RCO SETA contract. Expand across DoD services, then into NASA, DOE and FAA independent verification and validation, then into the owner's-engineer seat for any big buyer of engineered systems (utilities buying substations, hyperscalers buying data centres, transit agencies buying rolling stock). The cross-program corpus of reviewed deliverables and their eventual outcomes compounds into a predictive model of which programs will slip.",
+   "scores": {
+    "wedge_durability": 4,
+    "pattern_strength": 4,
+    "market_venture_scale": 4,
+    "defensibility": 4,
+    "yc_fit": 4,
+    "founder_fit": 4,
+    "composite": 4.0
+   },
+   "rubric_version": 3,
+   "kill_attempts_survived": 3,
+   "brief": "ideas/briefs/0032-ai-native-seta-firm.md"
+  },
+  {
+   "id": "ts-0471",
+   "date": "2026-10-01",
+   "status": "killed",
+   "summary": "Engineering-data underwriting of technology-performance guarantees for first-of-a-kind climate hardware (long-duration storage, geothermal, novel electrolysers), so project lenders will finance it: Charter Space's mechanism pointed at ground.",
+   "source_pattern": "Charter Space: 5M dollar seed (Crystal Venture Partners, QED), announced 2026-09-30; licensed brokerage launched in May now serves 50+ space and defense companies; underwrites from aerospace engineering data.",
+   "wedge": "Geography of risk: Charter is a space-specialist brokerage, and terrestrial energy project finance is a different market.",
+   "buyer": "Developer or project-finance lender on a first-of-a-kind energy project that needs a performance wrap to close debt.",
+   "trigger": "Lender term sheet conditioned on a technology-performance guarantee.",
+   "kill_test": "Occupancy",
+   "kill_reason": "An old, held seat. Munich Re's New & Green Tech Solutions unit writes technology-performance guarantees for all renewable technologies worldwide, kWh Analytics insures clean-energy project performance, and the Geneva Association and Munich Re Ventures have mapped the category since 2024. The AI-native gain (reading engineering data) is an underwriting input the incumbents can adopt.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0472",
+   "date": "2026-10-01",
+   "status": "killed",
+   "summary": "Autonomous purchasing agents for hospital and health-system supply chains (par levels, contract-price validation, PO generation), re-pointing Atomic.",
+   "source_pattern": "Atomic: 12.5M dollar Series A (Klass Capital, Madrona), September 2026; ARR up fivefold since January; DoorDash automates 90 percent of purchasing across hundreds of locations on it; HelloFresh is a customer.",
+   "wedge": "Data model: healthcare item masters, GPO contract tiers and clinical-preference cards differ from food and CPG.",
+   "buyer": "Supply-chain VP at a regional health system.",
+   "trigger": "Margin pressure and supply-chain staff shortages.",
+   "kill_test": "Occupancy",
+   "kill_reason": "An old category with AI-branded occupants. Medline has put AI into hospital supply chain, AMS AI sells an AI co-pilot to hospitals, Zycus ships agentic healthcare procurement, and GHX, Premier and Vizient own the contract and item-master data. Atomic's own expansion list already includes regulated verticals.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0473",
+   "date": "2026-10-01",
+   "status": "killed",
+   "summary": "Agent-channel distribution for independent hotels: make small hotels' inventory bookable and price-competitive inside consumer travel agents like Instinct.",
+   "source_pattern": "Instinct: 1bn dollar Series C at a 10bn dollar valuation (2026-09-29); over half of transactions are travel.",
+   "wedge": "Channel conflict: the agent platform sells to consumers, not to the supply side.",
+   "buyer": "Owner of an independent hotel losing share to agent-booked chains.",
+   "trigger": "Measurable bookings shifting to AI agents.",
+   "kill_test": "Config change (ledger duplicate)",
+   "kill_reason": "This is ts-0072 (merchant-side agentic storefront) with hotels as the merchant. Distribution is platform-owned: the agent platforms, Google's Universal Commerce Protocol, and the existing channel managers and OTAs (SiteMinder, Expedia, Booking) can each expose inventory to agents with a configuration change.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0474",
+   "date": "2026-10-01",
+   "status": "killed",
+   "summary": "Real-time voice-deepfake detection on bank and contact-centre phone lines, re-pointing Modulate's voice-intelligence stack from gaming to financial services.",
+   "source_pattern": "Modulate: 25M dollar round led by Future Ventures (announced 2026-09-30) for voice intelligence covering transcription, emotion analysis and deepfake detection.",
+   "wedge": "Compliance posture: banks need a vendor that passes model-risk and vendor-risk review, which a gaming-first company does not have.",
+   "buyer": "Head of fraud at a retail bank or credit union.",
+   "trigger": "Voice-clone account-takeover losses.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Pindrop has sold voice authentication and deepfake detection to banks and contact centres for over a decade, and Reality Defender and the contact-centre platforms already sell deepfake screening. The compliance wedge protects the incumbents, not a new entrant.",
+   "rubric_version": 3
   }
  ]
 }
