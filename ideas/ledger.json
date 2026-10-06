@@ -5718,6 +5718,97 @@
    "kill_test": "Occupancy",
    "kill_reason": "Path Robotics (AI welding) and GrayMatter Robotics (AI sanding and finishing for high-mix work) are funded and selling to exactly these shops, and ts-0198 found Intrinsic shipping integrator-free cells.",
    "rubric_version": 3
+  },
+  {
+   "id": "ts-0483",
+   "date": "2026-10-06",
+   "status": "killed",
+   "summary": "Payer-side hospital-bill review for German statutory health insurers: read the DRG bill and its documentation trail, decide which cases to send to the Medical Service (Medizinischer Dienst) and draft the objection, ahead of the 2027 audit-quota changes.",
+   "source_pattern": "The European hospital-coding cluster. Parallel (Paris): 20M dollar Series A from Index Ventures in March 2026, coding agents live in public and private hospitals. calliora (Munich): 6M dollar pre-seed on 2026-10-06 (Bertelsmann Healthcare Investments, redalpine), live in a double-digit number of hospitals in five German states. Mechanism: agents check every hospital case against the coding rules and the auditors' known patterns before the bill goes out.",
+   "wedge": "Channel conflict: hospital-side vendors sell 'audit-proof' bills, so they cannot also sell the insurers the tool that attacks those bills.",
+   "buyer": "Head of hospital-bill review (Krankenhausabrechnungsprüfung) at a German statutory health insurer.",
+   "trigger": "From 2027 the share of bills an insurer may audit depends on each hospital's error rate. It is 5-15%, rises to 40% above 35% objections, and is uncapped above 50%. That makes picking the right cases worth more.",
+   "kill_test": "Occupancy + segment viability",
+   "kill_reason": "Killed by the occupancy test, and the 2026-09-24 rule held again: the counterparty side was occupied first. Insurers have run automated, partly AI-based bill selection for years (Versicherungskammer Bayern's StARS reports 30% higher recoveries). A cross-insurer AI anomaly system led by Bundesdruckerei is in pilot with AOK, TK and Barmer, and the incumbent audit-software vendors serve the rest. The deep review, reading the medical record, is done by the Medical Service, which is a public body and a single buyer per region. The market is about 95 insurers in one country, so it fails the venture-scale gate even before occupancy.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0484",
+   "date": "2026-10-06",
+   "status": "killed",
+   "summary": "AI-native urgent-care triage line operator for European out-of-hours services (NHS 111, Germany's 116117, Denmark's 1813): a certified voice agent that does the clinical triage itself, not just bookings.",
+   "source_pattern": "Vocca: 20M dollar Series A on 2026-10-06 (Norrsken VC, Heal Capital, Speedinvest). It grew from 2,000 to 15,000 practitioners in a year with revenue up 7x, and resolves 70% of calls without a human (85% at mature customers). Mechanism: a voice agent answers, books and handles admin on a practice's phone line.",
+   "wedge": "Compliance posture: triage is a medical-device function (MDR class IIa or above), so an admin voice agent would need a second, certified product, and the buyers are public telephone services, not practices.",
+   "buyer": "Commissioner of an out-of-hours telephone service (NHS 111 provider, a German Kassenaerztliche Vereinigung running 116117, Copenhagen's 1813).",
+   "trigger": "Winter-pressure call queues and abandoned calls, plus clinician shortages on the line.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by the occupancy test. Infermedica already sells a pre-triage voice agent to call centres on its CE-marked triage engine, and Corti sits on Danish and other emergency lines. The largest buyer is also building it in-house: NHS England began rolling AI triage into the NHS App in July 2026, aiming for full coverage by April 2028, which moves demand off the phone line altogether. The buyers are a handful of public operators per country.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0485",
+   "date": "2026-10-06",
+   "status": "killed",
+   "summary": "AI-native medical-record review contractor for CMS's Medicare Advantage risk-adjustment audits (RADV MRRC): the government-side coder seat that plan-side risk-adjustment vendors are conflicted out of.",
+   "source_pattern": "Plan-side RADV and risk-adjustment AI (RAAPID, Reveleer, Martlet, Inferscience; see ts-0338), set against CMS's move to audit all ~550 eligible MA contracts every year with a coder workforce up from about 40 to 2,000. Mechanism: models read medical records and validate each diagnosis against the evidence. This followed the 2026-10-03 method note to look at government seats on labor contracts.",
+   "wedge": "Conflict of interest: vendors that code and defend risk scores for MA plans cannot hold CMS's reviewer seat on the same plans. The incumbents are labor-billed coding contractors.",
+   "buyer": "CMS Center for Program Integrity, RADV contracting officer.",
+   "trigger": "CMS's annual audit of every MA contract needs far more medical-record review than human coders can supply.",
+   "kill_test": "Segment viability (venture scale) + timing",
+   "kill_reason": "Killed on the segment-viability test. The seat was just filled: CMS awarded the RADV MRRC task order to FedPath Solutions (a RELI Group and ePath USA joint venture), with work starting 2026-09-30. The recent MRRC awards are 18.5M to 28M dollars, so a whole multi-year seat is worth tens of millions, not billions. CMS also states that final determinations stay with certified human coders, with AI only assisting them. The rest of the federal claims-review seats (CERT, SMRC, UPICs) are each similarly sized and labor-scoped, and RACs are paid on contingency, which ts-0447 showed lets incumbents keep the savings. The idea passed the two-question conflict screen but failed the size gate. Expanding to every federal review seat adds up to a low-billions services pool split across long fixed-term awards.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0486",
+   "date": "2026-10-06",
+   "status": "killed",
+   "summary": "AI-native EDI network for US mid-market suppliers: agents read each retailer's spec and generate and maintain the mapping into the supplier's ERP, replacing per-connection EDI projects.",
+   "source_pattern": "Procuros: EUR 20M Series A on 2026-10-06 (XAnge, Point Nine, Creandum), 300+ customers and EUR 3B annualised order volume across European retailers and suppliers. Mechanism: AI translates orders, invoices and shipping notices between any two incompatible ERP and EDI systems.",
+   "wedge": "Geography plus innovator's dilemma: Procuros is Europe-only, and the US leader SPS Commerce earns per-connection and service fees that an AI-maintained map erases.",
+   "buyer": "Operations or IT lead at a 20M-to-500M dollar US consumer-goods supplier onboarding a new big-box retailer.",
+   "trigger": "A new retailer listing that requires EDI compliance within weeks, with chargebacks for errors.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test, decisively. Orderful raised a 35M dollar Series C (Koch Disruptive Technologies; 85M dollars total) in June 2026 for Mosaic. Mosaic reads each trading partner's specification, writes and maintains the maps, and regenerates them when the spec changes. That is this idea exactly, aimed at the same buyer and at SPS's service model. The German 2027-28 e-invoicing mandate, the other flank tested, fails the AI-native gate because format conversion is deterministic, and DATEV, ecosio, Avalara and EDICOM already ship it.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0487",
+   "date": "2026-10-06",
+   "status": "killed",
+   "summary": "Structured state trial-court decision graph for US litigators: collect, structure and link unpublished state trial-court rulings and dockets into an agent-queryable corpus, the US version of Pandektes.",
+   "source_pattern": "Pandektes: EUR 13.5M Series A on 2026-10-05 (Alstin Capital), revenue up 6x in a year, 500+ law firms, companies and public bodies in Denmark, Germany and Switzerland, with two-thirds of trials converting. Mechanism: AI continuously collects and structures fragmented primary law and rulings that the legal publishers never covered.",
+   "wedge": "Data model: Westlaw and Lexis are built around published appellate opinions with editorial headnotes. Trial-court rulings are messy, county-by-county records that do not fit that model.",
+   "buyer": "Litigation partner or litigation-analytics lead at a US plaintiff or defence firm.",
+   "trigger": "Assessing a judge, an opposing counsel or a motion's odds in a state court with no published opinions.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test. Trellis already holds more than 2.5 billion state trial-court records. Since May-July 2026 it has exposed them to research agents through Claude and ChatGPT connectors and its own chat. UniCourt and Docket Alarm (now in the Clio and vLex stack) cover the rest. Pandektes itself plans to enter North America with this funding.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0488",
+   "date": "2026-10-06",
+   "status": "killed",
+   "summary": "AI physics simulation for hardware outside the chip: re-point Vinci's AI thermal solvers at data-centre racks, power electronics and battery packs, where the design teams are not semiconductor companies.",
+   "source_pattern": "Vinci: 250M dollars at a 1.5bn dollar valuation on 2026-10-06 (Advent, Temasek, Xora; Eclipse, Khosla, Madrona), moving from two pilots to twenty. Mechanism: AI solvers make physics simulation fast enough to run inside the design loop. The pattern is weak on traction; it rests mostly on the size of the round.",
+   "wedge": "Adjacent buyer: Vinci is going deep into chip thermal, so mechanical and electrical teams in other hardware categories are not its focus.",
+   "buyer": "Thermal or mechanical lead at a data-centre equipment, power-electronics or battery-pack maker.",
+   "trigger": "Rack power densities above 100 kW and liquid-cooling redesigns that conventional CFD cannot iterate quickly enough.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by the occupancy test, and 'Vinci isn't focused there' is not a structural block. PhysicsX raised 300M dollars at 2.4bn dollars (Temasek) in June 2026 for exactly this cross-industry AI-physics platform, across aerospace, automotive, energy and semiconductors, and it already reaches foundries (ts-0368). Phaidra (120M dollars total, with Nvidia, CoreWeave and Applied Digital) holds the data-centre cooling flank, and Cadence and Nvidia Omniverse sell data-centre digital twins. Vinci says it is expanding from thermal into vibration and electromagnetics, so the leader is moving toward this flank.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0489",
+   "date": "2026-10-06",
+   "status": "killed",
+   "summary": "Forensic authentication of AI-fabricated evidence for litigation: an AI-native expert service that tests disputed documents, images, audio and video and produces a court-ready authenticity report.",
+   "source_pattern": "Finovox: EUR 8.2M Series A after tripling revenue, selling real-time document-fraud detection to European lenders and insurers. Mechanism: generative AI made forged payslips, statements and invoices trivial, so detection has to be machine-scale too.",
+   "wedge": "Adjacent buyer, different trigger: lender-side fraud tools give a risk score, not testimony. Litigation needs an explainable, expert-signed report, and the incumbent forensic experts bill hourly.",
+   "buyer": "Litigation partner or insurer's coverage counsel facing a disputed exhibit.",
+   "trigger": "An opposing party produces an exhibit that may be AI-generated, under proposed federal evidence-rule changes on machine-generated evidence.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test. GetReal Security (Hany Farid; 17.5M dollar Series A, In-Q-Tel among investors) sells automated forensic analysis of manipulated media, publishes directly on courts and AI-generated evidence, and was named a market shaper in Gartner's 2026 deepfake-detection quadrant. Reality Defender covers detection, and the expert-witness work stays with credentialed forensic examiners whose value is their testimony, not their throughput. The buyer is also episodic and per matter, the same weakness that killed the litigation angle of ts-0098.",
+   "rubric_version": 3
   }
  ]
 }
