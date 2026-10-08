@@ -3818,7 +3818,13 @@
    },
    "kill_attempts_survived": 3,
    "brief": "ideas/briefs/0027-regulatory-grade-patient-interviewing.md",
-   "rubric_version": 3
+   "rubric_version": 3,
+   "evidence_updates": [
+    {
+     "date": "2026-10-08",
+     "note": "Pattern reconfirmed, status unchanged. Two more funded AI-interview companies: Verso (6M dollar seed, 2026-10-08; Ferrero, Orange, Michelin) and Miravoice (6.3M dollar seed; 120-question voice surveys, published with SSRS and NORC). NORC itself has presented a methodological evaluation of voice AI interviewers. All of this is commercial or methodological work. Nothing found enters the GCP- and IRB-governed patient-interview seat, so the wedge stands. The same run killed the public-statistics version (ts-0494) because that buyer needs a methodology authority's sign-off. FDA's COA guidance gives a sponsor's interview evidence no such mode gate."
+    }
+   ]
   },
   {
    "id": "ts-0337",
@@ -5808,6 +5814,84 @@
    "trigger": "An opposing party produces an exhibit that may be AI-generated, under proposed federal evidence-rule changes on machine-generated evidence.",
    "kill_test": "Occupancy",
    "kill_reason": "Killed by the occupancy test. GetReal Security (Hany Farid; 17.5M dollar Series A, In-Q-Tel among investors) sells automated forensic analysis of manipulated media, publishes directly on courts and AI-generated evidence, and was named a market shaper in Gartner's 2026 deepfake-detection quadrant. Reality Defender covers detection, and the expert-witness work stays with credentialed forensic examiners whose value is their testimony, not their throughput. The buyer is also episodic and per matter, the same weakness that killed the litigation angle of ts-0098.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0490",
+   "date": "2026-10-08",
+   "status": "killed",
+   "summary": "Missed-diagnosis capture for skilled nursing facilities: read each resident's hospital discharge packet and facility chart, find the comorbidities that drive the Medicare PDPM rate and the MDS assessment, and route them to the MDS coordinator before the assessment locks.",
+   "source_pattern": "Healthleap: 38M dollars seed plus Series A (Sequoia and First Round seed; Hummingbird-led 30M dollar Series A), announced 2026-10-07. Grew from 3 to 50+ hospital partners in a year (Penn Medicine, Cedars-Sinai, Houston Methodist, Emory, Intermountain) with revenue up more than 10x. Reported 23.8M dollars of annualised impact at HUP. Mechanism: a model reads every inpatient's notes, labs, vitals and medications daily, finds conditions the care team has not diagnosed (malnutrition first), and routes them into a workflow that pays through reimbursement and shorter stays.",
+   "wedge": "Data model plus sales motion: Healthleap sits on hospital Epic and sells to health-system revenue and quality leaders; SNFs run on PointClickCare or MatrixCare, are paid by PDPM case-mix and the MDS 3.0 assessment rather than DRGs, and are bought operator by operator.",
+   "buyer": "Regional SNF operator's MDS / reimbursement director.",
+   "trigger": "A Medicare Part A admission whose five-day MDS assessment window is open.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test. The flank is already held: Flax Health (3.5M dollar pre-seed, Pear VC and Sorenson) is building AI for skilled nursing, Digital Scientists sells an MDS/PDPM engine that surfaces uncaptured ICD-10 codes from six clinical sources (CommuniCare case study), and an industry guide already treats AI MDS/PDPM coding assistants as a distinct category. PointClickCare, the system of record, sells its own PDPM analytics, so this is also close to a config change for the EHR.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0491",
+   "date": "2026-10-08",
+   "status": "killed",
+   "summary": "Clinical-validation defence for diagnoses that payers deny most often (malnutrition, sepsis): assemble, for each flagged admission, the criteria-by-criteria evidence pack (GLIM or ASPEN, Sepsis-3) that wins the clinical-validation denial before and after the claim.",
+   "source_pattern": "Healthleap: 38M dollars seed plus Series A (Sequoia and First Round seed; Hummingbird-led 30M dollar Series A), announced 2026-10-07. Grew from 3 to 50+ hospital partners in a year (Penn Medicine, Cedars-Sinai, Houston Methodist, Emory, Intermountain) with revenue up more than 10x. Reported 23.8M dollars of annualised impact at HUP. Mechanism: a model reads every inpatient's notes, labs, vitals and medications daily, finds conditions the care team has not diagnosed (malnutrition first), and routes them into a workflow that pays through reimbursement and shorter stays.",
+   "wedge": "Adjacent buyer, different trigger: Healthleap sells detection to quality and nutrition teams; the denial is fought by revenue-integrity and appeals teams after the payer's clinical-validation audit.",
+   "buyer": "Hospital revenue-integrity or denials-management director.",
+   "trigger": "A Medicare Advantage or commercial payer clinical-validation denial removing a malnutrition or sepsis code from a DRG.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by occupancy and config change. Iodine Software's AwareCDI (now under Waystar) claims nearly 500 hospitals and 1.5B dollars a year of recovered reimbursement, and in 2025 shipped an Appeals Management Workspace for concurrent pre-claim denials with automated appeal letters. Solventum (3M) and Nuance cover the rest of CDI. Healthleap already holds the per-patient criteria evidence, so packaging it as an appeal is a feature, not a second product. Malnutrition and sepsis being the most-denied diagnoses is the reason incumbents built this first.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0492",
+   "date": "2026-10-08",
+   "status": "killed",
+   "summary": "AI-native licensed alcohol wholesaler for craft and import brands orphaned by RNDC's exit from most US states: hold the state wholesaler licences, use models to pick and sell to the accounts that will reorder, and run a thin, asset-light middle tier.",
+   "source_pattern": "Santé: 15M dollar Series A, 2026-10-07 (FINTOP; YC), six months after a 7.6M dollar seed. Nearly 1,000 independent wine and spirits retailers, about 2B dollars of annual GMV, 500% growth (company-reported). Mechanism: one point-of-sale, ecommerce and inventory system with agents that run merchandising and marketing for an independent retailer in a deep-catalogue, regulated category that horizontal POS serves poorly. Context: RNDC, the second-largest US wine and spirits distributor, exited California in 2025 and in 2026 sold or is selling 17 control states (Martignetti), 11 states (Reyes), Kentucky and Indiana (Breakthru) and the Plains (Quality Brands).",
+   "wedge": "Regulatory posture: three-tier and tied-house law forbid a retailer-software company with retailer customers from becoming the licensed middle tier, and the large distributors' economics drop small brands.",
+   "buyer": "Founder of a craft spirits, wine or RTD brand under about 50,000 cases.",
+   "trigger": "Its distributor exits the state, giving 90 days to find a new route to retailers.",
+   "kill_test": "Occupancy + AI-native gate",
+   "kill_reason": "Killed by occupancy and the AI-native gate. LibDib already runs exactly this model: a licensed wholesaler with no warehouse or trucks, in about 10 states including California, New York, Texas and Illinois, and it also licenses its platform to other distributors. Provi covers B2B ordering. RNDC's territories are going in blocks to Reyes, Martignetti, Breakthru and Quality Brands, not into a vacuum. The value sits in licences, warehousing and delivery, and the model only targets accounts, so it fails the AI-native gate.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0493",
+   "date": "2026-10-08",
+   "status": "killed",
+   "summary": "AI-native retail operating system for independent firearms dealers: POS, ecommerce, ATF bound book and Form 4473 checking with agents, for a retail category that Shopify, Square and Stripe exclude by acceptable-use policy.",
+   "source_pattern": "Santé: 15M dollar Series A, 2026-10-07 (FINTOP; YC), six months after a 7.6M dollar seed. Nearly 1,000 independent wine and spirits retailers, about 2B dollars of annual GMV, 500% growth (company-reported). Mechanism: one point-of-sale, ecommerce and inventory system with agents that run merchandising and marketing for an independent retailer in a deep-catalogue, regulated category that horizontal POS serves poorly.",
+   "wedge": "Channel / policy: the horizontal commerce platforms' acceptable-use policies ban firearms sales, so they cannot follow, and Santé-style vertical OS players have no reason to enter.",
+   "buyer": "Owner of an independent Type 01 FFL gun shop or range.",
+   "trigger": "An ATF compliance inspection or a POS contract renewal.",
+   "kill_test": "Segment viability",
+   "kill_reason": "Killed by segment viability on the venture-scale gate. The wedge is real but the segment is small and shrinking: Type 01 dealer licences fell 13.1% from 52,993 (FY2021) to 46,072 (FY2025) per ATF's 2026 proposed rule, and new applications fell from 7,445 to 4,160. Orchid already serves 11,000+ FFL users and sells POS, ecommerce and bound book for 99 dollars a month. Even full penetration is a market of a few hundred million dollars, with no credible expansion beyond the category.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0494",
+   "date": "2026-10-08",
+   "status": "killed",
+   "summary": "AI-native survey research organisation for public statistical surveys: a voice model conducts long CATI-style health and social surveys (state BRFSS, federal contracted surveys) in any language, with machine coding of open answers, bid against labour-billed incumbents.",
+   "source_pattern": "Verso: 6M dollar seed, 2026-10-08 (Angular Ventures), 30+ organisations including Ferrero, Orange and Michelin, claiming 10x faster at a quarter of agency cost. Cluster: Miravoice (6.3M dollar seed, Unusual Ventures; 10-20 customers; 120-question phone surveys; published with SSRS and NORC), Conveo and Simile (already in the ledger). Mechanism: a model conducts and codes long structured or open interviews by voice, so the human interviewer is no longer the constraint on how many people can be asked.",
+   "wedge": "Compliance posture plus labour billing: public survey work needs OMB clearance, confidentiality designations, IRB and bidding as a prime services contractor, which a SaaS insight vendor will not become. Incumbents (RTI, Westat, NORC, ICF, Abt) bill interviewer labour on cost-plus contracts, so automation cuts their revenue.",
+   "buyer": "State BRFSS coordinator or federal survey contracting officer.",
+   "trigger": "A state's BRFSS call-centre contract recompete, or falling response rates and budget cuts forcing a cheaper collection mode.",
+   "kill_test": "Segment viability + occupancy",
+   "kill_reason": "Killed by segment viability, with occupancy on the reachable flank. The beachhead buyer cannot buy: BRFSS states run CDC's protocol and federal surveys run under OMB statistical standards, so a new interview mode needs mode-effect experiments and methodological sign-off before any contract, which takes years and breaks time series. The biggest collection (CPS, CPI, ACS follow-up) is done by federal field staff, not contractors. The incumbents are evaluating it themselves: NORC presented a methodological evaluation of voice AI interviewers on a probability panel, and Miravoice has published with SSRS and NORC. The commercial flank that can buy now is held by Miravoice, Verso, Conveo and Listen Labs.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0495",
+   "date": "2026-10-08",
+   "status": "killed",
+   "summary": "AI roleplay certification for licensed insurance agents and financial advisers: simulated suitability, disclosure and complaint conversations scored against state insurance and FINRA conduct rules, with an audit record of each rep's demonstrated competence.",
+   "source_pattern": "Avarra: 17M dollar Series A, 2026-10-06 (Duration Ventures; Lightspeed, Zoom). ARR up 400%+ year on year, contracted mid-market and enterprise ARR up 698%, 10,000+ AI coaching sessions a week. Mechanism: a model plays the customer in realistic roleplay and scores the rep, so practice no longer needs a manager's time.",
+   "wedge": "Compliance posture: a regulated buyer needs scoring tied to suitability and disclosure rules, plus an audit trail a supervisor can show an examiner.",
+   "buyer": "Head of agent training or compliance at a life insurer or broker-dealer.",
+   "trigger": "A Regulation Best Interest or best-interest annuity rule exam finding on suitability conversations.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by config change. Second Nature already sells to insurers to train and certify their workforces with regulated-dialogue simulations, Hyperbound has an insurance page covering compliance-sensitive discussions, and Outdoo and Yoodli market compliance feedback and audit-ready evidence for advisers. Rule-specific scoring is a scenario library and a rubric, which any of them can add in a quarter.",
    "rubric_version": 3
   }
  ]
