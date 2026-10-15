@@ -6101,6 +6101,84 @@
    "kill_test": "Config change",
    "kill_reason": "Killed by the config-change test and occupancy. HealthEdge launched HealthRules Edge on 2026-10-01 as a cloud-native core administrative processing system with AI embedded in claims workflows, so the modern-core incumbent is already shipping the mechanism. Daffodil Health (16.3M dollar Series A, claims pricing for plans and TPAs) and Nara Health (14M dollars, AI-native TPA) work the same buyers.",
    "rubric_version": 3
+  },
+  {
+   "id": "ts-0512",
+   "date": "2026-10-15",
+   "status": "killed",
+   "summary": "AI staffing command centre for corrections, police, fire and 911: read each union contract and staffing order, forecast coverage, and run call-outs and mandatory-holdover order, so 24/7 public-safety agencies stop paying for runaway overtime.",
+   "source_pattern": "Vitalize: 31M dollar Series A led by Oak HC/FT (reported 2026-10-06/07; YC W23). More than 15 health systems on enterprise-wide multi-year contracts (MemorialCare, LifeBridge, Allina, Northwestern, Rochester Regional, St. Luke's), millions of shifts a week; St. Luke's cut premium labour (overtime and agency) 54% in 12 weeks. Mechanism: models forecast staffing demand and agents fill gaps and orchestrate staff, beds and patient flow, so a hospital stops buying premium labour.",
+   "wedge": "Sales motion and data model: Vitalize sells to health systems; public-safety agencies buy through government procurement and schedule under collective bargaining agreements, minimum-staffing orders and seniority rules that a hospital schema does not hold.",
+   "buyer": "Warden, sheriff or fire chief, and the county or state corrections budget office.",
+   "trigger": "An overtime budget overrun, an audit of mandatory overtime, or a union grievance over forced holdovers.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test. UKG TeleStaff sells a dedicated corrections edition with rules-based scheduling around qualifications and union rules; First Due launched an AI-driven scheduling and workforce platform for law enforcement that unifies shifts, overtime and off-duty work; InTime is built for police departments. The segment's systems of record already ship the mechanism.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0513",
+   "date": "2026-10-15",
+   "status": "killed",
+   "summary": "AI staffing and census-driven scheduling for skilled nursing and post-acute operators, cutting agency and overtime spend under thin Medicaid margins.",
+   "source_pattern": "Vitalize: 31M dollar Series A led by Oak HC/FT (reported 2026-10-06/07; YC W23). More than 15 health systems on enterprise-wide multi-year contracts (MemorialCare, LifeBridge, Allina, Northwestern, Rochester Regional, St. Luke's), millions of shifts a week; St. Luke's cut premium labour (overtime and agency) 54% in 12 weeks. Mechanism: models forecast staffing demand and agents fill gaps and orchestrate staff, beds and patient flow, so a hospital stops buying premium labour.",
+   "wedge": "Price point and buyer: Vitalize's enterprise multi-year contracts fit large health systems, not 100-bed nursing homes.",
+   "buyer": "Regional SNF chain administrator or COO.",
+   "trigger": "Agency spend above budget, or a state staffing-ratio inspection.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by the config-change test. Vitalize's founders name skilled nursing facilities, long-term-care hospitals and ambulatory care as their next settings, so the leader is already pointing at this segment. SNF workforce and shift-marketplace players (SmartLinx, ShiftMed, IntelyCare) also hold the buyer.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0514",
+   "date": "2026-10-15",
+   "status": "killed",
+   "summary": "AI-native Independent Review Organization: take the IRO seat that OIG Corporate Integrity Agreements and False Claims Act settlements require, with models reviewing every sampled claim and chart instead of billed consultant hours.",
+   "source_pattern": "Brellium: 23M dollar round (Left Lane Capital, First Round; reported 2026-10-13), about 40M dollars raised in total; 22M patient visits audited and nearly 2bn dollars of provider revenue reported protected from recoupment (company-reported); launched CortexLM. Mechanism: a model reads every clinical note before billing and checks it against payer documentation rules, so providers fix gaps before an auditor claws the money back.",
+   "wedge": "Independence: Brellium sells pre-bill compliance to the providers under review, so it cannot also be their independent reviewer. The incumbent IROs are consultancies billing staff hours (innovator's dilemma).",
+   "buyer": "General counsel or compliance officer of a provider entering a five-year Corporate Integrity Agreement.",
+   "trigger": "A signed CIA or settlement that requires an annual independent claims review.",
+   "kill_test": "Segment viability",
+   "kill_reason": "Killed by the segment-viability test, at the $1B gate. OIG's CIA browse pages list 339 agreements in total, not all active, each lasting five years, with only a handful of new ones a month. IRO engagements are hundreds of thousands of dollars a year, so the whole seat is worth tens of millions. The expansion to DOJ corporate monitorships is a few dozen mandates. The wedge is real, but it dead-ends small.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0515",
+   "date": "2026-10-15",
+   "status": "killed",
+   "summary": "Government-side clinical documentation review for Medicaid and Medicare program integrity: read every flagged chart against coverage and documentation rules for state Medicaid program-integrity units and CMS's UPIC contractors.",
+   "source_pattern": "Brellium: 23M dollar round (Left Lane Capital, First Round; reported 2026-10-13), about 40M dollars raised in total; 22M patient visits audited and nearly 2bn dollars of provider revenue reported protected from recoupment (company-reported); launched CortexLM. Mechanism: a model reads every clinical note before billing and checks it against payer documentation rules, so providers fix gaps before an auditor claws the money back.",
+   "wedge": "Conflict of interest: Brellium's customers are the providers being audited, so it cannot take the auditor seat. UPIC prime contractors bill cost-plus staff effort.",
+   "buyer": "State Medicaid program-integrity director, or a UPIC prime contractor.",
+   "trigger": "CMS's expansion of UPIC audits into Medicaid managed care, plus state fraud-referral targets.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy and segment viability. Codoxo already runs AI fraud leads with Georgia's Department of Community Health through to Medicaid Fraud Control Unit referrals, and Cotiviti, Gainwell and Optum hold the state program-integrity contracts. The UPIC seat is a few cost-plus awards to incumbent primes. ts-0485's lesson repeats: CMS keeps final determinations with human reviewers, and seats are worth tens of millions.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0516",
+   "date": "2026-10-15",
+   "status": "killed",
+   "summary": "Scam-baiting intelligence for crypto exchanges and stablecoin issuers: AI personas engage pig-butchering and investment-scam operations to harvest deposit addresses and mule accounts before victims pay, feeding exchange freezes.",
+   "source_pattern": "Apate.AI: 8.15M dollar seed (Lobby Capital; reincorporated in Delaware August 2026); Commonwealth Bank of Australia is a client and Mobileum resells it to telecom carriers as Scam Intelligent Defense (September 2026). Mechanism: voice and text agents pose as scam victims, keep scammers talking for up to two hours and harvest the phishing links, mule accounts and crypto wallets that institutions cannot otherwise see.",
+   "wedge": "Adjacent buyer: Apate sells to banks and telecom carriers, not exchanges or stablecoin issuers.",
+   "buyer": "Head of financial-crime compliance at a crypto exchange or stablecoin issuer.",
+   "trigger": "Regulatory pressure on exchanges over scam-proceeds flows, or a freeze request from law enforcement.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by the config-change test. Apate's agents already collect crypto wallet details as standard output, so selling the same feed to an exchange is a new sales motion, not a new product. Chainalysis and TRM Labs own the exchange compliance channel and already ingest scam-address intelligence.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0517",
+   "date": "2026-10-15",
+   "status": "killed",
+   "summary": "AI route-scouting and qualification for re-shoring China-sourced specialty chemicals: find and validate an alternative synthesis route and a non-China manufacturer for each at-risk intermediate, sold to formulators facing tariffs and supply shocks.",
+   "source_pattern": "Chemistry-AI cluster: Albert Invent 55M dollar Series B led by TCV (2026-10-13; customers include Chemours, Henkel, Nouryon, Diversey) and Scimplify 25M dollars led by Hitachi Ventures at a 250M dollar valuation (same week). Mechanism: models trained on lab and process data propose formulations and synthesis routes, so a chemical can be developed or re-sourced in months rather than years.",
+   "wedge": "Albert sells R&D software to large chemical makers; it does not take supply or manufacturing responsibility.",
+   "buyer": "Procurement and R&D heads at US and European formulators.",
+   "trigger": "Tariff escalation or a China export restriction on an intermediate.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test. Scimplify, in the same week's cluster, is exactly this: AI for chemicals and contract manufacturing, explicitly positioned to reduce China's grip on supply, at a 250M dollar valuation. Knowde and the distributors (Brenntag, IMCD) hold the substitution channel, and the ledger has already killed adjacent formulation flanks (ts-0222, ts-0231).",
+   "rubric_version": 3
   }
  ]
 }
