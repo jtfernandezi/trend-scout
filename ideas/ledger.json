@@ -4944,7 +4944,7 @@
   {
    "id": "ts-0424",
    "date": "2026-09-22",
-   "status": "new",
+   "status": "watching",
    "summary": "AI-native certification house that holds the FAA delegated authority: own an Organization Designation Authorization rather than sell tools to the people who hold one, and issue supplemental type certificates and parts approvals for aircraft modifications - generating the certification plan, the compliance checklist against the applicable part, the system safety assessment, the test plans and the requirement-to-evidence matrix by machine, with unit members reviewing and signing - then retain the resulting certificate library as a royalty-bearing asset rather than billing the hours that produced it.",
    "source_pattern": "The same AI-native licensed-firm cluster (Beacon 225M dollar Series C and roughly one acquisition a week; American Growth Insurance about 70M dollars committed with more than 50 percent agency profitability improvement across a 10-agency pilot; Integral 18M euro Series A; Corridor 25M dollar seed 2026-09-21), pointed at a delegated public authority rather than a private licence. Demand-side evidence: the GAO found that of 23 electric aircraft type certification projects started with the FAA since 2018 only 6 have been approved, the FAA has been expanding the ODA programme on industry input, and flight-test and certification engineers are named among the scarcest roles in US aerospace.",
    "cross": {
@@ -4965,7 +4965,14 @@
     "composite": 3.8
    },
    "rubric_version": 3,
-   "kill_attempts_survived": 1
+   "kill_attempts_survived": 1,
+   "last_reviewed": "2026-10-17",
+   "evidence_updates": [
+    {
+     "date": "2026-10-17",
+     "note": "Pattern strengthened, not yet promoted. Scarlet's 50M dollar Series B (Headline, 2026-10-12) is the first large, clearly priced round for the exact thesis this entry makes in aviation: an AI-native body that holds the regulated approval seat (EU MDR notified body, UK approved body, FDA third-party reviewer) and wins on review speed, with named customers and company-reported time savings of a year or more. With AIUC's 40M dollar Series A (Ribbit, September 2026) for AI-agent certification and insurance, it shows investors now fund 'AI-native certifier' as a category. The occupancy check is still clear: the newest ODA grants (Peregrine, July 2026; American Eurocopter, May 2026) went to conventional certification providers and OEMs, and no AI-native ODA holder was found. Today's three Scarlet flanks (ts-0518 machinery, ts-0519 IVDR, ts-0520 CRA) all died because incumbent assessors already hold the seat and can buy automation. ts-0424 is different because its block is that tool vendors cannot sign approvals and that ODA holders are mostly OEMs certifying their own products, not independent houses that compete for STC work. The open risk is unchanged: a designation that takes years to obtain, and a held certificate library whose value is still unproven."
+    }
+   ]
   },
   {
    "id": "ts-0425",
@@ -6178,6 +6185,110 @@
    "trigger": "Tariff escalation or a China export restriction on an intermediate.",
    "kill_test": "Occupancy",
    "kill_reason": "Killed by the occupancy test. Scimplify, in the same week's cluster, is exactly this: AI for chemicals and contract manufacturing, explicitly positioned to reduce China's grip on supply, at a 250M dollar valuation. Knowde and the distributors (Brenntag, IMCD) hold the substitution channel, and the ledger has already killed adjacent formulation flanks (ts-0222, ts-0231).",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0518",
+   "date": "2026-10-17",
+   "status": "killed",
+   "summary": "AI-native notified body for physical AI: hold the EU Machinery Regulation designation and run the mandatory third-party conformity assessment for machinery whose safety functions use machine learning (Annex I Part A, applicable 2027-01-20), starting with humanoids, cobots and autonomous mobile machines.",
+   "source_pattern": "Scarlet: 50M dollar Series B led by Headline on 2026-10-12 (Notion, Atomico, Creandum), more than 75M dollars raised in total. It holds EU MDR notified-body designation, UK approved-body status and FDA third-party review recognition, and says it is the only one of about 52 EU notified bodies that specialises in software and AI. Named customers include Flo Health, DeepHealth, NHS England, Skin Analytics, Heidi and Tandem Health. It says certification timelines fell by a year or more (company-reported). Mechanism: a conformity-assessment body built AI-first holds the regulated approval seat and reviews technical files far faster than legacy bodies.",
+   "wedge": "Attempted: Scarlet is designated under MDR only, and its competence is software, so assessing physical machines needs functional-safety assessors and test labs. The ML-safety categories newly remove self-certification.",
+   "buyer": "Head of regulatory or safety at a humanoid, cobot or autonomous mobile machinery maker selling into the EU.",
+   "trigger": "Machinery Regulation applies 2027-01-20, and ML-based safety components can no longer be self-certified.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test. TUV SUD and TUV Rheinland are already designated notified bodies under the new Machinery Regulation, and TUV Rheinland issued the first full hardware-and-software CE certification of a humanoid (AiMOGA). NVIDIA Halos runs an ANAB-accredited robot functional-safety inspection lab with TUV Rheinland and UL Solutions, with Agility Robotics as the first adopter. SafeWorld (12.2M dollar seed, CMU Safe AI lab) already does robot safety testing. The Digital Omnibus pushed AI Act obligations for machinery to 2028-08-02, so the AI-specific trigger is softer than it looks.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0519",
+   "date": "2026-10-17",
+   "status": "killed",
+   "summary": "AI-native notified body for in-vitro diagnostics: take an IVDR designation and clear the reagent and analyser backlog (19 IVDR bodies against 80+ under the old directive) with machine review of performance-evaluation and technical files.",
+   "source_pattern": "Scarlet: 50M dollar Series B led by Headline on 2026-10-12 (Notion, Atomico, Creandum), more than 75M dollars raised in total. It holds EU MDR notified-body designation, UK approved-body status and FDA third-party review recognition, and says it is the only one of about 52 EU notified bodies that specialises in software and AI. Named customers include Flo Health, DeepHealth, NHS England, Skin Analytics, Heidi and Tandem Health. It says certification timelines fell by a year or more (company-reported). Mechanism: a conformity-assessment body built AI-first holds the regulated approval seat and reviews technical files far faster than legacy bodies.",
+   "wedge": "Attempted: Scarlet is software-only. Physical IVDs need wet-lab performance-evaluation competence, which is a different reviewer bench, and the incumbent bodies are capacity-bound.",
+   "buyer": "Regulatory affairs lead at a mid-size IVD manufacturer with a compliant file stuck in a notified-body queue.",
+   "trigger": "IVDR transition deadlines (class D 2027, class C 2028, class B and sterile A 2029), with reviews of new applications not expected to finish before mid-to-late 2027.",
+   "kill_test": "Config change + segment viability",
+   "kill_reason": "Killed by the config-change and segment-viability tests. The segment is served: 19 designated IVDR bodies (BSI, TUV SUD, DEKRA, SGS and others) take the work. Their problem is capacity, not an inability to serve, and they charge per file and per review day, so buying AI review tooling raises their throughput with no innovator's dilemma (the ts-0435 lesson, where Zifino sold automation to incumbent assessors). A new designation takes years, so a new body arrives as the transition crunch ends. Scarlet itself is 'broadening certification services' with this round.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0520",
+   "date": "2026-10-17",
+   "status": "killed",
+   "summary": "AI-native Cyber Resilience Act notified body and evaluation lab: machine security assessment of firmware, source code and vulnerability-handling processes for products that need third-party CRA conformity assessment, designated from 2026 notified-body rules ahead of full application on 2027-12-11.",
+   "source_pattern": "Scarlet: 50M dollar Series B led by Headline on 2026-10-12 (Notion, Atomico, Creandum), more than 75M dollars raised in total. It holds EU MDR notified-body designation, UK approved-body status and FDA third-party review recognition, and says it is the only one of about 52 EU notified bodies that specialises in software and AI. Named customers include Flo Health, DeepHealth, NHS England, Skin Analytics, Heidi and Tandem Health. It says certification timelines fell by a year or more (company-reported). Mechanism: a conformity-assessment body built AI-first holds the regulated approval seat and reviews technical files far faster than legacy bodies.",
+   "wedge": "Attempted: notified-body impartiality bars the product-security tool vendors (ONEKEY, Exein, Cybellum, Finite State) from assessing the products they help build, and Scarlet has no cybersecurity designation. No CRA notified body was designated as of mid-2026, and the Commission acknowledges a bottleneck.",
+   "buyer": "Product security lead at a firewall, hypervisor, secure-element or connected-device maker selling into the EU.",
+   "trigger": "CRA notified-body rules applied from 2026-06-11; full application 2027-12-11.",
+   "kill_test": "Occupancy + segment viability",
+   "kill_reason": "Killed by the occupancy and segment-viability tests. Brightsight (SGS), Applus+ Laboratories, Keysight, Intertek and CCLab already market CRA notified-body services, and comply.land is building an ITSEF aimed at exactly the CRA third-party route. Third-party assessment is mandatory only for Class II and critical products (hypervisors, firewalls, intrusion detection, tamper-resistant chips). It is voluntary for Class I when harmonised standards are applied, so the forced volume is small, and the incumbent evaluation labs can adopt AI tooling without cannibalising anything.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0521",
+   "date": "2026-10-17",
+   "status": "killed",
+   "summary": "Stand's per-structure wildfire physics simulation pointed at commercial property in the wildland-urban interface: an AI-native excess-and-surplus program for the warehouses, wineries, hotels and retail sites the admitted market is non-renewing.",
+   "source_pattern": "Stand: 70M dollar Series C at a 1bn dollar valuation on 2026-10-15 (Saga Ventures, Lowercarbon, Eclipse); insured property value grew from about 1bn to 10bn dollars in a year. Mechanism: a physics simulation of each individual structure prices wildfire risk the admitted market abandoned and makes specific mitigation a condition of cover.",
+   "wedge": "Attempted: data model. Commercial sites have different construction, occupancy and business-interruption exposure from homes, and Stand's distribution is homeowner-facing.",
+   "buyer": "Wholesale broker placing a California or Nevada commercial property in a wildfire zone after a non-renewal.",
+   "trigger": "Admitted-market non-renewal at the commercial property renewal.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test. Kettle and RLI (Mt. Hawley) launched exactly this in February 2026: a non-admitted, wildfire-focused, multi-peril commercial property product for California and Nevada, sold through wholesale brokers, with RLI taking equity in Kettle. Earlier wildfire squares were already closed at ts-0011 and ts-0047.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0522",
+   "date": "2026-10-17",
+   "status": "killed",
+   "summary": "Stand's mechanism pointed at Italy's mandatory catastrophe-insurance law: per-site earthquake, flood and landslide pricing and mitigation for the millions of Italian SMEs now required to insure their premises.",
+   "source_pattern": "Stand: 70M dollar Series C at a 1bn dollar valuation on 2026-10-15 (Saga Ventures, Lowercarbon, Eclipse); insured property value grew from about 1bn to 10bn dollars in a year. Mechanism: a physics simulation of each individual structure prices wildfire risk the admitted market abandoned and makes specific mitigation a condition of cover.",
+   "wedge": "Attempted: geography and regulation. Stand is a US excess-and-surplus homeowners business; Italy is an admitted Solvency II market, with agent distribution and different perils.",
+   "buyer": "Owner of an Italian small or micro business, or the agent or bank branch that places its cover.",
+   "trigger": "Budget Law 2024 mandate, with deadlines on 2025-10-01 (medium) and 2026-01-01 (small and micro), plus later sector-specific dates.",
+   "kill_test": "Config change + occupancy",
+   "kill_reason": "Killed by the config-change and occupancy tests. The law obliges every insurer to offer cover, with fines of 100,000 to 500,000 euros, and SACE reinsures the system, so incumbent Italian carriers already serve the buyer by mandate. The main deadlines passed in October 2025 and January 2026, so the purchase moment is over, and banks and neobanks (for example aidexa) already sell the cover alongside business accounts. An MGA would sit between a mandated, price-sensitive product and carriers that do not need it.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0523",
+   "date": "2026-10-17",
+   "status": "killed",
+   "summary": "Voltus's bring-your-own-capacity model for data centres, pointed at vertically integrated utility territories with no capacity market (the US Southeast and the non-CAISO West): aggregate distributed flexibility to offset a data centre's load so the utility can energise it sooner.",
+   "source_pattern": "Voltus: 225M dollar Series D on 2026-10-08 (Generation, Activate, Vitol), 8.5GW on the platform with a target of 20GW by 2030, a June three-year Google agreement, and a BYOC partnership with Octopus. Mechanism: a hyperscaler pays for a virtual power plant in a capacity-constrained region, and the accredited megawatts offset its data centre's load, shortening time to power.",
+   "wedge": "Attempted: Voltus monetises through organised wholesale markets (PJM, MISO, ERCOT), and vertically integrated territories have no capacity market to accredit VPP capacity.",
+   "buyer": "Hyperscaler or colocation energy lead seeking faster interconnection in a Southeast or Mountain West utility territory.",
+   "trigger": "Large-load tariff filings and interconnection queues at Southern, Duke, Dominion-adjacent and Western utilities.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by the occupancy and config-change tests. In vertically integrated territories the buyer is the utility's own demand-response program, and the utility VPP platforms hold that seat (EnergyHub, Renew Home, Uplight, Itron). Voltus's Octopus deal shows it already structures BYOC as a utility or retailer partnership, so moving into a non-RTO territory is a contract, not a second product.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0524",
+   "date": "2026-10-17",
+   "status": "killed",
+   "summary": "Causa Prima's agent-to-agent settlement pointed at ocean and drayage detention and demurrage: an agent on the shipper's side negotiates and settles disputed carrier and terminal charges with the carrier's agent, taking a share of the recovery.",
+   "source_pattern": "Causa Prima: 20M dollar seed led by Base10 (QED, FJ Labs, Creandum), announced 2026-10-13, three months after a 10M dollar pre-seed. Revenue is not disclosed; it takes a cut when agent-negotiated early-payment deals clear. Mechanism: agents represent each side of a supplier relationship, negotiate payment terms and settle billing disputes between companies instead of within one.",
+   "wedge": "Attempted: data model. Detention and demurrage disputes turn on tariff, free-time and terminal evidence that a generic AP/AR dispute network does not hold, and the US FMC's 2024 billing rule gives the payer formal dispute rights.",
+   "buyer": "Logistics or freight-audit lead at a mid-to-large US importer.",
+   "trigger": "An ocean carrier or terminal invoices detention, demurrage or per diem after port congestion.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test. BlueCargo already audits and disputes demurrage, detention and per-diem charges and reports more than 175M dollars saved for customers. Shipsy's Vera dispute agent matches invoice lines to contract clauses and assembles evidence. Delhivery's TransportOne launched six logistics agents, including invoice audit. Freight audit (Loop, Cass, Trax) holds the AP side. The buyer is already served by specialists who own the domain data.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0525",
+   "date": "2026-10-17",
+   "status": "killed",
+   "summary": "AI-native technical service for driver-assistance type approval: hold the designation that tests and approves UN R171 driver-control-assistance and future automated-driving systems, using simulation and scenario review at machine scale for the Chinese and new-entrant automakers queuing for European approval.",
+   "source_pattern": "Scarlet: 50M dollar Series B led by Headline on 2026-10-12 (Notion, Atomico, Creandum), more than 75M dollars raised in total. It holds EU MDR notified-body designation, UK approved-body status and FDA third-party review recognition, and says it is the only one of about 52 EU notified bodies that specialises in software and AI. Named customers include Flo Health, DeepHealth, NHS England, Skin Analytics, Heidi and Tandem Health. It says certification timelines fell by a year or more (company-reported). Mechanism: a conformity-assessment body built AI-first holds the regulated approval seat and reviews technical files far faster than legacy bodies.",
+   "wedge": "Attempted: conflict of interest. The simulation and validation tool vendors (Applied Intuition, Foretellix) sell to the automakers being approved and cannot be the approving technical service. Scarlet has no automotive designation.",
+   "buyer": "Homologation lead at a Chinese or new-entrant automaker bringing highway or urban navigation assistance to Europe.",
+   "trigger": "UN R171 approvals (Geely in March 2026, Lotus after it) and the urban-navigation series that Europe has not yet approved.",
+   "kill_test": "Occupancy + segment viability",
+   "kill_reason": "Killed by the occupancy and segment-viability tests. The seat is held: IDIADA, with CATARC, issued Geely's R171 approval, and TUV SUD, TUV Rheinland, DEKRA and UTAC are the designated technical services that approval authorities already rely on. Designation runs through national approval authorities that favour these bodies. The buyer set is a few dozen automakers, so the approval fees alone do not make a venture-scale beachhead.",
    "rubric_version": 3
   }
  ]
