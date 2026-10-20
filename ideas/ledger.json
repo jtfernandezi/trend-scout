@@ -6290,6 +6290,84 @@
    "kill_test": "Occupancy + segment viability",
    "kill_reason": "Killed by the occupancy and segment-viability tests. The seat is held: IDIADA, with CATARC, issued Geely's R171 approval, and TUV SUD, TUV Rheinland, DEKRA and UTAC are the designated technical services that approval authorities already rely on. Designation runs through national approval authorities that favour these bodies. The buyer set is a few dozen automakers, so the approval fees alone do not make a venture-scale beachhead.",
    "rubric_version": 3
+  },
+  {
+   "id": "ts-0526",
+   "date": "2026-10-20",
+   "status": "killed",
+   "summary": "AI-native defence of mass arbitrations and other high-volume consumer claims: for a company hit by thousands of individual arbitration demands, verify each claimant against its own customer records, find duplicate and machine-generated narratives, contest filing requirements and price a settlement matrix, all on a fixed fee instead of defence-firm hours.",
+   "source_pattern": "Chariot Claims: 10M dollar Series A led by Silverton Partners, October 2026, 15.7M dollars raised in total. It says it processes more than 200,000 pre-qualified consumer claims a month, mostly mass arbitrations against Fortune 500 companies, with about 80 cases pursued since it moved to this model about a year ago (Value Add VC). Mechanism: AI matches consumers to misconduct patterns and assembles thousands of individually represented arbitration claims, turning class-action waivers into leverage.",
+   "wedge": "Attempted: channel conflict. Chariot, FinLegal and the claimant firms recruit consumers against these same companies and cannot sell to them. Defence firms bill by the hour, so a flat-fee machine defence runs into their innovator's dilemma.",
+   "buyer": "Head of litigation at a consumer platform (gaming, gig economy, telecoms, fintech) facing a mass arbitration wave.",
+   "trigger": "A wave of thousands of AAA or JAMS demands, each carrying per-case filing fees, which AI-assembled claimant rosters (Chariot) make cheaper and more frequent.",
+   "kill_test": "Segment viability + occupancy",
+   "kill_reason": "Killed by the segment-viability test, with partial occupancy. The AAA reported 104,000 consumer demands in 2025, but they were spread across only 81 mass arbitration caseloads, and 96% of settled merits cases settled before an arbitrator was appointed. That is about 80 buyer events a year, so it is not a venture beachhead. The expansion into all high-volume consumer-claims defence runs into OmniLex (a new AI-native firm focused on routine high-volume litigation), LegalMation (high-volume litigation response) and OraClaim (defence-side PI claims). Settlement-stage claim integrity was already closed at ts-0427 (Certum and the claims administrators).",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0527",
+   "date": "2026-10-20",
+   "status": "killed",
+   "summary": "Independent AI validation of industrial control code (PLC ladder logic and structured text) for plant owners: review every integrator's change against the process, the safety interlocks and the plant's standards before commissioning, outside the vendor IDE.",
+   "source_pattern": "Greptile: 50M dollar Series B led by Menlo Ventures at a 750M dollar valuation, announced 2026-10-19 (Benchmark, YC, Initialized, Jump Trading, Wing). It says it reviews and tests more than 1% of all pull requests opened on GitHub every day, for thousands of engineering teams including Nvidia, Coinbase, Decagon and Vanta. Revenue not disclosed. Mechanism: an independent AI reviewer, separate from whoever or whatever wrote the code, validates every change before it merges, which matters now that agents write much of the code.",
+   "wedge": "Attempted: data model and architecture. PLC projects live in proprietary vendor project files (Studio 5000, TIA Portal) on air-gapped networks rather than in Git, and validating them means simulating a physical process, which Greptile's GitHub-native product does not do.",
+   "buyer": "Controls engineering lead at a plant owner (food, pharma, chemicals, water) accepting code from system integrators.",
+   "trigger": "Integrators and OEMs start generating PLC code with copilots, so the owner receives more changes than its own engineers can review.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by the occupancy and config-change tests. Copia already markets AI explanation, documentation and code-quality recommendations for PLC code on its Git-for-automation platform, and PLC Copilot sells AI code review for Studio 5000, TIA Portal and AutomationDirect projects. Siemens' Eigen Engineering Agent (2026) reads the actual TIA Portal project, so review is a feature the IDE owner can ship. The vendor that owns the project format holds the data model.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0528",
+   "date": "2026-10-20",
+   "status": "killed",
+   "summary": "AI-native independent verification and validation (IV&V) firm for state government IT projects, starting with Medicaid eligibility and claims systems: hold the federally expected independent-reviewer seat and check every integrator deliverable, test and requirement with agents rather than staff hours.",
+   "source_pattern": "Greptile: 50M dollar Series B led by Menlo Ventures at a 750M dollar valuation, announced 2026-10-19 (Benchmark, YC, Initialized, Jump Trading, Wing). It says it reviews and tests more than 1% of all pull requests opened on GitHub every day, for thousands of engineering teams including Nvidia, Coinbase, Decagon and Vanta. Revenue not disclosed. Mechanism: an independent AI reviewer, separate from whoever or whatever wrote the code, validates every change before it merges, which matters now that agents write much of the code.",
+   "wedge": "Attempted: conflict of interest plus staff-hour billing. CMS wants IV&V held outside the agency and the build contractor, so the integrators (Deloitte, Gainwell, Conduent) and their tool vendors cannot hold the seat. Incumbent IV&V firms (PCG, CSG, Berry Dunn) bill by the hour.",
+   "buyer": "State Medicaid enterprise-systems director and the state CIO's project-oversight office.",
+   "trigger": "Modular Medicaid system replacements and work-requirement eligibility changes, each requiring oversight of integrator delivery.",
+   "kill_test": "Segment viability",
+   "kill_reason": "Killed by the segment-viability test, following the 2026-10-15 method note to size a mandate-created seat by the mandate first. The mandate is shrinking: Public Consulting Group, an incumbent IV&V vendor, reports that CMS told state Medicaid agencies it would no longer require IV&V to support modernisation efforts. Without the requirement, the buyer set is optional state oversight spend across about 56 jurisdictions, so the seat cannot carry a 1bn dollar company. The defensible independent-reviewer seat is already in the held book as ts-0470 (defence SETA), and this adds no new beachhead.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0529",
+   "date": "2026-10-20",
+   "status": "killed",
+   "summary": "Proactive AI chief-of-staff (inbox, calendar, follow-ups, meeting prep) built for regulated financial professionals whose communications must be archived and supervised: wealth advisors and registered representatives.",
+   "source_pattern": "Town: 108M dollar Series B co-led by Forerunner and Menlo at a 1bn dollar valuation, 2026-10-19, about four months after its June launch. It says it reached seven figures of ARR within weeks of launch, after a 55M dollar Series A led by a16z. Mechanism: an assistant with persistent memory over a person's email and calendar does follow-up and coordination work proactively, for individuals and whole teams.",
+   "wedge": "Attempted: compliance posture. FINRA and SEC books-and-records and supervision rules require archiving and review of business communications. A consumer and prosumer assistant cannot read and act on an advisor's email without that apparatus.",
+   "buyer": "Independent RIA or broker-dealer advisor team.",
+   "trigger": "Firm compliance blocks the general-purpose assistants advisors are already trying to use.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by the occupancy test, then the config-change test. Jump raised an 80M dollar Series B (Insight, February 2026) for exactly this AI operating system for advisors, says nearly one in ten US advisors use it, and adds over 2,000 advisors a month. Zocks and the CRM vendors also sit in the seat. For other regulated professions, archiving and supervision connectors are a config change for Town, not a second product.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0530",
+   "date": "2026-10-20",
+   "status": "killed",
+   "summary": "Automated environmental product declarations and digital product passports for European construction-product manufacturers under the revised Construction Products Regulation: generate verified declarations from plant production data across every product variant.",
+   "source_pattern": "Pathways: 6M dollar seed led by Sorenson Capital (Zacua participating), week ending 2026-10-19. It automates environmental product declarations from manufacturer data, and its largest contract is with Heidelberg Materials at over 1M dollars. Mechanism: models turn messy plant, supplier and energy data into the life-cycle declarations that specifiers and procurement rules now require.",
+   "wedge": "Attempted: geography and regulation. The EU CPR and Ecodesign regime make digital, verifiable environmental data mandatory per product, with European programme operators, while Pathways is a US seed company.",
+   "buyer": "Sustainability or product-compliance lead at a European cement, insulation or steel-products manufacturer.",
+   "trigger": "CPR deadlines for digital declarations and product passports, plus public-procurement carbon thresholds.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by the occupancy and config-change tests. One Click LCA's EPD Generator already produces EN 15804 declarations for manufacturers, publishes through EPD Hub, INIES and PEP Ecopassport, and is marketed for CPR, ESPR and CBAM readiness. Pathways' own client (Heidelberg) is European, so geography is not a block. The segment is served, and the new mandate raises demand for the incumbents.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0531",
+   "date": "2026-10-20",
+   "status": "killed",
+   "summary": "AI-native MEP engineering firm of record for US data-centre and commercial projects: agents produce mechanical, electrical and plumbing design, licensed engineers stamp it, and the firm charges per completed outcome.",
+   "source_pattern": "Solvera: 6.3M dollar pre-seed led by Seedcamp, 2026-10-15 (Oslo; Spacemaker founders as angels). It began operating in July 2026 and reports roughly 0.9M to 1M dollars of contracted revenue in its first three months with nine people (company-reported). Mechanism: an engineering firm of record whose agents do the design work, selling outcomes rather than software or hours.",
+   "wedge": "Attempted: geography and licensing. US work needs state PE licensure and US codes (NEC, ASHRAE, IMC), and Solvera is a Norwegian pre-seed company heading for London.",
+   "buyer": "Developer or general contractor on US data-centre and commercial projects, short of MEP engineering capacity.",
+   "trigger": "The data-centre build-out and a shortage of MEP engineers stretching design timelines.",
+   "kill_test": "Config change + seat screen (incumbent billing)",
+   "kill_reason": "Killed by the config-change test and the 2026-10-13 billing screen. PE licensure is held per engineer, so Solvera or any entrant can hire US stampers, and that is not a structural block. MEP design is usually billed as a lump sum or a percentage of construction cost, not by staff hour, so AI raises incumbent margins (Jacobs, WSP, Syska) and there is no innovator's dilemma to hide behind. This is the same lesson as the engineering-firm kills ts-0322 and ts-0346.",
+   "rubric_version": 3
   }
  ]
 }
