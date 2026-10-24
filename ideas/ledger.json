@@ -6485,6 +6485,84 @@
    "kill_test": "Segment viability",
    "kill_reason": "Killed by the segment-viability test. The conflict is real, but the buyer has no money. Medicaid members cannot pay, and the consumer appeal tools show what the market will bear: Claimable charges 50 dollars a letter, and Counterforce Health is grant-funded (280,000 dollars). Legal aid is underfunded, and states pay to run hearings, not to fund appellants. There is no budget line to build a 1bn dollar company on.",
    "rubric_version": 3
+  },
+  {
+   "id": "ts-0541",
+   "date": "2026-10-24",
+   "status": "killed",
+   "summary": "US-only low-speed autonomous delivery vans for retailers and parcel carriers, built for the market that Commerce's connected-vehicle rule closes to Chinese driving software.",
+   "source_pattern": "Neolix: nearly 400M dollar Series E co-led by Boyu Capital, 2026-10-20. More than 30,000 L4 delivery vehicles deployed in more than 300 cities and 20 countries, with more than 260M autonomous km (company-reported). Mechanism: cheap purpose-built L4 vans, run at fleet scale, make last-mile goods movement driverless on public roads.",
+   "wedge": "Attempted: geography and regulation. The BIS connected-vehicle rule bars Chinese-designed automated-driving software from US vehicles under 10,001 lbs (software prohibitions from model year 2027, March 2026 compliance milestone). Neolix structurally cannot enter the US.",
+   "buyer": "Grocery, retail and parcel last-mile operations managers in US metros.",
+   "trigger": "Driver-cost pressure plus same-day delivery commitments in dense metros.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test. The block on Neolix is real, but the US seat is already crowded with funded domestic players: Also (Rivian spinoff, 200M dollars at 1bn dollars with a multi-year DoorDash deployment deal), DoorDash's own Dot in Phoenix, Nuro, Serve Robotics and Coco. A wedge that keeps out one foreign leader does not create an opening when the domestic field is already funded.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0542",
+   "date": "2026-10-24",
+   "status": "killed",
+   "summary": "Bank-transaction income and work verification for state Medicaid agencies implementing the 2027 work requirements: verify gig and self-employed enrollees' hours and income from linked bank data instead of paperwork.",
+   "source_pattern": "Prism Data: 20M dollar Series A led by Story Ventures, October 2026. Used by three of the five largest US fintech lenders and six of the ten largest digital banks; API usage up more than 100x in two years; trained on more than 30bn bank transactions (company-reported). Mechanism: models turn raw bank transactions into a reliable income and cash-flow picture of a person.",
+   "wedge": "Attempted: adjacent buyer, different trigger, and sales motion. Prism sells to lenders under FCRA; state eligibility systems are bought through state procurement on federal 90 percent match funding.",
+   "buyer": "State Medicaid eligibility directors.",
+   "trigger": "H.R. 1 work requirements take effect in most states in January 2027, with enrollee notices due by 2026-08-31.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by the occupancy and config-change tests. CBPP's vendor crosswalk already lists Conduent, Gainwell, Healthy Together, Salesforce and the open-source OSCER and Emmy tools. Optum, Deloitte and Maximus are offering work-requirement products to states at a discount or free, and consent-based verification of gig income via linked accounts is already part of the toolkit. Equifax's Work Number is the incumbent data source. Bank-data verification is a feature inside those systems, not a company.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0543",
+   "date": "2026-10-24",
+   "status": "killed",
+   "summary": "AI-native legal bill review for insurers and corporate legal departments: audit every outside-counsel invoice line against billing guidelines and outcomes, paid as a share of savings.",
+   "source_pattern": "Legora: 550M dollar Series E at 8.8bn dollars led by Atreides, 2026-10-21. ARR above 200M dollars; 1M to 100M dollars in under 18 months and the next 100M dollars in under six months; more than 140,000 legal professionals at more than 2,400 firms and legal teams (company-reported). Mechanism: frontier models read and reason over legal work product at the level of a junior lawyer.",
+   "wedge": "Attempted: channel conflict. Legora and Harvey sell seats to law firms, so a product that cuts law-firm invoices works against their core customers.",
+   "buyer": "Claims litigation managers at P&C carriers and general counsel at large corporates.",
+   "trigger": "Annual outside-counsel spend review, or rising defence costs in social-inflation lines.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test. The conflict is real but the seat is held: Wolters Kluwer LegalVIEW BillAnalyzer (AI plus human reviewers, the insurer default), Milliman Datalytics-Defense, CounselAudit.ai (AI-native, founded 2025), Quark AI bill review, SimpleLegal SimpleReview and Brightflag. Law is mined territory, and this run confirms it.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0544",
+   "date": "2026-10-24",
+   "status": "killed",
+   "summary": "Borrower- and sponsor-side credit-document intelligence for liability-management fights: read every credit agreement and indenture in a capital structure and model which creditor-on-creditor moves are open to the company and its sponsor.",
+   "source_pattern": "Cognitive Credit: 40M dollar strategic growth round led by Summit Partners (with ETFS Capital), October 2026. Covers more than 3,500 bond and loan issuers; used by more than 80 percent of the world's 25 largest asset managers (company-reported). Mechanism: AI ties credit analysis back to source financial documents so credit investors can read every issuer.",
+   "wedge": "Attempted: channel conflict. Cognitive Credit sells to creditors, so arming the borrower and sponsor against those same creditors would antagonise its customers.",
+   "buyer": "Restructuring advisers, sponsor capital-markets teams and company-side law firms.",
+   "trigger": "A sponsor-backed borrower approaching a maturity wall and weighing a liability-management transaction.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by the occupancy and config-change tests. Octus (formerly Reorg) already sells to the restructuring bar, advisers and sponsors, claims all of the top 20 most-retained restructuring advisers, and has CreditAI. Company-side restructuring firms are Harvey and Legora customers. Neither side of the fight is unserved.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0545",
+   "date": "2026-10-24",
+   "status": "killed",
+   "summary": "Air-gapped, on-premises equipment-health AI for nuclear power plants, built for NRC cyber-security rules that keep cloud-connected wireless sensors away from critical systems.",
+   "source_pattern": "Tractian: 130M dollar Series D at 1.4bn dollars led by Sapphire Ventures, co-led by M&G's Catalyst, 2026-10-22. More than 2,000 facilities; ARR reported above 100M dollars in September (The Information); customers include Eli Lilly, Whirlpool, Cummins and Embraer. Mechanism: cheap wireless vibration and temperature sensors plus models that diagnose failure modes and generate work orders.",
+   "wedge": "Attempted: compliance posture and architecture. 10 CFR 73.54 governs digital assets at nuclear plants, which conflicts with Tractian's cloud-and-wireless architecture.",
+   "buyer": "Plant reliability and equipment-health engineers at US nuclear operators.",
+   "trigger": "Licence extensions to 80 years and the push to cut operations and maintenance cost per megawatt-hour.",
+   "kill_test": "Segment viability + occupancy",
+   "kill_reason": "Killed by the segment-viability and occupancy tests. There are about 94 US reactors run by a handful of fleet operators. Online monitoring is already established through EPRI, INL and ORNL programmes with Exelon, and through GE Vernova SmartSignal and AVEVA PRiSM. The SMR expansion is years from volume. Tractian names utilities and defence as target markets, and non-nuclear plants are a config change for it.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0546",
+   "date": "2026-10-24",
+   "status": "killed",
+   "summary": "Owner-side AI for state DOTs: turn statewide mobile LiDAR into a continuously updated as-built asset and design-ready base map that the agency owns, instead of buying survey and drafting project by project.",
+   "source_pattern": "Mach9: 34M dollar Series A co-led by First Round and Bessemer, 2026-10-21. About 100 customers in private beta, more than 2,500 projects in all 50 states, more than 100,000 miles of surveyed infrastructure; claims drafting up to 10x faster at one-fifth the cost (company-reported). Mechanism: models extract engineering features from point clouds and draft civil CAD that a licensed professional signs.",
+   "wedge": "Attempted: adjacent buyer, different trigger. Mach9 sells mainly to engineering and survey firms that bill DOTs, so selling DOTs a standing base map would undercut those customers' survey fees.",
+   "buyer": "State DOT survey, asset-management and CAD standards offices.",
+   "trigger": "Federal transportation asset-management plan updates and statewide LiDAR acquisition programmes.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by the config-change test. Mach9 already counts state DOTs (Caltrans among them) and utilities as direct customers alongside the engineering firms, so the supposed channel conflict is not real. The design-firm-of-record version fails the 2026-10-13 billing screen, as at ts-0531.",
+   "rubric_version": 3
   }
  ]
 }
