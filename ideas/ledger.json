@@ -6563,6 +6563,97 @@
    "kill_test": "Config change",
    "kill_reason": "Killed by the config-change test. Mach9 already counts state DOTs (Caltrans among them) and utilities as direct customers alongside the engineering firms, so the supposed channel conflict is not real. The design-firm-of-record version fails the 2026-10-13 billing screen, as at ts-0531.",
    "rubric_version": 3
+  },
+  {
+   "id": "ts-0547",
+   "date": "2026-10-27",
+   "status": "killed",
+   "summary": "AI-moderated expert interviews for corporate strategy teams, consultancies and PE diligence, priced per study instead of the expert networks' per-call fee.",
+   "source_pattern": "Qualitate: 25M dollar Series A led by Insight Partners, 2026-10-20 (second round of 2026). Revenue run-rate up more than 10x this year, 12-month net revenue retention above 300%, more than one million minutes of AI-moderated expert interviews (company-reported). Mechanism: an AI moderator runs expert interviews in parallel from a panel the company owns, and the answers go into a shared, structured library.",
+   "wedge": "Attempted: innovator's dilemma. Expert networks bill per call, so cheap machine-run interviews cannibalise their core revenue.",
+   "buyer": "Corporate strategy and corporate development teams, strategy consultancies, PE deal teams.",
+   "trigger": "A diligence or market-entry question that would otherwise mean 10-30 paid expert calls.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by the occupancy test. Qualitate itself already sells to enterprise strategy and go-to-market teams as well as hedge funds, PE and private credit. GLG (AI-Moderated Calls, 10 languages), Guidepoint, Maven (AIMR) and Usercall all ship AI-moderated expert interviews, so the networks are cannibalising themselves rather than being blocked. Closes note three from 2026-10-22.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0548",
+   "date": "2026-10-27",
+   "status": "killed",
+   "summary": "Leak watch for public companies: AI that reads expert-call transcript libraries and AI-interview output for the company's own confidential information disclosed by current and former employees.",
+   "source_pattern": "Qualitate: 25M dollar Series A led by Insight Partners, 2026-10-20 (second round of 2026). Revenue run-rate up more than 10x this year, 12-month net revenue retention above 300%, more than one million minutes of AI-moderated expert interviews (company-reported). Mechanism: an AI moderator runs expert interviews in parallel from a panel the company owns, and the answers go into a shared, structured library.",
+   "wedge": "Attempted: channel conflict. Expert networks and interview libraries pay these employees to talk, so policing them on behalf of the companies being discussed would antagonise both supply and customers.",
+   "buyer": "General counsel, insider-risk and investor-relations teams at public companies.",
+   "trigger": "Transcript volume growing more than 10x as AI interviewers replace scheduled calls.",
+   "kill_test": "Config change + segment viability",
+   "kill_reason": "Killed by the config-change test. AlphaSense/Tegus already sells to corporates, who can search transcripts about themselves today. The libraries are paywalled and governed by terms of service, so the product depends on access from the very players it polices. That makes the beachhead unreachable without them.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0549",
+   "date": "2026-10-27",
+   "status": "killed",
+   "summary": "AI-native self-perform earthwork subcontractor: own a fleet of autonomous excavators and bid on site preparation for data centres, solar farms and warehouses.",
+   "source_pattern": "Bedrock Robotics: reported 600M dollar Series C at about 3.5bn dollars pre-money (Axios Pro, 2026-10-26; not yet confirmed by the company), after a 270M dollar Series B in February. Operator-free excavation is live with Sundt and Zachry, and it has about 15 contractor partners in 23 states. Cluster: Gravis Robotics 200M dollar Series A (SoftBank, August 2026), and Caterpillar autonomy now extends to excavators. Mechanism: a retrofit sensor and compute kit plus learned policies let existing 20-80 ton excavators dig with no operator.",
+   "wedge": "Attempted: channel conflict. Bedrock and Gravis sell kits to earthwork contractors, so becoming a contractor would compete with their own customers.",
+   "buyer": "General contractors and developers subcontracting mass excavation and site preparation.",
+   "trigger": "Data-centre and industrial site-preparation backlog, plus a shortage of operators for long, remote, repetitive jobs.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by the config-change test. The incumbent contractors (Sundt, Zachry, Austin Bridge & Road and about 15 Bedrock partners in 23 states) buy the same kits and already bid the same work. The startup would have no proprietary autonomy edge, only lower-margin construction services, so there is no structural block.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0550",
+   "date": "2026-10-27",
+   "status": "killed",
+   "summary": "Autonomous excavator loading for quarries and open-pit mines, retrofitted onto mixed-brand fleets.",
+   "source_pattern": "Bedrock Robotics: reported 600M dollar Series C at about 3.5bn dollars pre-money (Axios Pro, 2026-10-26; not yet confirmed by the company), after a 270M dollar Series B in February. Operator-free excavation is live with Sundt and Zachry, and it has about 15 contractor partners in 23 states. Cluster: Gravis Robotics 200M dollar Series A (SoftBank, August 2026), and Caterpillar autonomy now extends to excavators. Mechanism: a retrofit sensor and compute kit plus learned policies let existing 20-80 ton excavators dig with no operator.",
+   "wedge": "Attempted: data model and geography. Bedrock is focused on civil sitework in the US, and mines have a different operating domain and cycle.",
+   "buyer": "Quarry and aggregates operators, and mid-tier miners.",
+   "trigger": "Autonomous haul trucks already in use, which leaves the loading tool as the manned bottleneck.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test. In January 2026 Caterpillar extended its autonomy to excavators for loading, trenching and grading, and Cat 777 trucks already haul autonomously at a Virginia quarry. Komatsu (FrontRunner, IMC 3.0) and Gravis (an OEM programme with Develon) cover the rest. Bedrock's own partners include Capitol Aggregates.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0551",
+   "date": "2026-10-27",
+   "status": "killed",
+   "summary": "Neutral AI clinical-development platform for neuroscience sponsors shut out by Pathos's three-year neuroscience exclusive with BMS.",
+   "source_pattern": "Pathos AI: 237.5M dollar Series E at about 3bn dollars led by Bristol Myers Squibb, 2026-10-23. BMS gets three-year exclusive use of the Pathos Foundry for its neuroscience development programmes, and Pathos is licensing Tempus neurology data for 55M dollars over five years. Mechanism: multimodal real-world and trial data plus models that predict which patients and trial designs will succeed.",
+   "wedge": "Attempted: channel conflict. Pathos is exclusive to BMS in neuroscience and is also a drug developer that competes for assets.",
+   "buyer": "Clinical development heads at mid-size pharma and biotech companies with neuroscience programmes.",
+   "trigger": "Phase 2 design and go/no-go decisions in Alzheimer's, ALS and psychiatry.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by the occupancy test, and the block is temporary rather than structural. The exclusive runs only three years and covers only BMS neuroscience. Unlearn (EMA-qualified PROCOVA, ALS sponsors SOLA and QurAlis), Intelligencia AI (probability of success for R&D and BD teams), QuantHealth and Owkin already serve these sponsors.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0552",
+   "date": "2026-10-27",
+   "status": "killed",
+   "summary": "Issuer-side AI vote prediction and investor targeting for corporate secretaries, as big asset managers drop ISS and Glass Lewis for in-house AI voting.",
+   "source_pattern": "Pennant (YC S26): 5M dollar seed led by Urban Innovation Fund, 2026-10-20, AI proxy voting for institutions; early customers include a large US public pension (company-reported). Category signal: JPMorgan Asset Management replaced proxy advisers with its in-house Proxy IQ in January 2026, and Glass Lewis is ending benchmark recommendations in 2027. Mechanism: models apply each fund's own policy and voting history to every ballot item.",
+   "wedge": "Attempted: channel conflict. Investor-side voting tools cannot sell issuers a model of their clients' voting behaviour.",
+   "buyer": "Corporate secretaries and IR teams at mid and large caps.",
+   "trigger": "An AGM with a contested say-on-pay or director vote, or an activist campaign, once ISS and Glass Lewis recommendations no longer predict the outcome.",
+   "kill_test": "Occupancy + segment viability",
+   "kill_reason": "Killed by the occupancy test. Diligent Market Intelligence (formerly Insightia/Proxy Insight) already markets 'predict and influence shareholder vote outcomes' to issuers on human-verified N-PX data. Proxy solicitors (Sodali, Georgeson at Computershare) own the contested-vote moment. Segment viability: about 4,000 US listed issuers at five- to six-figure fees dead-ends well below 1bn dollars. Pennant is seed-stage, so per the 2026-10-20 note it is a weak pattern.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0553",
+   "date": "2026-10-27",
+   "status": "killed",
+   "summary": "Certified retrofit autonomy for regional cargo feeder aircraft outside the US (EASA, Transport Canada, ANAC Brazil).",
+   "source_pattern": "Reliable Robotics: 115M dollar Series D extension (90M dollars equity plus 25M dollars SVB debt) led by Nimble Partners, 2026-10-20, valuation above 1bn dollars and 275M dollars in total Series D. It expects FAA sign-off on its first system in 18-24 months and has opened a detect-and-avoid radar centre. Mechanism: a certifiable autonomy stack retrofitted onto existing aircraft such as the Cessna Caravan, with remote pilots.",
+   "wedge": "Attempted: geography and regulatory posture. Reliable is FAA-first, and foreign regulators would need separate certification work.",
+   "buyer": "Feeder cargo operators and integrators' regional networks in Europe, Canada and Brazil.",
+   "trigger": "Pilot shortages on thin cargo routes.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by the config-change test. FAA type certification is validated abroad through bilateral agreements (EASA, TCCA, ANAC). Once Reliable is certified, foreign markets are a validation project on its own roadmap, not a second product. A newcomer would have to certify from scratch years behind it.",
+   "rubric_version": 3
   }
  ]
 }
