@@ -6654,6 +6654,99 @@
    "kill_test": "Config change",
    "kill_reason": "Killed by the config-change test. FAA type certification is validated abroad through bilateral agreements (EASA, TCCA, ANAC). Once Reliable is certified, foreign markets are a validation project on its own roadmap, not a second product. A newcomer would have to certify from scratch years behind it.",
    "rubric_version": 3
+  },
+  {
+   "id": "ts-0554",
+   "date": "2026-10-29",
+   "status": "killed",
+   "summary": "Pix MED 2.0 dispute and fund-tracing engine for Brazilian banks and fintechs: agents investigate each Pix fraud claim, trace the money through up to five hops of accounts and file the Banco Central refund requests.",
+   "source_pattern": "Casap: 56M dollar Series B led by Base10 Partners, 2026-10-28, with Experian and Synchrony as strategic investors (Emergence and Lightspeed following); about 90M dollars raised in total. Company-reported: first-party fraud losses cut by up to 51 percent, chargeback win rate 96 percent against a 60 percent industry average, and resolution in about 8 days instead of up to 90. Mechanism: agents investigate every card dispute on the issuer side, score the consumer for first-party fraud and assemble the network-ready case file.",
+   "wedge": "Attempted: geography and rail. Casap is built for US card networks under Reg E and Reg Z. Pix has no chargeback network, and MED 2.0 (Resolution BCB 493, mandatory from 2026-02-02) is a central-bank refund and fund-tracing process with its own rules.",
+   "buyer": "Fraud and disputes teams at Brazilian digital banks, fintechs and cooperatives that participate in Pix.",
+   "trigger": "MED 2.0 became mandatory in February 2026 (enforced from about May), and an in-app self-service dispute channel became compulsory.",
+   "kill_test": "Occupancy + segment viability",
+   "kill_reason": "Killed by occupancy and viability. Matera and Topaz (Stefanini) already ship MED 2.0 modules, and the large banks (Nubank, Itau) build in-house. The long tail of Pix participants buys MED from its core and Pix-connectivity providers, so a newcomer would be selling a feature into those providers' bundles. The expansion story (other LatAm instant-payment schemes) does not reach 1bn dollars.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0555",
+   "date": "2026-10-29",
+   "status": "killed",
+   "summary": "AI dispute and first-party-fraud agents for credit unions and community banks, the issuers below Casap's large-issuer accounts.",
+   "source_pattern": "Casap: 56M dollar Series B led by Base10 Partners, 2026-10-28, with Experian and Synchrony as strategic investors (Emergence and Lightspeed following); about 90M dollars raised in total. Company-reported: first-party fraud losses cut by up to 51 percent, chargeback win rate 96 percent against a 60 percent industry average, and resolution in about 8 days instead of up to 90. Mechanism: agents investigate every card dispute on the issuer side, score the consumer for first-party fraud and assemble the network-ready case file.",
+   "wedge": "Attempted: sales motion. The theory was that a Synchrony- and Experian-backed vendor would sell up-market to large issuers and leave small issuers to cheaper tools.",
+   "buyer": "Card and disputes operations at credit unions and community banks.",
+   "trigger": "Rising first-party fraud and Reg E dispute volume, with small teams.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by the config-change test, and the config change has already happened. Casap sells to credit unions today (credit-union trade press and CUSO partnerships cover it), and its round was announced through the credit-union channel. The small issuer is already its customer.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0556",
+   "date": "2026-10-29",
+   "status": "killed",
+   "summary": "AI finance agents for small businesses below Hyphenate's mid-market floor: close, reconciliation and payables run by agents as an outsourced finance function.",
+   "source_pattern": "Hyphenate (formerly Maximor): 45M dollar Series A led by Nexus Venture Partners with B Capital, 2026-10-27/28. Revenue reportedly up 80-86x year on year and customer count about 11x (company-reported); customers include Groupon. Mechanism: agents run reconciliation, close, order-to-cash, treasury and reporting on top of a mid-market company's existing ERP and bank feeds.",
+   "wedge": "Attempted: price point. Hyphenate sells to mid-market companies on existing ERPs.",
+   "buyer": "Owners and fractional CFOs of US small businesses with 2-20M dollars of revenue.",
+   "trigger": "The bookkeeper quits, or a lender or investor asks for timely monthly financials.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by occupancy, with config change behind it. AI-native accounting for small businesses is crowded with well-funded entrants (Pilot, Digits, Basis, Rillet, Puzzle and many AI bookkeeping firms). Hyphenate's agents sit on existing ERPs, so moving down-market is a pricing decision rather than a second product.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0557",
+   "date": "2026-10-29",
+   "status": "killed",
+   "summary": "AI-native publisher of medical-necessity criteria: evidence-graded, continuously updated coverage criteria for health plans' utilisation management, as an alternative to InterQual (Optum) and MCG (Hearst).",
+   "source_pattern": "Vera Health: 28.5M dollar Series A led by Threshold Ventures, 2026-10-27 (YC and Gradient following), about 32M dollars in total. Company-reported use by more than 800,000 clinicians in 190 countries; free to clinicians. Category: OpenEvidence raised at 12bn dollars in January 2026. Mechanism: a model reads the full clinical literature and guidelines, answers a point-of-care question and grades the evidence behind every claim.",
+   "wedge": "Attempted: channel conflict. OpenEvidence and Vera are free tools that clinicians trust, so writing the criteria payers use to deny care would antagonise their users. InterQual is owned by Optum, which competing plans distrust.",
+   "buyer": "Medical-policy and utilisation-management leaders at regional plans, Blues plans and Medicaid managed-care plans.",
+   "trigger": "CMS rules require Medicare Advantage plans to publish the evidence behind internal coverage criteria, and prior-authorisation reform (CMS-0057) forces faster, explainable decisions.",
+   "kill_test": "Config change + occupancy",
+   "kill_reason": "Killed by the config-change test, with occupancy behind it. The criteria buyer's real incumbents are MCG and InterQual. Both own the evidence workflow and the payer contracts, and adding AI to update and cite criteria is a feature for them. Hayes (Symplr) and ECRI already sell evidence ratings to payers, and PolicyVault (pngn.ai) drafts coverage policies from literature. Pennsylvania Medicaid's 2025 move from InterQual to MCG shows payers switch between the two rather than to a third option, and the criteria-licence pool alone is roughly 1bn dollars.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0558",
+   "date": "2026-10-29",
+   "status": "killed",
+   "summary": "OpenEvidence for veterinarians: AI point-of-care evidence search over the veterinary literature, formularies and species-specific dosing.",
+   "source_pattern": "Vera Health: 28.5M dollar Series A led by Threshold Ventures, 2026-10-27 (YC and Gradient following), about 32M dollars in total. Company-reported use by more than 800,000 clinicians in 190 countries; free to clinicians. Category: OpenEvidence raised at 12bn dollars in January 2026. Mechanism: a model reads the full clinical literature and guidelines, answers a point-of-care question and grades the evidence behind every claim.",
+   "wedge": "Attempted: data model. The human-medicine leaders' corpus, licensing and pharma-advertising model do not cover animal species.",
+   "buyer": "General-practice veterinarians, starting with corporate groups.",
+   "trigger": "A clinical question at the consult with no specialist available.",
+   "kill_test": "Occupancy + segment viability",
+   "kill_reason": "Killed by occupancy. Vetnio (YC W25, VetsGPT, used by AniCura and Creature Comforts), VETbytes (backed by BSAVA), Vetsie (Merck Veterinary Manual partnership), Vetz and Veluna already sell veterinary evidence search, mostly bundled with AI scribes. The veterinary software market cannot reach 1bn dollars on evidence search alone, and ts-0135 and ts-0352 already closed the care-network and referral flanks.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0559",
+   "date": "2026-10-29",
+   "status": "new",
+   "summary": "AI-native third-party administrator for union multiemployer (Taft-Hartley) benefit funds: take over the fund office (employer contribution remittances, hours-bank eligibility, reciprocity transfers, payroll audits of contributing employers, member services and claims coordination), with agents reading the messy remittances from hundreds of small contractors and reconciling them against each collective bargaining agreement's rates.",
+   "source_pattern": "Avante: 30M dollar Series A (or A+) led by Frist Cressey Ventures, announced 2026-10-27/28, with Sorenson, Hearst Ventures, Morgan Stanley Next Level Fund and FUSE; about 40M dollars in total. More than 70 employer customers (Zscaler, Samsung Semiconductor, News Corp) covering more than 385,000 employees and dependants, bookings about 5x year on year; Ava Agents beta launched the week before. Mechanism: agents read an employer's plan documents, insurance contracts and claims data and do the recurring benefits-administration work (vendor comparison, claims analysis, employee coverage questions), returning finished output for review.",
+   "cross": {
+    "ai_signal": "Avante shows benefits-administration work (reading plan documents, contracts and claims and answering member questions) can now be done by agents with human review, and employers pay for it. Multiemployer funds have the same work plus a harder layer that only frontier models handle well: each month hundreds of small contributing employers send hours and contribution reports as PDFs, spreadsheets, portal entries and paper, against dozens of collective bargaining agreements with different rates, classifications and effective dates.",
+    "structural_signal": "About 20-26 million workers, retirees and dependants rely on multiemployer plans (NCCMP). Their administration is concentrated in a few PE-owned TPAs (Zenith American, owned by BPOC, describes itself as the largest independent Taft-Hartley TPA and grew by acquisition) and in self-administered fund offices. They run legacy benefit-processing systems (Bridgeway, formed from basys and ISSI) and charge per participant for labour-heavy work. Eligibility lags of 8-10 weeks after contribution reports arrive are normal."
+   },
+   "wedge": "Two structural blocks. (1) Avante cannot follow on data model and business model. Its schema is one employer, one HRIS feed, one benefits team, sold as SaaS to corporate HR. A multiemployer fund has hundreds of contributing employers, hours banks rather than enrolment, reciprocity between funds, CBA rate tables, employer payroll audits and, on the pension side, withdrawal liability. The buyer is a joint labour-management board of trustees that hires an administrator through an RFP, often on a consultant's advice, and expects a bonded service provider that runs the fund office, not a software subscription. Serving it means a second company. (2) The incumbent TPAs face an innovator's dilemma. Their revenue is per-participant fees on labour-intensive processing, and they are PE roll-ups optimised for margin on legacy systems. They can buy agent tools (horizontal platforms such as Cassidy already template 'multi-employer fund administration' agents), but that only lowers their own costs. It does not rebuild the eligibility and audit engine around machine reading, and passing the savings to trustees cuts their revenue. The honest limit is that a TPA could buy agents and keep the margin, which caps the score at 4.",
+   "buyer": "Beachhead: the boards of trustees, fund managers and fund counsel of small and mid-sized building-trades health and welfare funds (carpenters, laborers, electricians, operating engineers, about 2,000-20,000 participants). Start with self-administered funds whose in-house fund office is short of staff, and with funds unhappy with their TPA.",
+   "trigger": "The TPA contract comes up for RFP (usually every 3-5 years), a fund office loses staff, or an eligibility or contribution backlog produces member complaints, delinquent-employer losses or an audit finding.",
+   "expansion_path": "Building-trades health and welfare funds, then the same funds' pension, annuity, apprenticeship and vacation plans (one fund office usually runs several trusts), then other multiemployer sectors (Teamsters, hospitality, entertainment and healthcare-worker funds), then public-sector union trusts and VEBAs. The administration fee pool for the roughly 20-26 million people in multiemployer plans is several billion dollars a year. Becoming the administrator also brings in claims administration, PBM and stop-loss economics and payroll-audit recoveries, and serving many funds makes reciprocity a network effect. An AI-native administrator holding 10-15 percent of the fund offices, at software-like margins, is a 1bn-dollar-plus company.",
+   "kill_attempts_survived": 3,
+   "occupancy_note": "Searched 'Taft-Hartley' and 'multiemployer' with AI, TPA, startup and raise terms. Found only legacy TPAs (Zenith American, BeneSys, ABPA), legacy software (Bridgeway, Union.dev, MIDIOR, LaborAid for contractors) and horizontal agent-template pages (Cassidy). No AI-native administrator found.",
+   "scores": {
+    "wedge_durability": 4,
+    "pattern_strength": 3,
+    "market_venture_scale": 4,
+    "defensibility": 4,
+    "yc_fit": 4,
+    "founder_fit": 3,
+    "composite": 3.67
+   },
+   "rubric_version": 3,
+   "brief": "ideas/briefs/0033-ai-native-multiemployer-fund-administrator.md"
   }
  ]
 }
