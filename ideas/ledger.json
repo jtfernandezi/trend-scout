@@ -6747,6 +6747,138 @@
    },
    "rubric_version": 3,
    "brief": "ideas/briefs/0033-ai-native-multiemployer-fund-administrator.md"
+  },
+  {
+   "id": "ts-0560",
+   "date": "2026-10-31",
+   "status": "killed",
+   "summary": "Agentic service desk for managed service providers (MSPs): agents that resolve the tickets of the small businesses an MSP supports, across many client tenants.",
+   "source_pattern": "Serval: 150M dollar Series C led by Sequoia at a 3bn dollar post-money valuation, announced 2026-10-29 (277M dollars raised in total; third round in 12 months). Company says ARR has doubled every quarter since its December 2025 Series B (absolute revenue undisclosed) and it signed two Fortune 20 customers in recent months. Mechanism: agents read a company's ticket history, policies and connected systems, then build and run the automations for internal IT and HR requests (access, onboarding, offboarding), positioned as a ServiceNow replacement.",
+   "wedge": "Attempted: sales motion and federated buyer. Serval sells per-employee SaaS into one enterprise; an MSP is a pool of hundreds of small client organisations with their own tenants and contracts.",
+   "buyer": "Owners and service managers of IT managed service providers.",
+   "trigger": "Technician hiring shortage or margin squeeze on flat-fee contracts.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. Thread (18M dollars from Susquehanna, 'the leading AI service desk built for MSPs'), Mizo (backed by Devolutions and Telegraph Ventures, July 2026), Neo Agent, MSPbots and ZofiQ (acquired by ConnectWise in January 2026) already sell agentic service desks to MSPs, and the PSA/RMM platforms own the channel.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0561",
+   "date": "2026-10-31",
+   "status": "killed",
+   "summary": "Agentic internal-service automation for state and local government and school districts, built for StateRAMP/FedRAMP, CJIS and public procurement.",
+   "source_pattern": "Serval: 150M dollar Series C led by Sequoia at a 3bn dollar post-money valuation, announced 2026-10-29 (277M dollars raised in total; third round in 12 months). Company says ARR has doubled every quarter since its December 2025 Series B (absolute revenue undisclosed) and it signed two Fortune 20 customers in recent months. Mechanism: agents read a company's ticket history, policies and connected systems, then build and run the automations for internal IT and HR requests (access, onboarding, offboarding), positioned as a ServiceNow replacement.",
+   "wedge": "Attempted: compliance posture. Public-sector buyers require government-cloud authorisations and buy through cooperative contracts.",
+   "buyer": "State CIO offices, county IT departments, school district technology directors.",
+   "trigger": "ServiceNow renewal or a government-cloud mandate.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by the config-change test. A StateRAMP or FedRAMP authorisation is a quarter or two of focused compliance work for a 3bn-dollar company, not a second product, and ServiceNow already holds government-cloud authorisations and the public-sector installed base. Nothing about the data model differs.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0562",
+   "date": "2026-10-31",
+   "status": "killed",
+   "summary": "AI call-answering and booking agents for franchised home-service brands, sold at the franchisor level across hundreds of franchisees.",
+   "source_pattern": "Broccoli AI: 30M dollar Series B led by Khosla Ventures, reported by Fortune 2026-10-28, nine months after its Series A. More than 1,500 home-service businesses use it, revenue roughly tripled since the Series A (company-reported). Category confirmed by Avoca (125M dollars at a 1bn dollar valuation, April 2026). Mechanism: voice agents answer a contractor's inbound calls, qualify the job and book it into the field-service system.",
+   "wedge": "Attempted: federated buyer. A franchisor buys for a network of independently owned franchisees with shared brand standards and call routing.",
+   "buyer": "Franchisor operations and technology leads at multi-brand home-service franchise systems.",
+   "trigger": "Missed-call and booking-rate problems across the network.",
+   "kill_test": "Config change (already done) + occupancy",
+   "kill_reason": "Killed by the config-change test: it is already done. Broccoli's named customers include Ace Hardware Home Services, Mr. Electric and Any Hour Group, and it is hiring a PE-partnerships director. Avoca is a ServiceTitan Gold Partner and works with Nexstar. Franchise and PE platforms are the leaders' core channel, not a locked-out segment.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0563",
+   "date": "2026-10-31",
+   "status": "killed",
+   "summary": "Agentic SOC run as a whole-of-state shared service for counties, municipalities, school districts and water utilities.",
+   "source_pattern": "Mave: 34M dollars (28M dollar Series A plus 6M dollar seed), week of 2026-10-26, deployed in 200+ SOCs with Fortune 200 customers. Category confirmed by Upwind (400M dollar Series C at 3.8bn dollars, Bessemer, 2026-10-29, revenue up 4x in 2026) and Dropzone AI (11x ARR growth in 2025, 300+ organisations). Mechanism: agents triage and investigate every security alert the way a tier-1 analyst would.",
+   "wedge": "Attempted: federated buyer. A state cyber program defends hundreds of legally separate local entities on different tools.",
+   "buyer": "State CISOs running whole-of-state programs funded by the State and Local Cybersecurity Grant Program.",
+   "trigger": "A ransomware incident at a local entity or a grant cycle.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by the config-change test. Dropzone already ships three multi-tenant deployment models and an MSSP tier, and signed an EMEA MSSP distribution deal in July 2026. A state program is an MSSP-shaped buyer the leaders already serve; nothing structural blocks them.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0564",
+   "date": "2026-10-31",
+   "status": "killed",
+   "summary": "AI-native administrator for public-entity risk pools and joint powers authorities: run underwriting, cost allocation, claims and loss control for pools of cities, counties and school districts.",
+   "source_pattern": "AI-native TPA cluster: Veltha (YC, AI-native workers' comp TPA, launched October 2026), Corgi Claims (AI-native TPA, June 2026), and Avante (30M dollar Series A, 2026-10-28/29) in benefits administration. Mechanism: agents read the claim or plan file and do the adjuster's or administrator's routine work, with a human approving decisions.",
+   "wedge": "Attempted: federated buyer (method note 2026-10-29). A pool is hundreds of member entities with cost-allocation formulas and member-specific deductibles, governed by a member board.",
+   "buyer": "Executive directors and boards of the roughly 500 US public-entity pools.",
+   "trigger": "Administrator contract RFP or rising loss ratios.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by occupancy. Klear.ai markets a native-AI platform for public risk pools and JPAs covering policy and claims administration, loss control and member services; Spear Technology sells claims software to pools; Alliant and Gallagher administer many pools. Pool claims work goes out as ordinary TPA contracts that Veltha or Corgi Claims could bid on next quarter.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0565",
+   "date": "2026-10-31",
+   "status": "killed",
+   "summary": "AI-native community association (HOA and condo) management company: agents run assessments, violations, architectural review, vendor work orders and board packets for homeowner associations.",
+   "source_pattern": "EliseAI: 350M dollars at a 4bn dollar valuation, 2026-09-29 (a16z, Bessemer), agents run leasing and resident operations for multifamily landlords. Used here only as the federated-buyer check from the 2026-10-29 method note; outside the two-week window.",
+   "wedge": "Attempted: data model. An HOA is owners governed by a volunteer board, not tenants of one landlord, so EliseAI's schema does not fit.",
+   "buyer": "Volunteer boards of self-managed and small-managed associations.",
+   "trigger": "Management-company contract renewal, assessment delinquency or a board complaint wave.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. Assembly HOA (YC S24) already operates as an AI-native HOA management company in the Bay Area and Los Angeles, and Vantaca and the large managers (FirstService, Associa) are adding AI. Ledger entries ts-0421 and ts-0422 already closed the condo financing flanks.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0566",
+   "date": "2026-10-31",
+   "status": "killed",
+   "summary": "AI back office for UK sole traders under Making Tax Digital for Income Tax: bookkeeping, quarterly HMRC updates and year-end return done by agents.",
+   "source_pattern": "Collective: 40M dollar Series B plus a 60M dollar growth facility (General Catalyst, QED, Gradient), week of 2026-10-26; ARR up about 120%, about 350M dollars in cumulative member tax savings (company-reported). Mechanism: one subscription that forms, books, pays and files for a one-person business, increasingly done by agents.",
+   "wedge": "Attempted: geography and regulation. Collective is built around US S-corp elections; MTD for Income Tax began on 2026-04-06 for incomes over 50,000 pounds.",
+   "buyer": "UK self-employed people and landlords newly inside MTD.",
+   "trigger": "First quarterly MTD update falls due.",
+   "kill_test": "Occupancy + segment viability",
+   "kill_reason": "Killed by occupancy. Starling, Monzo, HSBC with Sage, SumUp (powered by Sage), QuickBooks Sole Trader and ANNA Money already ship HMRC-recognised MTD tools, mostly free inside a bank account, and Sage has an MTD AI agent. With banks giving it away, the price point cannot support a 1bn-dollar company.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0567",
+   "date": "2026-10-31",
+   "status": "killed",
+   "summary": "Private, sovereign-deployed agent platform for European cooperative banking groups (Volksbanken, Sparkassen) run through their central IT providers.",
+   "source_pattern": "Cohere: initial close of a Series E targeting up to about 4.5bn US dollars, anchored by Schwarz Group (reported 2026-10-30); ARR up 165% year on year in Q3 2026 with about 300 customers. Mechanism: frontier models and an agent platform deployed inside a regulated customer's own environment.",
+   "wedge": "Attempted: federated buyer and data residency.",
+   "buyer": "Central IT providers of cooperative and savings-bank groups.",
+   "trigger": "EU AI Act and DORA obligations, plus group-wide AI programmes.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by the config-change test. Private deployment for regulated European enterprises is Cohere's core business (its new anchor investor is a German retail group), and Mistral sells the same posture. A banking group's central IT provider is exactly their buyer.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0568",
+   "date": "2026-10-31",
+   "status": "new",
+   "summary": "AI-native integration operator for private-equity buy-and-build platforms: at each add-on acquisition close, agents discover the acquired company's systems (identity, email and files, ERP and chart of accounts, payroll and benefits, line-of-business apps) from its configs, logs and tickets, then plan and execute the Day-1 to Day-100 integration into the platform, and run carve-out TSA exits the same way.",
+   "source_pattern": "Serval: 150M dollar Series C led by Sequoia at a 3bn dollar post-money valuation, announced 2026-10-29 (277M dollars raised in total; third round in 12 months). Company says ARR has doubled every quarter since its December 2025 Series B (absolute revenue undisclosed) and it signed two Fortune 20 customers in recent months. Mechanism: agents read a company's ticket history, policies and connected systems, then build and run the automations for internal IT and HR requests (access, onboarding, offboarding), positioned as a ServiceNow replacement. Supporting: Hyphenate (45M dollar Series A, revenue up 80-86x) shows agents can run finance operations on top of an existing ERP; Broccoli AI is hiring a PE-partnerships director, showing roll-up platforms already buy agents.",
+   "cross": {
+    "ai_signal": "Serval proves agents can learn an organisation's systems from its own ticket history and configuration and then execute changes across them. An integration is the hardest version of that job: two organisations' undocumented systems must be discovered, mapped and merged against a deadline. That needs frontier models reading heterogeneous configs, permissions, chart-of-accounts mappings and payroll rules, which scripts and migration tools cannot do.",
+    "structural_signal": "Add-ons are most US buyouts (PitchBook puts them at roughly three-quarters of PE buyouts), so platforms close thousands each year. Integration is done today by consultancies billing hours and by single-workload migration tools (ShareGate, Quest, BitTitan) priced at roughly 30-150 dollars per user for Microsoft 365 alone. Integrations take 3-24 months, and carve-out TSAs typically cost 1-3% of deal value."
+   },
+   "wedge": "Adjacent buyer, different trigger, and a different data model. Serval sells a per-employee subscription to one enterprise for continuous internal requests, and its schema is one organisation's systems. The integration job is episodic and cross-entity: two separate legal entities, two identity tenants, two ERPs, and a sponsor-imposed deadline. It is bought by the PE operating partner or platform CFO per deal, delivered as a fixed-fee outcome, and tied to the deal's value-creation plan. Serving it means an outcome-priced services operation plus a cross-deal playbook library, not a feature. Migration tools (ShareGate, Quest) cover one workload each and cannot own the ERP, payroll and business-process work. The consultancies that own the job (Big Four, West Monroe, Accordion) bill hours, so an operator that does it in weeks at a fixed price cannibalises their model. Honest limit: Serval or a migration vendor could partner with a consultancy, and horizontal tools (Caddi) already blog about Day-1 add-on integration. That caps the wedge at 3.",
+   "buyer": "Beachhead: operating partners and platform CFOs/CIOs at lower-middle-market PE firms running buy-and-build strategies in fragmented services (home services, dental, veterinary, accounting, IT services, insurance brokerage), doing 5-20 add-ons a year with 20-500 employees each.",
+   "trigger": "An add-on signs and Day-1 is 30-60 days away; or a platform has a backlog of half-integrated add-ons blocking consolidated reporting ahead of a sale process.",
+   "expansion_path": "Lower-middle-market add-on integrations, then upper-middle-market platforms and corporate M&A integration, then carve-outs and TSA exits (the highest-fee, hardest-deadline work), then a standing 'integration and IT operations layer' for the whole portfolio (the continuing Serval-like seat across every portfolio company). Every deal adds system-to-system mappings (common SMB ERPs, payroll providers and vertical apps) to a playbook library that makes the next integration faster. The M&A integration services market is several billion dollars a year, and the portfolio-operations layer behind it is larger.",
+   "kill_attempts_survived": 3,
+   "occupancy_note": "Searched AI agents plus M&A integration, carve-out, TSA exit, buy-and-build and tenant migration. Found consultancies (Persistent, TCS, Big Four), migration tools (ShareGate, Quest, BitTitan), PE diligence tools (Diligize), a horizontal back-office automation vendor that blogs about Day-1 add-on integration (Caddi, 5M dollar seed, no evidence it performs integrations), and Cognida's acquisition of Automate (accounting workflows for PE-backed companies). No AI-native operator that performs the integration end to end found.",
+   "scores": {
+    "wedge_durability": 3,
+    "pattern_strength": 4,
+    "market_venture_scale": 4,
+    "defensibility": 3,
+    "yc_fit": 4,
+    "founder_fit": 4,
+    "composite": 3.67
+   },
+   "rubric_version": 3,
+   "brief": "ideas/briefs/0034-ai-native-pe-integration-operator.md"
   }
  ]
 }
