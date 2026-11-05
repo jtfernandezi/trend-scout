@@ -7009,6 +7009,126 @@
    "kill_test": "Config change + occupancy",
    "kill_reason": "Killed by config change and occupancy. CarbonAI already sells to debt funds, mortgage REITs and agency lenders, whose workflows are the same as a life company's, so this is a sales-territory decision for it. Blooma already sells AI CRE underwriting to banks (see ts-0109).",
    "rubric_version": 3
+  },
+  {
+   "id": "ts-0579",
+   "date": "2026-11-05",
+   "status": "killed",
+   "summary": "AI-native premium-audit firm for commercial carriers: agents read a policyholder's payroll, tax filings and ledgers after the policy term to true-up workers' comp and GL exposure and catch misclassification.",
+   "source_pattern": "Kalepa: 75M dollar Series B at a 470M dollar valuation led by Updata Partners, announced 2026-11-05 (about 91M dollars raised in total); cash-flow positive for over two years, in 10+ countries; customers (insurers, MGAs, reinsurers, program administrators; Bowhead Specialty named) report 58%+ more premium per underwriter and 30-60% faster quotes (company-reported). Mechanism: agents gather research, data and guidelines for each submission and do the multi-step underwriting work, with a human approving.",
+   "wedge": "Attempted: adjacent buyer and trigger (post-bind audit, not submission underwriting); the job is outsourced to field-audit vendors, so it would be sold as a service.",
+   "buyer": "Premium audit managers at workers' comp and GL carriers and MGAs.",
+   "trigger": "Policy expiration; auditor shortage and audit backlogs.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. Arcimus (YC) is running AI-powered premium audits, founded by former premium auditors; Roots sells workers' comp audit agents; V7, Nomad Data and NeuralMetrics (CHRIS) ship audit agents; Majesco's carrier audit module already uses AI.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0580",
+   "date": "2026-11-05",
+   "status": "killed",
+   "summary": "AI-native contract-surety MGA for small and mid-size contractors: underwrite bonds by machine-reading the contractor's WIP schedules, financial statements, bank data and backlog instead of a manual surety underwriter file.",
+   "source_pattern": "Kalepa: 75M dollar Series B at a 470M dollar valuation led by Updata Partners, announced 2026-11-05 (about 91M dollars raised in total); cash-flow positive for over two years, in 10+ countries; customers (insurers, MGAs, reinsurers, program administrators; Bowhead Specialty named) report 58%+ more premium per underwriter and 30-60% faster quotes (company-reported). Mechanism: agents gather research, data and guidelines for each submission and do the multi-step underwriting work, with a human approving.",
+   "wedge": "Attempted: data model (WIP, work-on-hand and indemnity are different entities from P&C submissions) and channel conflict (Kalepa sells to sureties, so it won't write bonds itself).",
+   "buyer": "Contractors under about 5M dollars of bonding capacity, through surety agents.",
+   "trigger": "A bid that needs a bid or performance bond; public-infrastructure spending.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. InRev (3.8M dollars from Accelerant, Greenlight Re and others) already underwrites contract surety up to 2.5M dollars single / 5M dollars aggregate on an automated platform; Tinubu positions itself as the AI-native surety system; SuretyOS automates the bond lifecycle for agencies; Propeller Bonds (6.4M dollar seed).",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0581",
+   "date": "2026-11-05",
+   "status": "killed",
+   "summary": "Agents that run life-insurance case management for brokerage general agencies: chase APS records, labs and carrier requirements, and push each case to issue.",
+   "source_pattern": "Nevis: 70M dollar Series B led by EQT Ventures, 2026-10-26, at a reported 500M dollar valuation, with Charles Schwab, QuantumLight, Sequoia, ICONIQ and Ribbit; 100,000+ operational tasks completed by its agents (company-reported). Mechanism: agents do the administrative back office for financial advisers (account opening, paperwork, follow-ups).",
+   "wedge": "Attempted: adjacent buyer (life and annuity distribution instead of RIAs) and data model (carrier requirements, APS and underwriting instead of custodial paperwork).",
+   "buyer": "Case managers at BGAs and IMOs placing life and annuity business for independent agents.",
+   "trigger": "A case stuck in requirements; case-manager headcount limits.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. Modern Life (20M dollar Series A) is already an AI-driven life brokerage with end-to-end case management; Zocks launched a life-insurance assistant for producers; Layerup and LezDo summarise APS records; iPipeline AgencyIntegrator holds the case-management system of record.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0582",
+   "date": "2026-11-05",
+   "status": "killed",
+   "summary": "Vision AI on a casino's existing surveillance cameras that settles every table-game hand and flags dealer errors, cheating and advantage play, with an audit trail for gaming regulators.",
+   "source_pattern": "Solink: 100M dollars+ led by Vertu Capital with Goldman Sachs Alternatives, Golub Growth and Comcast Ventures, late October 2026; about 500,000 cameras across 35,000+ sites in 65 countries. Mechanism: AI reads video from cameras a business already owns and turns it into operational and loss-prevention events.",
+   "wedge": "Attempted: compliance posture (gaming-commission surveillance rules) and data model (cards, chips and game procedures).",
+   "buyer": "Casino surveillance directors.",
+   "trigger": "Table-game revenue leakage (vendors cite 1-2.5% of table revenue).",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. EagleSight turns existing casino cameras into vision agents for dealer errors and cheating; XSEN recognises every card and settles every hand; Resorts World runs a live platform; smart-table and RFID incumbents hold the rest.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0583",
+   "date": "2026-11-05",
+   "status": "killed",
+   "summary": "AI drafting of probation supervision records and pre-sentence reports for the Probation Service in England and Wales and US county probation departments.",
+   "source_pattern": "22one: stealth London police-AI startup reportedly valued near 400M dollars, backed by Sequoia, General Catalyst, Lux and Creandum (FT, late October 2026); founder previously built Riven (redaction, used by UK forces). UK PoliceAI programme has 75M pounds over three years. Mechanism: agents do justice-system casework and records from recorded interviews and case files.",
+   "wedge": "Attempted: adjacent buyer (probation rather than police).",
+   "buyer": "Probation officers and court report writers.",
+   "trigger": "Prison overcrowding and early-release caseload; staff shortages.",
+   "kill_test": "Occupancy + segment viability",
+   "kill_reason": "Killed by occupancy and viability. The MoJ built Justice Transcribe in-house, rolled it out to every probation officer in England and Wales in February-March 2026 (800,000+ meetings summarised by June 2026) and is piloting a pre-sentence-report version. One government buyer that builds in-house does not leave a venture-scale beachhead. ts-0532 already closed the UK police disclosure flank.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0584",
+   "date": "2026-11-05",
+   "status": "killed",
+   "summary": "AI SRE for factories: an agent that diagnoses why a production line went down from PLC logs, historian data, alarms and maintenance records.",
+   "source_pattern": "Traversal: reported 120M dollar round at a 1bn dollar valuation co-led by Kleiner Perkins, Redpoint and Khosla (week of 2026-11-02); Fortune 100 customers (PepsiCo, American Express named). Mechanism: agents investigate production incidents across logs, metrics and code to find root cause in minutes.",
+   "wedge": "Attempted: data model (OT time series, PLC tags and alarms instead of software telemetry) and architecture (on-premises plant networks).",
+   "buyer": "Plant reliability and controls engineers at multi-site manufacturers.",
+   "trigger": "An unplanned downtime event.",
+   "kill_test": "Config change (system-of-record rule)",
+   "kill_reason": "Killed by the system-of-record rule. Cognite's Atlas AI already ships troubleshooting and root-cause agents on contextualised plant data, and Schneider Electric agreed on 2026-06-30 to buy Cognite for 3.1bn dollars and fold it into AVEVA (PI System, the historian of record). The vendor holding the records has shipped the agent.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0585",
+   "date": "2026-11-05",
+   "status": "killed",
+   "summary": "Self-serve post-training for mid-market vertical-software companies: customise an open-weights model on the customer's own data without forward-deployed engineers.",
+   "source_pattern": "Applied Compute: 350M dollars at a 3.25bn dollar valuation led by Elad Gil, reported 2026-11-03; about 100M dollars ARR less than 18 months after founding; customers include DoorDash, Cognition and Mercor. Mechanism: ex-OpenAI researchers embed with the customer and train specialised open-weights models on its own data and tasks.",
+   "wedge": "Attempted: sales motion (Applied Compute's forward-deployed model cannot reach 50-200k dollar customers).",
+   "buyer": "ML leads at vertical SaaS companies with 20-200M dollars revenue.",
+   "trigger": "Inference cost or quality ceiling on a frontier API.",
+   "kill_test": "Occupancy (reasoned; no new search this run)",
+   "kill_reason": "Killed by occupancy. The self-serve post-training layer is already crowded: Thinking Machines (Tinker), OpenPipe (bought by CoreWeave), Predibase, Together, Fireworks and Prime Intellect all sell fine-tuning and RL to this buyer. Applied Compute's moat is the embedded researchers, which this flank removes.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0586",
+   "date": "2026-11-05",
+   "status": "new",
+   "summary": "Camera-underwritten premises liability: an AI-native MGA that writes general liability for apartment communities (then hotels, retail centres and parking) by reading each property's existing security-camera feeds, access logs and maintenance records with vision-language models, continuously verifying the security conditions behind negligent-security claims (working cameras at entries and exits, lighting, gates, locks, patrols, response to incidents), pricing on that evidence, and keeping a timestamped record that supports the property's defence when a claim comes.",
+   "source_pattern": "Three-part pattern. (1) Solink: 100M dollars+ led by Vertu Capital with Goldman Sachs Alternatives, Golub Growth and Comcast Ventures, late October 2026; about 500,000 cameras across 35,000+ sites in 65 countries. AI on cameras a business already owns produces operational and loss-prevention data. (2) Nirvana: 100M dollar Series D at 1.5bn dollars (Valor, December 2025), premium volume reportedly doubling year on year. Proves an AI-native MGA/carrier that prices on continuous sensor data beats questionnaire underwriting in a hard liability line. (3) Kalepa: 75M dollar Series B at 470M dollars, 2026-11-05, cash-flow positive; agentic underwriting for specialty insurers. Mechanism: continuous machine-read evidence of how a risk is actually managed replaces the application form as the basis for pricing.",
+   "cross": {
+    "ai_signal": "Vision-language models can now describe open-ended scene conditions (a dark stairwell, a propped-open gate, an unmanned lobby, a broken entry camera) across thousands of heterogeneous camera brands without per-site training. Agents can read incident logs, police calls-for-service and maintenance tickets alongside them. Before VLMs, camera analytics needed per-site tuning for narrow events, so underwriting on video was not economic.",
+    "structural_signal": "Habitational and hospitality GL is one of the hardest liability lines. Baldwin's mid-2026 report says nuclear verdicts and new liability theories keep GL and umbrella capacity tight, especially in high-litigation states and higher-crime ZIP codes, and carriers keep raising multifamily rates. Florida's 2023 tort reform (Fla. Stat. 768.0706) gives multifamily owners a presumption against negligent-security liability if they substantially implement named measures, including cameras at entry and exit points and a CPTED security assessment. That is a written evidence standard a machine can verify. Pending 2026 bills (HB 1423 / SB 956) would remove the presumption where reported crime exceeds a threshold, which makes property-level evidence matter more."
+   },
+   "wedge": "Three structural blocks. (1) Solink, Verkada, Eagle Eye and the other camera-AI vendors sell software to operators. To follow they would have to become a licensed, risk-bearing MGA with capacity, actuarial, claims and regulatory filings in every state: a second company. Pricing their own customers' liability would also turn their product into evidence that can be used against those customers in court, so they would have to rebuild the data relationship. (2) Kalepa and the underwriting-workbench vendors (FurtherAI, Cytora) sell to carriers and MGAs. Writing risk themselves would compete with their own customers. (3) Incumbent habitational carriers and MGAs (MSI, Kinsale and Lloyd's habitational facilities) price from applications, loss runs, CPTED reports and ZIP-code crime scores, and their wholesale distribution does not install software at properties. To follow they would need a camera-agnostic ingestion layer across thousands of sites, a vision-model stack and a new data-consent agreement with each insured. That is not a rating-plan change. Honest limit: a carrier could partner with a camera-AI vendor on a discount programme, much as Progressive answered Nirvana with Smart Haul. That caps the wedge at 3.",
+   "buyer": "Beachhead: owners and third-party managers of Class B and C apartment communities (100-500 units) in Florida, Georgia and Texas that already run cloud cameras, whose GL renewals have gone up sharply or been non-renewed, placed through wholesale habitational brokers.",
+   "trigger": "A GL non-renewal or a large renewal increase, a negligent-security suit or verdict nearby, a lender or investor insurance requirement, or the need to document Florida 768.0706 compliance.",
+   "expansion_path": "Florida/Georgia/Texas multifamily GL, then all US habitational GL and umbrella, then hotels and motels (the same negligent-security exposure), retail centres, parking operators, student housing and nightlife (liquor liability), then become a premises-liability carrier with loss-control-as-a-service as the second revenue line and claims-defence evidence as the third. US general liability is a market of more than 100bn dollars of premium a year, and the camera-to-loss dataset compounds with every policy year. Nirvana reached a 1.5bn dollar valuation on one sensor-priced liability line; premises liability is larger.",
+   "kill_attempts_survived": 3,
+   "occupancy_note": "Searched habitational/multifamily MGA plus AI, camera/video underwriting for liability, insurtech using property CCTV for underwriting, and Florida 768.0706 plus insurance. Found camera vendors marketing premium savings (Intellisee, Volt, Cloudastructure, Vulcan), established habitational MGAs without an AI or camera angle (MSI, a Baldwin Group subsidiary), BriefCam (video search, not insurance) and InsureVision (dashcams for motor fleets, London). No MGA or carrier pricing premises liability on continuous camera evidence found.",
+   "viability_note": "First ten buyers come through Florida Apartment Association and NAA events, the regional apartment associations in Atlanta and Houston, and the wholesale brokers (AmWINS, CRC, RT Specialty) who place distressed habitational GL. Camera vendors' multifamily partner programmes are a second channel. Capacity needs a fronting carrier and reinsurer, the same route Nirvana took.",
+   "scores": {
+    "wedge_durability": 3,
+    "pattern_strength": 4,
+    "market_venture_scale": 4,
+    "defensibility": 4,
+    "yc_fit": 4,
+    "founder_fit": 4,
+    "composite": 3.83
+   },
+   "rubric_version": 3,
+   "brief": "ideas/briefs/0035-camera-underwritten-premises-liability.md"
   }
  ]
 }
