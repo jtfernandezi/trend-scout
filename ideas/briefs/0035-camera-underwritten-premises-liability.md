@@ -45,8 +45,8 @@ nuclear verdicts and new liability theories constraining GL and umbrella capacit
 higher-crime ZIP codes. (3) Florida's 2023 tort reform (Fla. Stat. 768.0706) created a written, machine-checkable
 evidence standard. Multifamily owners who substantially implement named measures, including entry and exit cameras
 and a CPTED assessment, get a presumption against negligent-security liability. Pending 2026 bills (HB 1423 / SB 956)
-would remove it where reported crime is high, which makes property-level evidence matter more. Passage is
-unconfirmed.
+would have removed it where reported crime is high. **Update 2026-11-07:** HB 1423 died in the House Judiciary
+Committee on 2026-03-13 and SB 956 did not advance, so the presumption stands unamended.
 
 ## Why the leader structurally can't follow
 

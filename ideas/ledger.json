@@ -7128,7 +7128,128 @@
     "composite": 3.83
    },
    "rubric_version": 3,
-   "brief": "ideas/briefs/0035-camera-underwritten-premises-liability.md"
+   "brief": "ideas/briefs/0035-camera-underwritten-premises-liability.md",
+   "recheck_2026-11-07": "Weakest facts verified. Florida HB 1423 died in the House Judiciary Committee on 2026-03-13 (SB 956 did not advance), so the Fla. Stat. 768.0706 presumption stands unamended and the machine-checkable evidence standard is intact. No Verkada, Flock or Solink camera-linked insurance or premium-discount programme found. Status unchanged."
+  },
+  {
+   "id": "ts-0587",
+   "date": "2026-11-07",
+   "status": "killed",
+   "summary": "Post-discharge claim audit and deduction recovery for Indian private hospitals on the National Health Claims Exchange: agents check every cashless claim against the clinical record and each insurer's rules before submission, contest deductions and advance cash against approved claims.",
+   "source_pattern": "Rivio: R$180M Series A extension led by Valor Capital Group (reported 2026-11-04), valuation reported above R$1bn; live at 13 hospital groups including Einstein, Sirio-Libanes and A.C. Camargo. Mechanism: agents audit 100% of hospital bills against prescriptions and each payer's rules before submission and draft denial (glosa) appeals; Dealroom says it also guarantees hospital revenue.",
+   "wedge": "Attempted: geography (Rivio is built on Brazil's TISS/TUSS standards and ANS rules).",
+   "buyer": "Revenue-cycle heads at Indian multispecialty private hospitals.",
+   "trigger": "Insurer deductions on cashless claims, discharge delays, NHCX migration.",
+   "kill_test": "Occupancy + segment viability",
+   "kill_reason": "Killed by occupancy and viability. ClaimBuddy already runs the claims process for 250+ Indian hospitals; insurers such as Star Health are automating adjudication themselves (20% auto-processed, targeting 50%+); and ts-0503 already found that Indian hospital software price points make a 1bn dollar path implausible. Near-duplicate of the ts-0503 kill.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0588",
+   "date": "2026-11-07",
+   "status": "killed",
+   "summary": "Accountants' professional liability MGA priced on machine review of each CPA firm's audit workpapers, with continuous engagement-quality monitoring as loss control.",
+   "source_pattern": "Clark (formerly uiAgent): 11M dollar seed led by Touring Capital, 2026-11-02 (16M dollars in total); 35+ CPA firms including CliftonLarsonAllen, Aprio, Kreischer Miller and Sensiba. Mechanism: agents take ownership of audit fieldwork (testing, workpapers, client requests) while licensed CPAs sign.",
+   "wedge": "Attempted: insurer-of-record (Clark sells software to the firms it would insure).",
+   "buyer": "Managing partners of 20-200 person CPA firms with audit practices.",
+   "trigger": "Malpractice renewal after a peer-review deficiency or an audit-failure claim.",
+   "kill_test": "Config change + venture scale",
+   "kill_reason": "Killed by config change and venture scale. Clark already offers an accuracy guarantee and a peer-review guarantee, so it is already moving to bear the risk on its own work. Accountants' professional liability is a small line dominated by CNA's AICPA-endorsed programme, and the expansion into lawyers' and architects' liability has no shared data asset.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0589",
+   "date": "2026-11-07",
+   "status": "killed",
+   "summary": "Drone delivery as a service for independent grocers, pharmacies and restaurants that Zipline's big-retailer deals do not cover.",
+   "source_pattern": "Zipline: 1.5bn dollars at a 21.5bn dollar post-money valuation (Paradigm, WCM, Layer Global), 2026-11-05; 1M+ deliveries in Dallas-Fort Worth in 2026, 19-minute median delivery, 5,000+ health facilities served, a 300-site Walmart expansion and an Uber Eats partnership. Mechanism: autonomous aircraft deliver from local sites, now that BVLOS approvals and unit costs work at metro scale.",
+   "wedge": "Attempted: sales motion (enterprise retail deals vs independents).",
+   "buyer": "Owners of independent grocers, pharmacies and restaurants in drone-served metros.",
+   "trigger": "A delivery-app fee increase or a competitor offering 20-minute delivery.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by config change. The Uber Eats partnership puts every independent merchant on Uber's platform onto Zipline's network with no new product. Drone-enabled diagnostics logistics was already killed at ts-0303.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0590",
+   "date": "2026-11-07",
+   "status": "killed",
+   "summary": "Licensed payment rails that AI agents can operate end to end for small businesses: agents get scoped cards and bank payouts with policy, audit and approval built in.",
+   "source_pattern": "Pliant: 80M dollar Series C led by Seaya Nova and Speedinvest, 2026-11-04; ARR above 100M dollars, revenue doubling every year for three years; external agents (Claude, ChatGPT) connect via MCP to start payment workflows. Mechanism: licensed B2B card and payment infrastructure exposed to agents.",
+   "wedge": "Attempted: sales motion and geography (Pliant is mid-market and Europe-first).",
+   "buyer": "US small-business owners running agents for procurement and bills.",
+   "trigger": "First agent that needs to pay a vendor.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy (reasoned, building on ts-0021). Ramp, Brex and Payhawk ship agent cards and policy controls; Visa Intelligent Commerce, Mastercard Agent Pay, Skyfire and Payman cover agent payments at the protocol layer.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0591",
+   "date": "2026-11-07",
+   "status": "killed",
+   "summary": "Insurer of record for contractors running autonomous heavy equipment: an MGA that prices equipment, general liability and inland marine cover on the autonomy kit's own telemetry.",
+   "source_pattern": "Bedrock Robotics: 600M dollar Series C at a 4.1bn dollar valuation co-led by CapitalG and Emergence, 2026-10-26; paid work on active job sites since August 2026 (Native Excavating, Clarkson Construction, C.W. Matthews). Mechanism: retrofit autonomy kits turn existing excavators into autonomous machines.",
+   "wedge": "Attempted: insurer-of-record (Bedrock sells kits, not risk).",
+   "buyer": "Earthwork contractors deploying autonomy kits.",
+   "trigger": "An insurer declines or surcharges an autonomous machine at renewal.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by occupancy and config change. HDI Global's Digital Solutions unit already insures autonomous-machinery companies (it names Gravis Robotics and Embotech), Axis runs a programme for robot makers and deployers, and Zurich embeds robot insurance with YAS. Bedrock can also embed a carrier partner programme next quarter, as Tesla did with its insurance. Autonomous earthmoving was worked at ts-0549 and ts-0550.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0592",
+   "date": "2026-11-07",
+   "status": "killed",
+   "summary": "Medical malpractice MGA that prices each clinician on machine review of their own documentation and decision-support history.",
+   "source_pattern": "Vera Health: 28.5M dollar Series A led by Threshold (YC participating), 2026-10-27, used by 800,000 clinicians. Supporting: Indigo, an AI med-mal insurer with a 50M dollar Series B (January 2026) and premium reportedly doubled to 20M dollars+.",
+   "wedge": "Attempted: insurer-of-record on clinical-assistant data.",
+   "buyer": "Independent physician groups at malpractice renewal.",
+   "trigger": "A large malpractice renewal increase.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. Indigo already prices malpractice per physician with AI (Lux), auto-underwrites 20% of submissions and doubled premium to 20M dollars+; Curi and the physician-owned mutuals hold the rest of the segment.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0593",
+   "date": "2026-11-07",
+   "status": "killed",
+   "summary": "AI-generated video advertising for regulated advertisers (pharma direct-to-consumer and financial products), with fair-balance and disclosure compliance built into generation.",
+   "source_pattern": "Sand.ai: 200M dollar Series A+ (Cornerstone, Wangsu), 2026-11-05; its VidMuse video tool reached 10M dollars ARR within two months of launch (company-reported). Mechanism: video foundation models turn a brief into finished ad video.",
+   "wedge": "Attempted: compliance posture (MLR/promotional review).",
+   "buyer": "Brand teams at pharma and consumer-finance advertisers.",
+   "trigger": "A new campaign that needs medical, legal and regulatory sign-off.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy (reasoned, no new search). Veeva PromoMats owns the promotional-review system of record and is adding AI, Indegene and the agency holding companies sell compliant content production, and generic video tools (HeyGen, Synthesia, Creatify) already serve regulated brands with review workflows.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0594",
+   "date": "2026-11-07",
+   "status": "new",
+   "summary": "AI-native subcontractor-default insurer for mid-size general contractors: an MGA that writes subcontractor default insurance (SDI) for GCs below the 75-150M dollar subcontract-volume floor and 750K dollar deductible of Zurich SubGuard and Arch, by machine-underwriting every enrolled subcontractor (financials, WIP schedules, backlog, bank data, licences, lien and litigation history) and continuously monitoring each project's pay applications, schedule updates, daily logs, RFIs and correspondence for early signs of distress, so the GC can step in before a sub fails and gets reimbursed when one does.",
+   "source_pattern": "Two-part pattern. (1) AI-native risk-bearers that price each unit on its own evidence are winning hard commercial lines: Kalepa (75M dollar Series B at 470M dollars, 2026-11-05; revenue and customer count each tripled in a year, cash-flow positive), Indigo (AI med-mal insurer, 50M dollar Series B, premium doubled to 20M dollars+ by pricing individual physicians instead of groups) and Nirvana (1.5bn dollars, sensor-priced trucking liability). (2) Agents can now read construction project documents at scale: Shackleton (5M dollar seed led by Battery, 2026-11-04, 1bn dollars+ of project value across 15+ states), Bedrock Robotics (600M dollars at 4.1bn dollars, 2026-10-26) and Document Crunch. Mechanism: continuous machine-read evidence of how each counterparty is actually performing replaces the annual questionnaire as the basis for pricing default risk.",
+   "cross": {
+    "ai_signal": "Frontier models can now read the messy, heterogeneous paper of thousands of small subcontractors (reviewed or compiled financials, WIP schedules, bank statements, pay applications, schedules of values, lien waivers, daily logs, RFI and email threads) and turn it into a per-sub, per-project distress signal. Before this, underwriting a 2M dollar drywall sub cost the same analyst hours as a 50M dollar one, which is why SDI only exists for GCs big enough to run their own prequalification department and retain the first 750K dollars of every loss.",
+    "structural_signal": "SDI is offered only to large GCs: commonly cited floors are 75M dollars+ annual subcontract volume (NASBP), 100M dollars+ (Levelset) or 150M dollars+ revenue (Arch), with a minimum deductible of 750K dollars (Arch). Below that floor, GCs rely on subcontractor performance bonds, and 82% of contractors who started SubGuard programmes cited dissatisfaction with surety claims response (Cavignac). Subcontractor distress is rising with high rates, tariffs on materials and labour shortages."
+   },
+   "wedge": "Three structural blocks. (1) The SDI carriers (Zurich SubGuard, Arch, Berkley, Liberty) underwrite the GC's own prequalification process and lean on a 750K dollar+ retention, so the GC carries the frequency and the carrier carries the catastrophe. Serving a 30-150M dollar GC means the insurer must underwrite and monitor every subcontractor itself at SDI prices. That is a different product with a different cost structure, not a lower threshold. (2) Channel conflict: the same carriers are the largest contract-surety writers, and their surety distribution (NASBP producers) is organised around subcontractor bonds. A cheap mid-market SDI product would cannibalise sub-bond premium and antagonise the agents who place it. NASBP actively publishes material on SDI's drawbacks versus bonds. (3) The construction-AI software leaders (Procore, Oracle TradeTapp prequalification, Shackleton, Document Crunch) would have to become licensed, capitalised risk-bearers, and grading subs' default risk for the GC is a conflict with the subcontractor users on their own networks. Honest limit: a carrier could build a dedicated AI-native mid-market SDI unit or partner with Procore on an embedded programme. That is roughly a year of work and cannibalises its surety book, so wedge 3, not 4.",
+   "buyer": "Beachhead: CFOs and risk managers at general contractors with 30-150M dollars of annual subcontract volume (commercial, multifamily, healthcare and education building) in high-growth Sunbelt markets, who today require bonds from their subs or simply self-insure sub default, placed through the construction practices of retail brokers (Alliant, IMA, Cavignac, Marsh McLennan Agency).",
+   "trigger": "A subcontractor default that cost months of bond-claim fighting; an owner or lender demanding sub-default protection; a bid that cannot carry 1-3% sub-bond cost; or crossing the size where bonding every sub becomes uncompetitive.",
+   "expansion_path": "Mid-market GC SDI in the Sunbelt, then nationwide SDI for GCs from 20M dollars of volume up to the incumbents' floor and, as loss data compounds, competition for large-GC programmes. Then the subcontractor graph becomes the asset: every sub is seen across many GCs and projects, which supports sub-side products (contract surety at the bond-size floor, contractor GL, early-pay and payment-assurance financing priced on live performance) and project-level products (builders risk, owner-side contractor default cover, wrap-ups). The target is a construction-risk carrier: US construction spending is about 2 trillion dollars a year, mostly subcontracted, and SDI at roughly 0.5-1.5% of enrolled subcontract value implies a multi-billion-dollar premium pool before adjacent lines.",
+   "kill_attempts_survived": 3,
+   "occupancy_note": "Searched SDI plus AI, MGA, insurtech and startup; 'subcontractor default' plus default prediction; SubGuard mid-market launches; and Procore insurance products. Found only incumbent carriers (Zurich SubGuard, Arch, Alliant/RT Specialty broker pages), an AI-native construction broker (Acolite, a broker not an underwriter), surety-side automation already in the ledger (InRev, Tinubu, SuretyOS, Propeller: they bond the sub, not insure the GC) and an Indian surety vendor blog. No AI-native SDI underwriter or mid-market SDI programme found. Ledger checks: ts-0580 (surety MGA) and ts-0440 (sub-side billing) are different buyers and products.",
+   "viability_note": "First ten buyers: GCs on ENR regional Top Contractors lists and AGC chapter rosters in Texas, Florida, Georgia, the Carolinas and Arizona, reached through construction-practice brokers who today cannot get them SDI. A second channel is construction lenders and owners who require default protection. Data access comes through Procore/Autodesk Build APIs plus the sub's own financial submission at enrolment. Capacity needs a fronting carrier and reinsurers comfortable with a cyclical, low-frequency, high-severity line, which is the main viability risk.",
+   "scores": {
+    "wedge_durability": 3,
+    "pattern_strength": 4,
+    "market_venture_scale": 4,
+    "defensibility": 4,
+    "yc_fit": 4,
+    "founder_fit": 4,
+    "composite": 3.83
+   },
+   "rubric_version": 3,
+   "brief": "ideas/briefs/0036-ai-native-subcontractor-default-insurer.md"
   }
  ]
 }
