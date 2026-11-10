@@ -7249,7 +7249,125 @@
     "composite": 3.83
    },
    "rubric_version": 3,
-   "brief": "ideas/briefs/0036-ai-native-subcontractor-default-insurer.md"
+   "brief": "ideas/briefs/0036-ai-native-subcontractor-default-insurer.md",
+   "recheck_2026-11-10": "Threshold fact re-verified: no lower-threshold SDI programme announced in 2025-26. Current floors are Hudson 75M dollars revenue, Arch 150M dollars revenue plus 100M dollars annual enrolment, AXA XL 100M dollars+ subcontract cost and Procore's 'typically 100M dollars+'. New counter-signal: a 2026 CFMA piece says GCs are moving from SDI back to sub bonds because default claims and SDI deductibles are rising, which supports both the demand and the adverse-loss-trend risk. New adjacent name: Parakeet Risk, a sub-monitoring and prequalification platform, not a risk-bearer, so it is a possible data partner or competitor. Still unchecked: the real SDI rate from a construction broker and Procore API terms. Status unchanged."
+  },
+  {
+   "id": "ts-0595",
+   "date": "2026-11-10",
+   "status": "killed",
+   "summary": "AI-native accounting practice for UK and Nordic SMEs: own the client relationship and the engagement letter, and do the close, VAT and year-end work with agents, because Sumary sells to accounting firms and cannot compete with its own customers.",
+   "source_pattern": "Sumary: 25M dollar seed led by Singular, 2026-11-10 (largest European accounting-software seed); contracts with Deloitte, Grant Thornton and Baker Tilly; most of the 20 largest Nordic accounting firms signed; company-reported 50% faster monthly close and 75% faster VAT returns.",
+   "wedge": "Attempted: channel conflict (Sumary's customers are the firms; becoming a firm antagonises Deloitte, Grant Thornton and Baker Tilly).",
+   "buyer": "Owner-managed SMEs in the UK and the Nordics that buy bookkeeping, VAT and year-end accounts from a local practice.",
+   "trigger": "Practice retirement or fee rises; Making Tax Digital quarterly reporting in the UK.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. The AI-native firm model is already funded in this exact geography and adjacent ones: Multiplier Holdings (27.5M to 35M dollars, acquires tax and accounting practices and runs them on AI), Cortea (10M pound AI audit challenger, UK), AccountsOS (UK, pre-seed, 'AI-native accountancy'), Ravical (12.75M pound round, platform for PE-backed UK consolidators), Numica (US practice acquirer) and Taxforce in Germany (ts-0383). The UK sole-trader flank was already killed at ts-0566.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0596",
+   "date": "2026-11-10",
+   "status": "killed",
+   "summary": "Sumary's mechanism pointed at Japan: agents that do bookkeeping, monthly close and consumption-tax returns for zeirishi (licensed tax accountant) offices, a market with about 80,000 licensed practitioners and no Sumary localisation.",
+   "source_pattern": "Sumary: 25M dollar seed led by Singular, 2026-11-10 (largest European accounting-software seed); contracts with Deloitte, Grant Thornton and Baker Tilly; most of the 20 largest Nordic accounting firms signed; company-reported 50% faster monthly close and 75% faster VAT returns.",
+   "wedge": "Attempted: geography and language (Japanese tax rules, the zeirishi licence, Japanese ledgers).",
+   "buyer": "Zeirishi offices with 5-50 staff facing a hiring shortage.",
+   "trigger": "Invoice-system (qualified invoice) and electronic-bookkeeping compliance load, and the succession crisis among ageing practitioners.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by the system-of-record rule (config change by the incumbent that holds the records). TKC, the system of record for its member zeirishi offices, began providing TKC AI agents (an OMS agent for member offices and an FX agent for their clients, built on Microsoft Foundry) from the end of September 2026. freee launched its 'freee advisory-client management | AI agent', covering everything from collecting client documents to the final tax return, on 2026-09-15, plus the Agent Hub development platform. Money Forward is shipping AI Cowork. The vendors that hold the ledgers shipped the agent first.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0597",
+   "date": "2026-11-10",
+   "status": "killed",
+   "summary": "CRA importer verification by binary analysis: EU importers and distributors of white-label Asian connected devices use machine firmware analysis to verify their supplier's Cyber Resilience Act conformity without source code, since Finite State sells to the manufacturer that owns the firmware.",
+   "source_pattern": "Finite State: 27M dollar Series C led by The O.H.I.O. Fund (with CIBC Innovation Banking, Energy Impact Partners, National Grid Partners), 2026-11-10; customers include national grids, a US national-security lab, global automakers and medical-device makers; no revenue disclosed. Binary firmware analysis plus SBOM, VEX and signed CRA, FDA, UNECE R155 and IEC 62443 compliance packages.",
+   "wedge": "Attempted: adjacent buyer with a different trigger (the importer, who carries manufacturer-equivalent liability, rather than the device maker).",
+   "buyer": "Compliance and product managers at EU importers, retail chains and buying cooperatives selling white-label connected devices.",
+   "trigger": "CRA obligations phasing in from September 2026, with full application on 2027-12-11.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy, and it largely duplicates ts-0389. ONEKEY (Düsseldorf) markets exactly this: importers and distributors 'are considered manufacturers' under the CRA, white-label OEM goods are a cyber risk for 'chain stores and buying cooperatives', and its firmware analysis works without source code, the device or network access. Finite State's own binary analysis also needs no source code, so serving an importer is a sales-motion change, not a new product.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0598",
+   "date": "2026-11-10",
+   "status": "killed",
+   "summary": "Product-liability insurer for connected-device makers under the revised EU Product Liability Directive: an MGA that prices strict liability for software and cybersecurity defects on machine analysis of each insured's firmware, update cadence and SBOM.",
+   "source_pattern": "Finite State: 27M dollar Series C led by The O.H.I.O. Fund (with CIBC Innovation Banking, Energy Impact Partners, National Grid Partners), 2026-11-10; customers include national grids, a US national-security lab, global automakers and medical-device makers; no revenue disclosed. Binary firmware analysis plus SBOM, VEX and signed CRA, FDA, UNECE R155 and IEC 62443 compliance packages. Insurer-of-record pattern: Kalepa, Indigo, Nirvana.",
+   "wedge": "Attempted: insurer-of-record (scanner vendors would have to grade and bear risk on their own customers; product-liability carriers price on category and turnover).",
+   "buyer": "Hardware and IoT makers and EU importers placing connected products on the EU market.",
+   "trigger": "The PLD applies to products placed on the market from 2026-12-09: software counts as a product, missing security updates can be a defect, and defect and causation can be presumed.",
+   "kill_test": "Config change + viability",
+   "kill_reason": "Killed by config change and segment viability. The specialist technology MGAs that already write hardware product liability and tech E&O (CFC, Hiscox, Vouch, Founder Shield) can add a firmware-scan requirement to the submission next quarter, the same way cyber insurers added outside-in scans, by buying ONEKEY or Finite State output. Losses under the PLD do not exist yet (it applies only to products placed after December 2026, with a three-year limitation period), so there is no loss data to out-price incumbents with, and the early buyers are motivated by fear rather than claims.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0599",
+   "date": "2026-11-10",
+   "status": "killed",
+   "summary": "Representations and warranties (W&I) insurance for sub-20M dollar M&A deals: an AI-native MGA that underwrites by machine-reading the data room and quality-of-earnings work, removing the fixed underwriting fee that makes R&W uneconomic for small deals.",
+   "source_pattern": "Insurer-of-record pattern: Kalepa (75M dollar Series B at 470M dollars, revenue and customers each tripled in a year), Indigo (premium doubled to 20M dollars+), Nirvana (1.5bn dollars); size-gate method note from 2026-11-07.",
+   "wedge": "Attempted: size gate (standard R&W carries a 25-50K dollar underwriting fee, minimum premiums near 80K dollars and retentions near 150K dollars, so insured deals start around 20-30M dollars of enterprise value).",
+   "buyer": "Search-fund and independent-sponsor buyers, lower-middle-market PE add-ons and their sell-side advisers on 2-20M dollar deals.",
+   "trigger": "LOI signed on a deal whose seller will not accept a large escrow.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. CFC Underwriting's TLPE (Transactional Liability Private Enterprise) is a sell-side R&W policy built for the 'Main Street' sub-30M dollar market, with no underwriting fee and premiums of about 1-2% of limit, marketed for 5-20M dollar deals. Acquinex is an FCA-regulated M&A-insurance MGA for small and mid-market deals with no minimum premiums, operating in nine countries including the US. The size gate has already been lowered by specialists.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0600",
+   "date": "2026-11-10",
+   "status": "killed",
+   "summary": "Full-limit contingent business interruption cover for mid-market manufacturers: an MGA that maps each insured's tier-1 and tier-2 suppliers from customs records, invoices and bills of materials, then writes the supplier-dependency cover that property carriers sublimit because they cannot see the supply chain.",
+   "source_pattern": "Insurer-of-record pattern: Kalepa (75M dollar Series B at 470M dollars, revenue and customers each tripled in a year), Indigo (premium doubled to 20M dollars+), Nirvana (1.5bn dollars); size-gate method note from 2026-11-07. Supply-chain mapping (Altana, Interos) as the enabling data.",
+   "wedge": "Attempted: size gate and data model (property carriers cap CBI at small sublimits because supplier-level underwriting is uneconomic for each mid-market insured).",
+   "buyer": "Risk managers and CFOs at 100M-2bn dollar manufacturers with concentrated single-source suppliers.",
+   "trigger": "A supplier outage (fire, cyberattack, tariff shock) that the property policy's CBI sublimit failed to cover.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by occupancy and config change. Marsh's Sentrisk is an AI supplier-mapping platform built to support CBI placement, with 2M+ supplier locations mapped for 750+ clients across 15 sectors. CFC already sells a customer and supplier business-interruption product aimed at the same blind spot, and Parametrix covers dependent cloud outages. The broker with the clients already owns the mapping, and carriers can raise sublimits on its output.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0601",
+   "date": "2026-11-10",
+   "status": "killed",
+   "summary": "Nominal's mechanism pointed at regulated drug manufacturing: one data layer over every batch, sensor and lab result in a GMP plant, with agents that run deviation investigations and draft the batch-record and continued-process-verification evidence that Part 11 requires.",
+   "source_pattern": "Nominal: 240M dollar Series C led by Lightspeed and Insight (Fortune Term Sheet, 2026-11-10), after an 80M dollar B-2 at a 1bn dollar valuation in March 2026; reportedly four of the five largest US defence primes are customers.",
+   "wedge": "Attempted: compliance posture (GxP validation and 21 CFR Part 11 audit trails, outside Nominal's defence and aerospace focus).",
+   "buyer": "Quality and manufacturing-science heads at pharma and biologics plants and CDMOs.",
+   "trigger": "An FDA 483 or warning letter, or a backlog of open deviations holding batch release.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. Katalyze AI (10.5M dollar seed, July 2026) is already deployed at five of the 20 largest pharma companies with agent teams for plant operations. Leucine digitises batch records and does AI root-cause analysis for deviations, and Kolter AI reports 50% shorter deviation investigations. Körber PAS-X and the other MES vendors hold the batch record of record. The FDA's April 2026 cGMP warning letter on unreviewed AI use also raises the validation bar for any entrant.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0602",
+   "date": "2026-11-10",
+   "status": "killed",
+   "summary": "Clinician-built evaluation and training environments for non-English health systems: Alterra's mechanism, with Japanese, German, French and Korean clinicians designing tasks and graders on their own national guidelines, coding systems and record formats.",
+   "source_pattern": "Alterra Labs: 12.5M dollar seed led by Oak HC/FT, 2026-11-10; revenue from clinician-built training environments and post-training services; frontier AI labs are its fastest-growing customer group; no revenue disclosed.",
+   "wedge": "Attempted: geography and language (local clinicians, national guidelines and local EHR formats).",
+   "buyer": "Frontier labs and applied clinical-AI companies localising medical capability; later, national health systems validating models.",
+   "trigger": "A lab expanding a medical product into a non-English market, or a national regulator requiring local validation.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by config change. The expert-network suppliers to frontier labs (Mercor, Surge, Handshake, Turing) already recruit licensed clinicians worldwide, and Alterra can hire local clinicians for any market a lab asks for. Neither move needs a second product. RL environments are also one of the most crowded infrastructure squares (ts-0131: about 20 seed-to-Series-A competitors).",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0603",
+   "date": "2026-11-10",
+   "status": "killed",
+   "summary": "Sovereign test-and-telemetry data platform for European defence primes and the new European defence startups: Nominal's mechanism (one data layer over every test stand, with AI anomaly detection and test reports), deployed on European-controlled infrastructure for ReArm Europe programmes.",
+   "source_pattern": "Nominal: 240M dollar Series C led by Lightspeed and Insight (Fortune Term Sheet, 2026-11-10), after an 80M dollar B-2 at a 1bn dollar valuation in March 2026; reportedly four of the five largest US defence primes are customers. Context: Onodrim Industries (reported 300M dollar Series A at 1.3bn dollars, buys and modernises European defence suppliers) and the ReArm Europe spending surge.",
+   "wedge": "Attempted: geography and compliance posture (EU sovereignty, no US-controlled software in national programmes).",
+   "buyer": "Test and integration leads at European primes (Rheinmetall, KNDS, Saab, Leonardo) and defence scaleups (Helsing, Quantum Systems, Stark, Tekever).",
+   "trigger": "A ministry requirement for sovereign software on a new programme.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by config change and the system-of-record rule. Nominal already deploys on-premises and air-gapped for US defence customers, so a European entity with a sovereign deployment is a sales-and-legal change, not a second product (Palantir sells into European defence the same way). The European test-stand data already sits in Siemens Simcenter Testlab, HBK and dSPACE, which hold the record and are adding AI. The only small native player found is Marple (Antwerp, about 14 staff, automotive and aerospace).",
+   "rubric_version": 3
   }
  ]
 }
