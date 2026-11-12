@@ -4366,7 +4366,7 @@
   {
    "id": "ts-0381",
    "date": "2026-09-15",
-   "status": "new",
+   "status": "watching",
    "summary": "AI-native correctional health provider: bid for and run county jail medical and mental-health contracts as an AI-native clinical organisation - reconstructing a person's medication list and acute risk at 3am booking from fragmentary county, pharmacy and hospital records, documenting care where nobody types, and converting custodial care into the Medicaid claims that section 1115 reentry waivers made billable for the first time - entering as the three largest incumbent contractors emerge from or sit in bankruptcy and counties re-tender.",
    "cross": {
     "ai_signal": "Three tasks in this setting are frontier-model tasks and were not solvable before. (1) Intake reconstruction: a person arrives at booking at 3am, often intoxicated, withdrawing or psychotic, unable to give a reliable history, and the evidence of what they take and what will kill them in 72 hours is scattered across a county EHR, a state prescription drug monitoring database, a homeless-services record, prior bookings and a hospital discharge summary - assembling a defensible medication and risk list out of that is entity resolution plus clinical judgement over fragments, not a form. (2) Documentation where there is no workstation: care happens at a cell door, in a transport van, in a segregation unit, so the record has to be captured by voice and camera and turned into a clinical note, a sick-call disposition and a billable encounter. (3) Release-timing prediction: jails have an average length of stay under thirty days and no predetermined release date, which is exactly why CMS itself describes county jails as the hard case for the pre-release benefit - deciding today who will leave inside the ninety-day pre-release window, from charge, bail status, court calendar and history, is a prediction problem and it is what makes jail reentry billing possible at all.",
@@ -4389,7 +4389,8 @@
    },
    "kill_attempts_survived": 3,
    "brief": "ideas/briefs/0029-ai-native-correctional-health.md",
-   "rubric_version": 3
+   "rubric_version": 3,
+   "recheck_2026-11-12": "Moved new -> watching on two developing signals. (1) The AI-doctor-with-physician-oversight mechanism was priced: Oura agreed to buy Counsel Health, an AI-native primary-care company, for 625M dollars (TechCrunch, 2026-11-10), and Lotus Health raised 35M dollars for a free AI doctor in February 2026. (2) Counties keep re-tendering after Wellpath's bankruptcy. Oakland County, Michigan ran a competitive solicitation, got four proposals and gave VitalCore a five-year contract (approved January 2026). Wellpath is reportedly leaving Shelby County, Tennessee, and its liquidating trust is still defending unpaid-care claims. Counter-signals: Bexar County, Texas is moving intake screening to University Health, so public-hospital insourcing competes with any outsourced bidder, and Oakland's new contract adds human nurses at intake rather than technology, so county RFPs still score staffing ratios. A search for an AI-native correctional health bidder found none. Still unchecked: whether any 2026 county RFP scores technology or reentry Medicaid billing capability."
   },
   {
    "id": "ts-0382",
@@ -7367,6 +7368,110 @@
    "trigger": "A ministry requirement for sovereign software on a new programme.",
    "kill_test": "Config change",
    "kill_reason": "Killed by config change and the system-of-record rule. Nominal already deploys on-premises and air-gapped for US defence customers, so a European entity with a sovereign deployment is a sales-and-legal change, not a second product (Palantir sells into European defence the same way). The European test-stand data already sits in Siemens Simcenter Testlab, HBK and dSPACE, which hold the record and are adding AI. The only small native player found is Marple (Antwerp, about 14 staff, automotive and aerospace).",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0604",
+   "date": "2026-11-12",
+   "status": "killed",
+   "summary": "AI-native IRS tax-debt resolution firm for individuals and small businesses: enrolled agents plus agents that read IRS account transcripts and collection notices and file installment agreements, offers in compromise, penalty abatements and collection-appeal requests, entering as IRS automated collection and levies rise in 2026.",
+   "source_pattern": "Blue J: 176M dollar Series E led by JMI Equity (2026-11-10/11) at a valuation above 700M dollars; 6,500+ organisations (up from about 1,000 two years earlier); 14M+ tax questions answered; company-reported ARR growth of 165% over about 15 months. Mechanism: cited answers to hard tax questions over the full body of tax law, now expanding into return review and responses to government notices.",
+   "wedge": "Attempted: channel conflict. Blue J sells to the CPAs and enrolled agents who do this work, so becoming the representative firm would compete with its 6,500 customers.",
+   "buyer": "Taxpayers holding a final notice of intent to levy, or a balance due they cannot pay.",
+   "trigger": "A CP504 or LT11/Letter 1058 notice, a bank levy or a wage garnishment.",
+   "kill_test": "Occupancy + venture scale",
+   "kill_reason": "Killed by occupancy and the venture-scale gate. The channel conflict blocks Blue J but not the firms already serving this buyer. EasAly AI launched an AI tax-resolution service for consumers in February 2026 (transcript decoding, notice explanation, relief-program comparison, transcript monitoring). Resolve sells the same case classification to resolution professionals, and TaxRise already runs software-driven transcript review. The established resolution firms (Optima, Community Tax, Fortress) can adopt the same agents, because they are services firms with no software revenue to protect. The industry is also small and fragmented: Optima, which calls itself the largest, is credibly estimated at about 85-100M dollars of revenue. Expanding into student-loan and medical-debt resolution does not credibly reach 1bn dollars.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0605",
+   "date": "2026-11-12",
+   "status": "killed",
+   "summary": "Blue J for India: cited tax research and draft replies to income-tax and GST notices for India's chartered-accountant firms, priced at Indian practice economics.",
+   "source_pattern": "Blue J: 176M dollar Series E led by JMI Equity (2026-11-10/11) at a valuation above 700M dollars; 6,500+ organisations (up from about 1,000 two years earlier); 14M+ tax questions answered; company-reported ARR growth of 165% over about 15 months. Mechanism: cited answers to hard tax questions over the full body of tax law, now expanding into return review and responses to government notices.",
+   "wedge": "Attempted: geography and price point. Blue J covers common-law English-language tax systems at a US seat price, and Indian CA firms cannot pay that.",
+   "buyer": "Small and mid-size CA firms handling GST and faceless-assessment notices for SME clients.",
+   "trigger": "A surge of GST demand notices and faceless income-tax assessments.",
+   "kill_test": "Occupancy + viability",
+   "kill_reason": "Killed by occupancy and viability. Taxmann, which holds the Indian tax-law and case content, launched Taxmann.AI with EY India for research, document analysis and drafting responses to notices, and is adding a 'Draft Bot' for notices. ICAI ships TaxoBuddy.AI to its own members, and ClearTax already drafts cited replies to income-tax and GST notices. The content holder and the professional body both got there first, which is the system-of-record rule again. The Indian practice price point repeats the ts-0503 finding that local SaaS economics do not reach the 1bn dollar gate.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0606",
+   "date": "2026-11-12",
+   "status": "killed",
+   "summary": "Crypto CP2000 response firm: reconcile each holder's wallets and exchange history against the first Forms 1099-DA (gross proceeds with no basis) and answer the IRS mismatch notices expected from late 2026 through 2027.",
+   "source_pattern": "Blue J: 176M dollar Series E led by JMI Equity (2026-11-10/11) at a valuation above 700M dollars; 6,500+ organisations (up from about 1,000 two years earlier); 14M+ tax questions answered; company-reported ARR growth of 165% over about 15 months. Mechanism: cited answers to hard tax questions over the full body of tax law, now expanding into return review and responses to government notices. Trigger context: broker reporting on Form 1099-DA starts with 2025 transactions, with basis only for later acquisitions, so IRS automated matching will see proceeds without basis.",
+   "wedge": "Attempted: adjacent buyer, different trigger. Blue J serves professionals; this targets the taxpayer at the moment the notice arrives.",
+   "buyer": "US crypto holders with on-chain or multi-exchange history whose 1099-DA shows proceeds without basis.",
+   "trigger": "A CP2000 proposed adjustment with a 30-day response clock.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by config change. Koinly, CoinTracker and CoinLedger already publish 1099-DA reconciliation workflows and CoinTracker ships a sample CP2000 response letter. Thomson Reuters is writing for practitioners about exactly this matching problem. The crypto-tax apps hold the transaction record and can add a done-for-you notice service as a pricing tier. The trigger is also a one-time wave, not a lasting market, because the gap closes once basis reporting is in place for newer acquisitions.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0607",
+   "date": "2026-11-12",
+   "status": "killed",
+   "summary": "Claim purchaser of record for independent physician groups: buy every claim at submission at a discount priced by chart-versus-payer-rule review, take the denial risk, and fight denials and appeals with agents, so a practice is paid in days with certainty.",
+   "source_pattern": "Charta Health: 55M dollar Series B led by Insight Partners (2026-11-11), about 85M dollars raised in total, with Madrona, Bain Capital Ventures, South Park Commons and QuantumLight. Customers include American Family Care, Grow Therapy and Pediatric Associates; it reports double-digit cuts in denial rates for selected customers. Mechanism: before a claim is submitted, AI checks the medical record against coding guidelines and each payer's rules. Supporting: Rivio (Brazil) reportedly guarantees hospital revenue on top of pre-submission audit (2026-11-04 run).",
+   "wedge": "Attempted: insurer-of-record plus channel conflict. Charta sells to both providers and insurers, so guaranteeing the provider side and fighting payers would turn against its payer customers. RCM software vendors would need a capitalised balance-sheet entity.",
+   "buyer": "Independent multi-specialty, urgent-care and behavioural-health groups with heavy commercial and Medicare Advantage mixes.",
+   "trigger": "A spike in denials or a cash-flow crunch, especially from Medicare Advantage denials and downcoding.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by occupancy and config change. Claritev (formerly MultiPlan) invested in Klaim in October 2025 to run a co-branded Payment Acceleration Service for US and MENA providers. It turns pending claims into cash within 24 hours, uses Claritev's ACE coding technology to choose qualifying claims, promises certainty of payment for those claims, and handles payer follow-up. Cylerity advances funds within 24 hours of submission, and Brellium now pays clawback penalties on visits it cleared. Moving from 'qualifying claims' to 'every claim' is a pricing and underwriting choice for those players, not a second company.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0608",
+   "date": "2026-11-12",
+   "status": "killed",
+   "summary": "Pre-bill and pre-audit chart review for hospice and home health under the CMS enforcement push (hospice special focus programme, enhanced oversight in high-fraud states, UPIC and TPE audits), with a guarantee against clawbacks.",
+   "source_pattern": "Charta Health: 55M dollar Series B led by Insight Partners (2026-11-11), about 85M dollars raised in total, with Madrona, Bain Capital Ventures, South Park Commons and QuantumLight. Customers include American Family Care, Grow Therapy and Pediatric Associates; it reports double-digit cuts in denial rates for selected customers. Mechanism: before a claim is submitted, AI checks the medical record against coding guidelines and each payer's rules.",
+   "wedge": "Attempted: compliance posture and data model. Hospice eligibility and OASIS documentation differ from office-visit coding, and the audit regime is distinct.",
+   "buyer": "Compliance and revenue-cycle leaders at hospice and home-health agencies in enhanced-oversight states.",
+   "trigger": "A UPIC or TPE audit letter, or a provisional period of enhanced oversight.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. Brellium raised 23M dollars in October 2026 (Left Lane, First Round) and launched CortexLM. It has a CHAP-Verified hospice chart-audit product, enterprise customers Gentiva and Maxim, 250,000 providers across 50 states, and a guarantee to cover payer clawbacks on visits it cleared. WellSky, Axxess and HCHB hold the hospice record and are adding AI. Both the record and the guarantee are already taken.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0609",
+   "date": "2026-11-12",
+   "status": "killed",
+   "summary": "Agent-plus-human MDR for European mid-market firms newly in scope of NIS2, with the 24-hour and 72-hour incident-reporting evidence built in and run on EU-controlled infrastructure.",
+   "source_pattern": "Daylight Security: 80M dollar Series B led by Goldman Sachs Alternatives (2026-11-11), 120M dollars raised in total, with a reported valuation of about 400M dollars (WSJ). It reports revenue up more than 40x in a year; customers include Lovable, LastPass, Miro and dLocal. Mechanism: AI agents do the investigation work of managed detection and response (MDR), with human specialists escalating, so a managed security service runs at close to software margins.",
+   "wedge": "Attempted: geography and compliance. Daylight sells to US and Israeli cloud-native tech companies, while NIS2 entities are European mid-market firms.",
+   "buyer": "IT and security leads at 'important' and 'essential' NIS2 entities with 50-1,000 staff.",
+   "trigger": "National transposition deadlines and the first national supervisory audits.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by occupancy and config change. Eye Security raised a 60M euro Series C for exactly this bundle (AI-powered MDR, 24/7 human SOC, incident response and in-house cyber insurance for the European mid-market). Attic's IVON is agentic MDR 'from European soil' with NIS2 evidence built in. Sekoia, Qevlar AI (25.8M euros), Beelzebub (3M euro seed, NIS2-focused, July 2026) and WiseBee cover the rest. Daylight can also sell into the EU with an EU entity, and data residency is a deployment choice, not a second product.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0610",
+   "date": "2026-11-12",
+   "status": "killed",
+   "summary": "Abby Care for adults: an AI-native agency that trains and certifies family members to care for elderly or disabled adults at home and bills Medicaid structured-family-caregiving and self-direction programmes, with AI handling training, visit verification, documentation and compliance.",
+   "source_pattern": "Abby Care: 82M dollar Series C led by Transformation Capital with CVS Health Ventures, Khosla, Thrive and Sequoia (Fierce Healthcare tracker, 2026-10-15). It serves thousands of families across eight states, reported about 15M dollars of 2025 revenue, and members had 40%+ fewer hospitalisations in year one. Mechanism: AI-supported training and compliance turn unpaid family caregivers into certified, Medicaid-reimbursed workers.",
+   "wedge": "Attempted: adjacent buyer. Abby Care is built around medically complex children and pediatric private-duty nursing; adult structured family caregiving runs on different state waivers and stipend rules.",
+   "buyer": "Families caring for a Medicaid-eligible adult parent or disabled adult child at home.",
+   "trigger": "Hospital discharge, or nursing-home eligibility, with a family member already providing unpaid care.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by occupancy and config change. Careforth (Indiana and other states) and Momba Home Care (Arizona, Ohio, Michigan) already run structured family caregiving for adults, and every state has at least one Medicaid programme paying family caregivers through agencies. Abby Care's own stack (training, certification, EVV, Medicaid billing) carries over to adult waivers state by state, so the move is a state expansion for the leader, not a second company.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0611",
+   "date": "2026-11-12",
+   "status": "killed",
+   "summary": "Compliant desktop sandboxes for computer-use agents in regulated enterprises: fleets of persistent Windows and macOS machines, held to the enterprise's own controls, where agents operate legacy desktop applications with no API.",
+   "source_pattern": "Mount Thor: 45M dollars across seed and Series A (CRV and Conviction co-led the A), 2026-11-12, building Mac data centres for AI agents. Inkbox: 5.3M dollar seed led by Peak XV, 2026-11-10, reaching 300K dollars ARR within four months of its YC launch with cloud-hosted persistent computers for agents. Mechanism: computer-use agents need real operating-system environments at scale, not just browsers or code containers.",
+   "wedge": "Attempted: compliance posture. Regulated buyers need the agent desktops inside their own controls and audit perimeter.",
+   "buyer": "Automation and platform teams at banks, insurers and health systems running legacy thick-client applications.",
+   "trigger": "Moving a computer-use agent pilot into production under model-risk and security review.",
+   "kill_test": "Occupancy (reasoned, one search)",
+   "kill_reason": "Killed by occupancy. ts-0537 already found self-hosted agent sandboxes for air-gapped government taken, and ts-0024 killed the regulated computer-use operator. E2B, Daytona, Cua, Scrapybara and Browserbase offer self-hostable or VPC agent environments, and the hyperscalers (Windows 365 for agents, AWS WorkSpaces) can serve regulated enterprises inside existing contracts. Deploying in the customer's VPC is a config change.",
    "rubric_version": 3
   }
  ]
