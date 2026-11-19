@@ -7251,7 +7251,8 @@
    },
    "rubric_version": 3,
    "brief": "ideas/briefs/0036-ai-native-subcontractor-default-insurer.md",
-   "recheck_2026-11-10": "Threshold fact re-verified: no lower-threshold SDI programme announced in 2025-26. Current floors are Hudson 75M dollars revenue, Arch 150M dollars revenue plus 100M dollars annual enrolment, AXA XL 100M dollars+ subcontract cost and Procore's 'typically 100M dollars+'. New counter-signal: a 2026 CFMA piece says GCs are moving from SDI back to sub bonds because default claims and SDI deductibles are rising, which supports both the demand and the adverse-loss-trend risk. New adjacent name: Parakeet Risk, a sub-monitoring and prequalification platform, not a risk-bearer, so it is a possible data partner or competitor. Still unchecked: the real SDI rate from a construction broker and Procore API terms. Status unchanged."
+   "recheck_2026-11-10": "Threshold fact re-verified: no lower-threshold SDI programme announced in 2025-26. Current floors are Hudson 75M dollars revenue, Arch 150M dollars revenue plus 100M dollars annual enrolment, AXA XL 100M dollars+ subcontract cost and Procore's 'typically 100M dollars+'. New counter-signal: a 2026 CFMA piece says GCs are moving from SDI back to sub bonds because default claims and SDI deductibles are rising, which supports both the demand and the adverse-loss-trend risk. New adjacent name: Parakeet Risk, a sub-monitoring and prequalification platform, not a risk-bearer, so it is a possible data partner or competitor. Still unchecked: the real SDI rate from a construction broker and Procore API terms. Status unchanged.",
+   "recheck_2026-11-19": "Held-book re-check. Hudson Insurance Group's SDI product, in market since 2018, is 'specifically designed for general contractors whose annual revenue exceeds 50M dollars' (2018 launch release). That is lower than the 75M dollars recorded on 2026-11-10. An ALKEME broker page (updated 2026-04) says some GCs with 25-50M dollars of revenue have run SDI programmes. American Global launched an SDI administration module for its C-RISQ platform (2026-10-26); it is admin software with no AI claim. Net effect: the uncovered beachhead shrinks to GCs under about 50M dollars of revenue rather than 30-150M dollars of subcontract volume, and the lower tier of the original beachhead overlaps an incumbent's appetite. Wedge durability 3 is now at its floor. The one fact that would settle it: whether a GC under 50M dollars of revenue can carry any retention at all. If not, the product is a sub-bond replacement priced per sub, which is a different idea. Status unchanged pending that broker conversation."
   },
   {
    "id": "ts-0595",
@@ -7693,6 +7694,71 @@
    "trigger": "The 2027-01-20 application date, and the first machine model that must ship under the new regulation.",
    "kill_test": "Occupancy + segment viability (reasoned)",
    "kill_reason": "Killed by occupancy and viability. IBF's Safexpert dominates DACH CE risk-assessment software and is publishing Machinery Regulation updates. TÜV SÜD, Intertek and Pilz sell the transition as services, and Certivity sells AI requirements engineering to European machinery and automotive makers. Demand is a one-off transition spike on small SME budgets, and the bigger move (holding a notified-body seat) was already killed as ts-0518. Occupancy is reasoned from known players: the search found consultancy pages and no fresh startup raise.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0629",
+   "date": "2026-11-19",
+   "status": "killed",
+   "summary": "AI agents that investigate and decide financial-crime alerts for fintechs, money services businesses and payment companies, sold as an outsourced investigation desk priced per closed alert rather than as software for an in-house team.",
+   "source_pattern": "Arva AI: 20M dollar Series A led by Arthur Ventures, with YC and Gradient (announced 2026-11-17). Customers include a top-10 US bank, an S&P 500 payments company and Wise, plus a Fiserv partnership (June 2026) reaching banks and credit unions. In 2026 customers began letting its agents make the final decision instead of having staff review each case. No revenue disclosed. Mechanism: agents research the party behind a sanctions or money-laundering alert, read the documents and close the alert with an audit trail.",
+   "wedge": "Attempted: sales motion and price point. Arva sells to large banks' compliance teams. Small fintechs and money services businesses have no team to sell a tool to, so they would buy the finished decision.",
+   "buyer": "Heads of compliance at Series A-C fintechs, money transmitters and payment facilitators with 1-10 compliance staff.",
+   "trigger": "An alert backlog flagged by the sponsor bank or a state examiner.",
+   "kill_test": "Config change + occupancy",
+   "kill_reason": "Killed by config change and occupancy. Arva already serves Wise and an S&P 500 payments company, so the fintech segment is already its customer base. Bretton AI (formerly Greenlite AI, 75M dollar Series B, 2026-02) began with fintech and startup customers. Tangos (20M dollar seed, 2026-07), Sphinx (7.1M dollar seed), Diligent AI and Vivox AI all sell alert-investigation agents. Per-alert outsourced pricing is a pricing change, not a structural block.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0630",
+   "date": "2026-11-19",
+   "status": "killed",
+   "summary": "AI-native correspondent-banking intermediary for de-risked emerging-market banks: hold the licence that gives small respondent banks dollar access, and use agents to run know-your-customer's-customer reviews on the nested flows that large US banks exited because human review cost too much.",
+   "source_pattern": "Arva AI (20M dollar Series A, 2026-11-17; a top-10 US bank lets its agents make the final decision on alerts). Mechanism: agents make financial-crime decisions cheaply enough that low-margin flows become worth serving again.",
+   "wedge": "Attempted: compliance posture and channel conflict. Arva sells software to the banks that de-risked these respondents. To serve them it would have to hold the correspondent licence and the risk itself.",
+   "buyer": "Treasurers of small banks and licensed payment institutions in Africa, the Caribbean, the Pacific and Central Asia that lost US-dollar correspondent accounts.",
+   "trigger": "Notice that a correspondent account is being closed.",
+   "kill_test": "Occupancy + segment viability (reasoned)",
+   "kill_reason": "Killed by occupancy and viability; reasoned from known players. Dollar access for de-risked institutions is moving to stablecoin rails (Bridge, now owned by Stripe; BVNK; Conduit) and to licensed intermediaries such as Banking Circle and regional dollar-clearing banks. The seat needs a US bank charter or a Fed master-account sponsor before the first customer, and the regulator's appetite is exactly what caused the de-risking. AI does not change the regulator's risk view, so the bottleneck is not the one AI removes.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0631",
+   "date": "2026-11-19",
+   "status": "killed",
+   "summary": "AI-native fractional general-counsel law firm for companies with 20-300 employees and no in-house lawyer: a licensed firm (an Arizona or Utah alternative business structure) whose agents draft and negotiate contracts, run employment and privacy compliance and handle routine disputes under attorney supervision, for a flat monthly fee.",
+   "source_pattern": "GC AI: says it passed 40M dollars of ARR, up 4x year on year, with 2,200+ company customers (company press release, 2026-11; Sacra estimated about 20M dollars in mid-2026, so treat the figure as company-reported). 60M dollar Series B at 555M dollars post-money (Scale and Northzone, 2025-11). Mechanism: a legal assistant tuned for in-house counsel at mid-size companies, sold self-serve, lets one lawyer do the work of a legal department.",
+   "wedge": "Attempted: data model and channel conflict. GC AI sells to an in-house lawyer who supervises the output. A company with no lawyer needs a law firm, and becoming one would mean unauthorised-practice exposure and competing with the outside counsel its customers hire.",
+   "buyer": "CEOs, COOs and CFOs of 20-300-person companies that pay outside counsel by the hour for routine work.",
+   "trigger": "A first enterprise customer's MSA and security review, a first employment dispute, or a funding round that makes legal spend visible.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. Manifest OS (60M dollar Series A at 750M dollars, 2026-04) incubates AI-native fixed-fee law firms under Arizona's alternative-business-structure programme. Crosby already runs an AI-native law firm for startups' commercial contracts (reasoned from known coverage). Lawhive is consolidating small-business legal services in the UK, and Norm Law (backed by Bain Capital, Blackstone and Vanguard) and Eudia Counsel take the enterprise end. Several state bars are also lobbying to roll back Arizona's ABS programme, so the regulatory seat is not durable. ts-0230 already killed a high-volume ABS firm.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0632",
+   "date": "2026-11-19",
+   "status": "killed",
+   "summary": "In-silico biologics and small-molecule design for animal-health companies (companion-animal and livestock therapeutics), pointing open biomolecular foundation models at species-specific targets and veterinary development economics.",
+   "source_pattern": "Boltz: 110M dollar Series A led by Bessemer (Endpoints, 2026-11-18). Six of the 20 largest pharma companies are customers (Pfizer, GSK, Takeda and BMS are named), and tokens processed for paying customers grew 50x since June. Mechanism: open biomolecular structure and binding models plus a paid platform let drug designers screen and design molecules computationally before making them.",
+   "wedge": "Attempted: adjacent buyer. Boltz sells to top-20 human pharma. Animal-health R&D has its own targets, species data and a cheaper regulatory path (FDA CVM and USDA CVB).",
+   "buyer": "Discovery heads at mid-size animal-health companies and veterinary biotechs.",
+   "trigger": "A new canine or feline biologic programme (the market opened by Zoetis's monoclonal antibodies for pain and dermatitis).",
+   "kill_test": "Config change + segment viability (reasoned)",
+   "kill_reason": "Killed by config change and viability; reasoned. Boltz's models are open, and Zoetis, Elanco and Merck Animal Health can use them in-house or buy Boltz Labs seats with no new product. Animal-health R&D spend is a small fraction of human pharma's, so a design-tool vendor dead-ends small. The venture-scale version is just an AI-native animal-health biotech, which is a pipeline bet rather than a narrowed buyer. ts-0092 (pesticide design) and ts-0135 (veterinary care) are adjacent kills.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0633",
+   "date": "2026-11-19",
+   "status": "killed",
+   "summary": "Disease-risk prediction from patients' longitudinal health records, sold to life insurers for accelerated underwriting, so applicants skip blood draws and exams.",
+   "source_pattern": "Xlue: 35M dollar seed led by Conviction (2026-11-18), a Carnegie Mellon spinout that predicts cancer and disease risk from health records. No traction disclosed, so this is a weak pattern. Supporting: Humyn Labs and Boltz show this week's large rounds go to companies with proprietary data or models.",
+   "wedge": "Attempted: adjacent buyer, different trigger. Xlue sells clinical risk prediction to providers. A life insurer buys the same prediction at the moment someone applies for a policy.",
+   "buyer": "Chief underwriters at US life insurers and reinsurers.",
+   "trigger": "Expanding accelerated-underwriting limits to larger face amounts.",
+   "kill_test": "Occupancy (incumbent data holder)",
+   "kill_reason": "Killed by the 2026-11-14 method note's data-holder check before any search: reinsurers hold the mortality-outcome data that turns record-based risk scores into prices. Munich Re (alitheia), Swiss Re, RGA and Hannover Re sell record-based accelerated-underwriting tools. Datavant and Human API, plus the lab-data vendors, already deliver health records to insurers at application. Reasoned from known players.",
    "rubric_version": 3
   }
  ]
