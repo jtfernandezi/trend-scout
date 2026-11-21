@@ -6747,7 +6747,8 @@
     "composite": 3.67
    },
    "rubric_version": 3,
-   "brief": "ideas/briefs/0033-ai-native-multiemployer-fund-administrator.md"
+   "brief": "ideas/briefs/0033-ai-native-multiemployer-fund-administrator.md",
+   "recheck_2026-11-21": "Held-book re-check (two searches). No AI-native multiemployer TPA was found. Cassidy markets an 'AI multi-employer fund administration agent' solution page (a vendor template, not a fund administrator). BeneSys's Q1 2026 newsletter describes a 'deliberately balanced' approach to AI. Zenith American shows no AI administration launch. Incumbent caution supports the wedge. Settling fact: will one fund's trustees (or their co-chairs and fund counsel) move a single fund's administration to a new TPA without a 10+ year track record? That needs a conversation with a fund co-chair or a Taft-Hartley consultant, not a search. Status unchanged."
   },
   {
    "id": "ts-0560",
@@ -6879,7 +6880,8 @@
     "composite": 3.67
    },
    "rubric_version": 3,
-   "brief": "ideas/briefs/0034-ai-native-pe-integration-operator.md"
+   "brief": "ideas/briefs/0034-ai-native-pe-integration-operator.md",
+   "recheck_2026-11-21": "Held-book re-check (one search; thin). Serval (150M dollars at 3bn dollars) has expanded from IT service management into HR, security, finance and legal operations and bought Ensignia, but has announced no PE add-on integration product. No PE integration firm launching integration agents turned up. Status unchanged. Next re-check should search the PE operating-partner channel directly (for example, value-creation firms and the Big Four's integration practices)."
   },
   {
    "id": "ts-0569",
@@ -7130,7 +7132,8 @@
    },
    "rubric_version": 3,
    "brief": "ideas/briefs/0035-camera-underwritten-premises-liability.md",
-   "recheck_2026-11-07": "Weakest facts verified. Florida HB 1423 died in the House Judiciary Committee on 2026-03-13 (SB 956 did not advance), so the Fla. Stat. 768.0706 presumption stands unamended and the machine-checkable evidence standard is intact. No Verkada, Flock or Solink camera-linked insurance or premium-discount programme found. Status unchanged."
+   "recheck_2026-11-07": "Weakest facts verified. Florida HB 1423 died in the House Judiciary Committee on 2026-03-13 (SB 956 did not advance), so the Fla. Stat. 768.0706 presumption stands unamended and the machine-checkable evidence standard is intact. No Verkada, Flock or Solink camera-linked insurance or premium-discount programme found. Status unchanged.",
+   "recheck_2026-11-21": "Held-book re-check (two searches). No carrier or MGA was found pricing apartment or hotel premises liability from camera evidence. The camera and patrol supply grew this month: Ring launched an enterprise patrol robot (2026-11-10), Coram raised a 35M dollar Series B (2026-06) and Hakimo sells an autonomous security agent. That is more data supply for the idea, not competition. No Florida 768.0706 change was searched this run. Settling fact, unchanged: will a carrier or fronting partner give capacity for a camera-priced habitational GL programme in Florida, Texas or Georgia? Status unchanged."
   },
   {
    "id": "ts-0587",
@@ -7759,6 +7762,97 @@
    "trigger": "Expanding accelerated-underwriting limits to larger face amounts.",
    "kill_test": "Occupancy (incumbent data holder)",
    "kill_reason": "Killed by the 2026-11-14 method note's data-holder check before any search: reinsurers hold the mortality-outcome data that turns record-based risk scores into prices. Munich Re (alitheia), Swiss Re, RGA and Hannover Re sell record-based accelerated-underwriting tools. Datavant and Human API, plus the lab-data vendors, already deliver health records to insurers at application. Reasoned from known players.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0634",
+   "date": "2026-11-21",
+   "status": "killed",
+   "summary": "AI-native contract security company: a licensed guard firm that takes the whole guarding contract for warehouses, construction sites, car dealers and apartment communities, and delivers it with cameras, docked drones and remote operators plus a small mobile response crew, priced below the guard hours it replaces.",
+   "source_pattern": "Skydio: Axon is investing a further 1.2bn dollars at a 5.2bn dollar pre-money valuation, taking its stake to about 37% (announced 2026-11-05). Axon becomes Skydio's exclusive US and Canada public-safety distributor. Skydio expects about 1bn dollars of bookings this fiscal year. Supporting: Ring launched an enterprise patrol robot and a home security drone (TechCrunch, 2026-11-10). Mechanism: autonomous docked drones fly to an incident before people arrive and stream what they see to a remote operator.",
+   "wedge": "Attempted: innovator's dilemma (seat-holder). Allied Universal, Securitas and GardaWorld bill by the guard hour, so replacing hours with machines shrinks their revenue. Skydio sells hardware and would not take on guarding liability.",
+   "buyer": "Operations or security directors at owners of 10-200 unguarded or lightly guarded sites (logistics, construction, auto dealers, multifamily).",
+   "trigger": "Renewal of a guard contract after a theft or a guard no-show, or a guard wage increase.",
+   "kill_test": "Occupancy + config change",
+   "kill_reason": "Killed by occupancy and config change. Remote video guarding is already a staffed service category: Deep Sentinel (15M dollar Series B) pairs AI with live guards, Hakimo (20.5M dollars raised) sells an autonomous security agent, and Coram (35M dollar Series B, 2026-06), Lumana (64M dollars raised) and Actuate sell AI camera monitoring. Synara (YC F26) is new to the category. Securitas and Allied Universal already run remote-guarding units, so offering the machine-delivered contract is a pricing and staffing change for them. Ring is entering enterprise patrol. The innovator's dilemma is real but is being crossed already.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0635",
+   "date": "2026-11-21",
+   "status": "killed",
+   "summary": "Drone-first-responder programmes for police and fire agencies outside the Axon ecosystem: autonomous docked drones, dispatch integration and remote pilots for agencies standardised on Motorola Solutions or other records and dispatch stacks.",
+   "source_pattern": "Skydio: Axon is investing a further 1.2bn dollars at a 5.2bn dollar pre-money valuation, taking its stake to about 37% (announced 2026-11-05). Axon becomes Skydio's exclusive US and Canada public-safety distributor. Skydio expects about 1bn dollars of bookings this fiscal year. Supporting: Ring launched an enterprise patrol robot and a home security drone (TechCrunch, 2026-11-10). Mechanism: autonomous docked drones fly to an incident before people arrive and stream what they see to a remote operator.",
+   "wedge": "Attempted: channel conflict. Axon is now Skydio's exclusive public-safety distributor, so an agency that runs Motorola or another vendor's records, dispatch and camera stack would buy Skydio through a rival's channel.",
+   "buyer": "Police chiefs and fire chiefs at mid-size US agencies on Motorola Solutions or Tyler dispatch and records systems.",
+   "trigger": "A council-funded drone-first-responder pilot or a federal public-safety grant cycle.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy. The market has already split into three ecosystems: Axon with Skydio, Motorola with BRINC (125M dollar round led by Motorola in 2026; 700+ agencies use BRINC drones), and Flock with Aerodome. SkyfireAI (11M dollar seed, 2026-04) sells multi-drone autonomy to the same agencies. Agencies outside Axon are not unserved; they are Motorola's or Flock's.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0636",
+   "date": "2026-11-21",
+   "status": "killed",
+   "summary": "Agentic sourcing with compliance of record for regulated consumer goods: find and vet factories for children's products, cosmetics and supplements, and deliver each shipment with the testing, certificates and registrations (CPSIA children's product certificates, MoCRA cosmetic listings, FDA facility registration) that the US seller is liable for.",
+   "source_pattern": "Everful: 48.5M dollar Series A led by Vertex Ventures Southeast Asia & India and January Capital (TheNextWeb, 2026-11-19). The company says it ships more than 5M items a month to customers in 60+ countries, works with 30,000+ factories, and expects 100M dollars of annualised revenue by year-end 2026 (company-reported). Founded in 2024. Mechanism: agents spot trending products, find and score factories against Everful's own inspection data, and manage orders, with Everful shipping the goods itself.",
+   "wedge": "Attempted: data model and compliance posture. Everful sells general merchandise at low minimum order quantities. Regulated categories need lab testing, certificates and a party that carries the compliance record, which Everful does not offer.",
+   "buyer": "Founders and sourcing leads at DTC and Amazon brands selling children's products, cosmetics or supplements, with 1-20M dollars of revenue.",
+   "trigger": "A marketplace listing takedown, a CPSC or FDA notice, or a new product line in a regulated category.",
+   "kill_test": "Config change + occupancy",
+   "kill_reason": "Killed by config change and occupancy, reasoned from known players with one search. Testing and certification are purchasable from labs (QIMA, Intertek, SGS, Bureau Veritas), so Everful can add them per order as a partnership, not a rebuild. QIMA already combines factory inspection, lab testing and a supplier platform. Pietra serves DTC brands' sourcing, and Inspectorio sells supplier compliance software. No structural block.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0637",
+   "date": "2026-11-21",
+   "status": "killed",
+   "summary": "Neutral post-training platform for companies that will not train their proprietary models on a cybersecurity vendor's platform: customise and serve open-weight models on a company's own data, positioned for Applied Compute's orphaned customers and for Palo Alto Networks' competitors.",
+   "source_pattern": "Applied Compute: Palo Alto Networks agreed to buy it for 4.5bn dollars in stock (announced 2026-11-18; 8-K filed). It reached a 100M dollar annualised revenue run rate less than 18 months after founding, and raised 350M dollars at 3.25bn dollars on 2026-11-02. Palo Alto projects 1bn dollars+ of next-generation security ARR from it by fiscal 2029. Mechanism: a platform that post-trains and serves open-weight models on a company's own data, so the company owns a model tuned to its work.",
+   "wedge": "Attempted: channel conflict. After the acquisition, Applied Compute is owned by a security vendor. Its competitors (CrowdStrike, Zscaler, Fortinet) and data-sensitive companies may not want their training data on its platform.",
+   "buyer": "Heads of AI or ML platform at digital-native and enterprise companies that used, or were evaluating, Applied Compute.",
+   "trigger": "Closing of the Palo Alto acquisition (expected in Palo Alto's fiscal Q3 2027) and the roadmap shift toward security.",
+   "kill_test": "Occupancy (duplicate ground)",
+   "kill_reason": "Killed by occupancy, reasoned from known players. This is ts-0585's ground (killed). Post-training as a service is crowded: Adaptive ML, Prime Intellect, Thinking Machines (Tinker), Together AI, Fireworks, OpenPipe (CoreWeave), Remanence, Deep Cogito and Trajectory all offer it. Predibase went to Rubrik, so acquisitions by security and data vendors are the category's normal exit. Orphaned customers have many neutral alternatives.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0638",
+   "date": "2026-11-21",
+   "status": "killed",
+   "summary": "Defensive security model for industrial control networks: a model trained on industrial protocol traffic and plant telemetry that watches utilities', water systems' and factories' operational networks and works the alerts, deployed on-premises or air-gapped.",
+   "source_pattern": "Corma (Tel Aviv): 125M dollar Series A led by NEA at a 1bn dollar valuation, with Sequoia, Khosla and Coatue (TechCrunch, 2026-11-16), three months after a 60M dollar Sequoia-led seed. 185M dollars raised in total. The company says it grew server capacity 24x to meet Fortune 500 demand (company-reported; no customers named). Mechanism: a foundation model trained for defensive security reads logs and events continuously and works alerts as an autonomous security team.",
+   "wedge": "Attempted: data model and compliance posture. Corma's model is trained on enterprise IT logs. Industrial networks speak different protocols (Modbus, DNP3, OPC UA) and often run under NERC CIP or air-gap rules.",
+   "buyer": "OT security leads at mid-size electric, water and gas utilities and at multi-plant manufacturers.",
+   "trigger": "A NERC CIP audit finding, or a state-actor campaign advisory from CISA.",
+   "kill_test": "Occupancy",
+   "kill_reason": "Killed by occupancy, reasoned from known players. Dragos, Claroty, Nozomi Networks (bought by Mitsubishi Electric), Armis and Forescout already own industrial network monitoring, with protocol parsers and installed sensors at the target utilities, and are adding AI triage. Ledger kills ts-0475 (OT attack testing) and ts-0563 (shared-service SOC) cover the neighbouring ground. Corma could also ingest industrial telemetry as a new data source.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0639",
+   "date": "2026-11-21",
+   "status": "killed",
+   "summary": "Spare-parts equivalence and commercial-grade dedication engine for nuclear plants: match obsolete safety-related parts to qualified equivalents and generate the dedication packages that let a commercial part be used in a nuclear application, for operating fleets and the SMR new-build pipeline.",
+   "source_pattern": "SPARETECH (Munich): 20M dollar Series B co-led by Blume Equity and Insight Partners, with Headline (announced 2026-11-10). Revenue is up 5x since the start of 2024, its catalogue holds 40M+ verified parts, and its network has 15,000 manufacturer and supplier partners. Earlier customers include Bosch, Nestle, Porsche and Airbus Helicopters (2023). Mechanism: AI cleans and de-duplicates a manufacturer's messy spare-parts master data against a verified catalogue, so plants can share stock, find alternative suppliers and cut inventory.",
+   "wedge": "Attempted: compliance posture and data model. Nuclear parts need 10 CFR 50 Appendix B quality assurance and 10 CFR Part 21 dedication evidence, which a general industrial parts catalogue does not carry.",
+   "buyer": "Supply chain and procurement engineering leads at US nuclear operators (Constellation, Vistra, Duke, TVA, Southern) and at SMR developers.",
+   "trigger": "A part going obsolete during an outage window, or SMR supply-chain qualification.",
+   "kill_test": "Segment viability + occupancy",
+   "kill_reason": "Killed by segment viability and occupancy, reasoned from known players. There are about 94 US reactors run by fewer than 20 operators, and dedication engineering is a small services market (single-digit hundreds of millions of dollars). There is no credible 1bn dollar path. EPRI, PKMJ, Curtiss-Wright, Westinghouse and Nuclearn (nuclear AI startup) occupy the work. Ledger kills ts-0545 (nuclear equipment health) and ts-0398 (obsolete-part reverse engineering) cover the neighbours.",
+   "rubric_version": 3
+  },
+  {
+   "id": "ts-0640",
+   "date": "2026-11-21",
+   "status": "killed",
+   "summary": "AI agents for independent medical and dental practices sold through healthcare-specialist IT providers, with a signed HIPAA business associate agreement, PHI-safe model routing and practice-system connectors.",
+   "source_pattern": "Hatz AI (New York): 24M dollar Series A with Nadia Partners, Vestigo Ventures and The Private Shares Fund (announced 2026-11-12). Its active MSP partner base tripled in a year, and revenue grew faster than that (company-reported; no amount disclosed). It has partners in all 50 US states and headcount rose from 14 to almost 60. Mechanism: small businesses buy AI agents and workspaces through the IT provider (MSP) they already trust, with the MSP handling governance.",
+   "wedge": "Attempted: compliance posture. Hatz is horizontal. Practices need a business associate agreement and connectors to dental and medical practice systems, which a general SMB AI platform does not ship with.",
+   "buyer": "Owners of healthcare-focused MSPs serving 50-500 independent practices.",
+   "trigger": "A practice asking its IT provider for an AI scribe or front-desk agent, or a HIPAA risk-assessment finding about staff using consumer AI tools.",
+   "kill_test": "Config change",
+   "kill_reason": "Killed by config change. Signing business associate agreements, routing to HIPAA-eligible model endpoints and recruiting healthcare MSPs is a quarter of focused work for Hatz, not a second product. Practice-system connectors are already offered by vertical vendors (Weave, Dentrix and NextGen add-ons, plus the ambient scribe companies), so the agent layer is crowded and Hatz's channel can route to them.",
    "rubric_version": 3
   }
  ]
